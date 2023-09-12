@@ -557,12 +557,14 @@ a {
 
     .footer-buttons {
         flex-direction: column; /* Расположение кнопок подвала в столбец */
-        width:80%;
+        width:100%;
         gap: 0.5rem; /* Увеличение расстояния между кнопками подвала */
         justify-content: center;
-        padding-left:60px;
     }
-
+    .footer-button {
+        margin-left: 60px;
+        margin-right: 60px;
+    }
     .btn_scroll_top {
         right: 1rem; /* Перемещение кнопки "наверх" вправо */
         bottom: 1rem; /* Перемещение кнопки "наверх" вниз */
@@ -662,6 +664,9 @@ a {
         margin-top: 2rem;
     }
     .development-xc-devs{
-        height: 475px;
+        height: 600px;
+    }
+    .development-bot-devs{
+        height: 425px;
     }
 }

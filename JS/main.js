@@ -64,36 +64,41 @@ fetch('../JSON/news.json')
                     logoImg.alt = 'Логотип 1';
                     background_news.classList.add('background-blur-qlake');
                     background_news.classList.add('background-more-black');
+                    logoImg.setAttribute("onclick","window.location.href='HTML/devs/qlake.html';");
                     break;
                 case "2":
                     logoImg.src = '../img/SD/SD Logo.jpg';
                     logoImg.alt = 'Логотип 2';
                     background_news.classList.add('background-blur-sd');
                     background_news.classList.add('background-more-black');
+                    logoImg.setAttribute("onclick","window.location.href='HTML/devs/sd.html';");
                     break;
                 case "3":
                     logoImg.src = '../img/XenoClock/XC Logo.jpg';
                     logoImg.alt = 'Логотип 3';
                     background_news.classList.add('background-blur-xc');
                     background_news.classList.add('background-more-black');
+                    logoImg.setAttribute("onclick","window.location.href='HTML/devs/xc.html';");
                     break;
                 case "4":
                     logoImg.src = '../img/Bot/Bot Logo.jpg';
                     logoImg.alt = 'Логотип 4';
                     background_news.classList.add('background-blur-bot');
                     background_news.classList.add('background-more-black');
+                    logoImg.setAttribute("onclick","window.location.href='HTML/devs/bot.html';");
                     break;
                 case "5":
                     logoImg.src = '../img/header/LOGO VL_PLAY Games.png';
                     logoImg.alt = 'VL_PLAY Games Logo';
                     background_news.classList.add('background-blur-site');
                     background_news.classList.add('background-more-black');
+                    logoImg.setAttribute("onclick","window.location.href='index.html';");
                     break;
                 default:
                     logoImg.src = ''; // Если нет соответствия, можно оставить пустым
                     logoImg.alt = '';
             }
-
+            logoImg.setAttribute("style","cursor: pointer;");
             // Создаем элементы для отображения данных о новости
             const title = document.createElement('h4');
             title.textContent = newsItem.title;
@@ -176,36 +181,41 @@ fetch('../../JSON/news.json')
                         logoImg.alt = 'Логотип 1';
                         background_news.classList.add('background-blur-qlake');
                         background_news.classList.add('background-more-black');
+                        logoImg.setAttribute("onclick","window.location.href='../devs/qlake.html';");
                         break;
                     case "2":
                         logoImg.src = '../../img/SD/SD Logo.jpg';
                         logoImg.alt = 'Логотип 2';
                         background_news.classList.add('background-blur-sd');
                         background_news.classList.add('background-more-black');
+                        logoImg.setAttribute("onclick","window.location.href='../devs/sd.html';");
                         break;
                     case "3":
                         logoImg.src = '../../img/XenoClock/XC Logo.jpg';
                         logoImg.alt = 'Логотип 3';
                         background_news.classList.add('background-blur-xc');
                         background_news.classList.add('background-more-black');
+                        logoImg.setAttribute("onclick","window.location.href='../devs/xc.html';");
                         break;
                     case "4":
                         logoImg.src = '../../img/Bot/Bot Logo.jpg';
                         logoImg.alt = 'Логотип 4';
                         background_news.classList.add('background-blur-bot');
                         background_news.classList.add('background-more-black');
+                        logoImg.setAttribute("onclick","window.location.href='../devs/bot.html';");
                         break;
                     case "5":
                         logoImg.src = '../../img/header/LOGO VL_PLAY Games.png';
                         logoImg.alt = 'VL_PLAY Games Logo';
                         background_news.classList.add('background-blur-site');
                         background_news.classList.add('background-more-black');
+                        logoImg.setAttribute("onclick","window.location.href='../../index.html';");
                         break;
                     default:
                         logoImg.src = ''; // Если нет соответствия, можно оставить пустым
                         logoImg.alt = '';
                 }
-
+                logoImg.setAttribute("style","cursor: pointer;");
                 // Создаем элементы для отображения данных о новости
                 const title = document.createElement('h4');
                 title.textContent = newsItem.title;
