@@ -1,0 +1,658 @@
+﻿/* main.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fafafa;
+    color: #333;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+
+header {
+    background-color: #2d6c55;
+    color: #fff;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Новые стили для логотипа */
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    margin-right: 1rem; /* Расстояние между логотипом и надписью */
+    width: 50px; /* Размер логотипа */
+    height: 50px;
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.hero {
+    background-color: #e0f2f1;
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.hero h2 {
+    margin: 0;
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.btn_continue {
+    display: inline-block;
+    padding: 0.5rem 1.5rem;
+    background-color: #2d6c55;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 40px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn_continue:hover {
+    background-color: #1f4d3d; /* Изменяем цвет фона при наведении */
+    transform: scale(1.1); /* Увеличение кнопки на 10% при наведении */
+}
+
+.news {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+    margin-left: 5rem;
+}
+
+.article {
+    flex-basis: calc(50% - 1rem);
+    background-color: #000;
+    padding: 1.5rem;
+    border-radius: 4px;
+    margin-right: 6rem;
+    position: relative;
+    z-index: 0;
+    transition: transform 0.3s;
+}
+
+.article:hover, .article-news:hover{
+    transform: scale(1.05);
+}
+
+.background-blur-news {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    filter: blur(5px); /* Добавляем размытие только к фону */
+    z-index: -1;
+}
+
+.article, .article-news p {
+    color: #fff;
+}
+
+.developments {
+    display: flex;
+    flex-wrap: wrap; /* Добавьте wrap для переноса на новую строку, если не помещается на одной */
+    gap: 1rem; /* Расстояние между элементами */
+}
+
+.development-xc, .development-bot, .development-sd, .development-qlake {
+    flex-basis: calc(50% - 3rem); /* 2 элемента в ряду, с расстоянием между ними */
+    background-color: #fff;
+    padding: 2rem;
+    margin-left: 5rem;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem; /* Расстояние между блоками "Разработки" */
+    position: relative;
+    z-index: 0;
+    transition: transform 0.3s;
+}
+
+.development-bot-devs, .development-xc-devs {
+    flex-basis: calc(50% - 3rem); /* 2 элемента в ряду, с расстоянием между ними */
+    background-color: #fff;
+    padding: 2rem;
+    margin-left: 5rem;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem; /* Расстояние между блоками "Разработки" */
+    position: relative;
+    z-index: 0;
+    transition: transform 0.3s;
+    width: 50%;
+    height: 350px;
+    margin: 0 auto;
+}
+
+.background-blur-xc, .background-blur-bot, .background-blur-sd, .background-blur-qlake, .background-blur-site {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    filter: blur(10px); /* Добавляем размытие только к фону */
+    z-index: -1;
+}
+
+.development-xc:hover, .development-bot:hover, .development-sd:hover, .development-qlake:hover, .development-bot-devs:hover, .development-xc-devs:hover {
+    transform: scale(1.05);
+}
+
+.background-blur-xc {
+    background-image: url("../img/XenoClock/XC_wallpaper.jpg"); 
+}
+
+.background-blur-bot {
+    background-image: url("../img/Bot/Bot_wallpaper.jpg");
+}
+
+.background-blur-sd {
+    background-image: url("../img/SD/SD_wallpaper.jpg");
+}
+
+.background-blur-qlake {
+    background-image: url("../img/Qlake/Qlake_wallpaper.jpg");
+}
+
+.background-blur-site {
+    background-image: url("../img/Site/site_wallpaper.jpg");
+}
+
+.background-more-black{
+    opacity: 0.85;
+}
+
+.development-info {
+    position: relative;
+}
+
+.development-xc h3, .development-xc p, .development-bot h3, .development-bot p, .development-sd h3, .development-sd p, .development-qlake h3, .development-qlake p, .development-bot-devs h3, .development-bot-devs p, .development-xc-devs h3, .development-xc-devs p {
+    color: #fff;
+}
+
+.footer {
+    background-color: #2d6c55;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 3rem;
+}
+
+.footer-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.footer-button {
+    padding: 0.5rem 1rem;
+    background-color: #fff;
+    color: #2d6c55;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+
+.footer-button:hover {
+    background-color: #1f4d3d; /* Черный фон при наведении */
+    color: #fff; /* Белый текст при наведении */
+    transform: scale(1.1); /* Увеличение кнопки на 5% при наведении */
+}
+
+.centered-text {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.dev_one_string {
+    display: flex;
+    margin-right: 6rem;
+}
+
+.dev_one_string_one {
+    display: flex;
+    width: 60%;
+    height:350px;
+    margin:0 auto;
+    background: #369;
+}
+
+img {
+    border-radius: 10px;
+}
+
+.btn_scroll_top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #2d6c55;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, transform 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.btn_scroll_top:hover {
+    background-color: #1f4d3d;
+    transform: scale(1.1);
+}
+
+
+.mainPageName {
+    padding-left: 32rem;
+    text-align: center;
+}
+
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s, font-size 0.3s; /* Добавим анимацию для цвета и размера шрифта */
+    font-size: 16px; /* Размер шрифта по умолчанию */
+}
+
+.nav-links a:hover {
+    color: #A9A9A9; /* Цвет при наведении */
+    font-size: 18px; /* Увеличение размера шрифта при наведении */
+}
+
+
+
+
+.about-me {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about-me h2 {
+    font-size: 24px;
+    color: #2d6c55;
+}
+
+.about-me p {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #333;
+}
+
+.about-me img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+
+.contact-info {
+    background-color: #fff; /* Цвет фона блока контактов */
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Тень блока контактов */
+}
+
+.contact-info h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-info li {
+    margin: 10px 0;
+    font-size: 18px;
+    line-height: 1.5;
+    transition: font-size 0.3s;
+}
+
+.contact-info a {
+    text-decoration: none;
+    color: #007acc; /* Цвет ссылок */
+    font-weight: bold;
+}
+
+.contact-info li:hover {
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Стили для заголовка и логотипа игры */
+.devs-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    margin: 35px auto;
+    width: 65%;
+    text-align: center;
+}
+
+.devs-logo img {
+    max-width: 250px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.devs-details h2 {
+    font-size: 32px;
+    margin: 0;
+}
+
+.devs-details p {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+/* Стили для описания игры */
+.devs-description p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+/* Стили для таблицы с системными требованиями */
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    font-size: 18px;
+}
+
+table th, table td {
+    border: 1px solid #2d6c55; /* Цвет границ таблицы */
+    padding: 10px;
+    text-align: left;
+}
+
+/* Стили для ссылок и кнопок */
+a {
+    color: #fa5c5c; /* Цвет ссылок */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+
+.devs-info {
+    margin: 0 auto;
+    text-align: center;
+    width: 70%;
+    box-sizing: border-box;
+}
+
+.devs_text_align {
+    text-align: left;
+    padding-left: 20rem;
+}
+
+.news-row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top:2.5rem;
+}
+
+.article-news{
+    flex-basis: calc(50% - 1rem);
+    background-color: #000;
+    color:#fff;
+    padding: 1.5rem;
+    border-radius: 4px;
+    margin-right: 6rem;
+    position: relative;
+    z-index: 0;
+    transition: transform 0.3s;
+}
+
+.news-news {
+    flex-basis: calc(50% - 3rem);
+    position: relative;
+    justify-content: space-between;
+    padding: 1rem 0;
+    margin-left: 5rem;
+}
+
+.pagination{
+    display: flex;
+    justify-content: flex-end; /* Размещаем справа от центра */
+}
+
+.pagination-button {
+    display: inline-block;
+    padding: 0.5rem 1.5rem;
+    background-color: #2d6c55;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 40px;
+    transition: background-color 0.3s, transform 0.3s;
+    margin-right:100px;
+}
+
+.pagination-button:hover {
+    background-color: #1f4d3d; /* Изменяем цвет фона при наведении */
+    transform: scale(1.1); /* Увеличение кнопки на 10% при наведении */
+}
+
+
+.centered-text-news{
+    width:100%;
+    text-align: center;
+}
+
+.inline_text{
+    display: inline;
+}
+
+.opacity0{
+    opacity:0;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Добавьте стили, которые будут применяться для мобильных устройств с шириной экрана менее 768px */
+@media screen and (max-width: 896px) {
+    body {
+        font-size: 16px; /* Уменьшение размера шрифта для мобильных устройств */
+        margin-left: 1rem; /* Уменьшение отступа слева */
+        margin-right: 1rem; /* Уменьшение отступа справа */
+    }
+
+    header {
+        padding: 0.5rem; /* Уменьшение верхнего и нижнего отступа шапки */
+    }
+
+    .logo h1 {
+        font-size: 1.5rem; /* Уменьшение размера шрифта заголовка логотипа */
+    }
+
+    .nav-links {
+        flex-direction: column; /* Расположение элементов меню в столбец */
+        gap: 0.5rem; /* Увеличение расстояния между пунктами меню */
+    }
+
+    .nav-links a {
+        font-size: 1rem; /* Уменьшение размера шрифта пунктов меню */
+    }
+
+    .news {
+        flex-direction: column; /* Расположение новостей в столбец */
+        margin-left: 1rem; /* Уменьшение отступа слева для новостей */
+        margin-right: 1rem; /* Уменьшение отступа справа для новостей */
+    }
+
+    .article {
+        flex-basis: 100%; /* Новости занимают всю доступную ширину */
+        margin-right: 0; /* Убираем правый отступ для новостей */
+    }
+
+    .btn_continue {
+        margin-top: 20px; /* Уменьшение отступа между кнопками */
+    }
+
+    .footer {
+        margin-top: 2rem; /* Увеличение отступа сверху для подвала */
+    }
+
+    .footer-buttons {
+        flex-direction: column; /* Расположение кнопок подвала в столбец */
+        display: inline;
+        width:50%;
+        gap: 0.5rem; /* Увеличение расстояния между кнопками подвала */
+    }
+
+    .btn_scroll_top {
+        right: 1rem; /* Перемещение кнопки "наверх" вправо */
+        bottom: 1rem; /* Перемещение кнопки "наверх" вниз */
+    }
+    /* Стили для блока "Обо мне" */
+    .about-me {
+        padding: 10px; /* Уменьшаем отступы */
+        max-width: 100%; /* Расширяем максимальную ширину */
+    }
+
+    .about-me h2 {
+        font-size: 20px; /* Уменьшаем размер заголовка */
+    }
+
+    .about-me p {
+        font-size: 16px; /* Уменьшаем размер текста */
+    }
+
+    /* Стили для блока "Контактная информация" */
+    .contact-info {
+        padding: 1rem; /* Уменьшаем отступы */
+    }
+
+    .contact-info h2 {
+        font-size: 20px; /* Уменьшаем размер заголовка */
+        margin-bottom: 10px; /* Уменьшаем отступ снизу */
+    }
+
+    .contact-info li {
+        font-size: 16px; /* Уменьшаем размер текста */
+    }
+
+    /* Стили для заголовка и логотипа игры */
+    .devs-header {
+        width: 100%; /* Занимает всю доступную ширину */
+    }
+
+    .devs-logo img {
+        max-width: 100px; /* Уменьшаем размер логотипа */
+        margin-right: 10px; /* Уменьшаем отступ справа */
+    }
+
+    .devs-details h2 {
+        font-size: 24px; /* Увеличиваем размер заголовка */
+    }
+
+    .devs-details p {
+        font-size: 16px; /* Уменьшаем размер текста */
+        margin: 5px 0;
+    }
+
+    /* Стили для описания игры */
+    .devs-description p {
+        font-size: 16px; /* Уменьшаем размер текста */
+        line-height: 1.4; /* Уменьшаем межстрочный интервал */
+    }
+
+    /* Стили для таблицы с системными требованиями */
+    table {
+        font-size: 16px; /* Уменьшаем размер текста */
+    }
+
+    /* Стили для ссылок и кнопок */
+    a {
+        font-size: 16px; /* Уменьшаем размер текста */
+    }
+
+    /* Стили для новостей */
+    .news-row {
+        flex-direction: column; /* Столбцовая компоновка элементов */
+        margin-top: 1rem; /* Увеличиваем отступ между новостями */
+    }
+
+    .article-news {
+        flex-basis: 100%; /* Занимает всю ширину */
+        margin-right: 0; /* Убираем правый отступ */
+        margin-bottom: 1rem; /* Добавляем отступ снизу */
+    }
+
+    .news-news {
+        flex-basis: 100%; /* Занимает всю ширину */
+        margin-left: 0; /* Убираем левый отступ */
+        margin-bottom: 1rem; /* Добавляем отступ снизу */
+    }
+
+    .pagination {
+        justify-content: center; /* Выравниваем по центру */
+    }
+
+    .pagination-button {
+        margin-top: 20px; /* Увеличиваем отступ сверху */
+        margin-right: 0; /* Убираем правый отступ */
+    }
+}
