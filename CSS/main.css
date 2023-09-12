@@ -557,9 +557,10 @@ a {
 
     .footer-buttons {
         flex-direction: column; /* Расположение кнопок подвала в столбец */
-        display: inline;
-        width:50%;
+        width:80%;
         gap: 0.5rem; /* Увеличение расстояния между кнопками подвала */
+        justify-content: center;
+        padding-left:60px;
     }
 
     .btn_scroll_top {
@@ -638,7 +639,7 @@ a {
     .article-news {
         flex-basis: 100%; /* Занимает всю ширину */
         margin-right: 0; /* Убираем правый отступ */
-        margin-bottom: 1rem; /* Добавляем отступ снизу */
+        margin-bottom: 2rem; /* Добавляем отступ снизу */
     }
 
     .news-news {
@@ -654,5 +655,13 @@ a {
     .pagination-button {
         margin-top: 20px; /* Увеличиваем отступ сверху */
         margin-right: 0; /* Убираем правый отступ */
+    }
+    .dev_one_string {
+        display: block;
+        margin-right: 6rem;
+        margin-top: 2rem;
+    }
+    .development-xc-devs{
+        height: 475px;
     }
 }
