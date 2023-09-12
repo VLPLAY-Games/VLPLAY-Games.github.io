@@ -392,11 +392,29 @@ fetch('../../JSON/news.json')
                 nextPageBtn1.classList.add('opacity0');
             }
         });
-        if (currentPage == 1 && countOfPages > 1){
+        if (currentPage == 1 && countOfPages >1){
             prevPageBtn.classList.add('opacity0');
             prevPageBtn1.classList.add('opacity0');
             nextPageBtn.classList.remove('opacity0');
             nextPageBtn1.classList.remove('opacity0');
+        }
+        else if (currentPage === countOfPages){
+            nextPageBtn.classList.add('opacity0');
+            nextPageBtn1.classList.add('opacity0');
+            prevPageBtn.classList.remove('opacity0');
+            prevPageBtn1.classList.remove('opacity0');
+        }
+        else if (countOfPages > 1){
+            prevPageBtn.classList.remove('opacity0');
+            prevPageBtn1.classList.remove('opacity0');
+            nextPageBtn.classList.remove('opacity0');
+            nextPageBtn1.classList.remove('opacity0');
+        }
+        if (countOfPages === 1 && currentPage === 1){
+            prevPageBtn.classList.add('opacity0');
+            prevPageBtn1.classList.add('opacity0');
+            nextPageBtn.classList.add('opacity0');
+            nextPageBtn1.classList.add('opacity0');
         }
         // Инициализация отображения первой страницы новостей
         displayNewsOnPage(currentPage);

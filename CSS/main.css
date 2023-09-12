@@ -387,6 +387,10 @@ img {
     margin-right: 20px;
 }
 
+.devs-details{
+    text-align:left;
+}
+
 .devs-details h2 {
     font-size: 32px;
     margin: 0;
@@ -395,9 +399,13 @@ img {
 .devs-details p {
     font-size: 18px;
     margin: 5px 0;
+
 }
 
 /* Стили для описания игры */
+.devs-description p{
+    text-align:left;
+}
 .devs-description p {
     font-size: 18px;
     line-height: 1.5;
@@ -419,7 +427,7 @@ table th, table td {
 
 /* Стили для ссылок и кнопок */
 a {
-    color: #fa5c5c; /* Цвет ссылок */
+    color: #007acc; /* Цвет ссылок */
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s;
@@ -433,10 +441,6 @@ a {
     box-sizing: border-box;
 }
 
-.devs_text_align {
-    text-align: left;
-    padding-left: 20rem;
-}
 
 .news-row {
     display: flex;
@@ -500,10 +504,6 @@ a {
 .opacity0{
     opacity:0;
 }
-
-
-
-
 
 
 
