@@ -7,6 +7,10 @@ body {
     color: #333;
     opacity: 0;
     transition: opacity 0.3s;
+    background-image: url("../img/Site/wallpaper.jpg");
+    background-size: cover;
+    transform: 0.3s;
+    background-attachment:fixed;
 }
 
 
@@ -18,6 +22,7 @@ header {
     justify-content: space-between;
     align-items: center;
 }
+
 
 /* Новые стили для логотипа */
 .logo {
@@ -36,21 +41,14 @@ header {
     font-size: 2rem;
 }
 
-.nav-links {
-    list-style: none;
-    display: flex;
-    gap: 1rem;
-}
-
-.nav-links a {
-    text-decoration: none;
-    color: #fff;
-}
 
 .hero {
     background-color: #e0f2f1;
     padding: 4rem 0;
     text-align: center;
+    background-image: url("../img/Site/header_wallpaper.jpg");
+    background-size: cover;
+    background-attachment:fixed;
 }
 
 .hero h2 {
@@ -58,6 +56,7 @@ header {
     font-size: 2.5rem;
     color: #333;
 }
+
 
 .btn_continue {
     display: inline-block;
@@ -286,11 +285,17 @@ img {
     gap: 1rem;
 }
 
+.nav-links li {
+    width: 100px; /* Задаем фиксированную ширину элементов списка */
+    text-align: center; /* Выравниваем текст по центру */
+}
+
 .nav-links a {
     text-decoration: none;
     color: #fff;
-    transition: color 0.3s, font-size 0.3s; /* Добавим анимацию для цвета и размера шрифта */
-    font-size: 16px; /* Размер шрифта по умолчанию */
+    display: block; /* Делаем ссылки блочными элементами, чтобы они занимали всю доступную ширину */
+    padding: 10px 0; /* Добавляем немного вертикального отступа для стиля */
+    transition: color, font-size 0.3s; /* Добавляем анимацию смены цвета текста */
 }
 
 .nav-links a:hover {
@@ -347,17 +352,24 @@ img {
     margin: 10px 0;
     font-size: 18px;
     line-height: 1.5;
-    transition: font-size 0.3s;
+    transition: font-size 0.3s, height 0.3s; /* Добавляем анимацию смены размера шрифта и высоты элемента */
+    height: 40px; /* Задаем фиксированную высоту элементов списка */
+    overflow: hidden; /* Обрезаем текст, который выходит за пределы высоты элемента */
 }
 
 .contact-info a {
     text-decoration: none;
     color: #007acc; /* Цвет ссылок */
     font-weight: bold;
+    display: inline-block; /* Делаем ссылки блочными элементами для выравнивания текста по вертикали */
+    height: 100%; /* Заполняем высоту элемента ссылками */
+    width: 100%; /* Заполняем ширину элемента ссылками */
+    vertical-align: middle; /* Выравниваем текст по вертикали */
 }
 
 .contact-info li:hover {
     font-size: 20px;
+    height: 50px; /* Изменяем высоту элемента при наведении */
 }
 
 
@@ -505,7 +517,11 @@ a {
     opacity:0;
 }
 
-
+.page-container{
+    border-left: 10px solid #2d6c55;
+    border-right: 10px solid #2d6c55;
+    height: 100%;
+}
 
 
 
@@ -519,22 +535,26 @@ a {
         margin-right: 1rem; /* Уменьшение отступа справа */
     }
 
-    header {
-        padding: 0.5rem; /* Уменьшение верхнего и нижнего отступа шапки */
+    .nav-links {
+        flex-direction: column; /* Отображаем элементы списка вертикально */
+        gap:0rem;
+    }
+
+    .nav-links li {
+        width: auto; /* Снимаем фиксированную ширину */
+        text-align: left; /* Выравниваем текст слева */
+        margin-bottom: 10px; /* Добавляем отступ между элементами списка */
+    }
+
+    .nav-links a {
+        font-size: 16px; /* Уменьшаем размер шрифта */
+        padding: 0;
     }
 
     .logo h1 {
         font-size: 1.5rem; /* Уменьшение размера шрифта заголовка логотипа */
     }
 
-    .nav-links {
-        flex-direction: column; /* Расположение элементов меню в столбец */
-        gap: 0.5rem; /* Увеличение расстояния между пунктами меню */
-    }
-
-    .nav-links a {
-        font-size: 1rem; /* Уменьшение размера шрифта пунктов меню */
-    }
 
     .news {
         flex-direction: column; /* Расположение новостей в столбец */
@@ -668,5 +688,8 @@ a {
     }
     .development-bot-devs{
         height: 425px;
+    }
+    .development-sd, .development-qlake{
+        width:175px;
     }
 }
