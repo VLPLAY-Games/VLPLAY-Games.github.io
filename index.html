@@ -1,37 +1,42 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS\main.css">
     <link rel="shortcut icon" href="img\header\LOGO VL_PLAY Games.png" />
-    <title>VL_PLAY Games - Разработка часов, игр и многое другое</title>
+    <title data-translate="siteTitle">VL_PLAY Games - Главная</title>
+    <script src="JS/translations.js" defer></script>
 </head>
 <body>
     <div class="page-container">
         <header>
             <div class="logo">
-                <img src="../../img/header/LOGO VL_PLAY Games.png" alt="VL_PLAY Games Logo" width="100" height="100" onclick="window.location.href='../../index.html';" style="cursor: pointer;">
-                <h1>VL_PLAY Games - Главная</h1>
+                <img src="../../img/header/LOGO VL_PLAY Games.png" alt="Логотип VL_PLAY Games" width="100" height="100" onclick="window.location.href='../../index.html';" style="cursor: pointer;">
+                <h1 data-translate="siteTitle">VL_PLAY Games - Главная</h1>
             </div>
             <nav>
+                <div class="language-buttons">
+                    <button id="switchToEnglish" class = "switchToEnglishBut">English</button>
+                    <button id="switchToRussian" class = "switchToRussianBut">Русский</button>
+                </div>
                 <ul class="nav-links">
-                    <li><a href="index.html">Главная</a></li>
-                    <li><a href="HTML/devs/devs.html">Разработки</a></li>
-                    <li><a href="HTML/news/news_main.html">Новости</a></li>
-                    <li><a href="HTML/about_me/about_me.html">Обо мне</a></li>
-                    <li><a href="HTML/contacts/contacts.html">Контакты</a></li>
+                    <li><a href="index.html" data-translate="nav_home">Главная</a></li>
+                    <li><a href="HTML/devs/devs.html" data-translate="nav_developments">Разработки</a></li>
+                    <li><a href="HTML/news/news_main.html" data-translate="nav_news">Новости</a></li>
+                    <li><a href="HTML/about_me/about_me.html" data-translate="nav_about_me">Обо мне</a></li>
+                    <li><a href="HTML/contacts/contacts.html" data-translate="nav_contacts">Контакты</a></li>
                 </ul>
             </nav>
         </header>
  
         <div class="hero">
-            <h2>Разработка часов, игр и многое другое</h2>
-            <a href="HTML/about_me/about_me.html" class="btn_continue">Подробнее</a>
+            <h2 data-translate="hero">Разработка часов, игр и многое другое</h2>
+            <a href="HTML/about_me/about_me.html" class="btn_continue" data-translate="learn_more">Подробнее</a>
         </div>
 
         <div class="centered-text">
-            <h2>Разработки</h2>
+            <h2 data-translate="developments">Разработки</h2>
         </div>
 
         <div class="developments">
@@ -40,19 +45,19 @@
                     <div class="background-blur-xc"></div>
                     <img src="img\XenoClock\XC Logo.jpg" alt="Логотип 1" width="150" height="150" onclick="window.location.href='HTML/devs/xc.html';" style="cursor: pointer;">
                     <div class="development-info">
-                        <h3>XenoClock (в разработке)</h3>
-                        <p>Я занимаюсь созданием уникальных часов, сочетающих в себе высокую функциональность с помощью платы ESP32.</p>
+                        <h3 data-translate="xcTitle">XenoClock (в разработке)</h3>
+                        <p data-translate="xcDescription">Я занимаюсь созданием уникальных часов, сочетающих в себе высокую функциональность с помощью платы ESP32.</p>
                     </div>
-                    <a href="HTML/devs/xc.html" class="btn_continue">Подробнее</a>
+                    <a href="HTML/devs/xc.html" class="btn_continue" data-translate="learn_more">Подробнее</a>
                 </div>
                 <div class="development-bot">
                     <div class="background-blur-bot"></div>
                     <img src="img\Bot\Bot Logo.jpg" alt="Логотип 4" width="150" height="150" onclick="window.location.href='HTML/devs/bot.html';" style="cursor: pointer;">
                     <div class="development-info">
                         <h3>VL_PLAY Games Bot</h3>
-                        <p>Мой собственный Telegram-бот, который информирует о новых технологиях и имеет различные дополнительные функции.</p>
+                        <p data-translate="botDescription">Мой собственный Telegram-бот, который информирует о новых технологиях и имеет различные дополнительные функции.</p>
                     </div>
-                    <a href="HTML/devs/bot.html" class="btn_continue">Подробнее</a>
+                    <a href="HTML/devs/bot.html" class="btn_continue" data-translate="learn_more">Подробнее</a>
                 </div>
             </div>
 
@@ -61,25 +66,25 @@
                     <div class="background-blur-sd"></div>
                     <img src="img\SD\SD Logo.jpg" alt="Логотип 2" width="150" height="150" onclick="window.location.href='HTML/devs/sd.html';" style="cursor: pointer;">
                     <div class="development-info">
-                        <h3>Silent Darkness (в разработке)</h3>
-                        <p>Моя игра Silent Darkness представляет собой захватывающий хоррор, который погрузит вас в мрачный мир тайн и ужасов.</p>
+                        <h3 data-translate="sdTitle">Silent Darkness (в разработке)</h3>
+                        <p data-translate="sdDescription">Моя игра Silent Darkness представляет собой захватывающий хоррор, который погрузит вас в мрачный мир тайн и ужасов.</p>
                     </div>
-                    <a href="HTML/devs/sd.html" class="btn_continue">Подробнее</a>
+                    <a href="HTML/devs/sd.html" class="btn_continue" data-translate="learn_more">Подробнее</a>
                 </div>
                 <div class="development-qlake">
                     <div class="background-blur-qlake"></div>
                     <img src="img\Qlake\Qlake_Logo.png" alt="Логотип 3" width="150" height="150" onclick="window.location.href='HTML/devs/qlake.html';" style="cursor: pointer;">
                     <div class="development-info">
                         <h3>Qlake</h3>
-                        <p>Qlake — шутер от первого лица с элементами хоррора, где вы будете выполнять основную задачу — убить предводителя зомби.</p>
+                        <p data-translate="qlakeDescription">Qlake — шутер от первого лица с элементами хоррора, где вы будете выполнять основную задачу — убить предводителя зомби.</p>
                     </div>
-                    <a href="HTML/devs/qlake.html" class="btn_continue">Подробнее</a>
+                    <a href="HTML/devs/qlake.html" class="btn_continue" data-translate="learn_more">Подробнее</a>
                 </div>
             </div>
         </div>
 
         <div class="centered-text">
-            <h2>Последние новости</h2>
+            <h2 data-translate="latest_news">Последние новости</h2>
         </div>
 
         <div class="news">
@@ -87,15 +92,15 @@
         </div>
 
         <div class="centered-text">
-            <a href="HTML/news/news_main.html" class="btn_continue">Все новости</a>
+            <a href="HTML/news/news_main.html" class="btn_continue" data-translate="all_news">Все новости</a>
         </div>
         <footer class="footer">
             <div class="footer-buttons">
-                <a href="index.html" class="footer-button">Главная</a>
-                <a href="HTML/devs/devs.html" class="footer-button">Разработки</a>
-                <a href="HTML/news/news_main.html" class="footer-button">Новости</a>
-                <a href="HTML/about_me/about_me.html" class="footer-button">Обо мне</a>
-                <a href="HTML/contacts/contacts.html" class="footer-button">Контакты</a>
+                <a href="index.html" class="footer-button" data-translate="nav_home">Главная</a>
+                <a href="HTML/devs/devs.html" class="footer-button" data-translate="nav_developments">Разработки</a>
+                <a href="HTML/news/news_main.html" class="footer-button" data-translate="nav_news">Новости</a>
+                <a href="HTML/about_me/about_me.html" class="footer-button" data-translate="nav_about_me">Обо мне</a>
+                <a href="HTML/contacts/contacts.html" class="footer-button" data-translate="nav_contacts">Контакты</a>
             </div>
         </footer>
     </div>
