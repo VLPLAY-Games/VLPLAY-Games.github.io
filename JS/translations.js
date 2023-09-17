@@ -110,6 +110,62 @@ const translations = {
     'aboutMe9': {
         'en': 'Contacts',
         'ru': 'Контакты'
+    },
+    'siteTitleContacts': {
+        'en': 'VL_PLAY Games - Contacts',
+        'ru': 'VL_PLAY Games - Контакты'
+    },
+    'contactsMain': {
+        'en': 'My communication channels',
+        'ru': 'Мои каналы для связи'
+    },
+    'contacts1': {
+        'en': 'Community on VK',
+        'ru': 'Сообщество в VK'
+    },
+    'contacts2': {
+        'en': 'Server in Discord',
+        'ru': 'Сервер в Discord'
+    },
+    'contacts3': {
+        'en': 'YouTube channel',
+        'ru': 'YouTube канал'
+    },
+    'siteTitleDevs': {
+        'en': 'VL_PLAY Games - My developments',
+        'ru': 'VL_PLAY Games - Мои разработки'
+    },
+    'siteTitleNewsMain': {
+        'en': 'VL_PLAY Games - News',
+        'ru': 'VL_PLAY Games - Новости'
+    },
+    'devsMain1': {
+        'en': 'All developments',
+        'ru': 'Все разработки'
+    },
+    'devsMain2': {
+        'en': 'My games',
+        'ru': 'Мои игры'
+    },
+    'sdDescriptionDevs': {
+        'en': 'Silent Darkness is an addictive first-person horror puzzle game. Gloomy and atmospheric locations await you, where every step puts you in front of a new puzzle. In order to move forward and uncover the secrets of this dark world, you will have to solve complex riddles and look for clues. Horrible surprises await you, and your survival will depend on your puzzle-solving skills and your composure in scary situations. Get ready to dive into a world of horror and mystery, where every step could cost you your life.',
+        'ru': 'Silent Darkness - это захватывающая хоррор-головоломка от первого лица. Вас ждут мрачные и атмосферные локации, где каждый шаг ставит вас перед новой головоломкой. Для того чтобы продвигаться дальше и раскрывать тайны этого мрачного мира, вам придется разгадать сложные загадки и искать ключи к разгадке. Вас ждут ужасные сюрпризы, и ваше выживание будет зависеть от ваших навыков решения головоломок и хладнокровия в страшных ситуациях. Готовьтесь к погружению в мир ужаса и загадок, где каждый шаг может стоить вам жизни.'
+    },
+    'qlakeDescriptionDevs': {
+        'en': 'Qlake is a small atmospheric first-person shooter in the survival genre with horror elements, developed on the Unreal Engine 5. In this game, the player will have to fight zombies and their leader, who is the main goal of the game. The player will go through several levels, each of which presents a set of challenges and dangers. He will look for first aid kits and ammunition for weapons that will help him cope with evil and survive on each level.',
+        'ru': 'Qlake - это небольшой атмосферный шутер от первого лица в жанре выживания с элементами хоррора, разработанный на движке Unreal Engine 5. В этой игре игроку предстоит сразиться с зомби и их лидером, который является основной целью игры. Игрок будет проходить через несколько уровней, каждый из которых представляет собой набор вызовов и опасностей. Он будет искать аптечки и боеприпасы к оружию, которое поможет ему справиться с злом и выжить на каждом уровне.'
+    },
+    'botDescriptionDevs': {
+        'en': 'A multifunctional Telegram bot that provides a number of useful commands for the convenience of users. It also informs you about new VL_PLAY Games news.',
+        'ru': 'Многофункциональный Telegram-бот, который предоставляет ряд полезных команд для удобства пользователей. А также информирует вас о новых новостях VL_PLAY Games.'
+    },
+    'xcDescriptionDevs': {
+        'en': "XenoClock is a compact, portable device designed for convenience and functionality. Stylish and precise, this device is ideal for those who value time and an unusual lifestyle. While you probably won't be able to wear it on your hand, XenoClock is always there, ready to help you stay ahead of the curve.",
+        'ru': 'XenoClock - это компактное переносное устройство, предназначенное для удобства и функциональности. Стильный и точный, это устройство идеально подходит для тех, кто ценит время и необычный стиль жизни. Хоть вы скорее всего не сможете надеть его на руку, XenoClock всегда рядом, готовый помочь вам оставаться впереди событий.'
+    },
+    'newsMainMain': {
+        'en': "All news",
+        'ru': 'Все новости'
     }
 };
 
@@ -172,5 +228,4 @@ function translatePage(language) {
 document.getElementById('switchToEnglish').addEventListener('click', () => setLanguage('en'));
 document.getElementById('switchToRussian').addEventListener('click', () => setLanguage('ru'));
 
-// Установите начальный язык (например, русский)
 initializeLanguage();

@@ -36,6 +36,7 @@ scrollTopButton.addEventListener('click', function () {
 
 const newsContainer = document.querySelector('.news');
 
+
 // Загружаем JSON файл с данными о новостях
 fetch('../JSON/news.json')
     .then(response => response.json())

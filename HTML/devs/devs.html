@@ -5,30 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="..\..\CSS\main.css">
     <link rel="shortcut icon" href="../../img/header/LOGO VL_PLAY Games.png" />
-    <title>VL_PLAY Games - Мои разработки</title>
+    <script src="../../JS/translations.js" defer></script>
+    <title data-translate="siteTitleDevs">VL_PLAY Games - Мои разработки</title>
 </head>
 <body>
     <div class="page-container">
         <header>
             <div class="logo">
-                <img src="../../img/header/LOGO VL_PLAY Games.png" alt="VL_PLAY Games Logo" width="100" height="100" onclick="window.location.href='../../index.html';" style="cursor: pointer;">
-                <h1>VL_PLAY Games - Мои разработки</h1>
+                <img src="../../img/header/LOGO VL_PLAY Games.png" alt="Логотип VL_PLAY Games" width="100" height="100" onclick="window.location.href='../../index.html';" style="cursor: pointer;">
+                <h1 data-translate="siteTitleDevs">VL_PLAY Games - Мои разработки</h1>
             </div>
             <nav>
+                <div class="language-buttons">
+                    <button id="switchToEnglish" class = "switchToEnglishBut">English</button>
+                    <button id="switchToRussian" class = "switchToRussianBut">Русский</button>
+                </div>
                 <ul class="nav-links">
-                    <li><a href="../../index.html">Главная</a></li>
-                    <li><a href="../../HTML/devs/devs.html">Разработки</a></li>
-                    <li><a href="../../HTML/news/news_main.html">Новости</a></li>
-                    <li><a href="../../HTML/about_me/about_me.html">Обо мне</a></li>
-                    <li><a href="../../HTML/contacts/contacts.html">Контакты</a></li>
+                    <li><a href="../../index.html" data-translate="nav_home">Главная</a></li>
+                    <li><a href="../../HTML/devs/devs.html" data-translate="nav_developments">Разработки</a></li>
+                    <li><a href="../../HTML/news/news_main.html" data-translate="nav_news">Новости</a></li>
+                    <li><a href="../../HTML/about_me/about_me.html" data-translate="nav_about_me">Обо мне</a></li>
+                    <li><a href="../../HTML/contacts/contacts.html" data-translate="nav_contacts">Контакты</a></li>
                 </ul>
             </nav>
         </header>
 
         <div class="centered-text">
-            <h1>Все разработки</h1>
+            <h1 data-translate="devsMain1">Все разработки</h1>
             <br />
-            <h2>Мои игры</h2>
+            <h2 data-translate="devsMain2">Мои игры</h2>
         </div>
 
         <div class="dev_one_string">
@@ -36,19 +41,19 @@
                 <div class="background-blur-sd"></div>
                 <img src="..\..\img\SD\SD Logo.jpg" alt="Логотип 2" width="150" height="150" onclick="window.location.href='sd.html';" style="cursor: pointer;">
                 <div class="development-info">
-                    <h3>Silent Darkness (в разработке)</h3>
-                    <p>Silent Darkness - это захватывающая хоррор-головоломка от первого лица. Вас ждут мрачные и атмосферные локации, где каждый шаг ставит вас перед новой головоломкой. Для того чтобы продвигаться дальше и раскрывать тайны этого мрачного мира, вам придется разгадать сложные загадки и искать ключи к разгадке. Вас ждут ужасные сюрпризы, и ваше выживание будет зависеть от ваших навыков решения головоломок и хладнокровия в страшных ситуациях. Готовьтесь к погружению в мир ужаса и загадок, где каждый шаг может стоить вам жизни.</p>
+                    <h3 data-translate="sdTitle">Silent Darkness (в разработке)</h3>
+                    <p data-translate="sdDescriptionDevs">Silent Darkness - это захватывающая хоррор-головоломка от первого лица. Вас ждут мрачные и атмосферные локации, где каждый шаг ставит вас перед новой головоломкой. Для того чтобы продвигаться дальше и раскрывать тайны этого мрачного мира, вам придется разгадать сложные загадки и искать ключи к разгадке. Вас ждут ужасные сюрпризы, и ваше выживание будет зависеть от ваших навыков решения головоломок и хладнокровия в страшных ситуациях. Готовьтесь к погружению в мир ужаса и загадок, где каждый шаг может стоить вам жизни.</p>
                 </div>
-                <a href="sd.html" class="btn_continue">Подробнее</a>
+                <a href="sd.html" class="btn_continue" data-translate="learn_more">Подробнее</a>
             </div>
             <div class="development-qlake">
                 <div class="background-blur-qlake"></div>
                 <img src="..\..\img\Qlake\Qlake_Logo.png" alt="Логотип 3" width="150" height="150" onclick="window.location.href='qlake.html';" style="cursor: pointer;">
                 <div class="development-info">
                     <h3>Qlake</h3>
-                    <p>Qlake - это небольшой атмосферный шутер от первого лица в жанре выживания с элементами хоррора, разработанный на движке Unreal Engine 5. В этой игре игроку предстоит сразиться с зомби и их лидером, который является основной целью игры. Игрок будет проходить через несколько уровней, каждый из которых представляет собой набор вызовов и опасностей. Он будет искать аптечки и боеприпасы к оружию, которое поможет ему справиться с злом и выжить на каждом уровне. </p>
+                    <p data-translate="qlakeDescriptionDevs">Qlake - это небольшой атмосферный шутер от первого лица в жанре выживания с элементами хоррора, разработанный на движке Unreal Engine 5. В этой игре игроку предстоит сразиться с зомби и их лидером, который является основной целью игры. Игрок будет проходить через несколько уровней, каждый из которых представляет собой набор вызовов и опасностей. Он будет искать аптечки и боеприпасы к оружию, которое поможет ему справиться с злом и выжить на каждом уровне. </p>
                 </div>
-                <a href="qlake.html" class="btn_continue">Подробнее</a>
+                <a href="qlake.html" class="btn_continue" data-translate="learn_more">Подробнее</a>
             </div>
         </div>
 
@@ -62,9 +67,9 @@
             <img src="..\..\img\Bot\Bot Logo.jpg" alt="Логотип 4" width="150" height="150" onclick="window.location.href='bot.html';" style="cursor: pointer;">
             <div class="development-info">
                 <h3>VL_PLAY Games Bot</h3>
-                <p>Многофункциональный Telegram-бот, который предоставляет ряд полезных команд для удобства пользователей. А также информирует вас о новых новостях VL_PLAY Games.</p>
+                <p data-translate="botDescriptionDevs">Многофункциональный Telegram-бот, который предоставляет ряд полезных команд для удобства пользователей. А также информирует вас о новых новостях VL_PLAY Games.</p>
             </div>
-            <a href="bot.html" class="btn_continue">Подробнее</a>
+            <a href="bot.html" class="btn_continue" data-translate="learn_more">Подробнее</a>
         </div>
 
         <div class="centered-text">
@@ -77,19 +82,19 @@
             <div class="background-blur-xc"></div>
             <img src="..\..\img\XenoClock\XC Logo.jpg" alt="Логотип 1" width="150" height="150" onclick="window.location.href='xc.html';" style="cursor: pointer;">
             <div class="development-info">
-                <h3>XenoClock (в разработке)</h3>
-                <p>XenoClock - это компактное переносное устройство, предназначенное для удобства и функциональности. Стильный и точный, это устройство идеально подходит для тех, кто ценит время и необычный стиль жизни. Хоть вы скорее всего не сможете надеть его на руку, XenoClock всегда рядом, готовый помочь вам оставаться впереди событий.</p>
+                <h3 data-translate="xcTitle">XenoClock (в разработке)</h3>
+                <p data-translate="xcDescriptionDevs">XenoClock - это компактное переносное устройство, предназначенное для удобства и функциональности. Стильный и точный, это устройство идеально подходит для тех, кто ценит время и необычный стиль жизни. Хоть вы скорее всего не сможете надеть его на руку, XenoClock всегда рядом, готовый помочь вам оставаться впереди событий.</p>
             </div>
-            <a href="xc.html" class="btn_continue">Подробнее</a>
+            <a href="xc.html" class="btn_continue" data-translate="learn_more">Подробнее</a>
         </div>
 
         <footer class="footer">
             <div class="footer-buttons">
-                <a href="../../index.html" class="footer-button">Главная</a>
-                <a href="devs.html" class="footer-button">Разработки</a>
-                <a href="../news/news_main.html" class="footer-button">Новости</a>
-                <a href="../about_me/about_me.html" class="footer-button">Обо мне</a>
-                <a href="../contacts/contacts.html" class="footer-button">Контакты</a>
+                <a href="../../index.html" class="footer-button" data-translate="nav_home">Главная</a>
+                <a href="../../HTML/devs/devs.html" class="footer-button" data-translate="nav_developments">Разработки</a>
+                <a href="../../HTML/news/news_main.html" class="footer-button" data-translate="nav_news">Новости</a>
+                <a href="../../HTML/about_me/about_me.html" class="footer-button" data-translate="nav_about_me">Обо мне</a>
+                <a href="../../HTML/contacts/contacts.html" class="footer-button" data-translate="nav_contacts">Контакты</a>
             </div>
         </footer>
     </div>

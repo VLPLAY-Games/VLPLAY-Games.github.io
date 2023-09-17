@@ -5,32 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="..\..\CSS\main.css">
     <link rel="shortcut icon" href="../../img/header/LOGO VL_PLAY Games.png" />
-    <title>VL_PLAY Games - Контакты</title>
+    <script src="../../JS/translations.js" defer></script>
+    <title data-translate="siteTitleContacts">VL_PLAY Games - Контакты</title>
 </head>
 <body>
     <div class="page-container">
         <header>
             <div class="logo">
-                <img src="../../img/header/LOGO VL_PLAY Games.png" alt="VL_PLAY Games Logo" width="100" height="100" onclick="window.location.href='../../index.html';" style="cursor: pointer;">
-                <h1>VL_PLAY Games - Контакты</h1>
+                <img src="../../img/header/LOGO VL_PLAY Games.png" alt="Логотип VL_PLAY Games" width="100" height="100" onclick="window.location.href='../../index.html';" style="cursor: pointer;">
+                <h1 data-translate="siteTitleContacts">VL_PLAY Games - Контакты</h1>
             </div>
             <nav>
+                <div class="language-buttons">
+                    <button id="switchToEnglish" class = "switchToEnglishBut">English</button>
+                    <button id="switchToRussian" class = "switchToRussianBut">Русский</button>
+                </div>
                 <ul class="nav-links">
-                    <li><a href="../../index.html">Главная</a></li>
-                    <li><a href="../../HTML/devs/devs.html">Разработки</a></li>
-                    <li><a href="../../HTML/news/news_main.html">Новости</a></li>
-                    <li><a href="../../HTML/about_me/about_me.html">Обо мне</a></li>
-                    <li><a href="../../HTML/contacts/contacts.html">Контакты</a></li>
+                    <li><a href="../../index.html" data-translate="nav_home">Главная</a></li>
+                    <li><a href="../../HTML/devs/devs.html" data-translate="nav_developments">Разработки</a></li>
+                    <li><a href="../../HTML/news/news_main.html" data-translate="nav_news">Новости</a></li>
+                    <li><a href="../../HTML/about_me/about_me.html" data-translate="nav_about_me">Обо мне</a></li>
+                    <li><a href="../../HTML/contacts/contacts.html" data-translate="nav_contacts">Контакты</a></li>
                 </ul>
             </nav>
         </header>
 
         <section class="contact-info">
-            <h2>Мои каналы для связи</h2>
+            <h2 data-translate="contactsMain">Мои каналы для связи</h2>
             <ul>
-                <li><a href="https://vk.com/vlplaygames" target="_blank">Сообщество в VK</a></li>
-                <li><a href="https://discord.gg/mYaUdA4BMS" target="_blank">Сервер в Discord</a></li>
-                <li><a href="https://www.youtube.com/@VladPlay021" target="_blank">YouTube канал</a></li>
+                <li><a href="https://vk.com/vlplaygames" target="_blank" data-translate="contacts1">Сообщество в VK</a></li>
+                <li><a href="https://discord.gg/mYaUdA4BMS" target="_blank" data-translate="contacts2">Сервер в Discord</a></li>
+                <li><a href="https://www.youtube.com/@VladPlay021" target="_blank" data-translate="contacts3">YouTube канал</a></li>
                 <li><a href="https://www.twitch.tv/vl_play" target="_blank">Twitch</a></li>
                 <li><a href="https://trovo.live/s/VL_PLAY" target="_blank">Trovo</a></li>
                 <li><a href="https://vl-play.itch.io/" target="_blank">Itch.io</a></li>
@@ -39,11 +44,11 @@
 
         <footer class="footer">
             <div class="footer-buttons">
-                <a href="../../index.html" class="footer-button">Главная</a>
-                <a href="devs.html" class="footer-button">Разработки</a>
-                <a href="../news/news_main.html" class="footer-button">Новости</a>
-                <a href="../about_me/about_me.html" class="footer-button">Обо мне</a>
-                <a href="../contacts/contacts.html" class="footer-button">Контакты</a>
+                <a href="../../index.html" class="footer-button" data-translate="nav_home">Главная</a>
+                <a href="../../HTML/devs/devs.html" class="footer-button" data-translate="nav_developments">Разработки</a>
+                <a href="../../HTML/news/news_main.html" class="footer-button" data-translate="nav_news">Новости</a>
+                <a href="../../HTML/about_me/about_me.html" class="footer-button" data-translate="nav_about_me">Обо мне</a>
+                <a href="../../HTML/contacts/contacts.html" class="footer-button" data-translate="nav_contacts">Контакты</a>
             </div>
         </footer>
     </div>
