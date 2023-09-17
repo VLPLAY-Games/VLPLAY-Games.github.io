@@ -166,6 +166,14 @@ const translations = {
     'newsMainMain': {
         'en': "All news",
         'ru': 'Все новости'
+    },
+    'devsMain3': {
+        'en': 'My bots',
+        'ru': 'Мои боты'
+    },
+    'devsMain4': {
+        'en': 'My technologies',
+        'ru': 'Мои технологии'
     }
 };
 
