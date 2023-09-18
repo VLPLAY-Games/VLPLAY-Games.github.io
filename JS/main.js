@@ -96,7 +96,7 @@ fetch('../JSON/news.json')
                     logoImg.setAttribute("onclick","window.location.href='index.html';");
                     break;
                 case "6":
-                    logoImg.src = '../img/News/allNews.png';
+                    logoImg.src = '../img/News/allNews.jpg';
                     logoImg.alt = 'VL_PLAY Games Logo';
                     background_news.classList.add('background-blur-site');
                     background_news.classList.add('background-more-black');
@@ -220,7 +220,7 @@ fetch('../../JSON/news.json')
                         logoImg.setAttribute("onclick","window.location.href='../../index.html';");
                         break;
                     case "6":
-                        logoImg.src = '../img/News/allNews.png';
+                        logoImg.src = '../img/News/allNews.jpg';
                         logoImg.alt = 'VL_PLAY Games Logo';
                         background_news.classList.add('background-blur-site');
                         background_news.classList.add('background-more-black');
