@@ -174,6 +174,202 @@ const translations = {
     'devsMain4': {
         'en': 'My technologies',
         'ru': 'Мои технологии'
+    },
+    'botLogo': {
+        'en': 'Bot Logo',
+        'ru': 'Логотип бота'
+    },
+    'botTitle': {
+        'en': 'VL_PLAY Games Bot',
+        'ru': 'VL_PLAY Games Бот'
+    },
+    'botPrice': {
+        'en': 'Price: Free',
+        'ru': 'Цена: Бесплатно'
+    },
+    'botTelegramLink': {
+        'en': 'Telegram Link',
+        'ru': 'Ссылка на Telegram'
+    },
+    'botDescriptionTitle': {
+        'en': 'Description:',
+        'ru': 'Описание:'
+    },
+    'botDescription': {
+        'en': 'My own Telegram bot that informs about new developments and has various additional functions.',
+        'ru': 'Мой собственный Telegram-бот, который информирует о новых разработках и имеет различные дополнительные функции.'
+    },
+    'botLanguage': {
+        'en': "Bot Language: Russian",
+        'ru': 'Язык бота: Русский'
+    },
+    'botCommandsTitle': {
+        'en': 'Bot Commands',
+        'ru': 'Команды бота'
+    },
+    'botCommandStart': {
+        'en': '/start - start the bot',
+        'ru': '/start - запуск бота'
+    },
+    'SupportDevelopment': {
+        'en': 'Support Development',
+        'ru': 'Поддержать разработку'
+    },
+    'botCommandList': {
+        'en': '/commands - Bot command list',
+        'ru': '/commands - список команд бота'
+    },
+    'botCommandDownloadYouTubeVideo': {
+        'en': '/download_youtube_video - download video from YouTube',
+        'ru': '/download_youtube_video - загрузить видео с YouTube'
+    },
+    'botCommandConvertMP4toMP3': {
+        'en': '/convert_mp4_to_mp3 - convert video from mp4 to mp3',
+        'ru': '/convert_mp4_to_mp3 - конвертировать видео формата mp4 в аудио формат mp3'
+    },
+    'botCommandConvertMOVtoMP4': {
+        'en': '/convert_mov_to_mp4 - convert video from mov to mp4',
+        'ru': '/convert_mov_to_mp4 - конвертировать видео формата mov в видео формат mp4'
+    },
+    'botCommandConvertWebMtoMP4': {
+        'en': '/convert_webm_to_mp4 - convert video from webm to mp4',
+        'ru': '/convert_webm_to_mp4 - конвертировать видео формата webm в видео формат mp4'
+    },
+    'botCommandConvertMP3toWAV': {
+        'en': '/convert_mp3_to_wav - convert audio from mp3 to wav',
+        'ru': '/convert_mp3_to_wav - конвертировать аудио формата mp3 в аудио формат wav'
+    },
+    'botCommandConvertMP4toGIF': {
+        'en': '/convert_mp4_to_gif - convert video from mp4 to gif animation',
+        'ru': '/convert_mp4_to_gif - конвертировать видео формата mp4 в анимацию формата gif'
+    },
+    'botCommandConvertPNGtoJPEG': {
+        'en': '/convert_png_to_jpeg - convert image from png to jpeg',
+        'ru': '/convert_png_to_jpeg - конвертировать изображение формата png в изображение формата jpeg'
+    },
+    'botCommandConvertICOtoJPG': {
+        'en': '/convert_ico_to_jpg - convert image from ico to jpg',
+        'ru': '/convert_ico_to_jpg - конвертировать изображение формата ico в изображение формата jpg'
+    },
+    'botCommandConvertWebPtoJPG': {
+        'en': '/convert_webp_to_jpg - convert image from webp to jpg',
+        'ru': '/convert_webp_to_jpg - конвертировать изображение формата webp в изображение формата jpg'
+    },
+    'botCommandAudioRecognitionRus': {
+        'en': '/audio_recognition_rus - recognize text in audio file in Russian',
+        'ru': '/audio_recognition_rus - распознавание текста в аудиофайле на русском языке'
+    },
+    'botCommandAudioRecognitionEn': {
+        'en': '/audio_recognition_en - recognize text in audio file in English',
+        'ru': '/audio_recognition_en - распознавание текста в аудиофайле на английском языке'
+    },
+    'botCommandImageTextRecognition': {
+        'en': '/image_text_recognition - recognize text in image in png or jpg formats',
+        'ru': '/image_text_recognition - распознавание текста на изображении в форматах png или jpg'
+    },
+    'botCommandTextToAudio': {
+        'en': '/text_to_audio - convert text to audio',
+        'ru': '/text_to_audio - конвертировать текст в аудио'
+    },
+    'botCommandPasswordGenerator': {
+        'en': '/password_generator - generate a password of specified length',
+        'ru': '/password_generator - генератор паролей заданной длины'
+    },
+    'botCommandHashCalculator': {
+        'en': '/hash_calculator - calculate the hash sum of a file',
+        'ru': '/hash_calculator - вычислить хеш-сумму файла'
+    },
+    'botCommandSearchWikipedia': {
+        'en': '/search_wikipedia - search for information on Wikipedia',
+        'ru': '/search_wikipedia - поиск информации в Википедии'
+    },
+    'botCommandCurrency': {
+        'en': '/currency - get a list of prices to buy the specified currency in different currencies',
+        'ru': '/currency - получить список цен на покупку заданной валюты в разных валютах'
+    },
+    'xcTitle': {
+        'en': 'XenoClock',
+        'ru': 'XenoClock'
+    },
+    'xcPrice': {
+        'en': 'Price: Unknown',
+        'ru': 'Цена: Неизвестно'
+    },
+    'xcGithubLink': {
+        'en': 'GitHub Link',
+        'ru': 'Ссылка на GitHub'
+    },
+    'descriptionTitle': {
+        'en': 'Description:',
+        'ru': 'Описание:'
+    },
+    'descriptionContent': {
+        'en': "XenoClock is more than just a clock. It is a portable device designed with advanced technology to meet the needs of modern lifestyles. The main functionality includes accurate display of time, date and day of the week. However, XenoClock doesn't stop there. The functionality also includes the ability to synchronize with your smartphone, which makes the device more convenient. The watch also contains a portable Web server that allows you to configure the watch. With XenoClock you will always be one step ahead. This is not just a watch. It is your personal device for everyday life, optimally combining functionality and future technology.",
+        'ru': 'XenoClock — это больше, чем просто часы. Это переносное устройство, созданное с использованием передовых технологий для удовлетворения потребностей современного образа жизни. Основной функционал включает в себя точное отображение времени, даты и дня недели. Однако XenoClock не ограничивается только этим. Функционал также включает возможность синхронизации с вашим смартфоном, что делает устройство более удобным. В часах также находится портативный Web-сервер, с помощью которого можно настраивать часы. С XenoClock вы всегда будете на шаг впереди. Это не просто часы. Это ваше персональное устройство для повседневной жизни, оптимально сочетающее в себе функциональность и технологии будущего.'
+    },
+    'osTitle': {
+        'en': 'Operating System:',
+        'ru': 'Операционная система:'
+    },
+    'statusTitle': {
+        'en': 'Status:',
+        'ru': 'Статус:'
+    },
+    'boardTitle': {
+        'en': 'Board:',
+        'ru': 'Плата:'
+    },
+    'displayTitle': {
+        'en': 'Display:',
+        'ru': 'Дисплей:'
+    },
+    'displayResTitle': {
+        'en': 'Display Resolution:',
+        'ru': 'Разрешение дисплея:'
+    },
+    'memoryTitle': {
+        'en': 'Memory:',
+        'ru': 'Память:'
+    },
+    'ramTitle': {
+        'en': 'RAM:',
+        'ru': 'ОЗУ:'
+    },
+    'processorTitle': {
+        'en': 'Processor:',
+        'ru': 'Процессор:'
+    },
+    'languageTitle': {
+        'en': 'XenoClock Language:',
+        'ru': 'Язык XenoClock:'
+    },
+    'sdPrice': {
+        'en': 'Price',
+        'ru': 'Цена'
+    },
+    'sysReqDev': {
+        'en': 'In development',
+        'ru': 'В разработке'
+    },
+    'sysReqDevFreeSpace': {
+        'en': 'Free space',
+        'ru': 'Свободное место'
+    },
+    'sysReqItem': {
+        'en': 'Name',
+        'ru': 'Название'
+    },
+    'sysReqMin': {
+        'en': 'Minimum',
+        'ru': 'Минимальные'
+    },
+    'sysReqRecommended': {
+        'en': 'Minimum',
+        'ru': 'Recommended'
+    },
+    'sddescriptionContent': {
+        'en': 'Silent Darkness is an exciting puzzle game with elements of survival and horror that will immerse you in the atmosphere of a mysterious and enigmatic world. In this exciting game you will explore abandoned locations, revealing various secrets and solving riddles. Immerse yourself in the story of a mysterious hero whose fate is now connected with otherworldly forces. Your goal is to solve puzzles, solve riddles, and experience exciting moments in your search for the truth. Silent Darkness offers a unique combination of deep story, incredible adventure and challenging puzzles that will require your persistence and intelligence. The graphics and sound in the game create an atmosphere, immersing you in an amazing, mysterious world. Take on the challenge of Silent Darkness and embark on a journey through a mystical world that will not leave you indifferent. Will you be able to uncover all its secrets that will await you at every step?',
+        'ru': 'Silent Darkness — захватывающая головоломка с элементами выживания и хоррора, которая погрузит вас в атмосферу таинственного и загадочного мира. В этой увлекательной игре вам предстоит исследовать заброшенные локации, раскрывая различные тайны и разгадывая загадки. Погрузитесь в историю загадочного героя, чья судьба теперь связана с потусторонними силами. Ваша цель — решать головоломки, разгадывать загадки и переживать захватывающие моменты в поисках истины. Silent Darkness предлагает уникальное сочетание глубокого сюжета, невероятных приключений и сложных головоломок, которые потребуют вашей настойчивости и интеллекта. Графика и звук в игре создают атмосферу, погружая в удивительный загадочный мир. Примите вызов Silent Darkness и отправьтесь в путешествие по мистическому миру, которое не оставит вас равнодушным. Сможете ли вы раскрыть все его секреты, что будут поджидать вас на каждом шагу?'
     }
 };
 
