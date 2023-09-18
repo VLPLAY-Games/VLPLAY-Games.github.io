@@ -425,9 +425,6 @@ function initializeLanguage() {
     }
 }
 
-function translatePage(language) {
-    
-}
 
 document.getElementById('switchToEnglish').addEventListener('click', () => setLanguage('en'));
 document.getElementById('switchToRussian').addEventListener('click', () => setLanguage('ru'));

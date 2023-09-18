@@ -95,6 +95,13 @@ fetch('../JSON/news.json')
                     background_news.classList.add('background-more-black');
                     logoImg.setAttribute("onclick","window.location.href='index.html';");
                     break;
+                case "6":
+                    logoImg.src = '../img/News/allNews.png';
+                    logoImg.alt = 'VL_PLAY Games Logo';
+                    background_news.classList.add('background-blur-site');
+                    background_news.classList.add('background-more-black');
+                    logoImg.setAttribute("onclick","window.location.href='index.html';");
+                    break;
                 default:
                     logoImg.src = ''; // Если нет соответствия, можно оставить пустым
                     logoImg.alt = '';
@@ -211,6 +218,13 @@ fetch('../../JSON/news.json')
                         background_news.classList.add('background-blur-site');
                         background_news.classList.add('background-more-black');
                         logoImg.setAttribute("onclick","window.location.href='../../index.html';");
+                        break;
+                    case "6":
+                        logoImg.src = '../img/News/allNews.png';
+                        logoImg.alt = 'VL_PLAY Games Logo';
+                        background_news.classList.add('background-blur-site');
+                        background_news.classList.add('background-more-black');
+                        logoImg.setAttribute("onclick","window.location.href='index.html';");
                         break;
                     default:
                         logoImg.src = ''; // Если нет соответствия, можно оставить пустым
@@ -441,4 +455,21 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Изменяем непрозрачность на 1
     body.style.opacity = '1';
+});
+
+window.addEventListener('load', function () {
+    const spinWrapper = document.querySelector('.spin-wrapper');
+    const spinner = document.querySelector('.spinner');
+    const spinWrapperparent = spinWrapper.parentNode;
+    spinWrapperparent.removeChild(spinWrapper);
+
+    const spinnerparent = spinner.parentNode;
+    spinnerparent.removeChild(spinner);
+});
+
+
+document.addEventListener('mousemove', (e) => {
+    const cursor = document.querySelector('.custom-cursor');
+    cursor.style.left = e.pageX + 'px';
+    cursor.style.top = e.pageY + 'px';
 });
