@@ -1,6 +1,4 @@
-﻿
-// Кнопка Вверх
-
+﻿// Кнопка Вверх
 window.addEventListener('scroll', function () {
     if (window.pageYOffset >= document.body.clientHeight / 4) {
         scrollTopButton.style.opacity = 1;
@@ -9,18 +7,20 @@ window.addEventListener('scroll', function () {
         scrollTopButton.style.opacity = 0;
     }
 });
+
 window.onscroll = function () { myFunction() };
 function myFunction() {
     let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
     let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
     let scrolled = (winScroll / height) * 100;
+    const btn_scroll_top = document.querySelector('.btn_scroll_top');
     if (scrolled === 100) {
-        document.getElementById("btn_scroll_top").style.backgroundColor = "green";
+        btn_scroll_top.backgroundColor = "green";
     }
     else {
-        document.getElementById("btn_scroll_top").style.backgroundColor = "#fa8072";
+        btn_scroll_top.backgroundColor = "#fa8072";
     }
-    document.getElementById("btn_scroll_top").style.width = scrolled + "%";
+    btn_scroll_top.width = scrolled + "%";
 }
 
 scrollTopButton.addEventListener('click', function () {
@@ -35,7 +35,6 @@ scrollTopButton.addEventListener('click', function () {
 // Для страницы мини новостей на главном экране
 
 const newsContainer = document.querySelector('.news');
-
 
 // Загружаем JSON файл с данными о новостях
 fetch('../JSON/news.json')
@@ -473,4 +472,3 @@ document.addEventListener('mousemove', (e) => {
     cursor.style.left = e.pageX + 'px';
     cursor.style.top = e.pageY + 'px';
 });
-
