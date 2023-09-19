@@ -564,20 +564,12 @@ a {
     background-color: #8B0000;
 }
 
-.noColorA{
-    font-size: 18px;
-    line-height: 1.5;
-    color: #333;
-    text-decoration: none;
-}
-
 
 .spin-wrapper{
     position: relative;
     width: 100%;
     height: 100vh;
     background: #080705;
-    transition: all 0.5s;
   
     .spinner{
       position: absolute;

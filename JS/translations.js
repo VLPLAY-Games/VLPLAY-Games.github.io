@@ -287,13 +287,9 @@ const translations = {
         'en': '/currency - get a list of prices to buy the specified currency in different currencies',
         'ru': '/currency - получить список цен на покупку заданной валюты в разных валютах'
     },
-    'xcTitle': {
-        'en': 'XenoClock',
-        'ru': 'XenoClock'
-    },
     'xcPrice': {
-        'en': 'Price: Unknown',
-        'ru': 'Цена: Неизвестно'
+        'en': 'Price: ',
+        'ru': 'Цена: '
     },
     'xcGithubLink': {
         'en': 'GitHub Link',
@@ -370,6 +366,66 @@ const translations = {
     'sddescriptionContent': {
         'en': 'Silent Darkness is an exciting puzzle game with elements of survival and horror that will immerse you in the atmosphere of a mysterious and enigmatic world. In this exciting game you will explore abandoned locations, revealing various secrets and solving riddles. Immerse yourself in the story of a mysterious hero whose fate is now connected with otherworldly forces. Your goal is to solve puzzles, solve riddles, and experience exciting moments in your search for the truth. Silent Darkness offers a unique combination of deep story, incredible adventure and challenging puzzles that will require your persistence and intelligence. The graphics and sound in the game create an atmosphere, immersing you in an amazing, mysterious world. Take on the challenge of Silent Darkness and embark on a journey through a mystical world that will not leave you indifferent. Will you be able to uncover all its secrets that will await you at every step?',
         'ru': 'Silent Darkness — захватывающая головоломка с элементами выживания и хоррора, которая погрузит вас в атмосферу таинственного и загадочного мира. В этой увлекательной игре вам предстоит исследовать заброшенные локации, раскрывая различные тайны и разгадывая загадки. Погрузитесь в историю загадочного героя, чья судьба теперь связана с потусторонними силами. Ваша цель — решать головоломки, разгадывать загадки и переживать захватывающие моменты в поисках истины. Silent Darkness предлагает уникальное сочетание глубокого сюжета, невероятных приключений и сложных головоломок, которые потребуют вашей настойчивости и интеллекта. Графика и звук в игре создают атмосферу, погружая в удивительный загадочный мир. Примите вызов Silent Darkness и отправьтесь в путешествие по мистическому миру, которое не оставит вас равнодушным. Сможете ли вы раскрыть все его секреты, что будут поджидать вас на каждом шагу?'
+    },
+    'pageNewsCountNews': {
+        'en': 'Page: ',
+        'ru': 'Страница: '
+    },
+    'qlakePrice': {
+        'en': 'Price: Free ',
+        'ru': 'Цена: Бесплатно '
+    },
+    'qlakeDescription': {
+        'en': 'Qlake is a small indie first-person shooter in the Survival Horror genre, developed on the Unreal Engine 5. You have to communicate with zombies and their leader, which is the main goal of the game. The game requires you to complete several levels, each of which has a different set of tasks and dangers. You will be looking for weapons and ammunition that will help you prevent evil and survive. Qlake is a game that will stretch your nerves and force you to use all your survival skills. If you are a fan of games that combine horror and survival, then playing Qlake will be an additional way to spend your time.',
+        'ru': 'Qlake — это небольшой инди-шутер от первого лица в жанре Survival Horror, разработанный на движке Unreal Engine 5. Вам предстоит сражаться с зомби и их лидером, что является основной целью игры. В игре необходимо пройти несколько уровней, каждый из которых имеет различный набор задач и опасностей. Вы будете искать оружие и боеприпасы, которые помогут справиться со злом и выжить. Qlake — игра, которая натягивает ваши нервы и заставляет использовать все навыки выживания. Если вы любитель игр, сочетающих в себе ужасы и выживание, то игра в Qlake станет для вас отличным времяпрепровождением.'
+    },
+    'sysReqTitle': {
+        'en': 'System requirements on PC',
+        'ru': 'Системные требования на ПК'
+    },
+    'andMore': {
+        'en': 'and higher',
+        'ru': 'и выше'
+    },
+    'stateTitle': {
+        'en': 'State:',
+        'ru': 'Состояние:'
+    },
+    'platformsTitle': {
+        'en': 'Platforms:',
+        'ru': 'Платформы:'
+    },
+    'localizationTitle': {
+        'en': 'Game localization:',
+        'ru': 'Локализация игры:'
+    },
+    'authorTitle': {
+        'en': 'Author:',
+        'ru': 'Автор:'
+    },
+    'genreTitle': {
+        'en': 'Genre:',
+        'ru': 'Жанр:'
+    },
+    'tagsTitle': {
+        'en': 'Tags:',
+        'ru': 'Метки:'
+    },
+    'sessionTitle': {
+        'en': 'Average session:',
+        'ru': 'Средний сеанс:'
+    },
+    'langTitle': {
+        'en': 'Languages:',
+        'ru': 'Языки:'
+    },
+    'previousPageNews': {
+        'en': 'Previous page',
+        'ru': 'Предыдущая страница'
+    },
+    'nextPageNews': {
+        'en': 'Next page',
+        'ru': 'Следующая страница'
     }
 };
 
