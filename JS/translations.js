@@ -426,6 +426,42 @@ const translations = {
     'nextPageNews': {
         'en': 'Next page',
         'ru': 'Следующая страница'
+    },
+    'nav_status': {
+        'en': 'Status',
+        'ru': 'Статус'
+    },
+    'puzzle': {
+        'en': 'Puzzle',
+        'ru': 'Головоломка'
+    },
+    'first_person': {
+        'en': 'First person',
+        'ru': 'От первого лица'
+    },
+    'indie': {
+        'en': 'Indie',
+        'ru': 'Инди'
+    },
+    'single': {
+        'en': 'Single',
+        'ru': 'Одиночная'
+    },
+    'horror': {
+        'en': 'Horror',
+        'ru': 'Хоррор'
+    },
+    'survival': {
+        'en': 'Survival',
+        'ru': 'Выживание'
+    },
+    'inches': {
+        'en': 'inches',
+        'ru': 'дюйма'
+    },
+    'MHz': {
+        'en': 'MHz',
+        'ru': 'МГц'
     }
 };
 
