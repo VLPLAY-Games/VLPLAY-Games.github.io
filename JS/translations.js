@@ -80,8 +80,8 @@ const translations = {
         'ru': 'Привет! Я инди-разработчик, стоящий за псевдонимом VL_PLAY. Мое призвание — создавать удивительные технологии и захватывающие игры для аудитории, ищущей что-то новое и увлекательное.'
     },
     'aboutMe2': {
-        'en': 'My passion for programming started at an early age. Since then it has only gotten hotter. I am passionate about developing both software and hardware devices. My goal is to provide the user with incredible and innovative products that will make their life easier and more fun.',
-        'ru': 'Страсть к программированию началась еще в раннем возрасте. С тех пор она разгорелась только сильнее. Я увлечен разработкой как программного обеспечения, так и аппаратных устройств. Моя цель — предоставить пользователю невероятные и инновационные продукты, которые сделают их жизнь легче и увлекательнее.'
+        'en': 'My passion for programming started at an early age. Since then it has only gotten hotter. I am passionate about developing both software and hardware devices. My goal is to provide the users with incredible and innovative products that will make their life easier and more fun.',
+        'ru': 'Страсть к программированию началась еще в раннем возрасте. С тех пор она разгорелась только сильнее. Я увлечен разработкой как программного обеспечения, так и аппаратных устройств. Моя цель — предоставить пользователям невероятные и инновационные продукты, которые сделают их жизнь легче и увлекательнее.'
     },
     'aboutMe3': {
         'en': 'Nowadays, the arsenal includes a variety of projects, ranging from exciting games in which players can plunge into a world of adventure and fantasy, to smart devices that combine advanced technology and design.',
@@ -388,8 +388,8 @@ const translations = {
         'ru': 'и выше'
     },
     'stateTitle': {
-        'en': 'State:',
-        'ru': 'Состояние:'
+        'en': 'State',
+        'ru': 'Состояние'
     },
     'platformsTitle': {
         'en': 'Platforms:',
@@ -444,8 +444,8 @@ const translations = {
         'ru': 'Инди'
     },
     'single': {
-        'en': 'Single',
-        'ru': 'Одиночная'
+        'en': 'Single Player',
+        'ru': 'Одиночная игра'
     },
     'horror': {
         'en': 'Horror',
@@ -462,6 +462,86 @@ const translations = {
     'MHz': {
         'en': 'MHz',
         'ru': 'МГц'
+    },
+    'localization_game': {
+        'en': 'Game localization:',
+        'ru': 'Локализация игры:'
+    },
+    'subtitles': {
+        'en': 'Subtitles',
+        'ru': 'Субтитры'
+    },
+    'voice_acting': {
+        'en': 'Voice acting',
+        'ru': 'Озвучка'
+    },
+    'interface': {
+        'en': 'Interface',
+        'ru': 'Интерфейс'
+    },
+    'note': {
+        'en': 'Note',
+        'ru': 'Примечание'
+    },
+    'sysReqQlakeAndroid': {
+        'en': 'System requirements for Android (approximate)',
+        'ru': 'Системные требования на Android (примерные)'
+    },
+    'Approximate_requirements': {
+        'en': 'Approximate requirements',
+        'ru': 'Примерные требования'
+    },
+    'released': {
+        'en': 'Released',
+        'ru': 'Выпущено'
+    },
+    'shooter': {
+        'en': 'Shooter',
+        'ru': 'Шутер'
+    },
+    'space': {
+        'en': 'Space',
+        'ru': 'Космос'
+    },
+    'sessionAverage': {
+        'en': 'Approximately 30 minutes',
+        'ru': 'Примерно 30 минут'
+    },
+    'trailers': {
+        'en': 'Trailers',
+        'ru': 'Трейлеры'
+    },
+    'screenshots': {
+        'en': 'Screenshots',
+        'ru': 'Скриншоты'
+    },
+    'siteTitleStatus': {
+        'en': 'VL_PLAY Games - Status',
+        'ru': 'VL_PLAY Games - Статус'
+    },
+    'status': {
+        'en': 'Status',
+        'ru': 'Статус'
+    },
+    'working': {
+        'en': 'Working',
+        'ru': 'Работает'
+    },
+    'release_date': {
+        'en': 'Release date',
+        'ru': 'Дата выпуска'
+    },
+    'name_dev_status': {
+        'en': 'Development name ',
+        'ru': 'Название разработки'
+    },
+    'version_status': {
+        'en': 'Version',
+        'ru': 'Версия'
+    },
+    'links_status': {
+        'en': 'Links',
+        'ru': 'Ссылки'
     }
 };
 

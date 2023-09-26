@@ -27,7 +27,7 @@
                     <li><a href="../../HTML/news/news_main.html" data-translate="nav_news">Новости</a></li>
                     <li><a href="../../HTML/about_me/about_me.html" data-translate="nav_about_me">Обо мне</a></li>
                     <li><a href="../../HTML/contacts/contacts.html" data-translate="nav_contacts">Контакты</a></li>
-                    <!-- <li><a href="../../HTML/status/status.html" data-translate="nav_status">Статус</a></li> -->
+                    <li><a href="../../HTML/status/status.html" data-translate="nav_status">Статус</a></li>
                 </ul>
             </nav>
         </header>
@@ -42,7 +42,16 @@
                     <p><strong data-translate="sdPrice">Цена</strong>:<span data-translate="sysReqDev">В разработке</span></p>
                 </div>
             </div>
-
+            <div class = "sdTrailers">
+                <h2 data-translate="trailers">Трейлеры</h2>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/J47VR75orC0?si=gA4MKsw0wjxNUl9m" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <div class = "sdImgs">
+                <h2 data-translate="screenshots">Скриншоты</h2>
+                <img src = "..\..\img\SD\SD1.jpg" width="375" height="200" onclick="openModal(this)">
+                <img src = "..\..\img\SD\SD2.jpg" width="375" height="200" onclick="openModal(this)">
+                <img src = "..\..\img\SD\SD3.jpg" width="375" height="200" onclick="openModal(this)">
+            </div>
             <div class="devs-description">
                 <p><strong data-translate="descriptionTitle">Описание:</strong></p>
                 <p data-translate="sddescriptionContent">
@@ -98,8 +107,14 @@
                 <a href="../../HTML/news/news_main.html" class="footer-button" data-translate="nav_news">Новости</a>
                 <a href="../../HTML/about_me/about_me.html" class="footer-button" data-translate="nav_about_me">Обо мне</a>
                 <a href="../../HTML/contacts/contacts.html" class="footer-button" data-translate="nav_contacts">Контакты</a>
+                <a href="../../HTML/status/status.html" class="footer-button" data-translate="nav_status">Статус</a>
             </div>
+            <p>VL_PLAY Games Site v0.8.0</p>
         </footer>
+    </div>
+    <div id="image-modal" class="image-modal">
+        <span class="close-modal" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modal-image">
     </div>
     <div class="custom-cursor"></div>
     <button id="scrollTopButton" class="btn_scroll_top">↑</button>

@@ -27,7 +27,7 @@
                     <li><a href="../../HTML/news/news_main.html" data-translate="nav_news">Новости</a></li>
                     <li><a href="../../HTML/about_me/about_me.html" data-translate="nav_about_me">Обо мне</a></li>
                     <li><a href="../../HTML/contacts/contacts.html" data-translate="nav_contacts">Контакты</a></li>
-                    <!-- <li><a href="../../HTML/status/status.html" data-translate="nav_status">Статус</a></li> -->
+                    <li><a href="../../HTML/status/status.html" data-translate="nav_status">Статус</a></li>
                 </ul>
             </nav>
         </header>
@@ -44,13 +44,25 @@
                 </div>
             </div>
 
+            <div class = "qlakeTrailers">
+                <h2 data-translate="trailers">Трейлеры</h2>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/E8vI3LdvRXk?si=0jTu2KxLzHLjkrZu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/5nrnYaY7Hbw?si=Msf1XCVWSN1Pc7SF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <div class="qlakeImgs">
+                <h2 data-translate="screenshots">Скриншоты</h2>
+                <img src="..\..\img\Qlake\qlake1.jpg" width="375" height="200" onclick="openModal(this)">
+                <img src="..\..\img\Qlake\qlake2.jpg" width="375" height="200" onclick="openModal(this)">
+                <img src="..\..\img\Qlake\qlake3.jpg" width="375" height="200" onclick="openModal(this)">
+              </div>
+
             <div class="devs-description">
                 <p><strong data-translate="botDescriptionTitle">Описание:</strong></p>
                 <p data-translate="qlakeDescription">Qlake — это небольшой инди-шутер от первого лица в жанре Survival Horror, разработанный на движке Unreal Engine 5. Вам предстоит сражаться с зомби и их лидером, что является основной целью игры. В игре необходимо пройти несколько уровней, каждый из которых имеет различный набор задач и опасностей. Вы будете искать оружие и боеприпасы, которые помогут справиться со злом и выжить. Qlake — игра, которая натягивает ваши нервы и заставляет использовать все навыки выживания. Если вы любитель игр, сочетающих в себе ужасы и выживание, то игра в Qlake станет для вас отличным времяпрепровождением.</p>
-                <p><strong>Локализация игры:</strong></p>
-                <p><strong>Субтитры</strong> - Русский</p>
-                <p><strong>Озвучка</strong> - English</p>
-                <p><strong>Интерфейс</strong> - English</p>
+                <p><strong data-translate = "localization_game">Локализация игры:</strong></p>
+                <p><strong data-translate = "subtitles">Субтитры</strong> - Русский</p>
+                <p><strong data-translate = "voice_acting">Озвучка</strong> - English</p>
+                <p><strong data-translate = "interface">Интерфейс</strong> - English</p>
                 <p><strong data-translate="sysReqTitle">Системные требования на ПК</strong></p>
                 <table>
                     <tr>
@@ -79,7 +91,7 @@
                         <td>5GB</td>
                     </tr>
                     <tr>
-                        <td>Примечание</td>
+                        <td data-translate = "note">Примечание</td>
                         <td>1080p low ~ 30fps</td>
                         <td>1080p ultra ~45fps</td>
                     </tr>
@@ -87,11 +99,11 @@
 
 
                 <br />
-                <p><strong>Системные требования на Android (примерные)</strong></p>
+                <p><strong data-translate = "sysReqQlakeAndroid">Системные требования на Android (примерные)</strong></p>
                 <table>
                     <tr>
-                        <th>Название</th>
-                        <th>Минимальные</th>
+                        <th data-translate="sysReqItem">Название</th>
+                        <th data-translate="sysReqMin">Минимальные</th>
                     </tr>
                     <tr>
                         <td>Android</td>
@@ -110,17 +122,17 @@
                         <td>1.2GB</td>
                     </tr>
                     <tr>
-                        <td>Примечание</td>
-                        <td>Примерные требования</td>
+                        <td data-translate = "note">Примечание</td>
+                        <td data-translate = "Approximate_requirements">Примерные требования</td>
                     </tr>
                 </table>
-                <p><strong>Выпущено:</strong> 30 Марта 2023 года</p>
-                <p><strong data-translate="stateTitle">Состояние:</strong> Выпущено</p>
+                <p><strong data-translate = "released">Выпущено</strong>: 30.03.2023</p>
+                <p><strong data-translate="stateTitle">Состояние</strong>: <span data-translate = "released">Выпущено</span></p>
                 <p><strong data-translate="platformsTitle">Платформы:</strong> Windows, Android</p>
                 <p><strong data-translate="authorTitle">Автор:</strong> VL_PLAY</p>
-                <p><strong data-translate="genreTitle">Жанр:</strong> Шутер</p>
-                <p><strong data-translate="tagsTitle">Метки:</strong> 3D, <span data-translate="first_person">От первого лица</span>, <span data-translate="indie">Инди</span>, <span data-translate="single">Одиночная</span>, Космос, Unreal Engine</p>
-                <p><strong data-translate="sessionTitle">Средний сеанс:</strong> Примерно 30 минут</p>
+                <p><strong data-translate="genreTitle">Жанр:</strong> <span data-translate="shooter">Шутер</span></p>
+                <p><strong data-translate="tagsTitle">Метки:</strong> 3D, <span data-translate="first_person">От первого лица</span>, <span data-translate="indie">Инди</span>, <span data-translate="single">Одиночная игра</span>, <span data-translate="space">Космос</span>, Unreal Engine</p>
+                <p><strong data-translate="sessionTitle">Средний сеанс:</strong> <span data-translate="sessionAverage">Примерно 30 минут</span></p>
                 <p><strong data-translate="langTitle">Языки:</strong> English, Русский</p>
                 <p><strong><a href="https://www.donationalerts.com/r/vl_play021" target="_blank" class="btn_continue" data-translate="SupportDevelopment">Поддержать разработку</a></strong></p>
             </div>
@@ -133,8 +145,14 @@
                 <a href="../../HTML/news/news_main.html" class="footer-button" data-translate="nav_news">Новости</a>
                 <a href="../../HTML/about_me/about_me.html" class="footer-button" data-translate="nav_about_me">Обо мне</a>
                 <a href="../../HTML/contacts/contacts.html" class="footer-button" data-translate="nav_contacts">Контакты</a>
+                <a href="../../HTML/status/status.html" class="footer-button" data-translate="nav_status">Статус</a>
             </div>
+            <p>VL_PLAY Games Site v0.8.0</p>
         </footer>
+    </div>
+    <div id="image-modal" class="image-modal">
+        <span class="close-modal" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modal-image">
     </div>
     <div class="custom-cursor"></div>
     <button id="scrollTopButton" class="btn_scroll_top">↑</button>
