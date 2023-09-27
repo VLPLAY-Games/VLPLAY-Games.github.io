@@ -464,6 +464,8 @@ window.addEventListener('load', function () {
 
     const spinnerparent = spinner.parentNode;
     spinnerparent.removeChild(spinner);
+    var pageContainer = document.querySelector('.page-container');
+    pageContainer.style.display = 'block';
 });
 
 

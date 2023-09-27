@@ -539,6 +539,7 @@ a {
     border-left: 10px solid #2d6c55;
     border-right: 10px solid #2d6c55;
     height: 100%;
+    display: none;
 }
 
 .language-buttons{
@@ -693,6 +694,10 @@ a {
     margin:0 auto;
 }
 
+.text-left{
+    text-align: left;
+}
+
   
 @keyframes spin{
     0% {transform: rotate(0deg);}
@@ -708,6 +713,7 @@ a {
     pointer-events: none; /* Ensures cursor does not interfere with clicks */
     z-index: 9999; /* Ensures cursor is on top of other elements */
 }
+
 
 /* Добавьте стили, которые будут применяться для мобильных устройств с шириной экрана менее 768px */
 @media screen and (max-width: 896px) {
@@ -885,5 +891,9 @@ a {
     }
     .sdTrailers iframe, .qlakeTrailers iframe{
         margin-left:0rem;
+    }
+    .status_table{
+        transform: scale(0.65);
+        margin-left: 0rem;
     }
 }

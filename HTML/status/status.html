@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="..\..\CSS\main.css">
     <link rel="shortcut icon" href="../../img/header/LOGO VL_PLAY Games.png" />
     <script src="../../JS/translations.js" defer></script>
+    <script src="../../JS/status.js" defer></script>
     <title data-translate="siteTitleStatus">VL_PLAY Games - Статус</title>
 </head>
 <body>
@@ -46,24 +47,24 @@
                 </tr>
                 <tr>
                     <td>VL_PLAY Games Bot</td>
-                    <td>1.31.0</td>
-                    <td>18.05.2023</td>
+                    <td status-info = "botVersion"></td>
+                    <td status-info = "botDate"></td>
                     <td data-translate = "working">Работает</td>
-                    <td><a>https://t.me/VL_PLAY_Bot</a></td>
+                    <td><a href = "https://t.me/VL_PLAY_Bot">t.me/VL_PLAY_Bot</a></td>
                 </tr>
                 <tr>
                     <td>Qlake</td>
-                    <td>1.2.0</td>
-                    <td>02.05.2023</td>
+                    <td status-info = "qlakeVersion"></td>
+                    <td status-info = "qlakeDate"></td>
                     <td data-translate = "released">Выпущено</td>
-                    <td><a>https://vl-play.itch.io/qlake</a></td>
+                    <td><a href = "https://vl-play.itch.io/qlake">vl-play.itch.io/qlake</a></td>
                 </tr>
                 <tr>
                     <td>XenoCoreOS</td>
-                    <td>0.4.2</td>
-                    <td>28.08.2023</td>
+                    <td status-info = "xcVersion"></td>
+                    <td status-info = "xcDate"></td>
                     <td data-translate="sysReqDev">В разработке</td>
-                    <td><a>https://github.com/VLPLAY-Games/XenoCore-OS</a></td>
+                    <td><a href = "https://github.com/VLPLAY-Games/XenoCore-OS">github.com/VLPLAY-Games/XenoCore-OS</a></td>
                 </tr>
                 <tr>
                     <td>Silent Darkness</td>
@@ -74,9 +75,9 @@
                 </tr>
                 <tr>
                     <td>VL_PLAY Games Site</td>
-                    <td>0.8.0</td>
-                    <td>- - -</td>
-                    <td data-translate="sysReqDev">В разработке</td>
+                    <td status-info = "siteVersion"></td>
+                    <td status-info = "siteDate"></td>
+                    <td data-translate = "working">Работает</td>
                     <td>- - -</td>
                 </tr>
             </table>
@@ -91,7 +92,7 @@
                 <a href="../../HTML/contacts/contacts.html" class="footer-button" data-translate="nav_contacts">Контакты</a>
                 <a href="../../HTML/status/status.html" class="footer-button" data-translate="nav_status">Статус</a>
             </div>
-            <p>VL_PLAY Games Site v0.8.0</p>
+            <p>VL_PLAY Games Site v<span status-info = "siteVersion"></span></p>
         </footer>
     </div>
     <div class="custom-cursor"></div>
