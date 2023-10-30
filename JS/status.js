@@ -3,13 +3,13 @@ const status = {
     'qlakeVersion': "2.0",
     'xcVersion': "0.4.2",
     'sdVersion': "- - -",
-    'siteVersion': "0.8.2",
+    'siteVersion': "0.8.3",
 
     'botDate': "13.10.2023",
     'qlakeDate': "30.10.2023",
     'xcDate': "28.08.2023",
     'sdDate': "- - -",
-    'siteDate': "29.10.2023",
+    'siteDate': "30.10.2023",
 };
 
 function setStatus() {

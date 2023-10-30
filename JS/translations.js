@@ -542,6 +542,15 @@ const translations = {
     'links_status': {
         'en': 'Links',
         'ru': 'Ссылки'
+    },
+    'botCommandLang': {
+        'en': '/language - change language',
+        'ru': '/language - изменить язык'
+        
+    },
+    'aboutMePartnersLabel': {
+        'en': 'Unofficial partners',
+        'ru': 'Неофициальные партнеры'
     }
 };
 

@@ -698,6 +698,10 @@ a {
     text-align: left;
 }
 
+
+.makaev_group_div p{
+    padding-left: 50px;
+}
   
 @keyframes spin{
     0% {transform: rotate(0deg);}
@@ -789,7 +793,10 @@ a {
     .about-me p {
         font-size: 16px; /* Уменьшаем размер текста */
     }
-
+    .about-me img {
+        width: 140px;
+        height: 140px;
+    }
     /* Стили для блока "Контактная информация" */
     .contact-info {
         padding: 1rem; /* Уменьшаем отступы */
@@ -895,5 +902,8 @@ a {
     .status_table{
         transform: scale(0.65);
         margin-left: 0rem;
+    }
+    .makaev_group_div p{
+        padding-left: 0px;
     }
 }
