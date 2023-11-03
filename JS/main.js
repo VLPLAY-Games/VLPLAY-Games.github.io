@@ -113,20 +113,15 @@ fetch('../JSON/news.json')
             const description = document.createElement('p');
             description.textContent = newsItem.description_short;
 
-            const continueLink = document.createElement('a');
-            continueLink.classList.add('btn_continue');
-
-            const newsNum = newsItem.number;
-
-            continueLink.href = "HTML/news/" + newsId + "_x/" + newsId + "_" + newsNum + ".html";
-            continueLink.textContent = 'Подробнее';
+            const description_long = document.createElement('p');
+            description.textContent = newsItem.description_long;
 
             // Добавляем элементы на страницу
             articleDiv.appendChild(background_news);
             articleDiv.appendChild(logoImg); // Добавляем логотип
             articleDiv.appendChild(title);
             articleDiv.appendChild(description);
-            articleDiv.appendChild(continueLink);
+            articleDiv.appendChild(description_long);
 
             // Добавляем созданный элемент в контейнер новостей
             newsContainer.appendChild(articleDiv);
@@ -237,19 +232,15 @@ fetch('../../JSON/news.json')
                 const description = document.createElement('p');
                 description.textContent = newsItem.description_short;
 
-                const continueLink = document.createElement('a');
-                continueLink.classList.add('btn_continue');
-                const newsNum = newsItem.number;
-
-                continueLink.href = newsId + "_x/" + newsId + "_" + newsNum + ".html";
-                continueLink.textContent = 'Подробнее';
+                const description_long = document.createElement('p');
+                description.textContent = newsItem.description_long;
 
                 // Добавляем элементы на страницу
                 articleDiv.appendChild(background_news);
                 articleDiv.appendChild(logoImg); // Добавляем логотип
                 articleDiv.appendChild(title);
                 articleDiv.appendChild(description);
-                articleDiv.appendChild(continueLink);
+                articleDiv.appendChild(description_long);
 
                 // Добавляем созданный элемент в контейнер новостей
                 currentNewsRow.appendChild(articleDiv);

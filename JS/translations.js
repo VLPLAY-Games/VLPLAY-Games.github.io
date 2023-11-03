@@ -48,8 +48,8 @@ const translations = {
         'ru': 'Я занимаюсь созданием уникальных часов, сочетающих в себе высокую функциональность с помощью платы ESP32.'
     },
     'botDescription': {
-        'en': 'My own Telegram bot that provides information about new technologies and has various additional features.',
-        'ru': 'Мой собственный Telegram-бот, который информирует о новых технологиях и имеет различные дополнительные функции.'
+        'en': 'My own Telegram bot, which informs about new developments and has many different additional functions, and also has a file converter.',
+        'ru': 'Мой собственный Telegram-бот, который информирует о новых разработках и имеет много различных дополнительных функций, а также имеет конвертер файлов.'
     },
     'sdDescription': {
         'en': 'My game Silent Darkness is an exciting horror game that will immerse you in a dark world of secrets and horrors.',
@@ -194,10 +194,6 @@ const translations = {
     'botDescriptionTitle': {
         'en': 'Description:',
         'ru': 'Описание:'
-    },
-    'botDescription': {
-        'en': 'My own Telegram bot that informs about new developments and has various additional functions.',
-        'ru': 'Мой собственный Telegram-бот, который информирует о новых разработках и имеет различные дополнительные функции.'
     },
     'botLanguage': {
         'en': "Bot Language: Russian",
@@ -551,7 +547,12 @@ const translations = {
     'aboutMePartnersLabel': {
         'en': 'Unofficial partners',
         'ru': 'Неофициальные партнеры'
+    },
+    'qlakeDescriptionTitle': {
+        'en': 'Qlake is a first-person shooter with horror elements, where you have to complete the main task - kill the leader of the zombies.',
+        'ru': 'Qlake — шутер от первого лица с элементами хоррора, где вы будете выполнять основную задачу — убить предводителя зомби.'
     }
+    
 };
 
 // Функция для установки куки
