@@ -20,8 +20,15 @@
             </div>
             <nav>
                 <div class="language-buttons">
-                    <button id="switchToEnglish" class = "switchToEnglishBut">English</button>
-                    <button id="switchToRussian" class = "switchToRussianBut">Русский</button>
+                    <div class="language-dropdown">
+                        <button class="language-dropdown-btn" data-translate="site_language">Язык</button>
+                        <div class="language-dropdown-content">
+                            <button id="switchToEnglish" class="switchToEnglishBut">English</button>
+                            <button id="switchToRussian" class="switchToRussianBut">Русский</button>
+                            <button id="switchToSpanish" class="switchToSpainBut">Español</button>
+                            <button id="switchToFrench" class="switchToFrenchBut">Français</button>
+                        </div>
+                    </div>
                 </div>
                 <ul class="nav-links">
                     <li><a href="../../index.html" data-translate="nav_home">Главная</a></li>
@@ -156,7 +163,7 @@
     </div>
     <div class="custom-cursor"></div>
     <button id="scrollTopButton" class="btn_scroll_top">↑</button>
-    <script src="../../JS/main.js"></script>
+    <script src="../../JS/main.js" type="module"></script>
     <script>
         $(document).ready(function () {
             var ytFrame = '<iframe width="560" height="315" src="https://www.youtube.com/embed/E8vI3LdvRXk?si=0jTu2KxLzHLjkrZu" loading="lazy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';

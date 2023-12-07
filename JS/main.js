@@ -1,4 +1,6 @@
-﻿// Кнопка Вверх
+﻿import { initializeLanguage } from './translations.js';
+
+// Кнопка Вверх
 window.addEventListener('scroll', function () {
     if (window.pageYOffset >= document.body.clientHeight / 4) {
         scrollTopButton.style.opacity = 1;
@@ -109,12 +111,18 @@ fetch('../JSON/news.json')
             // Создаем элементы для отображения данных о новости
             const title = document.createElement('h4');
             title.textContent = newsItem.title;
+            title.setAttribute("data-translate",newsItem.id_name + "-" + newsItem.number + "-title");
 
             const description = document.createElement('p');
             description.textContent = newsItem.description_short;
+            description.setAttribute("data-translate",newsItem.id_name + "-" + newsItem.number + "-description_short");
 
             const description_long = document.createElement('p');
             description.textContent = newsItem.description_long;
+            description_long.setAttribute("data-translate",newsItem.id_name + "-" + newsItem.number + "-description_long");
+
+            const date = document.createElement('p');
+            date.textContent = newsItem.date;
 
             // Добавляем элементы на страницу
             articleDiv.appendChild(background_news);
@@ -122,9 +130,11 @@ fetch('../JSON/news.json')
             articleDiv.appendChild(title);
             articleDiv.appendChild(description);
             articleDiv.appendChild(description_long);
+            articleDiv.appendChild(date);
 
             // Добавляем созданный элемент в контейнер новостей
             newsContainer.appendChild(articleDiv);
+            initializeLanguage();
         });
     })
 
@@ -228,12 +238,18 @@ fetch('../../JSON/news.json')
                 // Создаем элементы для отображения данных о новости
                 const title = document.createElement('h4');
                 title.textContent = newsItem.title;
+                title.setAttribute("data-translate",newsItem.id_name + "-" + newsItem.number + "-title");
 
                 const description = document.createElement('p');
                 description.textContent = newsItem.description_short;
+                description.setAttribute("data-translate",newsItem.id_name + "-" + newsItem.number + "-description_short");
 
                 const description_long = document.createElement('p');
-                description.textContent = newsItem.description_long;
+                description_long.textContent = newsItem.description_long;
+                description_long.setAttribute("data-translate",newsItem.id_name + "-" + newsItem.number + "-description_long");
+
+                const date = document.createElement('p');
+                date.textContent = newsItem.date;
 
                 // Добавляем элементы на страницу
                 articleDiv.appendChild(background_news);
@@ -241,10 +257,12 @@ fetch('../../JSON/news.json')
                 articleDiv.appendChild(title);
                 articleDiv.appendChild(description);
                 articleDiv.appendChild(description_long);
+                articleDiv.appendChild(date);
 
                 // Добавляем созданный элемент в контейнер новостей
                 currentNewsRow.appendChild(articleDiv);
                 newsContainer.appendChild(currentNewsRow);
+                initializeLanguage();
             });
         }
 
