@@ -1,0 +1,14 @@
+ai_logo.jpeg
+calc_logo.jpeg
+explorer_logo.jpeg
+flashlight_logo.jpeg
+paint_logo.jpeg
+settings_logo.jpeg
+stopwatch_logo.jpeg
+timer_logo.jpeg
+xc_logo_white.jpeg
+xc_logo_black.jpeg
+about.html
+loginPage.html
+mainPage.html
+serverUpdateSystem.html
