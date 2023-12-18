@@ -7,3 +7,7 @@ settings_logo.jpeg
 stopwatch_logo.jpeg
 timer_logo.jpeg
 xc_logo.jpeg
+about.html
+loginPage.html
+mainPage.html
+serverUpdateSystem.html
