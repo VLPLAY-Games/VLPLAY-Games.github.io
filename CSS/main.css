@@ -5,7 +5,7 @@
 }
 
 ::-webkit-scrollbar-track {
-    background-color: #f1f1f1; /* Цвет фона трека */
+    background-color: #2d6c55; /* Цвет фона трека */
 }
 
 ::-webkit-scrollbar-thumb {
@@ -38,7 +38,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
+    height:100px;
 }
 
 
@@ -314,6 +314,7 @@ img {
     list-style: none;
     display: flex;
     gap: 1rem;
+    height:30px;
 }
 
 .nav-links li {

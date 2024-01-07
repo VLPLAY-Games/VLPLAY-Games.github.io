@@ -856,10 +856,10 @@ const translations = {
     },
 
     '3-0-title': {
-        'en': 'XenoClockOS v0.4.2 update',
-        'ru': 'Обновление XenoClockOS v0.4.2',
-        'fr': 'Mise à jour XenoClockOS v0.4.2',
-        'es': 'Actualización de XenoClockOS v0.4.2'
+        'en': 'XenoCoreOS v0.4.2 update',
+        'ru': 'Обновление XenoCoreOS v0.4.2',
+        'fr': 'Mise à jour XenoCoreOS v0.4.2',
+        'es': 'Actualización de XenoCoreOS v0.4.2'
     },
     '3-0-description_short': {
         'en': 'XenoClockOS 0.4.2 update released', 
@@ -891,6 +891,9 @@ const translations = {
         'fr': "Heureux d'annoncer que la démo de Silent Darkness est sortie -> https://vl-play.itch.io/silent-darkness",
         'es': 'Feliz de anunciar que se lanzó la demostración de Silent Darkness -> https://vl-play.itch.io/silent-darkness'
     },
+
+
+
     
 };
 

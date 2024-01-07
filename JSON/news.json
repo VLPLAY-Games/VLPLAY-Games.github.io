@@ -1,6 +1,14 @@
 {
   "news": [
     {
+      "id_name": "3",
+      "number": "1",
+      "title": "XenoCoreOS Update",
+      "description_short": "XenoCoreOS v0.6.0 Software update release",
+      "description_long": "https://github.com/VLPLAY-Games/XenoCore-OS/commit/02b0bd47f82530f8bc2031292cdc8143bb998796",
+      "date": "26.12.2023"
+    },
+    {
       "id_name": "2",
       "number": "0",
       "title": "Silent Darkness Demo",
@@ -19,7 +27,7 @@
     {
       "id_name": "3",
       "number": "0",
-      "title": "Обновление XenoClockOS v0.4.2",
+      "title": "Обновление XenoCoreOS v0.4.2",
       "description_short": "Выпущено обновление XenoClockOS 0.4.2",
       "description_long": "Небольшое обновление XenoCoreOS v0.4.2  1) Снижено энергопотребление в активном режиме в 2 раза. 2) Снижено энергопотребление в глубоком сне в 10 раз. 3) Добавлена функция проверки файловой системы и модулей в настройках. Также я добавил папки в github и опубликовал исходники версии v0.4.0",
       "date": "28.09.2023"
