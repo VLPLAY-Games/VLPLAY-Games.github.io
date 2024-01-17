@@ -1,15 +1,15 @@
 const status = {
-    'botVersion': "1.4.2",
+    'botVersion': "1.5.0",
     'qlakeVersion': "2.0.1",
     'xcVersion': "0.6.0",
     'sdVersion': "Demo",
-    'siteVersion': "1.0.2",
+    'siteVersion': "1.0.3",
 
-    'botDate': "13.10.2023",
+    'botDate': "17.01.2024",
     'qlakeDate': "03.11.2023",
     'xcDate': "26.12.2023",
     'sdDate': "30.11.2023",
-    'siteDate': "07.01.2024",
+    'siteDate': "17.01.2024",
 };
 
 function setStatus() {
