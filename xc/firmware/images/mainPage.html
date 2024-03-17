@@ -54,8 +54,10 @@
 
 <style>
   body {
-    font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
+      margin:0;
+      padding:0;
+      font-family: sans-serif;
+      background: linear-gradient(#141e30, #243b55);
   }
 
   #update-container {
@@ -67,26 +69,34 @@
     display: inline-block;
     padding: 20px;
     width: 200px;
-    background-color: #4CAF50;
+    background-color: #03e9f4;
     color: white;
     border: none;
     border-radius: 4px;
     cursor: pointer;
     font-weight: bold;
     font-size: 18px;
+     background: linear-gradient(90deg, transparent, #03e9f4);
+     animation: btn-anim1 1s linear infinite;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: background-color 0.3s, transform 0.3s;
   }
 
-  #sysupdatepagebtn:hover, #aboutpagebtn:hover, #btn:hover {
-    background-color: #45a049;
-    transform: scale(1.05);
+  #sysupdatepagebtn:hover, #aboutpagebtn:hover, #btn:hover, #logout:hover{
+    background: #03e9f4;
+      color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 0 5px #03e9f4,
+                  0 0 25px #03e9f4,
+                  0 0 50px #03e9f4,
+                  0 0 100px #03e9f4;
   }
 
   h2, h3 {
     text-align: center;
     margin-top: 20px;
     font-weight: bold;
+    color: #ffffff
   }
 
   #header-image {

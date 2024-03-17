@@ -68,41 +68,51 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      background-color: #f2f2f2;
+      background: linear-gradient(#141e30, #243b55);
+      color: #ffffff
     }
     h2, h3 {
       text-align: center;
       margin-top: 20px;
       font-weight: bold;
+       color: #ffffff
     }
     h4 {
       text-align: center;
       margin-top: 20px;
       font-weight: bold;
       background-color: #dc143c;
+      color: #ffffff
     }
     #upload-container {
       width: 50%;
       margin: 20px auto;
       padding: 20px;
       border: 1px solid #ccc;
-      background-color: #ffffff;
+      background: rgba(0,0,0,.5);
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     }
     .choose-file {
       display: inline-block;
       padding: 10px 20px;
-      background-color: #4CAF50;
+      background-color: #03e9f4;
       color: #fff;
       border: none;
       border-radius: 4px;
       cursor: pointer;
       font-weight: bold;
+      background: linear-gradient(90deg, transparent, #03e9f4);
+      animation: btn-anim1 1s linear infinite;
       transition: background-color 0.3s, transform 0.3s;
     }
     .choose-file:hover{
-      background-color: #45a049;
-      transform: scale(1.05);
+      background: #03e9f4;
+      color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 0 5px #03e9f4,
+                  0 0 25px #03e9f4,
+                  0 0 50px #03e9f4,
+                  0 0 100px #03e9f4;
     }
     #file-upload {
       display: none;
@@ -116,17 +126,24 @@
       width: 100%;
       margin-top: 20px;
       padding: 10px;
-      background-color: #4CAF50;
+      background-color: #03e9f4;
       color: #fff;
       border: none;
       border-radius: 4px;
       cursor: pointer;
       font-weight: bold;
+      background: linear-gradient(90deg, transparent, #03e9f4);
+      animation: btn-anim1 1s linear infinite;
       transition: background-color 0.3s, transform 0.3s;
     }
     #update-btn:hover{
-      background-color: #45a049;
-      transform: scale(1.025);
+     background: #03e9f4;
+      color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 0 5px #03e9f4,
+                  0 0 25px #03e9f4,
+                  0 0 50px #03e9f4,
+                  0 0 100px #03e9f4;
     }
     #prg {
       margin-top: 20px;
