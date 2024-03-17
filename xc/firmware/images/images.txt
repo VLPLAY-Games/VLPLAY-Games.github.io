@@ -24,3 +24,4 @@ wifi_on_icon.jpeg
 xc_logo_black.jpeg
 xc_logo_site.ico
 xc_logo_white.jpeg
+bluetooth_icon.jpeg
