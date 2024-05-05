@@ -22,6 +22,9 @@
       <div id='progress-bar'>0%</div>
     </div>
   </div>
+  <div id ='update-container'>
+    <button id = "backbtn">Back</button>
+  </div>
   <script>
     $(document).ready(function() {
       $('form').submit(function(e){
@@ -64,6 +67,8 @@
         }
       });
     });
+  const backbtn = document.getElementById('backbtn');
+  backbtn.addEventListener('click', ()=>{window.location.href ='/mainpage';});
   </script>
   <style>
     body {
@@ -120,6 +125,15 @@
     .file-name {
       margin-left: 10px;
       color: #999;
+    }
+     button{
+    margin: 0  auto;      width: 10%;
+    height: 30px;
+    text-align: center;      color: #03e9f4;
+    position: absolute;      top: 80%;
+      left: 30%;      transform: translate(-50%, -50%);
+    background: rgba(0,0,0,.5)
+
     }
     #update-btn {
       display: block;

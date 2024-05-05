@@ -14,13 +14,19 @@
       <button id='sysupdatepagebtn'>Update system</button>
     </div>
     <div id='update-container'>
+      <button id='settingspagebtn'>Settings</button>
+    </div>
+    <div id='update-container'>
+      <button id='aboutpagebtn'>About</button>
+    </div>
+    <div id='update-container'>
+      <button id='sensorspagebtn'>Sensors</button>
+    </div>
+    <div id='update-container'>
       <a href = "https://vlplay-games.github.io"><button id='btn'>Main Site</button></a>
     </div>
     <div id='update-container'>
       <a href = "https://github.com/VLPLAY-Games/XenoCore-OS"><button id='btn'>XenoCoreOS Github</button></a>
-    </div>
-    <div id='update-container'>
-      <button id='aboutpagebtn'>About</button>
     </div>
     <div id='update-container'>
       <button id='logout' onclick='logoutAndRedirect()'>Logout</button>
@@ -35,6 +41,17 @@
       updateButton.addEventListener('click', () => {
         window.location.href = '/updatesystem';
       });
+      const settingsButton = document.getElementById('settingspagebtn');
+      settingsButton.addEventListener('click', () => {
+        window.location.href = '/settings';
+      });
+
+      const sensorsButton = document.getElementById('sensorspagebtn');
+      sensorsButton.addEventListener('click', () => {
+        window.location.href = '/sensors';
+      });
+
+
       function logoutAndRedirect() {
         var xhr = new XMLHttpRequest();
         xhr.open("GET", "/logout", true);
@@ -65,7 +82,7 @@
     margin-top: 20px;
   }
 
-  #sysupdatepagebtn, #aboutpagebtn, #btn, #logout{
+  #sysupdatepagebtn, #aboutpagebtn, #btn, #logout, #sensorspagebtn, #settingspagebtn{
     display: inline-block;
     padding: 20px;
     width: 200px;
@@ -82,7 +99,7 @@
     transition: background-color 0.3s, transform 0.3s;
   }
 
-  #sysupdatepagebtn:hover, #aboutpagebtn:hover, #btn:hover, #logout:hover{
+  #sysupdatepagebtn:hover, #aboutpagebtn:hover, #btn:hover, #logout:hover, #sensorspagebtn:hover, #settingspagebtn:hover{
     background: #03e9f4;
       color: #fff;
       border-radius: 5px;
