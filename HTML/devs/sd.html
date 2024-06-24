@@ -9,6 +9,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="../../JS/translations.js" defer></script>
     <script src="../../JS/status.js" defer></script>
+    <script src="../../JS/images.js"></script>
     
 </head>
 <body>
@@ -54,9 +55,7 @@
                 </div>
             </div>
             <h2 data-translate="trailers" class = "text-left">Трейлеры</h2>
-            <div class = "sdTrailers">
-                
-            </div>
+            <div class = "sdTrailers"></div>
             <div class = "sdImgs">
                 <h2 data-translate="screenshots">Скриншоты</h2>
                 <img src = "..\..\img\SD\SD1.jpg" width="375" height="200" onclick="openModal(this)">
@@ -100,12 +99,12 @@
                 </table>
 
                 <p><strong data-translate="stateTitle">Состояние:</strong> <span data-translate="sysReqDev">В разработке</span></p>
-                <p><strong data-translate="platformsTitle">Платформы:</strong> Windows</p>
-                <p><strong data-translate="localizationTitle">Локализация игры:</strong><span data-translate="sysReqDev">В разработке</span></p>
+                <p><strong data-translate="platformsTitle">Платформы:</strong> Windows, Android</p>
+                <p><strong data-translate="localizationTitle">Локализация игры: </strong><span> English, Русский</span></p>
                 <p><strong data-translate="authorTitle">Автор:</strong> VL_PLAY</p>
                 <p><strong data-translate="genreTitle">Жанр:</strong> <span data-translate="puzzle">Головоломка</span></p>
                 <p><strong data-translate="tagsTitle">Метки:</strong> 3D, <span data-translate="first_person">От первого лица</span>, <span data-translate="indie">Инди</span>, <span data-translate="single">Одиночная</span>, <span data-translate="horror">Хоррор</span>, Unreal Engine, <span data-translate="survival">Выживание</span></p>
-                <p><strong data-translate="sessionTitle">Средний сеанс:</strong> <span data-translate="sysReqDev">В разработке</span></p>
+                <p><strong data-translate="sessionTitle">Средний сеанс:</strong> 3-5 <span data-translate="hours">Часов</span></p>
                 <p><strong data-translate="langTitle">Языки:</strong> English, Русский</p>
                 <p><strong><a href="https://www.donationalerts.com/r/vl_play021" target="_blank" class="btn_continue" data-translate="SupportDevelopment">Поддержать разработку</a></strong></p>
             </div>
@@ -132,9 +131,11 @@
     <script src="../../JS/main.js" type="module"></script>
     <script>
         $(document).ready(function () {
-          var ytFrame = '<iframe width="560" height="315" src="https://www.youtube.com/embed/J47VR75orC0?si=gA4MKsw0wjxNUl9m" loading="lazy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
-          $('.sdTrailers').html(ytFrame);
+          var ytFrame = '<iframe width="560" height="315" src="https://www.youtube.com/embed/1oKA5o6SUuI?si=lbHT7MzvkZ5tTYeX" loading="lazy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+          var ytFrame1 = '<iframe width="560" height="315" src="https://www.youtube.com/embed/J47VR75orC0?si=gA4MKsw0wjxNUl9m" loading="lazy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+          $('.sdTrailers').html(ytFrame + ytFrame1);
         });
     </script> 
 </body>
 </html>
+

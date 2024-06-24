@@ -891,6 +891,25 @@ const translations = {
         'fr': "Heureux d'annoncer que la démo de Silent Darkness est sortie -> https://vl-play.itch.io/silent-darkness",
         'es': 'Feliz de anunciar que se lanzó la demostración de Silent Darkness -> https://vl-play.itch.io/silent-darkness'
     },
+    'hours': {
+        'en': 'Hours',
+        'ru': 'Часов',
+        'fr': "Heures",
+        'es': 'Horas'
+    },
+    'batTitle': {
+        'en': 'Battery:',
+        'ru': 'Батарея:',
+        'fr': "Batterie:",
+        'es': 'Batería:'
+    },
+    'pulseSensorTitle': {
+        'en': 'Pulse sensor:',
+        'ru': 'Датчик пульса:',
+        'fr': "Capteur de pouls:",
+        'es': 'Sensor de pulso:'
+    },
+
 
 
 
