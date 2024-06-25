@@ -18,7 +18,7 @@ const status = {
     'sdAndDate': "22.04.2024",
 
     'siteVersion': "1.1.0",
-    'siteDate': "17.01.2024",
+    'siteDate': "25.06.2024",
 };
 
 function setStatus() {
