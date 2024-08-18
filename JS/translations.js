@@ -59,12 +59,6 @@ const translations = {
         'fr': 'XenoClock (en développement)',
         'es': 'XenoClock (en desarrollo)'
     },
-    'sdTitle': {
-        'en': 'Silent Darkness (in developing)',
-        'ru': 'Silent Darkness (в разработке)',
-        'fr': 'Silent Darkness (en développement)',
-        'es': 'Silent Darkness (en desarrollo)'
-    },
     'xcDescription': {
         'en': 'I am creating unique clocks that combine high functionality using the ESP32 board and various modules.',
         'ru': 'Я занимаюсь созданием уникальных часов, сочетающих в себе высокую функциональность с помощью платы ESP32.',
@@ -274,6 +268,12 @@ const translations = {
         'ru': 'Цена: Бесплатно',
         'es': 'Precio: Gratis',
         'fr': 'Prix: Gratuit'
+    },
+    'free':{
+        'en': 'Free',
+        'ru': 'Бесплатно',
+        'es': 'Gratis',
+        'fr': 'Gratuit'
     },
     'botTelegramLink': {
         'en': 'Telegram Link',

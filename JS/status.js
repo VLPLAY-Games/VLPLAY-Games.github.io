@@ -12,8 +12,8 @@ const status = {
     'xcVersion': "0.9.0",
     'xcDate': "05.05.2024",
 
-    'sdPCVersion': "Demo 2",
-    'sdPCDate': "22.04.2024",
+    'sdPCVersion': "1.1.0",
+    'sdPCDate': "12.08.2024",
     'sdAndVersion': "Demo 2",
     'sdAndDate': "22.04.2024",
 
