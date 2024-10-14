@@ -14,8 +14,8 @@ const status = {
 
     'sdPCVersion': "1.1.0",
     'sdPCDate': "12.08.2024",
-    'sdAndVersion': "Demo 2",
-    'sdAndDate': "22.04.2024",
+    'sdAndVersion': "1.0.0.110 (Test)",
+    'sdAndDate': "14.10.2024",
 
     'siteVersion': "1.1.0",
     'siteDate': "25.06.2024",
