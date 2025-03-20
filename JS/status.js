@@ -2,12 +2,10 @@ const status = {
     'botVersion': "1.5.0",
     'botDate': "17.01.2024",
 
-    'qlakePCVersion': "2.0.1",
-    'qlakePCDate': "03.11.2023",
+    'qlakePCVersion': "2.1.0",
+    'qlakePCDate': "27.02.2025",
     'qlakeAndVersion': "2.0.1",
     'qlakeAndDate': "03.11.2023",
-    'qlakeVRVersion': "?",
-    'qlakeVRDate': "?",
     
     'xcVersion': "0.9.0",
     'xcDate': "05.05.2024",
@@ -18,7 +16,7 @@ const status = {
     'sdAndDate': "14.10.2024",
 
     'siteVersion': "1.1.0",
-    'siteDate': "25.06.2024",
+    'siteDate': "20.03.2025",
 };
 
 function setStatus() {
