@@ -15,8 +15,8 @@ const status = {
     'sdAndVersion': "1.0.0.110 (Test)",
     'sdAndDate': "14.10.2024",
 
-    'siteVersion': "1.1.0",
-    'siteDate': "20.03.2025",
+    'siteVersion': "2.0.0 preview 1",
+    'siteDate': "26.05.2025",
 };
 
 function setStatus() {
