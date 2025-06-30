@@ -20,8 +20,8 @@ const translations = {
         'ru': 'Обо мне',
     },
     'nav_contacts': {
-        'en': 'Contacts',
-        'ru': 'Контакты',
+        'en': 'Links',
+        'ru': 'Ссылки',
     },
     'hero': {
         'en': 'Clocks, Games, and More',
@@ -112,12 +112,8 @@ const translations = {
         'ru': 'VL_PLAY Games - Контакты',
     },
     'contactsMain': {
-        'en': 'My communication channels',
-        'ru': 'Мои каналы для связи',
-    },
-    'contacts1': {
-        'en': 'Community on VK',
-        'ru': 'Сообщество в VK',
+        'en': 'Links',
+        'ru': 'Ссылки',
     },
     'contacts2': {
         'en': 'Server in Discord',
@@ -339,6 +335,10 @@ const translations = {
         'en': 'In development',
         'ru': 'В разработке',
     },
+    'deprecated': {
+        'en': 'Deprecated',
+        'ru': 'Устарело',
+    },
     'sysReqDevFreeSpace': {
         'en': 'Free space',
         'ru': 'Свободное место',
@@ -352,8 +352,8 @@ const translations = {
         'ru': 'Минимальные',
     },
     'sysReqRecommended': {
-        'en': 'Minimum',
-        'ru': 'Recommended',
+        'en': 'Recommended',
+        'ru': 'Рекомендуемые',
     },
     'sddescriptionContent': {
         'en': 'Silent Darkness is an exciting puzzle game with elements of survival and horror that will immerse you in the atmosphere of a mysterious and enigmatic world. In this exciting game you will explore abandoned locations, revealing various secrets and solving riddles. Immerse yourself in the story of a mysterious hero whose fate is now connected with otherworldly forces. Your goal is to solve puzzles, solve riddles, and experience exciting moments in your search for the truth. Silent Darkness offers a unique combination of deep story, incredible adventure and challenging puzzles that will require your persistence and intelligence. The graphics and sound in the game create an atmosphere, immersing you in an amazing, mysterious world. Take on the challenge of Silent Darkness and embark on a journey through a mystical world that will not leave you indifferent. Will you be able to uncover all its secrets that will await you at every step?',
@@ -521,8 +521,8 @@ const translations = {
         'ru': 'Работает',
     },
     'release_date': {
-        'en': 'Release date',
-        'ru': 'Дата выпуска',
+        'en': 'Last update',
+        'ru': 'Последнее обновление',
     },
     'name_dev_status': {
         'en': 'Development name ',

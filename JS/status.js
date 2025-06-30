@@ -10,13 +10,31 @@ const status = {
     'xcVersion': "0.9.0",
     'xcDate': "05.05.2024",
 
-    'sdPCVersion': "1.1.0",
-    'sdPCDate': "12.08.2024",
-    'sdAndVersion': "1.0.0.110 (Test)",
-    'sdAndDate': "14.10.2024",
+    'xenoosVersion': "0.2.3",
+    'xenoosDate': "29.06.2025",
 
-    'siteVersion': "2.0.0 preview 1",
-    'siteDate': "26.05.2025",
+    'musicVersion': "0.3.0",
+    'musicDate': "25.03.2025",
+
+    'psVersion': "1.0.1",
+    'psDate': "09.01.2025",
+
+    'sd2Version': "---",
+    'sd2Date': "---",
+
+    'ftVersion': "---",
+    'ftDate': "---",
+
+    'attsiVersion': "---",
+    'attsiDate': "---",
+
+    'sdPCVersion': "1.2.0",
+    'sdPCDate': "30.03.2025",
+    'sdAndVersion': "1.1.0.120 (Test)",
+    'sdAndDate': "30.03.2025",
+
+    'siteVersion': "2.0.0 preview 2",
+    'siteDate': "30.06.2025",
 };
 
 function setStatus() {
