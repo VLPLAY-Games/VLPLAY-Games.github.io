@@ -22,8 +22,8 @@ const status = {
     'sd2Version': "---",
     'sd2Date': "---",
 
-    'ftVersion': "---",
-    'ftDate': "---",
+    'ftVersion': "1.0.0",
+    'ftDate': "05.09.2025",
 
     'attsiVersion': "---",
     'attsiDate': "---",
