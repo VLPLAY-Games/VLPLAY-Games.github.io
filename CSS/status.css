@@ -1,0 +1,201 @@
+.centered-text {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.status-section {
+    margin-bottom: 3rem;
+}
+
+
+.status-category-title {
+    font-size: 28px;
+    color: #e8b4e1;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    text-shadow: 0 2px 8px rgba(228, 180, 225, 0.3);
+    font-weight: 400;
+    letter-spacing: 1px;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.status-category-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 2px;
+    background: linear-gradient(90deg, #e8b4e1, #c47aff);
+    border-radius: 2px;
+}
+.centered-text h1 {
+    font-size: 36px;
+    color: #e8b4e1;
+    text-shadow: 0 2px 8px rgba(228, 180, 225, 0.3);
+    font-weight: 400;
+    letter-spacing: 2px;
+    position: relative;
+    display: inline-block;
+}
+
+.centered-text h1::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 2px;
+    background: linear-gradient(90deg, #e8b4e1, #c47aff);
+    border-radius: 2px;
+}
+
+.status_table {
+    width: 85%;
+    margin: 0 auto;
+    background: rgba(45, 27, 78, 0.8);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 8px 25px rgba(156, 89, 209, 0.3);
+    border: 1px solid rgba(196, 122, 255, 0.3);
+    overflow: hidden;
+    animation: tableFadeIn 0.8s ease-out;
+}
+
+.status_table table {
+    width: 100%;
+    border-collapse: collapse;
+    color: #f8f0ff;
+}
+
+.status_table th {
+    background: linear-gradient(135deg, rgba(156, 89, 209, 0.6), rgba(196, 122, 255, 0.4));
+    color: #f8f0ff;
+    padding: 15px 10px;
+    text-align: left;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    border-bottom: 2px solid #c47aff;
+    position: relative;
+}
+
+.status_table th::after {
+    content: '❀';
+    position: absolute;
+    right: 10px;
+    color: #e8b4e1;
+    font-size: 12px;
+}
+
+.status_table td {
+    padding: 12px 10px;
+    border-bottom: 1px solid rgba(196, 122, 255, 0.2);
+    transition: all 0.3s ease;
+    font-size: 14px;
+}
+
+.status_table tr:nth-child(even) {
+    background: rgba(156, 89, 209, 0.1);
+}
+
+.status_table tr:hover td {
+    background: rgba(228, 180, 225, 0.2);
+    transform: translateX(5px);
+}
+
+/* Стили для групповых заголовков (Software, Games, Other) */
+.status_table tr td:first-child:not(:has(a)):not(:has(span)) {
+    background: linear-gradient(135deg, rgba(228, 180, 225, 0.3), rgba(156, 89, 209, 0.2));
+    color: #f8f0ff;
+    font-weight: 600;
+    font-size: 16px;
+    text-align: center;
+    border-bottom: 2px solid #c47aff;
+    border-top: 2px solid #c47aff;
+}
+
+.status_table a {
+    color: #e8b4e1;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border-bottom: 1px dotted #e8b4e1;
+    padding: 2px 0;
+}
+
+.status_table a:hover {
+    color: #c47aff;
+    border-bottom: 1px solid #c47aff;
+}
+
+/* Стили для статусов */
+.status_table td[data-translate="released"],
+.status_table td[data-translate="working"] {
+    color: #a3e4a3; /* Зеленый для выпущенных/работающих */
+    font-weight: 500;
+}
+
+.status_table td[data-translate="sysReqDev"] {
+    color: #f7dc6f; /* Желтый для в разработке */
+    font-weight: 500;
+}
+
+.status_table td[data-translate="deprecated"] {
+    color: #f1948a; /* Красный для устаревших */
+    font-weight: 500;
+}
+
+/* Адаптивность */
+@media (max-width: 1024px) {
+    .status_table {
+        width: 95%;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .centered-text h1 {
+        font-size: 28px;
+    }
+    
+    .status_table {
+        width: 100%;
+        border-radius: 0;
+        padding: 10px;
+        overflow-x: auto;
+    }
+    
+    .status_table table {
+        min-width: 800px;
+    }
+    
+    .status_table th,
+    .status_table td {
+        padding: 8px 5px;
+        font-size: 12px;
+    }
+    
+    .status_table th::after {
+        display: none;
+    }
+}
+
+/* Анимация появления таблицы */
+@keyframes tableFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.status_table {
+    animation: tableFadeIn 0.8s ease-out;
+}

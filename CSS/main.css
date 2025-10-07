@@ -16,20 +16,7 @@
 ::-webkit-scrollbar-thumb:hover {
     background-color: #555; /* Цвет полосы прокрутки при наведении */
 }
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #fafafa;
-    color: #333;
-    opacity: 0;
-    transition: opacity 0.3s;
-    background-image: url("../img/Site/wallpaper.jpg");
-    background-size: cover;
-    transform: 0.3s;
-    background-attachment:fixed;
-    cursor: url('../../img/cursor/cursorMain.png'), auto;
-}
+
 
 .hero {
     background-color: #e0f2f1;
@@ -182,10 +169,7 @@ body {
     color: #fff;
 }
 
-.centered-text {
-    text-align: center;
-    margin-bottom: 2rem;
-}
+
 
 .dev_one_string {
     display: flex;
@@ -204,114 +188,11 @@ img {
     border-radius: 10px;
 }
 
-.btn_scroll_top {
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-    background-color: #2d6c55;
-    color: #fff;
-    border: none;
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    font-size: 24px;
-    cursor: pointer;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    opacity: 0;
-    transition: opacity 0.3s, background-color 0.3s, transform 0.3s;
-}
-
-.btn_scroll_top:hover {
-    background-color: #1f4d3d;
-    transform: scale(1.1);
-}
-
 
 .mainPageName {
     padding-left: 32rem;
     text-align: center;
 }
-
-
-.about-me {
-    padding: 20px;
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.about-me h2 {
-    font-size: 24px;
-    color: #2d6c55;
-}
-
-.about-me p {
-    font-size: 18px;
-    line-height: 1.5;
-    color: #333;
-}
-
-.about-me img {
-    max-width: 100%;
-    height: auto;
-}
-
-
-
-
-.contact-info {
-    background-color: #fff; /* Цвет фона блока контактов */
-    padding: 2rem;
-    text-align: center;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Тень блока контактов */
-    
-}
-
-.contact-info h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
-}
-
-.contact-info ul {
-    list-style: none;
-    padding: 0;
-}
-
-.contact-info li {
-    margin: 10px 0;
-    font-size: 18px;
-    line-height: 1.5;
-    transition: font-size 0.3s, height 0.3s; /* Добавляем анимацию смены размера шрифта и высоты элемента */
-    height: 40px; /* Задаем фиксированную высоту элементов списка */
-    overflow: hidden; /* Обрезаем текст, который выходит за пределы высоты элемента */
-}
-
-.contact-info a {
-    text-decoration: none;
-    color: #007acc; /* Цвет ссылок */
-    font-weight: bold;
-    display: inline-block; /* Делаем ссылки блочными элементами для выравнивания текста по вертикали */
-    height: 100%; /* Заполняем высоту элемента ссылками */
-    width: 100%; /* Заполняем ширину элемента ссылками */
-    vertical-align: middle; /* Выравниваем текст по вертикали */
-}
-
-.contact-info li:hover {
-    font-size: 20px;
-    height: 50px; /* Изменяем высоту элемента при наведении */
-}
-
-
-
-
-
-
-
-
-
-
 
 
 /* Стили для заголовка и логотипа игры */
@@ -354,19 +235,6 @@ img {
     line-height: 1.5;
 }
 
-/* Стили для таблицы с системными требованиями */
-table {
-    width: 100%;
-    margin-top: 20px;
-    border-collapse: collapse;
-    font-size: 18px;
-}
-
-table th, table td {
-    border: 1px solid #2d6c55; /* Цвет границ таблицы */
-    padding: 10px;
-    text-align: left;
-}
 
 /* Стили для ссылок и кнопок */
 a {
@@ -448,59 +316,7 @@ a {
     opacity:0;
 }
 
-.page-container{
-    border-left: 10px solid #2d6c55;
-    border-right: 10px solid #2d6c55;
-    height: 100%;
-    display: none;
-}
 
-
-
-.spin-wrapper{
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    background: #080705;
-  
-    .spinner{
-      position: absolute;
-      height: 60px;
-      width: 60px;
-      border: 3px solid transparent;
-      border-top-color: #A04668;
-      top: 50%;
-      left: 50%;
-      margin: -30px;
-      border-radius: 50%;
-      animation: spin 2s linear infinite;
-      
-      &:before, &:after{
-        content:'';
-        position: absolute;
-        border: 3px solid transparent;
-        border-radius: 50%;
-      }
-      
-      &:before{
-        border-top-color: #254E70;
-        top: -12px;
-        left: -12px;
-        right: -12px;
-        bottom: -12px;
-        animation: spin 3s linear infinite;
-      }
-      
-      &:after{
-        border-top-color: #FFFBFE;
-        top: 6px;
-        left: 6px;
-        right: 6px;
-        bottom: 6px;  
-        animation: spin 4s linear infinite;
-      }
-    }
-}
 
 
 .sdTrailers, .qlakeTrailers, .qlakeImgs, .sdImgs{
@@ -563,18 +379,10 @@ a {
 
 
 
-.status_table{
-    width:75%;
-    margin:0 auto;
-}
+
 
 .text-left{
     text-align: left;
-}
-
-
-.makaev_group_div p{
-    padding-left: 50px;
 }
 
 
@@ -584,15 +392,6 @@ a {
     100% {transform: rotate(360deg);}
 }
 
-
-.custom-cursor {
-    position: fixed;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    pointer-events: none; /* Ensures cursor does not interfere with clicks */
-    z-index: 9999; /* Ensures cursor is on top of other elements */
-}
 
 
 /* Добавьте стили, которые будут применяться для мобильных устройств с шириной экрана менее 768px */

@@ -3,11 +3,11 @@
     color: #f8f0ff;
     text-align: center;
     padding: 2rem 0;
-    margin-top: 3rem;
     border-top: 2px solid #c47aff;
     position: relative;
     font-family: 'Segoe UI', 'Hiragino Sans', 'Yu Gothic UI', sans-serif;
     box-shadow: 0 -4px 20px rgba(156, 89, 209, 0.3);
+    flex-shrink: 0;
 }
 
 .footer::before {
@@ -26,7 +26,6 @@
     color: #f8f0ff;
     text-align: center;
     padding: 1.5rem 0;
-    margin-top: 3rem;
     position: fixed;
     left: 0;
     bottom: 0;
