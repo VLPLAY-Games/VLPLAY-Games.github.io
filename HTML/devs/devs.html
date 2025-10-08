@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="../../CSS/main.css">
     <link rel="stylesheet" href="../../CSS/header.css">
     <link rel="stylesheet" href="../../CSS/body.css">
+    <link rel="stylesheet" href="../../CSS/devs.css">
     <link rel="stylesheet" href="../../CSS/footer.css">
     <link rel="shortcut icon" href="../../img/header/LOGO VL_PLAY Games.png" />
     <script src="../../JS/translations.js" defer></script>
@@ -42,60 +43,99 @@
 
         <div class="centered-text">
             <h1 data-translate="devsMain1">Все разработки</h1>
-            <br />
-            <h2 data-translate="devsMain2">Мои игры</h2>
+            <div class="title-decoration"></div>
         </div>
 
-        <div class="dev_one_string">
-            <div class="development-sd">
-                <div class="background-blur-sd"></div>
-                <img src="..\..\img\SD\SD Logo.jpg" alt="Логотип 2" width="150" height="150" onclick="window.location.href='sd.html';" style="cursor: pointer;">
-                <div class="development-info">
-                    <h3 data-translate="sdTitle">Silent Darkness</h3>
-                    <p data-translate="sdDescriptionDevs">Silent Darkness - это захватывающая хоррор-головоломка от первого лица. Вас ждут мрачные и атмосферные локации, где каждый шаг ставит вас перед новой головоломкой. Для того чтобы продвигаться дальше и раскрывать тайны этого мрачного мира, вам придется разгадать сложные загадки и искать ключи к разгадке. Вас ждут ужасные сюрпризы, и ваше выживание будет зависеть от ваших навыков решения головоломок и хладнокровия в страшных ситуациях. Готовьтесь к погружению в мир ужаса и загадок, где каждый шаг может стоить вам жизни.</p>
+        <div class="games-section">
+            <div class="section-header">
+                <h2 data-translate="devsMain2">Мои игры</h2>
+                <div class="title-decoration"></div>
+            </div>
+            
+            <div class="developments-grid">
+                <div class="development-card" onclick="window.location.href='sd.html';" style="cursor: pointer;">
+                    <div class="card-background sd-bg"></div>
+                    <div class="card-content">
+                        <div class="card-image">
+                            <img src="..\..\img\SD\SD Logo.jpg" alt="Silent Darkness Logo">
+                        </div>
+                        <div class="card-info">
+                            <h3 data-translate="sdTitle">Silent Darkness</h3>
+                            <p data-translate="sdDescriptionDevs">Silent Darkness - это захватывающая хоррор-головоломка от первого лица. Вас ждут мрачные и атмосферные локации, где каждый шаг ставит вас перед новой головоломкой. Для того чтобы продвигаться дальше и раскрывать тайны этого мрачного мира, вам придется разгадать сложные загадки и искать ключи к разгадке. Вас ждут ужасные сюрпризы, и ваше выживание будет зависеть от ваших навыков решения головоломок и хладнокровия в страшных ситуациях. Готовьтесь к погружению в мир ужаса и загадок, где каждый шаг может стоить вам жизни.</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="sd.html" class="card-btn" data-translate="learn_more">Подробнее</a>
+                        </div>
+                    </div>
                 </div>
-                <a href="sd.html" class="btn_continue" data-translate="learn_more">Подробнее</a>
-            </div>
-            <div class="development-qlake">
-                <div class="background-blur-qlake"></div>
-                <img src="..\..\img\Qlake\Qlake_Logo.png" alt="Логотип 3" width="150" height="150" onclick="window.location.href='qlake.html';" style="cursor: pointer;">
-                <div class="development-info">
-                    <h3>Qlake</h3>
-                    <p data-translate="qlakeDescriptionDevs">Qlake - это небольшой атмосферный шутер от первого лица в жанре выживания с элементами хоррора, разработанный на движке Unreal Engine 5. В этой игре игроку предстоит сразиться с зомби и их лидером, который является основной целью игры. Игрок будет проходить через несколько уровней, каждый из которых представляет собой набор вызовов и опасностей. Он будет искать аптечки и боеприпасы к оружию, которое поможет ему справиться с злом и выжить на каждом уровне. </p>
+
+                <div class="development-card" onclick="window.location.href='qlake.html';" style="cursor: pointer;">
+                    <div class="card-background qlake-bg"></div>
+                    <div class="card-content">
+                        <div class="card-image">
+                            <img src="..\..\img\Qlake\Qlake_Logo.png" alt="Qlake Logo">
+                        </div>
+                        <div class="card-info">
+                            <h3>Qlake</h3>
+                            <p data-translate="qlakeDescriptionDevs">Qlake - это небольшой атмосферный шутер от первого лица в жанре выживания с элементами хоррора, разработанный на движке Unreal Engine 5. В этой игре игроку предстоит сразиться с зомби и их лидером, который является основной целью игры. Игрок будет проходить через несколько уровней, каждый из которых представляет собой набор вызовов и опасностей. Он будет искать аптечки и боеприпасы к оружию, которое поможет ему справиться с зомби и выжить на каждом уровне.</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="qlake.html" class="card-btn" data-translate="learn_more">Подробнее</a>
+                        </div>
+                    </div>
                 </div>
-                <a href="qlake.html" class="btn_continue" data-translate="learn_more">Подробнее</a>
             </div>
         </div>
 
-        <div class="centered-text">
-            <br />
-            <h2 data-translate="devsMain3">Мои Боты</h2>
-        </div>
-
-        <div class="development-bot-devs">
-            <div class="background-blur-bot"></div>
-            <img src="..\..\img\Bot\Bot Logo.jpg" alt="Логотип 4" width="150" height="150" onclick="window.location.href='bot.html';" style="cursor: pointer;">
-            <div class="development-info">
-                <h3>VL_PLAY Games Bot</h3>
-                <p data-translate="botDescriptionDevs">Многофункциональный Telegram-бот, который предоставляет ряд полезных команд для удобства пользователей. А также информирует вас о новых новостях VL_PLAY Games.</p>
+        <div class="bots-section">
+            <div class="section-header">
+                <h2 data-translate="devsMain3">Мои Боты</h2>
+                <div class="title-decoration"></div>
             </div>
-            <a href="bot.html" class="btn_continue" data-translate="learn_more">Подробнее</a>
-        </div>
-
-        <div class="centered-text">
-            <br />
-            <h2 data-translate="devsMain4">Мои Технологии</h2>
-        </div>
-
-
-        <div class="development-xc-devs">
-            <div class="background-blur-xc"></div>
-            <img src="..\..\img\XenoClock\XC Logo.jpg" alt="Логотип 1" width="150" height="150" onclick="window.location.href='xc.html';" style="cursor: pointer;">
-            <div class="development-info">
-                <h3 data-translate="xcTitle">XenoClock (в разработке)</h3>
-                <p data-translate="xcDescriptionDevs">XenoClock - это компактное переносное устройство, предназначенное для удобства и функциональности. Стильный и точный, это устройство идеально подходит для тех, кто ценит время и необычный стиль жизни. Хоть вы скорее всего не сможете надеть его на руку, XenoClock всегда рядом, готовый помочь вам оставаться впереди событий.</p>
+            
+            <div class="developments-grid">
+                <div class="development-card" onclick="window.location.href='bot.html';" style="cursor: pointer;">
+                    <div class="card-background bot-bg"></div>
+                    <div class="card-content">
+                        <div class="card-image">
+                            <img src="..\..\img\Bot\Bot Logo.jpg" alt="VL_PLAY Games Bot Logo">
+                        </div>
+                        <div class="card-info">
+                            <h3>VL_PLAY Games Bot</h3>
+                            <p data-translate="botDescriptionDevs">Многофункциональный Telegram-бот, который предоставляет ряд полезных команд для удобства пользователей. А также информирует вас о новых новостях VL_PLAY Games.</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="bot.html" class="card-btn" data-translate="learn_more">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <a href="xc.html" class="btn_continue" data-translate="learn_more">Подробнее</a>
+        </div>
+
+        <div class="tech-section">
+            <div class="section-header">
+                <h2 data-translate="devsMain4">Мои Технологии</h2>
+                <div class="title-decoration"></div>
+            </div>
+            
+            <div class="developments-grid">
+                <div class="development-card" onclick="window.location.href='xc.html';" style="cursor: pointer;">
+                    <div class="card-background xc-bg"></div>
+                    <div class="card-content">
+                        <div class="card-image">
+                            <img src="..\..\img\XenoClock\XC Logo.jpg" alt="XenoClock Logo">
+                        </div>
+                        <div class="card-info">
+                            <h3 data-translate="xcTitle">XenoClock</h3>
+                            <span class="status-badge deprecated" data-translate="deprecated">Устарело</span>
+                            <p data-translate="xcDescriptionDevs">XenoClock - это компактное переносное устройство, предназначенное для удобства и функциональности. Стильный и точный, это устройство идеально подходит для тех, кто ценит время и необычный стиль жизни. Хоть вы скорее всего не сможете надеть его на руку, XenoClock всегда рядом, готовый помочь вам оставаться впереди событий.</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="xc.html" class="card-btn" data-translate="learn_more">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <footer class="footer">
@@ -109,7 +149,6 @@
             <p>VL_PLAY Games Site v<span status-info = "siteVersion"></span></p>
         </footer>
     </div>
-    <div class="custom-cursor"></div>
     <button id="scrollTopButton" class="btn_scroll_top">↑</button>
     <script src="../../JS/main.js" type="module"></script>
 </body>

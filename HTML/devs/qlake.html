@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="../../CSS/main.css">
     <link rel="stylesheet" href="../../CSS/header.css">
     <link rel="stylesheet" href="../../CSS/body.css">
+    <link rel="stylesheet" href="../../CSS/games.css">
+    <link rel="stylesheet" href="../../CSS/media.css">
     <link rel="stylesheet" href="../../CSS/footer.css">
     <link rel="shortcut icon" href="..\..\img\header\LOGO VL_PLAY Games.png" />
     <title>VL_PLAY Games - Qlake</title>
@@ -54,94 +56,243 @@
                 </div>
             </div>
 
-            <h2 data-translate="trailers" class = "text-left">Трейлеры</h2>
-            <div class = "qlakeTrailers"></div>
-            <div class="qlakeImgs">
-                <h2 data-translate="screenshots">Скриншоты</h2>
-                <img src="..\..\img\Qlake\qlake1.jpg" width="375" height="200" onclick="openModal(this)">
-                <img src="..\..\img\Qlake\qlake2.jpg" width="375" height="200" onclick="openModal(this)">
-                <img src="..\..\img\Qlake\qlake3.jpg" width="375" height="200" onclick="openModal(this)">
-              </div>
+            <div class="media-section">
+                <div class="section-header">
+                    <h2 data-translate="trailers" class="media-title">Трейлеры</h2>
+                    <div class="title-decoration"></div>
+                </div>
+                
+                <div class="trailers-grid qlakeTrailers">
+                    <!-- Трейлеры будут добавляться через JS -->
+                </div>
+            </div>
 
+            <div class="media-section">
+                <div class="section-header">
+                    <h2 data-translate="screenshots" class="media-title">Скриншоты</h2>
+                    <div class="title-decoration"></div>
+                </div>
+                
+                <div class="screenshots-grid qlakeImgs">
+                    <div class="screenshot-card" onclick="openModal(this)">
+                        <img src="..\..\img\Qlake\qlake1.jpg" alt="Qlake Screenshot 1">
+                        <div class="screenshot-overlay">
+                            <span class="zoom-icon">🔍</span>
+                        </div>
+                    </div>
+                    <div class="screenshot-card" onclick="openModal(this)">
+                        <img src="..\..\img\Qlake\qlake2.jpg" alt="Qlake Screenshot 2">
+                        <div class="screenshot-overlay">
+                            <span class="zoom-icon">🔍</span>
+                        </div>
+                    </div>
+                    <div class="screenshot-card" onclick="openModal(this)">
+                        <img src="..\..\img\Qlake\qlake3.jpg" alt="Qlake Screenshot 3">
+                        <div class="screenshot-overlay">
+                            <span class="zoom-icon">🔍</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="devs-description">
-                <p><strong data-translate="botDescriptionTitle">Описание:</strong></p>
-                <p data-translate="qlakeDescription">Qlake — это небольшой инди-шутер от первого лица в жанре Survival Horror, разработанный на движке Unreal Engine 5. Вам предстоит сражаться с зомби и их лидером, что является основной целью игры. В игре необходимо пройти несколько уровней, каждый из которых имеет различный набор задач и опасностей. Вы будете искать оружие и боеприпасы, которые помогут справиться со злом и выжить. Qlake — игра, которая натягивает ваши нервы и заставляет использовать все навыки выживания. Если вы любитель игр, сочетающих в себе ужасы и выживание, то игра в Qlake станет для вас отличным времяпрепровождением.</p>
-                <p><strong data-translate = "localization_game">Локализация игры:</strong></p>
-                <p><strong data-translate = "subtitles">Субтитры</strong> - Русский</p>
-                <p><strong data-translate = "voice_acting">Озвучка</strong> - English</p>
-                <p><strong data-translate = "interface">Интерфейс</strong> - English</p>
-                <p><strong data-translate="sysReqTitle">Системные требования на ПК</strong></p>
-                <table>
-                    <tr>
-                        <th data-translate="sysReqItem">Название</th>
-                        <th data-translate="sysReqMin">Минимальные</th>
-                        <th data-translate="sysReqRecommended">Рекомендуемые</th>
-                    </tr>
-                    <tr>
-                        <td>CPU</td>
-                        <td>i5-4690K <span data-translate="andMore"> и выше</span></td>
-                        <td>i5-8600k <span data-translate="andMore"> и выше</span></td>
-                    </tr>
-                    <tr>
-                        <td>RAM</td>
-                        <td>4GB</td>
-                        <td>8GB</td>
-                    </tr>
-                    <tr>
-                        <td>GPU</td>
-                        <td>Gtx 750ti <span data-translate="andMore"> и выше</span></td>
-                        <td>Gtx 1660 <span data-translate="andMore"> и выше</span></td>
-                    </tr>
-                    <tr>
-                        <td data-translate="sysReqDevFreeSpace">Свободное место</td>
-                        <td>3GB</td>
-                        <td>3GB</td>
-                    </tr>
-                    <tr>
-                        <td data-translate = "note">Примечание</td>
-                        <td>1080p very low ~ 30fps</td>
-                        <td>1080p ultra ~45fps</td>
-                    </tr>
-                </table>
+            <div class="description-card">
+                <div class="card-header">
+                    <h3 data-translate="botDescriptionTitle">Описание</h3>
+                    <div class="decorative-line"></div>
+                </div>
+                <p data-translate="qlakeDescription" class="description-text">
+                    Qlake — это небольшой инди-шутер от первого лица в жанре Survival Horror, разработанный на движке Unreal Engine 5. Вам предстоит сражаться с зомби и их лидером, что является основной целью игры. В игре необходимо пройти несколько уровней, каждый из которых имеет различный набор задач и опасностей. Вы будете искать оружие и боеприпасы, которые помогут справиться со злом и выжить. Qlake — игра, которая натягивает ваши нервы и заставляет использовать все навыки выживания. Если вы любитель игр, сочетающих в себе ужасы и выживание, то игра в Qlake станет для вас отличным времяпрепровождением.
+                </p>
+            </div>
 
+            <div class="specs-grid">
+                <div class="localization-card">
+                    <h4 data-translate="localization_game">Локализация игры</h4>
+                    <div class="localization-items">
+                        <div class="localization-item">
+                            <span class="localization-icon">📝</span>
+                            <div class="localization-content">
+                                <strong data-translate="subtitles">Субтитры</strong>
+                                <span>Русский</span>
+                            </div>
+                        </div>
+                        <div class="localization-item">
+                            <span class="localization-icon">🎤</span>
+                            <div class="localization-content">
+                                <strong data-translate="voice_acting">Озвучка</strong>
+                                <span>English</span>
+                            </div>
+                        </div>
+                        <div class="localization-item">
+                            <span class="localization-icon">🖥️</span>
+                            <div class="localization-content">
+                                <strong data-translate="interface">Интерфейс</strong>
+                                <span>English</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-                <br />
-                <p><strong data-translate = "sysReqQlakeAndroid">Системные требования на Android (примерные)</strong></p>
-                <table>
-                    <tr>
-                        <th data-translate="sysReqItem">Название</th>
-                        <th data-translate="sysReqMin">Минимальные</th>
-                    </tr>
-                    <tr>
-                        <td>Android</td>
-                        <td>Android 9.0 <span data-translate="andMore"> и выше</span></td>
-                    </tr>
-                    <tr>
-                        <td>CPU</td>
-                        <td>Snapdragon 778G <span data-translate="andMore"> и выше</span></td>
-                    </tr>
-                    <tr>
-                        <td>RAM</td>
-                        <td>4GB <span data-translate="andMore"> и выше</span></td>
-                    </tr>
-                    <tr>
-                        <td data-translate="sysReqDevFreeSpace">Свободное место</td>
-                        <td>1.7GB</td>
-                    </tr>
-                    <tr>
-                        <td data-translate = "note">Примечание</td>
-                        <td data-translate = "Approximate_requirements">Примерные требования</td>
-                    </tr>
-                </table>
-                <p><strong data-translate = "released">Выпущено</strong>: 30.03.2023</p>
-                <p><strong data-translate="stateTitle">Состояние</strong>: <span data-translate = "released">Выпущено</span></p>
-                <p><strong data-translate="platformsTitle">Платформы:</strong> Windows, Android</p>
-                <p><strong data-translate="authorTitle">Автор:</strong> VL_PLAY</p>
-                <p><strong data-translate="genreTitle">Жанр:</strong> <span data-translate="shooter">Шутер</span></p>
-                <p><strong data-translate="tagsTitle">Метки:</strong> 3D, <span data-translate="first_person">От первого лица</span>, <span data-translate="indie">Инди</span>, <span data-translate="single">Одиночная игра</span>, <span data-translate="space">Космос</span>, Unreal Engine</p>
-                <p><strong data-translate="sessionTitle">Средний сеанс:</strong> <span data-translate="sessionAverage">Примерно 30 минут</span></p>
-                <p><strong data-translate="langTitle">Языки:</strong> English, Русский</p>
-                <p><strong><a href="https://www.donationalerts.com/r/vl_play021" target="_blank" class="btn_continue" data-translate="SupportDevelopment">Поддержать разработку</a></strong></p>
+                <div class="info-cards">
+                    <div class="info-card">
+                        <span class="info-icon">📅</span>
+                        <div class="info-content">
+                            <strong>Выпущено:</strong>
+                            <span>30.03.2023</span>
+                        </div>
+                    </div>
+                    
+                    <div class="info-card">
+                        <span class="info-icon">🔄</span>
+                        <div class="info-content">
+                            <strong data-translate="stateTitle">Состояние:</strong>
+                            <span data-translate="released" class="status-released">Выпущено</span>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <span class="info-icon">📱</span>
+                        <div class="info-content">
+                            <strong data-translate="platformsTitle">Платформы:</strong>
+                            <span>Windows, Android</span>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <span class="info-icon">👤</span>
+                        <div class="info-content">
+                            <strong data-translate="authorTitle">Автор:</strong>
+                            <span>VL_PLAY</span>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <span class="info-icon">🎭</span>
+                        <div class="info-content">
+                            <strong data-translate="genreTitle">Жанр:</strong>
+                            <span data-translate="shooter">Шутер</span>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <span class="info-icon">⏱️</span>
+                        <div class="info-content">
+                            <strong data-translate="sessionTitle">Средний сеанс:</strong>
+                            <span data-translate="sessionAverage">Примерно 30 минут</span>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <span class="info-icon">🗣️</span>
+                        <div class="info-content">
+                            <strong data-translate="langTitle">Языки:</strong>
+                            <span>English, Русский</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="requirements-grid">
+                <div class="spec-card">
+                    <h4 data-translate="sysReqTitle">Системные требования на ПК</h4>
+                    <div class="requirements-table">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th data-translate="sysReqItem">Название</th>
+                                    <th data-translate="sysReqMin">Минимальные</th>
+                                    <th data-translate="sysReqRecommended">Рекомендуемые</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>CPU</td>
+                                    <td>i5-4690K <span class="requirement-note" data-translate="andMore"> и выше</span></td>
+                                    <td>i5-8600k <span class="requirement-note" data-translate="andMore"> и выше</span></td>
+                                </tr>
+                                <tr>
+                                    <td>RAM</td>
+                                    <td>4GB</td>
+                                    <td>8GB</td>
+                                </tr>
+                                <tr>
+                                    <td>GPU</td>
+                                    <td>Gtx 750ti <span class="requirement-note" data-translate="andMore"> и выше</span></td>
+                                    <td>Gtx 1660 <span class="requirement-note" data-translate="andMore"> и выше</span></td>
+                                </tr>
+                                <tr>
+                                    <td data-translate="sysReqDevFreeSpace">Свободное место</td>
+                                    <td>3GB</td>
+                                    <td>3GB</td>
+                                </tr>
+                                <tr>
+                                    <td data-translate="note">Примечание</td>
+                                    <td>1080p very low ~ 30fps</td>
+                                    <td>1080p ultra ~45fps</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="spec-card">
+                    <h4 data-translate="sysReqQlakeAndroid">Системные требования на Android (примерные)</h4>
+                    <div class="requirements-table">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th data-translate="sysReqItem">Название</th>
+                                    <th data-translate="sysReqMin">Минимальные</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Android</td>
+                                    <td>Android 9.0 <span class="requirement-note" data-translate="andMore"> и выше</span></td>
+                                </tr>
+                                <tr>
+                                    <td>CPU</td>
+                                    <td>Snapdragon 778G <span class="requirement-note" data-translate="andMore"> и выше</span></td>
+                                </tr>
+                                <tr>
+                                    <td>RAM</td>
+                                    <td>4GB <span class="requirement-note" data-translate="andMore"> и выше</span></td>
+                                </tr>
+                                <tr>
+                                    <td data-translate="sysReqDevFreeSpace">Свободное место</td>
+                                    <td>1.7GB</td>
+                                </tr>
+                                <tr>
+                                    <td data-translate="note">Примечание</td>
+                                    <td data-translate="Approximate_requirements">Примерные требования</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tags-section">
+                <div class="spec-card">
+                    <h4 data-translate="tagsTitle">Метки</h4>
+                    <div class="tags">
+                        <span class="tag">3D</span>
+                        <span class="tag" data-translate="first_person">От первого лица</span>
+                        <span class="tag" data-translate="indie">Инди</span>
+                        <span class="tag" data-translate="single">Одиночная игра</span>
+                        <span class="tag" data-translate="space">Космос</span>
+                        <span class="tag">Unreal Engine</span>
+                        <span class="tag" data-translate="horror">Хоррор</span>
+                        <span class="tag" data-translate="survival">Выживание</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="support-section">
+                <a href="https://www.donationalerts.com/r/vl_play021" target="_blank" class="support-btn">
+                    <span class="btn-icon">❤️</span>
+                    <span data-translate="SupportDevelopment">Поддержать разработку</span>
+                </a>
             </div>
         </div>
 

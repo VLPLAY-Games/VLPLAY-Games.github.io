@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="../../CSS/main.css">
     <link rel="stylesheet" href="../../CSS/header.css">
     <link rel="stylesheet" href="../../CSS/body.css">
+    <link rel="stylesheet" href="../../CSS/games.css">
+    <link rel="stylesheet" href="../../CSS/xc.css">
     <link rel="stylesheet" href="../../CSS/footer.css">
     <link rel="shortcut icon" href="..\..\img\header\LOGO VL_PLAY Games.png" />
     <title>VL_PLAY Games - XenoClock</title>
@@ -53,24 +55,126 @@
             </div>
 
             <div class="devs-description">
-                <p><strong data-translate="descriptionTitle">Описание:</strong></p>
-                <p data-translate="descriptionContent">
-                    XenoClock — это больше, чем просто часы. Это переносное устройство, созданное с использованием передовых технологий для удовлетворения потребностей современного образа жизни. Основной функционал включает в себя точное отображение времени, даты и дня недели. Однако XenoClock не ограничивается только этим. Функционал также включает возможность синхронизации с вашим смартфоном, что делает устройство более удобным. В часах также находится портативный Web-сервер, с помощью которого можно настраивать часы. С XenoClock вы всегда будете на шаг впереди.
+                <div class="description-card">
+                    <div class="card-header">
+                        <h3 data-translate="descriptionTitle">Описание</h3>
+                        <div class="decorative-line"></div>
+                    </div>
+                    <p data-translate="descriptionContent" class="description-text">
+                        XenoClock — это больше, чем просто часы. Это переносное устройство, созданное с использованием передовых технологий для удовлетворения потребностей современного образа жизни. Основной функционал включает в себя точное отображение времени, даты и дня недели. Однако XenoClock не ограничивается только этим. Функционал также включает возможность синхронизации с вашим смартфоном, что делает устройство более удобным. В часах также находится портативный Web-сервер, с помощью которого можно настраивать часы. С XenoClock вы всегда будете на шаг впереди.
 
-                    Это не просто часы. Это ваше персональное устройство для повседневной жизни, оптимально сочетающее в себе функциональность и технологии будущего.
-                </p>
-                <p><strong data-translate="osTitle">Операционная система:</strong> XenoCoreOS</p>
-                <p><strong data-translate="statusTitle">Статус:</strong> <span data-translate="sysReqDev">В разработке</span></p>
-                <p><strong data-translate="boardTitle">Плата:</strong> ESP32</p>
-                <p><strong data-translate="displayTitle">Дисплей:</strong> TFT 4.0 <span data-translate="inches">дюйма</span></p>
-                <p><strong data-translate="displayResTitle">Разрешение дисплея:</strong> 480x320</p>
-                <p><strong data-translate="memoryTitle">Память:</strong> 4MB + 512MB Micro SD card</p>
-                <p><strong data-translate="ramTitle">ОЗУ:</strong> 540KB</p>
-                <p><strong data-translate="processorTitle">Процессор:</strong> 2x240 <span data-translate="MHz">МГц</span></p>
-                <p><strong data-translate="pulseSensorTitle">Датчик пульса:</strong> PulseSensor</p>
-                <p><strong data-translate="batTitle">Батарея:</strong> 16340 700 mah</p>
-                <p><strong data-translate="languageTitle">Язык XenoClock:</strong> English</p>
-                <p><strong><a href="https://www.donationalerts.com/r/vl_play021" target="_blank" class="btn_continue" data-translate="SupportDevelopment">Поддержать разработку</a></strong></p>
+                        Это не просто часы. Это ваше персональное устройство для повседневной жизни, оптимально сочетающее в себе функциональность и технологии будущего.
+                    </p>
+                </div>
+
+                <div class="specs-grid">
+                    <div class="hardware-specs">
+                        <h4 class="specs-title">Характеристики устройства</h4>
+                        <div class="specs-grid-inner">
+                            <div class="spec-item">
+                                <span class="spec-icon">💻</span>
+                                <div class="spec-content">
+                                    <strong data-translate="osTitle">Операционная система:</strong>
+                                    <span>XenoCoreOS</span>
+                                </div>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-icon">🔧</span>
+                                <div class="spec-content">
+                                    <strong data-translate="boardTitle">Плата:</strong>
+                                    <span>ESP32</span>
+                                </div>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-icon">📱</span>
+                                <div class="spec-content">
+                                    <strong data-translate="displayTitle">Дисплей:</strong>
+                                    <span>TFT 4.0 <span data-translate="inches">дюйма</span></span>
+                                </div>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-icon">🖥️</span>
+                                <div class="spec-content">
+                                    <strong data-translate="displayResTitle">Разрешение дисплея:</strong>
+                                    <span>480x320</span>
+                                </div>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-icon">💾</span>
+                                <div class="spec-content">
+                                    <strong data-translate="memoryTitle">Память:</strong>
+                                    <span>4MB + 512MB Micro SD card</span>
+                                </div>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-icon">⚡</span>
+                                <div class="spec-content">
+                                    <strong data-translate="ramTitle">ОЗУ:</strong>
+                                    <span>540KB</span>
+                                </div>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-icon">🚀</span>
+                                <div class="spec-content">
+                                    <strong data-translate="processorTitle">Процессор:</strong>
+                                    <span>2x240 <span data-translate="MHz">МГц</span></span>
+                                </div>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-icon">❤️</span>
+                                <div class="spec-content">
+                                    <strong data-translate="pulseSensorTitle">Датчик пульса:</strong>
+                                    <span>PulseSensor</span>
+                                </div>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-icon">🔋</span>
+                                <div class="spec-content">
+                                    <strong data-translate="batTitle">Батарея:</strong>
+                                    <span>16340 700 mah</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="device-info-cards">
+                        <div class="info-card status-deprecated">
+                            <span class="info-icon">⚠️</span>
+                            <div class="info-content">
+                                <strong data-translate="statusTitle">Статус:</strong>
+                                <span data-translate="deprecated">Устарело</span>
+                            </div>
+                        </div>
+                        <div class="info-card">
+                            <span class="info-icon">🌐</span>
+                            <div class="info-content">
+                                <strong data-translate="languageTitle">Язык XenoClock:</strong>
+                                <span>English</span>
+                            </div>
+                        </div>
+                        <div class="info-card">
+                            <span class="info-icon">🔗</span>
+                            <div class="info-content">
+                                <strong>Связь:</strong>
+                                <span>Wi-Fi, Bluetooth</span>
+                            </div>
+                        </div>
+                        <div class="info-card">
+                            <span class="info-icon">🌍</span>
+                            <div class="info-content">
+                                <strong>Веб-сервер:</strong>
+                                <span>Встроенный</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="support-section">
+                    <a href="https://www.donationalerts.com/r/vl_play021" target="_blank" class="support-btn">
+                        <span class="btn-icon">❤️</span>
+                        <span data-translate="SupportDevelopment">Поддержать разработку</span>
+                    </a>
+                </div>
             </div>
         </div>
 

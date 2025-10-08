@@ -1,90 +1,93 @@
 ﻿/* main.css */
 
-::-webkit-scrollbar {
-    width: 12px; /* Ширина полосы прокрутки */
-}
-
-::-webkit-scrollbar-track {
-    background-color: #2d6c55; /* Цвет фона трека */
-}
-
-::-webkit-scrollbar-thumb {
-    background-color: #888; /* Цвет полосы прокрутки */
-    border-radius: 6px; /* Скругление углов полосы прокрутки */
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background-color: #555; /* Цвет полосы прокрутки при наведении */
-}
-
-
 .hero {
-    background-color: #e0f2f1;
-    padding: 4rem 0;
+    background: linear-gradient(135deg, #e8d4ff 0%, #d8c0ff 50%, #c8acff 100%);
+    padding: 5rem 0;
     text-align: center;
-    background-image: url("../img/Site/header_wallpaper.jpg");
-    background-size: cover;
-    background-attachment:fixed;
-}
-
-.hero h2 {
-    margin: 0;
-    font-size: 2.5rem;
-    color: #333;
-}
-
-
-.btn_continue {
-    display: inline-block;
-    padding: 0.5rem 1.5rem;
-    background-color: #2d6c55;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 4px;
-    margin-top: 40px;
-    transition: background-color 0.3s, transform 0.3s;
-}
-
-.btn_continue:hover {
-    background-color: #1f4d3d; /* Изменяем цвет фона при наведении */
-    transform: scale(1.1); /* Увеличение кнопки на 10% при наведении */
-}
-
-.news {
-    display: flex;
-    justify-content: space-between;
-    padding: 1rem 0;
-    margin-left: 5rem;
-}
-
-.article {
-    flex-basis: calc(50% - 1rem);
-    background-color: #000;
-    padding: 1.5rem;
-    border-radius: 4px;
-    margin-right: 6rem;
     position: relative;
-    z-index: 0;
-    transition: transform 0.3s;
+    overflow: hidden;
 }
 
-.article:hover, .article-news:hover{
-    transform: scale(1.05);
-}
-
-.background-blur-news {
+.hero::before {
+    content: '';
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    filter: blur(5px); /* Добавляем размытие только к фону */
-    z-index: -1;
+    right: 0;
+    bottom: 0;
+    background: 
+        radial-gradient(circle at 20% 80%, rgba(228, 180, 225, 0.3) 0%, transparent 50%),
+        radial-gradient(circle at 80% 20%, rgba(196, 122, 255, 0.2) 0%, transparent 50%);
+    pointer-events: none;
 }
 
-.article, .article-news p {
-    color: #fff;
+.hero h2 {
+    margin: 0 0 2rem 0;
+    font-size: 2.8rem;
+    color: #5a3a7a;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-shadow: 0 2px 4px rgba(255, 255, 255, 0.5);
+    position: relative;
+    z-index: 1;
+}
+
+.btn_continue {
+    display: inline-block;
+    padding: 12px 30px;
+    background: linear-gradient(45deg, #e8b4e1, #c47aff);
+    color: #5a3a7a;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: 500;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 15px rgba(156, 89, 209, 0.3);
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.btn_continue::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: left 0.5s ease;
+}
+
+.btn_continue:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(156, 89, 209, 0.5);
+    color: #3d2a5e;
+}
+
+.btn_continue:hover::before {
+    left: 100%;
+}
+
+.btn_continue:active {
+    transform: translateY(-1px);
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .hero {
+        padding: 3rem 1rem;
+    }
+    
+    .hero h2 {
+        font-size: 2rem;
+    }
+    
+    .btn_continue {
+        padding: 10px 25px;
+        font-size: 1rem;
+    }
 }
 
 .developments {
@@ -169,8 +172,6 @@
     color: #fff;
 }
 
-
-
 .dev_one_string {
     display: flex;
     margin-right: 6rem;
@@ -226,15 +227,6 @@ img {
 
 }
 
-/* Стили для описания игры */
-.devs-description p{
-    text-align:left;
-}
-.devs-description p {
-    font-size: 18px;
-    line-height: 1.5;
-}
-
 
 /* Стили для ссылок и кнопок */
 a {
@@ -250,34 +242,6 @@ a {
     text-align: center;
     width: 70%;
     box-sizing: border-box;
-}
-
-
-.news-row {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    margin-top:2.5rem;
-}
-
-.article-news{
-    flex-basis: calc(50% - 10rem);
-    background-color: #000;
-    color:#fff;
-    padding: 1.5rem;
-    border-radius: 4px;
-    margin-right: 6rem;
-    position: relative;
-    z-index: 0;
-    transition: transform 0.3s;
-}
-
-.news-news {
-    flex-basis: calc(50% - 3rem);
-    position: relative;
-    justify-content: space-between;
-    padding: 1rem 0;
-    margin-left: 5rem;
 }
 
 .pagination{
@@ -303,7 +267,7 @@ a {
 }
 
 
-.centered-text-news{
+.centered-text{
     width:100%;
     text-align: center;
 }
@@ -315,24 +279,6 @@ a {
 .opacity0{
     opacity:0;
 }
-
-
-
-
-.sdTrailers, .qlakeTrailers, .qlakeImgs, .sdImgs{
-    text-align: left;
-}
-.sdTrailers iframe, .qlakeTrailers iframe, .qlakeImgs img, .sdImgs img{
-    margin-left:2rem;
-    transition: transform 0.3s;
-    cursor: pointer;
-}
-
-.qlakeImgs img:hover, .sdImgs img:hover{
-    transform: scale(1.1);
-}
-
-
 
 
 .image-modal {
@@ -377,217 +323,11 @@ a {
     transform: translateY(0);
   }
 
-
-
-
-
 .text-left{
     text-align: left;
 }
 
-
-  
 @keyframes spin{
     0% {transform: rotate(0deg);}
     100% {transform: rotate(360deg);}
-}
-
-
-
-/* Добавьте стили, которые будут применяться для мобильных устройств с шириной экрана менее 768px */
-@media screen and (max-width: 896px) {
-    body {
-        font-size: 16px; /* Уменьшение размера шрифта для мобильных устройств */
-    }
-    header{
-        height: auto;
-    }
-    .nav-links {
-        flex-direction: column; /* Отображаем элементы списка вертикально */
-        gap:0rem;
-        height: auto;
-    }
-
-    .nav-links li {
-        width: auto; /* Снимаем фиксированную ширину */
-        text-align: left; /* Выравниваем текст слева */
-        margin-bottom: 10px; /* Добавляем отступ между элементами списка */
-    }
-
-    .nav-links a {
-        font-size: 16px; /* Уменьшаем размер шрифта */
-        padding: 0;
-    }
-
-    .logo h1 {
-        font-size: 1.5rem; /* Уменьшение размера шрифта заголовка логотипа */
-    }
-
-
-    .news {
-        flex-direction: column; /* Расположение новостей в столбец */
-        margin-left: 1rem; /* Уменьшение отступа слева для новостей */
-        margin-right: 1rem; /* Уменьшение отступа справа для новостей */
-    }
-
-    .article {
-        flex-basis: 100%; /* Новости занимают всю доступную ширину */
-        margin-right: 0; /* Убираем правый отступ для новостей */
-        margin-top:50px;
-    }
-
-    .btn_continue {
-        margin-top: 20px; /* Уменьшение отступа между кнопками */
-    }
-
-    .footer {
-        margin-top: 2rem; /* Увеличение отступа сверху для подвала */
-    }
-
-    .footer-buttons {
-        flex-direction: column; /* Расположение кнопок подвала в столбец */
-        width:100%;
-        gap: 0.5rem; /* Увеличение расстояния между кнопками подвала */
-        justify-content: center;
-    }
-    .footer-button {
-        margin-left: 60px;
-        margin-right: 60px;
-    }
-    .btn_scroll_top {
-        right: 1rem; /* Перемещение кнопки "наверх" вправо */
-        bottom: 1rem; /* Перемещение кнопки "наверх" вниз */
-        background-color: #fff;
-    }
-    /* Стили для блока "Обо мне" */
-    .about-me {
-        padding: 10px; /* Уменьшаем отступы */
-        max-width: 100%; /* Расширяем максимальную ширину */
-    }
-
-    .about-me h2 {
-        font-size: 20px; /* Уменьшаем размер заголовка */
-    }
-
-    .about-me p {
-        font-size: 16px; /* Уменьшаем размер текста */
-    }
-    .about-me img {
-        width: 140px;
-        height: 140px;
-    }
-    /* Стили для блока "Контактная информация" */
-    .contact-info {
-        padding: 1rem; /* Уменьшаем отступы */
-    }
-
-    .contact-info h2 {
-        font-size: 20px; /* Уменьшаем размер заголовка */
-        margin-bottom: 10px; /* Уменьшаем отступ снизу */
-    }
-
-    .contact-info li {
-        font-size: 16px; /* Уменьшаем размер текста */
-    }
-
-    /* Стили для заголовка и логотипа игры */
-    .devs-header {
-        width: 100%; /* Занимает всю доступную ширину */
-    }
-
-    .devs-logo img {
-        max-width: 100px; /* Уменьшаем размер логотипа */
-        margin-right: 10px; /* Уменьшаем отступ справа */
-    }
-
-    .devs-details h2 {
-        font-size: 24px; /* Увеличиваем размер заголовка */
-    }
-
-    .devs-details p {
-        font-size: 16px; /* Уменьшаем размер текста */
-        margin: 5px 0;
-    }
-
-    /* Стили для описания игры */
-    .devs-description p {
-        font-size: 16px; /* Уменьшаем размер текста */
-        line-height: 1.4; /* Уменьшаем межстрочный интервал */
-    }
-
-    /* Стили для таблицы с системными требованиями */
-    table {
-        font-size: 16px; /* Уменьшаем размер текста */
-    }
-
-    /* Стили для ссылок и кнопок */
-    a {
-        font-size: 16px; /* Уменьшаем размер текста */
-    }
-
-    /* Стили для новостей */
-    .news-row {
-        flex-direction: column; /* Столбцовая компоновка элементов */
-        margin-top: 1rem; /* Увеличиваем отступ между новостями */
-    }
-
-    .article-news {
-        flex-basis: 100%; /* Занимает всю ширину */
-        margin:0 auto;
-        width: 75%;
-        margin-top: 25px;
-    }
-
-    .news-news {
-        flex-basis: 100%; /* Занимает всю ширину */
-        margin-left: 0; /* Убираем левый отступ */
-        margin-bottom: 1rem; /* Добавляем отступ снизу */
-    }
-
-    .pagination {
-        justify-content: center; /* Выравниваем по центру */
-    }
-
-    .pagination-button {
-        margin-top: 20px; /* Увеличиваем отступ сверху */
-        margin-right: 0; /* Убираем правый отступ */
-    }
-    .dev_one_string {
-        display: block;
-        margin-right: 6rem;
-        margin-top: 2rem;
-    }
-    .development-xc-devs{
-        height: 600px;
-    }
-    .development-bot-devs{
-        height: 425px;
-    }
-    .development-sd, .development-qlake{
-        width: 65%;
-        padding: 0 auto;
-    }
-    table {
-        margin-left:-60px;
-    }
-    iframe{
-        width: 100%;
-        height: 10%;
-    }
-    .qlakeImgs img, .sdImgs img{
-        margin-left:-2rem;
-    }
-    .sdTrailers iframe, .qlakeTrailers iframe{
-        margin-left:0rem;
-    }
-    .status_table{
-        transform: scale(0.65);
-        margin-left: 0rem;
-    }
-    .makaev_group_div p{
-        padding-left: 0px;
-    }
-    .footer-fixed{
-        position: relative; 
-    }
 }

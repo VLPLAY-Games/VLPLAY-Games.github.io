@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="../../CSS/main.css">
     <link rel="stylesheet" href="../../CSS/header.css">
     <link rel="stylesheet" href="../../CSS/body.css">
+    <link rel="stylesheet" href="../../CSS/games.css">
+    <link rel="stylesheet" href="../../CSS/media.css">
     <link rel="stylesheet" href="../../CSS/footer.css">
     <link rel="shortcut icon" href="..\..\img\header\LOGO VL_PLAY Games.png" />
     <title>VL_PLAY Games - Silent Darkness</title>
@@ -54,59 +56,175 @@
                     <iframe frameborder="0" src="https://itch.io/embed/1967825" width="552" height="167"><a href="https://vl-play.itch.io/silent-darkness">Silent Darkness by VL_PLAY</a></iframe>
                 </div>
             </div>
-            <h2 data-translate="trailers" class = "text-left">Трейлеры</h2>
-            <div class = "sdTrailers"></div>
-            <div class = "sdImgs">
-                <h2 data-translate="screenshots">Скриншоты</h2>
-                <img src = "..\..\img\SD\SD1.jpg" width="375" height="200" onclick="openModal(this)">
-                <img src = "..\..\img\SD\SD2.jpg" width="375" height="200" onclick="openModal(this)">
-                <img src = "..\..\img\SD\SD3.jpg" width="375" height="200" onclick="openModal(this)">
+            <div class="media-section">
+                <div class="section-header">
+                    <h2 data-translate="trailers" class="media-title">Трейлеры</h2>
+                    <div class="title-decoration"></div>
+                </div>
+                
+                <div class="trailers-grid sdTrailers">
+                    <!-- Трейлеры будут добавляться через JS -->
+                </div>
+            </div>
+
+            <div class="media-section">
+                <div class="section-header">
+                    <h2 data-translate="screenshots" class="media-title">Скриншоты</h2>
+                    <div class="title-decoration"></div>
+                </div>
+                
+                <div class="screenshots-grid sdImgs">
+                    <div class="screenshot-card" onclick="openModal(this)">
+                        <img src="..\..\img\SD\SD1.jpg" alt="Silent Darkness Screenshot 1">
+                        <div class="screenshot-overlay">
+                            <span class="zoom-icon">🔍</span>
+                        </div>
+                    </div>
+                    <div class="screenshot-card" onclick="openModal(this)">
+                        <img src="..\..\img\SD\SD2.jpg" alt="Silent Darkness Screenshot 2">
+                        <div class="screenshot-overlay">
+                            <span class="zoom-icon">🔍</span>
+                        </div>
+                    </div>
+                    <div class="screenshot-card" onclick="openModal(this)">
+                        <img src="..\..\img\SD\SD3.jpg" alt="Silent Darkness Screenshot 3">
+                        <div class="screenshot-overlay">
+                            <span class="zoom-icon">🔍</span>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="devs-description">
-                <p><strong data-translate="descriptionTitle">Описание:</strong></p>
-                <p data-translate="sddescriptionContent">
+            <div class="description-card">
+                <div class="card-header">
+                    <h3 data-translate="descriptionTitle">Описание</h3>
+                    <div class="decorative-line"></div>
+                </div>
+                <p data-translate="sddescriptionContent" class="description-text">
                     Silent Darkness — захватывающая головоломка с элементами выживания и хоррора, которая погрузит вас в атмосферу таинственного и загадочного мира. В этой увлекательной игре вам предстоит исследовать заброшенные локации, раскрывая различные тайны и разгадывая загадки. Погрузитесь в историю загадочного героя, чья судьба теперь связана с потусторонними силами. Ваша цель — решать головоломки, разгадывать загадки и переживать захватывающие моменты в поисках истины. Silent Darkness предлагает уникальное сочетание глубокого сюжета, невероятных приключений и сложных головоломок, которые потребуют вашей настойчивости и интеллекта. Графика и звук в игре создают атмосферу, погружая в удивительный загадочный мир. 
 
                     Примите вызов Silent Darkness и отправьтесь в путешествие по мистическому миру, которое не оставит вас равнодушным. Сможете ли вы раскрыть все его секреты, что будут поджидать вас на каждом шагу?
                 </p>
-                <p><strong data-translate="sysReqTitle">Системные требования на ПК</strong></p>
-                <table>
-                    <tr>
-                        <th data-translate="sysReqItem">Название</th>
-                        <th data-translate="sysReqMin">Минимальные</th>
-                        <th data-translate="sysReqRecommended">Рекомендуемые</th>
-                    </tr>
-                    <tr>
-                        <td>CPU</td>
-                        <td>Intel(R) Core(TM) i5-7400</td>
-                        <td>Intel(R) Core(TM) i5-11400</td>
-                    </tr>
-                    <tr>
-                        <td>RAM</td>
-                        <td>8 GB</td>
-                        <td>16 GB</td>
-                    </tr>
-                    <tr>
-                        <td>GPU</td>
-                        <td>NVIDIA GeForce GTX 1060</td>
-                        <td>NVIDIA GeForce RTX 2060</td>
-                    </tr>
-                    <tr>
-                        <td data-translate="sysReqDevFreeSpace">Свободное место</td>
-                        <td>17 GB</td>
-                        <td>17 GB</td>
-                    </tr>
-                </table>
+            </div>
 
-                <p><strong data-translate="stateTitle">Состояние:</strong> <span data-translate="released">Выпущено</span></p>
-                <p><strong data-translate="platformsTitle">Платформы:</strong> Windows, Android</p>
-                <p><strong data-translate="localizationTitle">Локализация игры: </strong><span> English, Русский</span></p>
-                <p><strong data-translate="authorTitle">Автор:</strong> VL_PLAY</p>
-                <p><strong data-translate="genreTitle">Жанр:</strong> <span data-translate="puzzle">Головоломка</span></p>
-                <p><strong data-translate="tagsTitle">Метки:</strong> 3D, <span data-translate="first_person">От первого лица</span>, <span data-translate="indie">Инди</span>, <span data-translate="single">Одиночная</span>, <span data-translate="horror">Хоррор</span>, Unreal Engine, <span data-translate="survival">Выживание</span></p>
-                <p><strong data-translate="sessionTitle">Средний сеанс:</strong> 3-5 <span data-translate="hours">Часов</span></p>
-                <p><strong data-translate="langTitle">Языки:</strong> English, Русский</p>
-                <p><strong><a href="https://www.donationalerts.com/r/vl_play021" target="_blank" class="btn_continue" data-translate="SupportDevelopment">Поддержать разработку</a></strong></p>
+            <div class="specs-grid">
+                <div class="spec-card">
+                    <h4 data-translate="sysReqTitle">Системные требования на ПК</h4>
+                    <div class="requirements-table">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th data-translate="sysReqItem">Название</th>
+                                    <th data-translate="sysReqMin">Минимальные</th>
+                                    <th data-translate="sysReqRecommended">Рекомендуемые</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>CPU</td>
+                                    <td>Intel(R) Core(TM) i5-7400</td>
+                                    <td>Intel(R) Core(TM) i5-11400</td>
+                                </tr>
+                                <tr>
+                                    <td>RAM</td>
+                                    <td>8 GB</td>
+                                    <td>16 GB</td>
+                                </tr>
+                                <tr>
+                                    <td>GPU</td>
+                                    <td>NVIDIA GeForce GTX 1060</td>
+                                    <td>NVIDIA GeForce RTX 2060</td>
+                                </tr>
+                                <tr>
+                                    <td data-translate="sysReqDevFreeSpace">Свободное место</td>
+                                    <td>17 GB</td>
+                                    <td>17 GB</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="info-cards">
+                    <div class="info-card">
+                        <span class="info-icon">🎮</span>
+                        <div class="info-content">
+                            <strong data-translate="stateTitle">Состояние:</strong>
+                            <span data-translate="released" class="status-released">Выпущено</span>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <span class="info-icon">📱</span>
+                        <div class="info-content">
+                            <strong data-translate="platformsTitle">Платформы:</strong>
+                            <span>Windows, Android</span>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <span class="info-icon">🌐</span>
+                        <div class="info-content">
+                            <strong data-translate="localizationTitle">Локализация:</strong>
+                            <span>English, Русский</span>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <span class="info-icon">👤</span>
+                        <div class="info-content">
+                            <strong data-translate="authorTitle">Автор:</strong>
+                            <span>VL_PLAY</span>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <span class="info-icon">🎭</span>
+                        <div class="info-content">
+                            <strong data-translate="genreTitle">Жанр:</strong>
+                            <span data-translate="puzzle">Головоломка</span>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <span class="info-icon">🏷️</span>
+                        <div class="info-content">
+                            <strong data-translate="tagsTitle">Метки:</strong>
+                            <div class="tags">
+                                <span class="tag">3D</span>
+                                <span class="tag" data-translate="first_person">От первого лица</span>
+                                <span class="tag" data-translate="indie">Инди</span>
+                                <span class="tag" data-translate="single">Одиночная</span>
+                                <span class="tag" data-translate="horror">Хоррор</span>
+                                <span class="tag">Unreal Engine</span>
+                                <span class="tag" data-translate="survival">Выживание</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <span class="info-icon">⏱️</span>
+                        <div class="info-content">
+                            <strong data-translate="sessionTitle">Средний сеанс:</strong>
+                            <span>3-5 <span data-translate="hours">Часов</span></span>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <span class="info-icon">🗣️</span>
+                        <div class="info-content">
+                            <strong data-translate="langTitle">Языки:</strong>
+                            <span>English, Русский</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="support-section">
+                <a href="https://www.donationalerts.com/r/vl_play021" target="_blank" class="support-btn">
+                    <span class="btn-icon">❤️</span>
+                    <span data-translate="SupportDevelopment">Поддержать разработку</span>
+                </a>
             </div>
         </div>
 
@@ -121,11 +239,20 @@
             <p>VL_PLAY Games Site v<span status-info = "siteVersion"></span></p>
         </footer>
     </div>
-    <div id="image-modal" class="image-modal">
-        <span class="close-modal" onclick="closeModal()">&times;</span>
-        <img class="modal-content" id="modal-image">
+    <!-- Модальное окно для изображений -->
+    <div id="image-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">✕</span>
+            <div class="modal-navigation">
+                <button class="nav-btn prev-btn" onclick="navigateModal(-1)">‹</button>
+                <img id="modal-image" class="modal-image" src="" alt="Modal Image">
+                <button class="nav-btn next-btn" onclick="navigateModal(1)">›</button>
+            </div>
+            <div class="modal-info">
+                <span id="modal-counter" class="modal-counter">1 / 1</span>
+            </div>
+        </div>
     </div>
-    <div class="custom-cursor"></div>
     <button id="scrollTopButton" class="btn_scroll_top">↑</button>
     <script src="../../JS/main.js" type="module"></script>
     <script>

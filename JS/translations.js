@@ -36,8 +36,8 @@ const translations = {
         'ru': 'Разработки',
     },
     'xcTitle': {
-        'en': 'XenoClock (in developing)',
-        'ru': 'XenoClock (в разработке)',
+        'en': 'XenoClock',
+        'ru': 'XenoClock',
     },
     'xcDescription': {
         'en': 'I am creating unique clocks that combine high functionality using the ESP32 board and various modules.',
