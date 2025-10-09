@@ -397,3 +397,264 @@
         padding: 4px 8px;
     }
 }
+
+
+
+/* Карточка заголовка игры */
+.game-header-card {
+    background: rgba(45, 27, 78, 0.8);
+    backdrop-filter: blur(10px);
+    border-radius: 25px;
+    border: 1px solid rgba(196, 122, 255, 0.3);
+    box-shadow: 0 8px 25px rgba(156, 89, 209, 0.3);
+    margin: 3rem auto;
+    padding: 2.5rem;
+    max-width: 900px;
+    position: relative;
+    overflow: hidden;
+}
+
+.game-header-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, #e8b4e1, #c47aff, #9c59d1);
+    border-radius: 3px 3px 0 0;
+}
+
+.game-header-content {
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+/* Секция с логотипом */
+.game-logo-section {
+    flex-shrink: 0;
+}
+
+.logo-container {
+    position: relative;
+    display: inline-block;
+}
+
+.game-logo {
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    border: 3px solid rgba(228, 180, 225, 0.3);
+    box-shadow: 0 8px 20px rgba(156, 89, 209, 0.4);
+    transition: all 0.4s ease;
+    position: relative;
+    z-index: 2;
+}
+
+.logo-glow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 220px;
+    height: 220px;
+    background: radial-gradient(circle, rgba(228, 180, 225, 0.2) 0%, transparent 70%);
+    border-radius: 25px;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.logo-container:hover .game-logo {
+    transform: scale(1.05);
+    border-color: rgba(228, 180, 225, 0.6);
+    box-shadow: 0 12px 30px rgba(228, 180, 225, 0.5);
+}
+
+.logo-container:hover .logo-glow {
+    opacity: 1;
+}
+
+/* Секция с информацией */
+.game-info-section {
+    flex: 1;
+}
+
+.game-title-section {
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.game-title {
+    color: #e8b4e1;
+    font-size: 2.5rem;
+    font-weight: 400;
+    margin: 0;
+    text-shadow: 0 2px 8px rgba(228, 180, 225, 0.3);
+    letter-spacing: 1px;
+}
+
+/* Стили для ценников */
+.price-tag {
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.price-tag.free {
+    background: linear-gradient(45deg, #a3e4a3, #58d68d);
+    color: #1a5276;
+    border: 1px solid rgba(163, 228, 163, 0.5);
+}
+
+.price-tag.paid {
+    background: linear-gradient(45deg, #f7dc6f, #f8c471);
+    color: #7d6608;
+    border: 1px solid rgba(247, 220, 111, 0.5);
+}
+
+.price-tag:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Контейнер для itch.io embed */
+.itch-embed-container {
+    background: rgba(7, 16, 23, 0.7);
+    border-radius: 15px;
+    padding: 1.5rem;
+    border: 1px solid rgba(196, 122, 255, 0.2);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.itch-embed-container:hover {
+    border-color: rgba(228, 180, 225, 0.4);
+    box-shadow: 0 6px 20px rgba(156, 89, 209, 0.3);
+}
+
+.itch-embed-container iframe {
+    border-radius: 10px;
+    border: none;
+}
+
+/* Декоративные элементы */
+.game-header-card::after {
+    content: '🎮';
+    position: absolute;
+    bottom: 15px;
+    right: 20px;
+    font-size: 2rem;
+    opacity: 0.1;
+    transform: rotate(15deg);
+}
+
+/* Анимация появления */
+@keyframes headerSlideIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.game-header-card {
+    animation: headerSlideIn 0.6s ease-out;
+}
+
+.game-header-card:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+/* Адаптивность */
+@media (max-width: 968px) {
+    .game-header-card {
+        margin: 2rem 1rem;
+        padding: 2rem;
+    }
+    
+    .game-header-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 2rem;
+    }
+    
+    .game-title-section {
+        justify-content: center;
+    }
+    
+    .game-logo {
+        width: 180px;
+        height: 180px;
+    }
+    
+    .logo-glow {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media (max-width: 768px) {
+    .game-header-card {
+        padding: 1.5rem;
+    }
+    
+    .game-title {
+        font-size: 2rem;
+    }
+    
+    .game-logo {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .logo-glow {
+        width: 170px;
+        height: 170px;
+    }
+    
+    .itch-embed-container {
+        padding: 1rem;
+    }
+    
+    .price-tag {
+        font-size: 0.9rem;
+        padding: 6px 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .game-header-card {
+        margin: 1.5rem 0.5rem;
+        padding: 1.2rem;
+    }
+    
+    .game-title {
+        font-size: 1.8rem;
+    }
+    
+    .game-title-section {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .game-logo {
+        width: 130px;
+        height: 130px;
+    }
+    
+    .logo-glow {
+        width: 150px;
+        height: 150px;
+    }
+}
