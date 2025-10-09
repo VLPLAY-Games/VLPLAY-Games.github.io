@@ -17,6 +17,20 @@
     <script src="../../../js/images.js"></script>
 </head>
 <body>
+    <!-- Модальное окно для изображений -->
+    <div id="image-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">✕</span>
+            <div class="modal-navigation">
+                <button class="nav-btn prev-btn" onclick="navigateModal(-1)">‹</button>
+                <img id="modal-image" class="modal-image" src="" alt="Modal Image">
+                <button class="nav-btn next-btn" onclick="navigateModal(1)">›</button>
+            </div>
+            <div class="modal-info">
+                <span id="modal-counter" class="modal-counter">1 / 1</span>
+            </div>
+        </div>
+    </div>
     <div class="spin-wrapper"><div class="spinner"></div></div>
     <div class="page-container">
         <header>
@@ -318,15 +332,11 @@
                 <a href="../../../index.html" class="footer-button" data-translate="nav_home">Главная</a>
                 <a href="../../../html/devs/devs.html" class="footer-button" data-translate="nav_developments">Разработки</a>
                 <a href="../../../html/about_me/about_me.html" class="footer-button" data-translate="nav_about_me">Обо мне</a>
-                <a href="../../../html/contacts/contacts.html" class="footer-button" data-translate="nav_contacts">Контакты</a>
+                <a href="../../../html/links/links.html" class="footer-button" data-translate="nav_contacts">Контакты</a>
                 <a href="../../../html/status/status.html" class="footer-button" data-translate="nav_status">Статус</a>
             </div>
             <p>VL_PLAY Games Site v<span status-info = "siteVersion"></span></p>
         </footer>
-    </div>
-    <div id="image-modal" class="image-modal">
-        <span class="close-modal" onclick="closeModal()">&times;</span>
-        <img class="modal-content" id="modal-image">
     </div>
     <button id="scrollTopButton" class="btn_scroll_top">↑</button>
     <script src="../../../js/main.js" type="module"></script>

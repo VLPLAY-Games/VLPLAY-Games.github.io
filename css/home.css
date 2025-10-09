@@ -182,6 +182,7 @@
     box-shadow: 0 4px 15px rgba(156, 89, 209, 0.3);
     position: relative;
     overflow: hidden;
+    margin-bottom: 50px;
 }
 
 .view-all-btn::before {

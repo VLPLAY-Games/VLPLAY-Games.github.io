@@ -586,7 +586,574 @@ const translations = {
     'web_server': {
        'en': 'Web-server:',
        'ru': 'Веб-сервер:',
-    }
+    },
+    'viewAllDevelopments': {
+       'en': 'All developments',
+       'ru': 'Все разработки',
+    },
+    'tanabataTitle': {
+        'en': 'Tanabata: Path to the Stars',
+        'ru': 'Танабата: Путь к звездам',
+    },
+    'tanabataDescription': {
+        'en': 'A relaxing atmospheric puzzle game with adventure elements. Embark on a mystical journey through Tokyo and beyond to discover the secret Tanabata festival! Explore beautiful locations, solve ancient puzzles, and play magical mini-games where your choices determine the spectacular starry finale.',
+        'ru': 'Расслабляющая атмосферная головоломка с элементами приключения. Отправьтесь в мистическое путешествие по Токио и не только, чтобы открыть для себя секретный фестиваль Танабата! Исследуйте красивые локации, решайте древние головоломки и играйте в волшебные мини-игры, где ваши выборы определяют зрелищную звездную развязку.',
+    },
+    'tanabataFeaturesTitle': {
+        'en': 'Features',
+        'ru': 'Особенности',
+    },
+    'tanabataFeatures': {
+        'en': '✨ Authentic Japanese atmosphere – from cozy Tokyo streets to mysterious caves and a hidden village under the starry sky<br>🎮 Three unique levels – featuring different mechanics from social interactions to environmental puzzles<br>🎵 Soothing soundtrack – traditional Japanese instruments blended with natural ambient sounds<br>🎆 Dynamic ending – your performance determines the scale of the grand celestial celebration<br>⏳ Gentle time pressure – the stars won\'t wait, so reach the festival before the climax!',
+        'ru': '✨ Аутентичная японская атмосфера – от уютных улиц Токио до загадочных пещер и скрытой деревни под звездным небом<br>🎮 Три уникальных уровня – с различными механиками от социальных взаимодействий до головоломок окружающей среды<br>🎵 Успокаивающий саундтрек – традиционные японские инструменты в сочетании с естественными окружающими звуками<br>🎆 Динамичная концовка – ваши действия определяют масштаб грандиозного небесного праздника<br>⏳ Легкое давление времени – звезды не будут ждать, так что успевайте на фестиваль до кульминации!',
+    },
+    'tanabataPrice': {
+        'en': 'Free',
+        'ru': 'Бесплатно',
+    },
+    'tanabataPlatforms': {
+        'en': 'Windows',
+        'ru': 'Windows',
+    },
+    'tanabataLocalizationTitle': {
+        'en': 'Localization',
+        'ru': 'Локализация',
+    },
+    'tanabataLocalization': {
+        'en': '🌐 English – subtitles and user interface<br>🌐 Russian – subtitles only',
+        'ru': '🌐 Английский – субтитры и пользовательский интерфейс<br>🌐 Русский – только субтитры',
+    },
+    'tanabataGenre': {
+        'en': 'Puzzle, Adventure',
+        'ru': 'Головоломка, Приключение',
+    },
+    'tanabataSession': {
+        'en': '1-2 hours',
+        'ru': '1-2 часа',
+    },
+    'tanabataSoundtrack': {
+        'en': 'Soundtrack:',
+        'ru': 'Саундтрек:',
+    },
+    'tanabataSoundtrackType': {
+        'en': 'Traditional Japanese instruments',
+        'ru': 'Традиционные японские инструменты',
+    },
+    'sysReqOS': {
+        'en': 'Operating System',
+        'ru': 'Операционная система',
+    },
+    'sysReqPerformance': {
+        'en': 'Target Performance',
+        'ru': 'Целевая производительность',
+    },
+    'adventure': {
+        'en': 'Adventure',
+        'ru': 'Приключение',
+    },
+    // Новые ключи для Download Server
+    'downloadServerTitle': {
+        'en': 'Download Server',
+        'ru': 'Download Server',
+    },
+    'downloadServerDescription': {
+        'en': 'A modern web-based download manager with real-time progress tracking and user-friendly interface. This tool provides complete control over the file download process with advanced management features.',
+        'ru': 'Современный веб-менеджер загрузок с отслеживанием прогресса в реальном времени и удобным интерфейсом. Этот инструмент предоставляет полный контроль над процессом загрузки файлов с расширенными функциями управления.',
+    },
+    'downloadServerFeaturesTitle': {
+        'en': 'Key Features',
+        'ru': 'Основные возможности',
+    },
+    'featureFastDownloads': {
+        'en': 'Fast Downloads',
+        'ru': 'Быстрые загрузки',
+    },
+    'featureFastDownloadsDesc': {
+        'en': 'Real-time progress tracking',
+        'ru': 'Отслеживание прогресса в реальном времени',
+    },
+    'featureLiveStats': {
+        'en': 'Live Statistics',
+        'ru': 'Живая статистика',
+    },
+    'featureLiveStatsDesc': {
+        'en': 'Download speed, progress, file size',
+        'ru': 'Скорость загрузки, прогресс, размер файла',
+    },
+    'featurePauseResume': {
+        'en': 'Pause/Resume',
+        'ru': 'Пауза/Продолжение',
+    },
+    'featurePauseResumeDesc': {
+        'en': 'Control over active downloads',
+        'ru': 'Контроль над активными загрузками',
+    },
+    'featureRestart': {
+        'en': 'Restart',
+        'ru': 'Перезапуск',
+    },
+    'featureRestartDesc': {
+        'en': 'Ability to restart downloads',
+        'ru': 'Возможность перезапуска загрузок',
+    },
+    'featureDelete': {
+        'en': 'Delete Tasks',
+        'ru': 'Удаление задач',
+    },
+    'featureDeleteDesc': {
+        'en': 'Deletion with file cleanup',
+        'ru': 'Удаление с очисткой файлов',
+    },
+    'featureMultiLang': {
+        'en': 'Multi-language',
+        'ru': 'Мультиязычность',
+    },
+    'featureMultiLangDesc': {
+        'en': 'Support for English, Russian',
+        'ru': 'Поддержка English, Russian',
+    },
+    'featureAuth': {
+        'en': 'Authentication',
+        'ru': 'Аутентификация',
+    },
+    'featureAuthDesc': {
+        'en': 'User authentication system',
+        'ru': 'Система аутентификации пользователей',
+    },
+    'featureResponsive': {
+        'en': 'Responsive Design',
+        'ru': 'Адаптивный дизайн',
+    },
+    'featureResponsiveDesc': {
+        'en': 'Works on all devices',
+        'ru': 'Работает на всех устройствах',
+    },
+    'downloadServerTechStack': {
+        'en': 'Technology Stack',
+        'ru': 'Технологический стек',
+    },
+    'downloadServerVersion': {
+        'en': 'Version:',
+        'ru': 'Версия:',
+    },
+    'downloadServerType': {
+        'en': 'Type:',
+        'ru': 'Тип:',
+    },
+    'webApplication': {
+        'en': 'Web Application',
+        'ru': 'Веб-приложение',
+    },
+    'downloadServerLanguages': {
+        'en': 'Languages:',
+        'ru': 'Языки:',
+    },
+    'downloadServerInstallation': {
+        'en': 'Installation & Setup',
+        'ru': 'Установка и запуск',
+    },
+    'stepClone': {
+        'en': 'Clone Repository',
+        'ru': 'Клонирование репозитория',
+    },
+    'stepInstallDeps': {
+        'en': 'Install Dependencies',
+        'ru': 'Установка зависимостей',
+    },
+    'stepRun': {
+        'en': 'Run Application',
+        'ru': 'Запуск приложения',
+    },
+    'downloadServerConfiguration': {
+        'en': 'Configuration',
+        'ru': 'Конфигурация',
+    },
+    'configParameter': {
+        'en': 'Parameter',
+        'ru': 'Параметр',
+    },
+    'configDefault': {
+        'en': 'Default',
+        'ru': 'По умолчанию',
+    },
+    'configDescription': {
+        'en': 'Description',
+        'ru': 'Описание',
+    },
+    'configPortDesc': {
+        'en': 'Port for running web server',
+        'ru': 'Порт для запуска веб-сервера',
+    },
+    'configDownloadDir': {
+        'en': 'Download Directory',
+        'ru': 'Директория загрузок',
+    },
+    'configDownloadDirDesc': {
+        'en': 'Folder for saving files',
+        'ru': 'Папка для сохранения файлов',
+    },
+    'viewOnGitHub': {
+        'en': 'View on GitHub',
+        'ru': 'Смотреть на GitHub',
+    },
+    // Новые ключи для Port Scanner
+    'portScannerTitle': {
+        'en': 'Port Scanner',
+        'ru': 'Port Scanner',
+    },
+    'portScannerDescription': {
+        'en': 'A versatile tool designed to analyze and interact with networks. It provides features for checking IP addresses, scanning ports, pinging servers, viewing logs, and accessing terminal commands. The intuitive graphical interface supports multiple functions to cater to developers, network administrators, and tech enthusiasts.',
+        'ru': 'Многофункциональный инструмент для анализа и взаимодействия с сетями. Предоставляет возможности для проверки IP-адресов, сканирования портов, пинга серверов, просмотра логов и доступа к терминальным командам. Интуитивно понятный графический интерфейс поддерживает множество функций для разработчиков, сетевых администраторов и технических энтузиастов.',
+    },
+    'portScannerMainFeatures': {
+        'en': 'Main Features',
+        'ru': 'Основные функции',
+    },
+    'featureIPCheck': {
+        'en': 'IP Check',
+        'ru': 'Проверка IP',
+    },
+    'featureIPCheckDesc': {
+        'en': 'Display all computer IP addresses',
+        'ru': 'Отображение всех IP-адресов компьютера',
+    },
+    'featurePortScan': {
+        'en': 'Port Scan',
+        'ru': 'Сканирование портов',
+    },
+    'featurePortScanDesc': {
+        'en': 'Scan and show all open ports',
+        'ru': 'Сканирование и показ всех открытых портов',
+    },
+    'featureAllInfo': {
+        'en': 'All Info',
+        'ru': 'Вся информация',
+    },
+    'featureAllInfoDesc': {
+        'en': 'Complete network overview: IP, ports, drivers',
+        'ru': 'Полный обзор сети: IP, порты, драйверы',
+    },
+    'featureCustomIP': {
+        'en': 'Custom IP',
+        'ru': 'Пользовательский IP',
+    },
+    'featureCustomIPDesc': {
+        'en': 'Scan ports on specific IP address',
+        'ru': 'Сканирование портов на конкретном IP-адресе',
+    },
+    'featurePing': {
+        'en': 'Ping',
+        'ru': 'Ping',
+    },
+    'featurePingDesc': {
+        'en': 'Check connectivity and latency',
+        'ru': 'Проверка подключения и задержки',
+    },
+    'featureTerminal': {
+        'en': 'Terminal',
+        'ru': 'Терминал',
+    },
+    'featureTerminalDesc': {
+        'en': 'Built-in command line interface',
+        'ru': 'Встроенный интерфейс командной строки',
+    },
+    'featureActiveDevices': {
+        'en': 'Active Devices',
+        'ru': 'Активные устройства',
+    },
+    'featureActiveDevicesDesc': {
+        'en': 'List devices in local network',
+        'ru': 'Список устройств в локальной сети',
+    },
+    'featureLogs': {
+        'en': 'Logs',
+        'ru': 'Логи',
+    },
+    'featureLogsDesc': {
+        'en': 'Program activity history',
+        'ru': 'История активности программы',
+    },
+    'portScannerInterface': {
+        'en': 'Interface',
+        'ru': 'Интерфейс',
+    },
+    'portScannerInterfaceDesc': {
+        'en': 'The interface is divided into two primary sections:',
+        'ru': 'Интерфейс разделен на две основные секции:',
+    },
+    'interfaceSection1': {
+        'en': '<strong>Select Option:</strong> Features buttons for each main function',
+        'ru': '<strong>Выбор опции:</strong> Кнопки для каждой основной функции',
+    },
+    'interfaceSection2': {
+        'en': '<strong>Result Panel:</strong> Displays the results and outputs of the selected operation',
+        'ru': '<strong>Панель результатов:</strong> Отображение результатов и выводов выбранной операции',
+    },
+    'portScannerLanguages': {
+        'en': 'Languages:',
+        'ru': 'Языки:',
+    },
+    'portScannerPlatforms': {
+        'en': 'Platforms:',
+        'ru': 'Платформы:',
+    },
+    'portScannerType': {
+        'en': 'Type:',
+        'ru': 'Тип:',
+    },
+    'desktopApplication': {
+        'en': 'Desktop Application',
+        'ru': 'Десктопное приложение',
+    },
+    'portScannerInstallation': {
+        'en': 'Installation',
+        'ru': 'Установка',
+    },
+    'platformWindows': {
+        'en': 'For Windows',
+        'ru': 'Для Windows',
+    },
+    'platformLinux': {
+        'en': 'For Linux',
+        'ru': 'Для Linux',
+    },
+    'stepReleases': {
+        'en': 'Go to the <strong>Releases</strong> section',
+        'ru': 'Перейдите в раздел <strong>Releases</strong>',
+    },
+    'stepDownloadWindows': {
+        'en': 'Download <code>port_scanner_windows.zip</code>',
+        'ru': 'Скачайте <code>port_scanner_windows.zip</code>',
+    },
+    'stepExtractWindows': {
+        'en': 'Extract the contents and run <code>port_scanner.exe</code>',
+        'ru': 'Разархивируйте содержимое и запустите <code>port_scanner.exe</code>',
+    },
+    'stepDownloadLinux': {
+        'en': 'Download <code>port_scanner_linux.zip</code>',
+        'ru': 'Скачайте <code>port_scanner_linux.zip</code>',
+    },
+    'stepExtractLinux': {
+        'en': 'Extract the contents and execute in terminal:',
+        'ru': 'Разархивируйте содержимое и выполните в терминале:',
+    },
+    'portScannerWarning': {
+        'en': 'Important Information',
+        'ru': 'Важная информация',
+    },
+    'portScannerWarningText': {
+        'en': '<strong>If Windows complains about viruses:</strong><br>I use Pyinstaller to create an .exe file and since Pyinstaller creates a self-extracting archive, Windows (and Virus Total) shows it as a virus. You can look at the source code of the program and make sure that there are no viruses.',
+        'ru': '<strong>Если Windows жалуется на вирусы:</strong><br>Я использую Pyinstaller для создания .exe файла, и поскольку Pyinstaller создает самораспаковывающийся архив, Windows (и Virus Total) показывает его как вирус. Вы можете посмотреть исходный код программы и убедиться, что там нет вирусов.',
+    },
+    'portScannerWarningLink': {
+        'en': 'Learn more about this issue',
+        'ru': 'Подробнее об этой проблеме',
+    },
+    'portScannerUsage': {
+        'en': 'How to Use',
+        'ru': 'Как использовать',
+    },
+    'usageStep1': {
+        'en': 'Select a function from the main menu by clicking the corresponding button',
+        'ru': 'Выберите функцию из главного меню, нажав соответствующую кнопку',
+    },
+    'usageStep2': {
+        'en': 'View the results or logs in the "Result" panel',
+        'ru': 'Просмотрите результаты или логи в панели "Результат"',
+    },
+    'usageStep3': {
+        'en': 'Use the additional buttons at the bottom to manage logs, clear results, or access the help menu',
+        'ru': 'Используйте дополнительные кнопки внизу для управления логами, очистки результатов или доступа к меню помощи',
+    },
+    // Новые ключи для Music Local UI
+    'musicLocalUITitle': {
+        'en': 'Music Local UI',
+        'ru': 'Music Local UI',
+    },
+    'musicLocalUIDescription': {
+        'en': 'A lightweight Windows music player for local audio files (under 1MB size). Compact and efficient application for listening to music from your computer.',
+        'ru': 'Легковесный музыкальный проигрыватель для Windows для локальных аудиофайлов (размером менее 1 МБ). Компактное и эффективное приложение для прослушивания музыки с вашего компьютера.',
+    },
+    'musicLocalUIFeaturesTitle': {
+        'en': 'Key Features',
+        'ru': 'Основные возможности',
+    },
+    'featureCompactSize': {
+        'en': 'Compact Size',
+        'ru': 'Компактный размер',
+    },
+    'featureCompactSizeDesc': {
+        'en': 'Only ~1MB total size',
+        'ru': 'Всего ~1 МБ общий размер',
+    },
+    'featureFormatSupport': {
+        'en': 'Format Support',
+        'ru': 'Поддержка форматов',
+    },
+    'featureFormatSupportDesc': {
+        'en': 'MP3, WAV, FLAC, AAC, OGG, WMA, M4A',
+        'ru': 'MP3, WAV, FLAC, AAC, OGG, WMA, M4A',
+    },
+    'featureTrackInfo': {
+        'en': 'Track Information',
+        'ru': 'Информация о треках',
+    },
+    'featureTrackInfoDesc': {
+        'en': 'Duration, bitrate, extension, size, creation date',
+        'ru': 'Длительность, битрейт, расширение, размер, дата создания',
+    },
+    'featurePlaybackControls': {
+        'en': 'Playback Controls',
+        'ru': 'Управление воспроизведением',
+    },
+    'featurePlaybackControlsDesc': {
+        'en': 'Play/Pause, Next, Previous track',
+        'ru': 'Play/Pause, Следующий, Предыдущий трек',
+    },
+    'featureMultiLanguage': {
+        'en': 'Multi-language',
+        'ru': 'Мультиязычность',
+    },
+    'featureMultiLanguageDesc': {
+        'en': 'Russian and English support',
+        'ru': 'Поддержка русского и английского языков',
+    },
+    'featurePlaybackModes': {
+        'en': 'Playback Modes',
+        'ru': 'Режимы воспроизведения',
+    },
+    'featurePlaybackModesDesc': {
+        'en': 'Order, Random, Repeat',
+        'ru': 'По порядку, Случайно, Повтор',
+    },
+    'featureDurationCalc': {
+        'en': 'Duration Calculation',
+        'ru': 'Расчет длительности',
+    },
+    'featureDurationCalcDesc': {
+        'en': 'Total duration of all tracks',
+        'ru': 'Общая длительность всех треков',
+    },
+    'featureFolderScan': {
+        'en': 'Folder Scanning',
+        'ru': 'Сканирование папок',
+    },
+    'featureFolderScanDesc': {
+        'en': 'Display of folder scanning status',
+        'ru': 'Отображение статуса сканирования папок',
+    },
+    'musicLocalUISystemRequirements': {
+        'en': 'System Requirements',
+        'ru': 'Системные требования',
+    },
+    'sysReqDiskSpace': {
+        'en': 'Disk Space',
+        'ru': 'Место на диске',
+    },
+    'sysReqRAM': {
+        'en': 'RAM',
+        'ru': 'Оперативная память',
+    },
+    'musicLocalUIPlatforms': {
+        'en': 'Platforms:',
+        'ru': 'Платформы:',
+    },
+    'musicLocalUIType': {
+        'en': 'Type:',
+        'ru': 'Тип:',
+    },
+    'musicLocalUILanguages': {
+        'en': 'Languages:',
+        'ru': 'Языки:',
+    },
+    'musicLocalUIInstallation': {
+        'en': 'Installation',
+        'ru': 'Установка',
+    },
+    'stepDownload': {
+        'en': 'Download the latest release',
+        'ru': 'Скачайте последний релиз',
+    },
+    'stepDownloadDesc': {
+        'en': 'Go to the Releases section on GitHub',
+        'ru': 'Перейдите в раздел Releases на GitHub',
+    },
+    'stepExtract': {
+        'en': 'Extract the ZIP file',
+        'ru': 'Разархивируйте ZIP файл',
+    },
+    'stepExtractDesc': {
+        'en': 'Extract the contents of the archive',
+        'ru': 'Извлеките содержимое архива',
+    },
+    'stepRun': {
+        'en': 'Run the application',
+        'ru': 'Запустите приложение',
+    },
+    'stepRunDesc': {
+        'en': 'Run the <code>MusicLocalUI.exe</code> file',
+        'ru': 'Запустите файл <code>MusicLocalUI.exe</code>',
+    },
+    'includedFilesTitle': {
+        'en': 'Included Files:',
+        'ru': 'Включенные файлы:',
+    },
+    'mainApplication': {
+        'en': 'Main application',
+        'ru': 'Основное приложение',
+    },
+    'metadataLibrary': {
+        'en': 'Metadata library',
+        'ru': 'Библиотека метаданных',
+    },
+    'musicLocalUIUsage': {
+        'en': 'How to Use',
+        'ru': 'Как использовать',
+    },
+    'usageStep1Music': {
+        'en': 'Click "Open" to select your music folder',
+        'ru': 'Нажмите "Open" чтобы выбрать папку с музыкой',
+    },
+    'usageStep2Music': {
+        'en': 'Click "Scan" to load tracks',
+        'ru': 'Нажмите "Scan" чтобы загрузить треки',
+    },
+    'usageStep3Music': {
+        'en': 'Use playback controls:<br>▶️ Play/Pause current track<br>\'Next\' button for next track<br>\'Previous\' button for previous track',
+        'ru': 'Используйте элементы управления воспроизведением:<br>▶️ Play/Pause текущего трека<br>\'Next\' для следующего трека<br>\'Previous\' для предыдущего трека',
+    },
+    'usageStep4Music': {
+        'en': 'View track details in "Track info" section',
+        'ru': 'Просматривайте информацию о треках в разделе "Track info"',
+    },
+    'musicLocalUITroubleshooting': {
+        'en': 'Troubleshooting',
+        'ru': 'Устранение неполадок',
+    },
+    'troubleshootingIntro': {
+        'en': 'If the application doesn\'t run:',
+        'ru': 'Если приложение не запускается:',
+    },
+    'troubleshootingStep1': {
+        'en': 'Install <a href="https://dotnet.microsoft.com/download/dotnet-framework/net472" target="_blank">.NET Framework 4.7.2</a>',
+        'ru': 'Установите <a href="https://dotnet.microsoft.com/download/dotnet-framework/net472" target="_blank">.NET Framework 4.7.2</a>',
+    },
+    'troubleshootingStep2': {
+        'en': 'Ensure both files are in the same folder',
+        'ru': 'Убедитесь, что оба файла находятся в одной папке',
+    },
+    'troubleshootingStep3': {
+        'en': 'Run as Administrator if needed',
+        'ru': 'Запустите от имени Администратора при необходимости',
+    },
+    'musicLocalUILicense': {
+        'en': 'License',
+        'ru': 'Лицензия',
+    },
+    'musicLocalUILicenseText': {
+        'en': 'This project is licensed under the MIT License - see the <a href="https://github.com/VLPLAY-Games/MusicLocalUI/blob/main/LICENSE" target="_blank">LICENSE</a> file for details.',
+        'ru': 'Этот проект лицензирован под MIT License - подробности в файле <a href="https://github.com/VLPLAY-Games/MusicLocalUI/blob/main/LICENSE" target="_blank">LICENSE</a>.',
+    },
 };
 
 // Функция для установки куки

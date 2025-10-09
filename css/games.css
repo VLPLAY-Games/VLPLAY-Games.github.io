@@ -543,6 +543,7 @@
 .itch-embed-container iframe {
     border-radius: 10px;
     border: none;
+    height: 175px;
 }
 
 /* Декоративные элементы */

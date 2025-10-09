@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../css/main.css">
+    <link rel="stylesheet" href="../../../css/header.css">
+    <link rel="stylesheet" href="../../../css/body.css">
+    <link rel="stylesheet" href="../../../css/games.css">
+    <link rel="stylesheet" href="../../../css/media.css">
+    <link rel="stylesheet" href="../../../css/footer.css">
+    <link rel="shortcut icon" href="..\..\..\img\header\LOGO VL_PLAY Games.png" />
+    <title>VL_PLAY Games - Tanabata: Path to the Stars</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../../../js/translations.js" defer></script>
+    <script src="../../../js/status.js" defer></script>
+    <script src="../../../js/images.js"></script>
+    
+</head>
+<body>
+    <!-- Модальное окно для изображений -->
+    <div id="image-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">✕</span>
+            <div class="modal-navigation">
+                <button class="nav-btn prev-btn" onclick="navigateModal(-1)">‹</button>
+                <img id="modal-image" class="modal-image" src="" alt="Modal Image">
+                <button class="nav-btn next-btn" onclick="navigateModal(1)">›</button>
+            </div>
+            <div class="modal-info">
+                <span id="modal-counter" class="modal-counter">1 / 1</span>
+            </div>
+        </div>
+    </div>
+    <div class="spin-wrapper"><div class="spinner"></div></div>
+    <div class="page-container">
+        <header>
+            <div class="logo">
+                <img src="../../../img/header/LOGO VL_PLAY Games.png" alt="Логотип VL_PLAY Games" width="100" height="100" onclick="window.location.href='../../index.html';" style="cursor: pointer;">
+                <h1>VL_PLAY Games - Tanabata: Path to the Stars</h1>
+            </div>
+            <nav>
+                <div class="language-buttons">
+                    <div class="language-dropdown">
+                        <button class="language-dropdown-btn" data-translate="site_language">Язык</button>
+                        <div class="language-dropdown-content">
+                            <button id="switchToEnglish" class="switchToEnglishBut">English</button>
+                            <button id="switchToRussian" class="switchToRussianBut">Русский</button>
+                        </div>
+                    </div>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="../../../index.html" data-translate="nav_home">Главная</a></li>
+                    <li><a href="../../../html/devs/devs.html" data-translate="nav_developments">Разработки</a></li>
+                    <li><a href="../../../html/about_me/about_me.html" data-translate="nav_about_me">Обо мне</a></li>
+                    <li><a href="../../../html/links/links.html" data-translate="nav_contacts">Ссылки</a></li>
+                    <li><a href="../../../html/status/status.html" data-translate="nav_status">Статус</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="devs-info">
+            <div class="game-header-card">
+                <div class="game-header-content">
+                    <div class="game-logo-section">
+                        <div class="logo-container">
+                            <img src="..\..\..\img\Tanabata\Tanabata_Logo.png" alt="Tanabata Logo" class="game-logo">
+                            <div class="logo-glow"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="game-info-section">
+                        <div class="game-title-section">
+                            <h1 class="game-title" data-translate="tanabataTitle">Tanabata: Path to the Stars</h1>
+                            <div class="price-tag free" data-translate="tanabataPrice">Бесплатно</div>
+                        </div>
+                        
+                        <div class="itch-embed-container">
+                            <iframe frameborder="0" src="https://itch.io/embed/3697974" width="552" height="167"><a href="https://vl-play.itch.io/tanabata-path-to-the-stars">Tanabata: Path to the Stars by VL_PLAY Games</a></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="media-section">
+                <div class="section-header">
+                    <h2 data-translate="trailers" class="media-title">Трейлеры</h2>
+                    <div class="title-decoration"></div>
+                </div>
+                
+                <div class="trailers-grid tanabataTrailers">
+                    <!-- Трейлеры будут добавляться через js -->
+                </div>
+            </div>
+
+            <div class="media-section">
+                <div class="section-header">
+                    <h2 data-translate="screenshots" class="media-title">Скриншоты</h2>
+                    <div class="title-decoration"></div>
+                </div>
+                
+                <div class="screenshots-grid tanabataImgs">
+                    <div class="screenshot-card" onclick="openModal(this)">
+                        <img src="..\..\..\img\Tanabata\Tanabata1.jpg" alt="Tanabata Screenshot 1">
+                        <div class="screenshot-overlay">
+                            <span class="zoom-icon">🔍</span>
+                        </div>
+                    </div>
+                    <div class="screenshot-card" onclick="openModal(this)">
+                        <img src="..\..\..\img\Tanabata\Tanabata2.jpg" alt="Tanabata Screenshot 2">
+                        <div class="screenshot-overlay">
+                            <span class="zoom-icon">🔍</span>
+                        </div>
+                    </div>
+                    <div class="screenshot-card" onclick="openModal(this)">
+                        <img src="..\..\..\img\Tanabata\Tanabata3.jpg" alt="Tanabata Screenshot 3">
+                        <div class="screenshot-overlay">
+                            <span class="zoom-icon">🔍</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="devs-description">
+            <div class="description-card">
+                <div class="card-header">
+                    <h3 data-translate="descriptionTitle">Описание</h3>
+                    <div class="decorative-line"></div>
+                </div>
+                <p data-translate="tanabataDescription" class="description-text">
+                    A relaxing atmospheric puzzle game with adventure elements. Embark on a mystical journey through Tokyo and beyond to discover the secret Tanabata festival! Explore beautiful locations, solve ancient puzzles, and play magical mini-games where your choices determine the spectacular starry finale.
+                </p>
+            </div>
+
+            <div class="description-card">
+                <div class="card-header">
+                    <h3 data-translate="tanabataFeaturesTitle">Особенности</h3>
+                    <div class="decorative-line"></div>
+                </div>
+                <p data-translate="tanabataFeatures" class="description-text">
+                    ✨ Authentic Japanese atmosphere – from cozy Tokyo streets to mysterious caves and a hidden village under the starry sky<br>
+                    🎮 Three unique levels – featuring different mechanics from social interactions to environmental puzzles<br>
+                    🎵 Soothing soundtrack – traditional Japanese instruments blended with natural ambient sounds<br>
+                    🎆 Dynamic ending – your performance determines the scale of the grand celestial celebration<br>
+                    ⏳ Gentle time pressure – the stars won't wait, so reach the festival before the climax!
+                </p>
+            </div>
+
+            <div class="specs-grid">
+                <div class="spec-card">
+                    <h4 data-translate="sysReqTitle">Системные требования на ПК</h4>
+                    <div class="requirements-table">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th data-translate="sysReqItem">Название</th>
+                                    <th data-translate="sysReqMin">Минимальные</th>
+                                    <th data-translate="sysReqRecommended">Рекомендуемые</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td data-translate="sysReqOS">Операционная система</td>
+                                    <td>Windows 10 or 11 (64-bit)</td>
+                                    <td>Windows 10 or 11 (64-bit)</td>
+                                </tr>
+                                <tr>
+                                    <td>CPU</td>
+                                    <td>AMD Ryzen 5 1600</td>
+                                    <td>Intel Core i5-10400</td>
+                                </tr>
+                                <tr>
+                                    <td>GPU</td>
+                                    <td>NVIDIA GeForce GTX 1060 (3 GB)</td>
+                                    <td>AMD Radeon RX 7600 (8 GB)</td>
+                                </tr>
+                                <tr>
+                                    <td>RAM</td>
+                                    <td>6 GB</td>
+                                    <td>12 GB</td>
+                                </tr>
+                                <tr>
+                                    <td data-translate="sysReqDevFreeSpace">Свободное место</td>
+                                    <td>1.8 GB</td>
+                                    <td>1.8 GB</td>
+                                </tr>
+                                <tr>
+                                    <td data-translate="sysReqPerformance">Целевая производительность</td>
+                                    <td>1080p Low Settings 30 FPS</td>
+                                    <td>1080p High Settings 60 FPS</td>
+                                </tr>
+                                <tr>
+                                    <td data-translate="note">Примечание</td>
+                                    <td data-translate="Approximate_requirements">Примерные требования</td>
+                                    <td data-translate="Approximate_requirements">Примерные требования</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="info-cards">
+                    <div class="info-card">
+                        <span class="info-icon">🎮</span>
+                        <div class="info-content">
+                            <strong data-translate="stateTitle">Состояние:</strong>
+                            <span data-translate="released">Выпущено</span>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <span class="info-icon">📱</span>
+                        <div class="info-content">
+                            <strong data-translate="platformsTitle">Платформы:</strong>
+                            <span data-translate="tanabataPlatforms">Windows</span>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <span class="info-icon">🌐</span>
+                        <div class="info-content">
+                            <strong data-translate="tanabataLocalizationTitle">Локализация:</strong>
+                            <div class="localization-details">
+                                <span data-translate="tanabataLocalization">🌐 English – subtitles and user interface<br>🌐 Russian – subtitles only</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <span class="info-icon">👤</span>
+                        <div class="info-content">
+                            <strong data-translate="authorTitle">Автор:</strong>
+                            <span>VL_PLAY</span>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <span class="info-icon">🎭</span>
+                        <div class="info-content">
+                            <strong data-translate="genreTitle">Жанр:</strong>
+                            <span data-translate="tanabataGenre">Головоломка, Приключение</span>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <span class="info-icon">🏷️</span>
+                        <div class="info-content">
+                            <strong data-translate="tagsTitle">Метки:</strong>
+                            <div class="tags">
+                                <span class="tag" data-translate="puzzle">Головоломка</span>
+                                <span class="tag" data-translate="adventure">Приключение</span>
+                                <span class="tag" data-translate="indie">Инди</span>
+                                <span class="tag">Atmospheric</span>
+                                <span class="tag" data-translate="single">Одиночная</span>
+                                <span class="tag">Japanese</span>
+                                <span class="tag">Relaxing</span>
+                                <span class="tag">Festival</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <span class="info-icon">⏱️</span>
+                        <div class="info-content">
+                            <strong data-translate="sessionTitle">Средний сеанс:</strong>
+                            <span data-translate="tanabataSession">1-2 часа</span>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <span class="info-icon">🎵</span>
+                        <div class="info-content">
+                            <strong data-translate="tanabataSoundtrack">Саундтрек:</strong>
+                            <span data-translate="tanabataSoundtrackType">Традиционные японские инструменты</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="support-section">
+                <a href="https://www.donationalerts.com/r/vl_play021" target="_blank" class="support-btn">
+                    <span class="btn-icon">❤️</span>
+                    <span data-translate="SupportDevelopment">Поддержать разработку</span>
+                </a>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="footer-buttons">
+                <a href="../../../index.html" class="footer-button" data-translate="nav_home">Главная</a>
+                <a href="../../../html/devs/devs.html" class="footer-button" data-translate="nav_developments">Разработки</a>
+                <a href="../../../html/about_me/about_me.html" class="footer-button" data-translate="nav_about_me">Обо мне</a>
+                <a href="../../../html/links/links.html" class="footer-button" data-translate="nav_contacts">Контакты</a>
+                <a href="../../../html/status/status.html" class="footer-button" data-translate="nav_status">Статус</a>
+            </div>
+            <p>VL_PLAY Games Site v<span status-info = "siteVersion"></span></p>
+        </footer>
+    </div>
+    <button id="scrollTopButton" class="btn_scroll_top">↑</button>
+    <script src="../../../js/main.js" type="module"></script>
+    <script>
+        $(document).ready(function () {
+          // Добавьте трейлеры YouTube когда они будут доступны
+          var ytFrame = '<iframe width="560" height="315" src="https://www.youtube.com/embed/ieuLEvnPGfQ?si=5V9LX5i1ZL989IoV" loading="lazy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+          $('.tanabataTrailers').html(ytFrame);
+        });
+    </script> 
+</body>
+</html>

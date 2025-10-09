@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../css/main.css">
+    <link rel="stylesheet" href="../../../css/header.css">
+    <link rel="stylesheet" href="../../../css/body.css">
+    <link rel="stylesheet" href="../../../css/games.css">
+    <link rel="stylesheet" href="../../../css/media.css">
+    <link rel="stylesheet" href="../../../css/ds.css">
+    <link rel="stylesheet" href="../../../css/projects.css">
+    <link rel="stylesheet" href="../../../css/ps.css">
+    <link rel="stylesheet" href="../../../css/footer.css">
+    <link rel="shortcut icon" href="..\..\..\img\header\LOGO VL_PLAY Games.png" />
+    <title>VL_PLAY Games - Port Scanner</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../../../js/translations.js" defer></script>
+    <script src="../../../js/status.js" defer></script>
+    <script src="../../../js/images.js"></script>
+    
+</head>
+<body>
+    <div class="spin-wrapper"><div class="spinner"></div></div>
+    <div class="page-container">
+        <header>
+            <div class="logo">
+                <img src="../../../img/header/LOGO VL_PLAY Games.png" alt="Логотип VL_PLAY Games" width="100" height="100" onclick="window.location.href='../../index.html';" style="cursor: pointer;">
+                <h1>VL_PLAY Games - Port Scanner</h1>
+            </div>
+            <nav>
+                <div class="language-buttons">
+                    <div class="language-dropdown">
+                        <button class="language-dropdown-btn" data-translate="site_language">Язык</button>
+                        <div class="language-dropdown-content">
+                            <button id="switchToEnglish" class="switchToEnglishBut">English</button>
+                            <button id="switchToRussian" class="switchToRussianBut">Русский</button>
+                        </div>
+                    </div>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="../../../index.html" data-translate="nav_home">Главная</a></li>
+                    <li><a href="../../../html/devs/devs.html" data-translate="nav_developments">Разработки</a></li>
+                    <li><a href="../../../html/about_me/about_me.html" data-translate="nav_about_me">Обо мне</a></li>
+                    <li><a href="../../../html/links/links.html" data-translate="nav_contacts">Ссылки</a></li>
+                    <li><a href="../../../html/status/status.html" data-translate="nav_status">Статус</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="devs-info">
+            <div class="game-header-card">
+                <div class="game-header-content">
+                    <div class="game-logo-section">
+                        <div class="logo-container">
+                            <img src="..\..\..\img\PortScanner\port_scanner_logo.png" alt="Port Scanner Logo" class="game-logo">
+                            <div class="logo-glow"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="game-info-section">
+                        <div class="game-title-section">
+                            <h1 class="game-title" data-translate="portScannerTitle">Port Scanner</h1>
+                            <div class="status-badge released" data-translate="released">Выпущено</div>
+                        </div>
+                        
+                        <div class="project-links-container">
+                            <a href="https://github.com/VLPLAY-Games/Port-Scanner" target="_blank" class="project-link github-link">
+                                <span class="link-icon">📁</span>
+                                <span data-translate="viewOnGitHub">Смотреть на GitHub</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="devs-description">
+                <div class="description-card">
+                    <div class="card-header">
+                        <h3 data-translate="descriptionTitle">Описание</h3>
+                        <div class="decorative-line"></div>
+                    </div>
+                    <p data-translate="portScannerDescription" class="description-text">
+                        Многофункциональный инструмент для анализа и взаимодействия с сетями. Предоставляет возможности для проверки IP-адресов, сканирования портов, пинга серверов, просмотра логов и доступа к терминальным командам. Интуитивно понятный графический интерфейс поддерживает множество функций для разработчиков, сетевых администраторов и технических энтузиастов.
+                    </p>
+                </div>
+
+                <div class="description-card">
+                    <div class="card-header">
+                        <h3 data-translate="portScannerMainFeatures">Основные функции</h3>
+                        <div class="decorative-line"></div>
+                    </div>
+                    <div class="features-grid">
+                        <div class="feature-card">
+                            <span class="feature-icon">🔍</span>
+                            <div class="feature-content">
+                                <h4 data-translate="featureIPCheck">Проверка IP</h4>
+                                <p data-translate="featureIPCheckDesc">Отображение всех IP-адресов компьютера</p>
+                            </div>
+                        </div>
+                        <div class="feature-card">
+                            <span class="feature-icon">📡</span>
+                            <div class="feature-content">
+                                <h4 data-translate="featurePortScan">Сканирование портов</h4>
+                                <p data-translate="featurePortScanDesc">Сканирование и показ всех открытых портов</p>
+                            </div>
+                        </div>
+                        <div class="feature-card">
+                            <span class="feature-icon">📊</span>
+                            <div class="feature-content">
+                                <h4 data-translate="featureAllInfo">Вся информация</h4>
+                                <p data-translate="featureAllInfoDesc">Полный обзор сети: IP, порты, драйверы</p>
+                            </div>
+                        </div>
+                        <div class="feature-card">
+                            <span class="feature-icon">🎯</span>
+                            <div class="feature-content">
+                                <h4 data-translate="featureCustomIP">Пользовательский IP</h4>
+                                <p data-translate="featureCustomIPDesc">Сканирование портов на конкретном IP-адресе</p>
+                            </div>
+                        </div>
+                        <div class="feature-card">
+                            <span class="feature-icon">⚡</span>
+                            <div class="feature-content">
+                                <h4 data-translate="featurePing">Ping</h4>
+                                <p data-translate="featurePingDesc">Проверка подключения и задержки</p>
+                            </div>
+                        </div>
+                        <div class="feature-card">
+                            <span class="feature-icon">💻</span>
+                            <div class="feature-content">
+                                <h4 data-translate="featureTerminal">Терминал</h4>
+                                <p data-translate="featureTerminalDesc">Встроенный интерфейс командной строки</p>
+                            </div>
+                        </div>
+                        <div class="feature-card">
+                            <span class="feature-icon">📱</span>
+                            <div class="feature-content">
+                                <h4 data-translate="featureActiveDevices">Активные устройства</h4>
+                                <p data-translate="featureActiveDevicesDesc">Список устройств в локальной сети</p>
+                            </div>
+                        </div>
+                        <div class="feature-card">
+                            <span class="feature-icon">📝</span>
+                            <div class="feature-content">
+                                <h4 data-translate="featureLogs">Логи</h4>
+                                <p data-translate="featureLogsDesc">История активности программы</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="specs-grid">
+                    <div class="spec-card">
+                        <h4 data-translate="portScannerInterface">Интерфейс</h4>
+                        <div class="interface-description">
+                            <p data-translate="portScannerInterfaceDesc">Интерфейс разделен на две основные секции:</p>
+                            <ul class="interface-list">
+                                <li data-translate="interfaceSection1"><strong>Выбор опции:</strong> Кнопки для каждой основной функции</li>
+                                <li data-translate="interfaceSection2"><strong>Панель результатов:</strong> Отображение результатов и выводов выбранной операции</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="info-cards">
+                        <div class="info-card">
+                            <span class="info-icon">🔄</span>
+                            <div class="info-content">
+                                <strong data-translate="stateTitle">Состояние:</strong>
+                                <span data-translate="released">Выпущено</span>
+                            </div>
+                        </div>
+
+                        <div class="info-card">
+                            <span class="info-icon">🌐</span>
+                            <div class="info-content">
+                                <strong data-translate="portScannerLanguages">Языки:</strong>
+                                <span>English, Русский</span>
+                            </div>
+                        </div>
+
+                        <div class="info-card">
+                            <span class="info-icon">👤</span>
+                            <div class="info-content">
+                                <strong data-translate="authorTitle">Автор:</strong>
+                                <span>VL_PLAY</span>
+                            </div>
+                        </div>
+
+                        <div class="info-card">
+                            <span class="info-icon">💻</span>
+                            <div class="info-content">
+                                <strong data-translate="portScannerPlatforms">Платформы:</strong>
+                                <span>Windows, Linux</span>
+                            </div>
+                        </div>
+
+                        <div class="info-card">
+                            <span class="info-icon">🔧</span>
+                            <div class="info-content">
+                                <strong data-translate="portScannerType">Тип:</strong>
+                                <span data-translate="desktopApplication">Десктопное приложение</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="description-card">
+                    <div class="card-header">
+                        <h3 data-translate="portScannerInstallation">Установка</h3>
+                        <div class="decorative-line"></div>
+                    </div>
+                    <div class="installation-platforms">
+                        <div class="platform-card">
+                            <div class="platform-icon">🪟</div>
+                            <div class="platform-content">
+                                <h4 data-translate="platformWindows">Для Windows</h4>
+                                <ol class="installation-steps">
+                                    <li data-translate="stepReleases">Перейдите в раздел <strong>Releases</strong></li>
+                                    <li data-translate="stepDownloadWindows">Скачайте <code>port_scanner_windows.zip</code></li>
+                                    <li data-translate="stepExtractWindows">Разархивируйте содержимое и запустите <code>port_scanner.exe</code></li>
+                                </ol>
+                            </div>
+                        </div>
+
+                        <div class="platform-card">
+                            <div class="platform-icon">🐧</div>
+                            <div class="platform-content">
+                                <h4 data-translate="platformLinux">Для Linux</h4>
+                                <ol class="installation-steps">
+                                    <li data-translate="stepReleases">Перейдите в раздел <strong>Releases</strong></li>
+                                    <li data-translate="stepDownloadLinux">Скачайте <code>port_scanner_linux.zip</code></li>
+                                    <li data-translate="stepExtractLinux">Разархивируйте содержимое и выполните в терминале:</li>
+                                    <code class="code-block">./port_scanner</code>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="description-card warning-card">
+                    <div class="card-header">
+                        <h3 data-translate="portScannerWarning">Важная информация</h3>
+                        <div class="decorative-line"></div>
+                    </div>
+                    <div class="warning-content">
+                        <div class="warning-icon">⚠️</div>
+                        <div class="warning-text">
+                            <p data-translate="portScannerWarningText">
+                                <strong>Если Windows жалуется на вирусы:</strong><br>
+                                Я использую Pyinstaller для создания .exe файла, и поскольку Pyinstaller создает самораспаковывающийся архив, Windows (и Virus Total) показывает его как вирус. Вы можете посмотреть исходный код программы и убедиться, что там нет вирусов.
+                            </p>
+                            <a href="https://stackoverflow.com/questions/43777106/program-made-with-pyinstaller-now-seen-as-a-trojan-horse-by-avg" target="_blank" class="warning-link" data-translate="portScannerWarningLink">Подробнее об этой проблеме</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="description-card">
+                    <div class="card-header">
+                        <h3 data-translate="portScannerUsage">Как использовать</h3>
+                        <div class="decorative-line"></div>
+                    </div>
+                    <div class="usage-steps">
+                        <div class="usage-step">
+                            <div class="step-number">1</div>
+                            <div class="step-content">
+                                <p data-translate="usageStep1">Выберите функцию из главного меню, нажав соответствующую кнопку</p>
+                            </div>
+                        </div>
+                        <div class="usage-step">
+                            <div class="step-number">2</div>
+                            <div class="step-content">
+                                <p data-translate="usageStep2">Просмотрите результаты или логи в панели "Результат"</p>
+                            </div>
+                        </div>
+                        <div class="usage-step">
+                            <div class="step-number">3</div>
+                            <div class="step-content">
+                                <p data-translate="usageStep3">Используйте дополнительные кнопки внизу для управления логами, очистки результатов или доступа к меню помощи</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="support-section">
+                <a href="https://www.donationalerts.com/r/vl_play021" target="_blank" class="support-btn">
+                    <span class="btn-icon">❤️</span>
+                    <span data-translate="SupportDevelopment">Поддержать разработку</span>
+                </a>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="footer-buttons">
+                <a href="../../../index.html" class="footer-button" data-translate="nav_home">Главная</a>
+                <a href="../../../html/devs/devs.html" class="footer-button" data-translate="nav_developments">Разработки</a>
+                <a href="../../../html/about_me/about_me.html" class="footer-button" data-translate="nav_about_me">Обо мне</a>
+                <a href="../../../html/links/links.html" class="footer-button" data-translate="nav_contacts">Контакты</a>
+                <a href="../../../html/status/status.html" class="footer-button" data-translate="nav_status">Статус</a>
+            </div>
+            <p>VL_PLAY Games Site v<span status-info = "siteVersion"></span></p>
+        </footer>
+    </div>
+    <button id="scrollTopButton" class="btn_scroll_top">↑</button>
+    <script src="../../../js/main.js" type="module"></script>
+</body>
+</html>

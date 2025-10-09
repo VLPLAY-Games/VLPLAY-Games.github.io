@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../css/main.css">
+    <link rel="stylesheet" href="../../../css/header.css">
+    <link rel="stylesheet" href="../../../css/body.css">
+    <link rel="stylesheet" href="../../../css/games.css">
+    <link rel="stylesheet" href="../../../css/media.css">
+    <link rel="stylesheet" href="../../../css/projects.css">
+    <link rel="stylesheet" href="../../../css/ds.css">
+    <link rel="stylesheet" href="../../../css/footer.css">
+    <link rel="shortcut icon" href="..\..\..\img\header\LOGO VL_PLAY Games.png" />
+    <title>VL_PLAY Games - Download Server</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../../../js/translations.js" defer></script>
+    <script src="../../../js/status.js" defer></script>
+    <script src="../../../js/images.js"></script>
+    
+</head>
+<body>
+    <div class="spin-wrapper"><div class="spinner"></div></div>
+    <div class="page-container">
+        <header>
+            <div class="logo">
+                <img src="../../../img/header/LOGO VL_PLAY Games.png" alt="Логотип VL_PLAY Games" width="100" height="100" onclick="window.location.href='../../index.html';" style="cursor: pointer;">
+                <h1>VL_PLAY Games - Download Server</h1>
+            </div>
+            <nav>
+                <div class="language-buttons">
+                    <div class="language-dropdown">
+                        <button class="language-dropdown-btn" data-translate="site_language">Язык</button>
+                        <div class="language-dropdown-content">
+                            <button id="switchToEnglish" class="switchToEnglishBut">English</button>
+                            <button id="switchToRussian" class="switchToRussianBut">Русский</button>
+                        </div>
+                    </div>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="../../../index.html" data-translate="nav_home">Главная</a></li>
+                    <li><a href="../../../html/devs/devs.html" data-translate="nav_developments">Разработки</a></li>
+                    <li><a href="../../../html/about_me/about_me.html" data-translate="nav_about_me">Обо мне</a></li>
+                    <li><a href="../../../html/links/links.html" data-translate="nav_contacts">Ссылки</a></li>
+                    <li><a href="../../../html/status/status.html" data-translate="nav_status">Статус</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="devs-info">
+            <div class="game-header-card">
+                <div class="game-header-content">
+                    <div class="game-logo-section">
+                        <div class="logo-container">
+                            <img src="..\..\..\img\DownloadServer\download_server_logo.png" alt="Download Server Logo" class="game-logo">
+                            <div class="logo-glow"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="game-info-section">
+                        <div class="game-title-section">
+                            <h1 class="game-title" data-translate="downloadServerTitle">Download Server</h1>
+                            <div class="status-badge released" data-translate="released">Выпущено</div>
+                        </div>
+                        
+                        <div class="project-links-container">
+                            <a href="https://github.com/VLPLAY-Games/DownloadServer" target="_blank" class="project-link github-link">
+                                <span class="link-icon">📁</span>
+                                <span data-translate="viewOnGitHub">Смотреть на GitHub</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="devs-description">
+                <div class="description-card">
+                    <div class="card-header">
+                        <h3 data-translate="descriptionTitle">Описание</h3>
+                        <div class="decorative-line"></div>
+                    </div>
+                    <p data-translate="downloadServerDescription" class="description-text">
+                        Современный веб-менеджер загрузок с отслеживанием прогресса в реальном времени и удобным интерфейсом. 
+                        Этот инструмент предоставляет полный контроль над процессом загрузки файлов с расширенными функциями управления.
+                    </p>
+                </div>
+
+                <div class="description-card">
+                    <div class="card-header">
+                        <h3 data-translate="downloadServerFeaturesTitle">Основные возможности</h3>
+                        <div class="decorative-line"></div>
+                    </div>
+                    <div class="features-grid">
+                        <div class="feature-card">
+                            <span class="feature-icon">🚀</span>
+                            <div class="feature-content">
+                                <h4 data-translate="featureFastDownloads">Быстрые загрузки</h4>
+                                <p data-translate="featureFastDownloadsDesc">Отслеживание прогресса в реальном времени</p>
+                            </div>
+                        </div>
+                        <div class="feature-card">
+                            <span class="feature-icon">📊</span>
+                            <div class="feature-content">
+                                <h4 data-translate="featureLiveStats">Живая статистика</h4>
+                                <p data-translate="featureLiveStatsDesc">Скорость загрузки, прогресс, размер файла</p>
+                            </div>
+                        </div>
+                        <div class="feature-card">
+                            <span class="feature-icon">⏸️</span>
+                            <div class="feature-content">
+                                <h4 data-translate="featurePauseResume">Пауза/Продолжение</h4>
+                                <p data-translate="featurePauseResumeDesc">Контроль над активными загрузками</p>
+                            </div>
+                        </div>
+                        <div class="feature-card">
+                            <span class="feature-icon">🔄</span>
+                            <div class="feature-content">
+                                <h4 data-translate="featureRestart">Перезапуск</h4>
+                                <p data-translate="featureRestartDesc">Возможность перезапуска загрузок</p>
+                            </div>
+                        </div>
+                        <div class="feature-card">
+                            <span class="feature-icon">🗑️</span>
+                            <div class="feature-content">
+                                <h4 data-translate="featureDelete">Удаление задач</h4>
+                                <p data-translate="featureDeleteDesc">Удаление с очисткой файлов</p>
+                            </div>
+                        </div>
+                        <div class="feature-card">
+                            <span class="feature-icon">🌐</span>
+                            <div class="feature-content">
+                                <h4 data-translate="featureMultiLang">Мультиязычность</h4>
+                                <p data-translate="featureMultiLangDesc">Поддержка English, Russian, Japanese</p>
+                            </div>
+                        </div>
+                        <div class="feature-card">
+                            <span class="feature-icon">🔐</span>
+                            <div class="feature-content">
+                                <h4 data-translate="featureAuth">Аутентификация</h4>
+                                <p data-translate="featureAuthDesc">Система аутентификации пользователей</p>
+                            </div>
+                        </div>
+                        <div class="feature-card">
+                            <span class="feature-icon">📱</span>
+                            <div class="feature-content">
+                                <h4 data-translate="featureResponsive">Адаптивный дизайн</h4>
+                                <p data-translate="featureResponsiveDesc">Работает на всех устройствах</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="specs-grid">
+                    <div class="spec-card">
+                        <h4 data-translate="downloadServerTechStack">Технологический стек</h4>
+                        <div class="tech-stack">
+                            <div class="tech-item">
+                                <span class="tech-icon">🐍</span>
+                                <div class="tech-content">
+                                    <strong>Python</strong>
+                                    <span>3.11+</span>
+                                </div>
+                            </div>
+                            <div class="tech-item">
+                                <span class="tech-icon">🌶️</span>
+                                <div class="tech-content">
+                                    <strong>Flask</strong>
+                                    <span>3.1+</span>
+                                </div>
+                            </div>
+                            <div class="tech-item">
+                                <span class="tech-icon">📡</span>
+                                <div class="tech-content">
+                                    <strong>Requests</strong>
+                                    <span>2.32+</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="info-cards">
+                        <div class="info-card">
+                            <span class="info-icon">🔄</span>
+                            <div class="info-content">
+                                <strong data-translate="stateTitle">Состояние:</strong>
+                                <span data-translate="released">Выпущено</span>
+                            </div>
+                        </div>
+
+                        <div class="info-card">
+                            <span class="info-icon">📦</span>
+                            <div class="info-content">
+                                <strong data-translate="downloadServerVersion">Версия:</strong>
+                                <span>0.3.0</span>
+                            </div>
+                        </div>
+
+                        <div class="info-card">
+                            <span class="info-icon">👤</span>
+                            <div class="info-content">
+                                <strong data-translate="authorTitle">Автор:</strong>
+                                <span>VL_PLAY</span>
+                            </div>
+                        </div>
+
+                        <div class="info-card">
+                            <span class="info-icon">🏷️</span>
+                            <div class="info-content">
+                                <strong data-translate="downloadServerType">Тип:</strong>
+                                <span data-translate="webApplication">Веб-приложение</span>
+                            </div>
+                        </div>
+
+                        <div class="info-card">
+                            <span class="info-icon">🌐</span>
+                            <div class="info-content">
+                                <strong data-translate="downloadServerLanguages">Языки:</strong>
+                                <span>English, Русский</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="description-card">
+                    <div class="card-header">
+                        <h3 data-translate="downloadServerInstallation">Установка и запуск</h3>
+                        <div class="decorative-line"></div>
+                    </div>
+                    <div class="installation-steps">
+                        <div class="step-card">
+                            <div class="step-number">1</div>
+                            <div class="step-content">
+                                <h4 data-translate="stepClone">Клонирование репозитория</h4>
+                                <code class="code-block">git clone https://github.com/VLPLAY-Games/DownloadServer.git<br>cd DownloadServer</code>
+                            </div>
+                        </div>
+                        <div class="step-card">
+                            <div class="step-number">2</div>
+                            <div class="step-content">
+                                <h4 data-translate="stepInstallDeps">Установка зависимостей</h4>
+                                <code class="code-block">pip install -r requirements.txt</code>
+                            </div>
+                        </div>
+                        <div class="step-card">
+                            <div class="step-number">3</div>
+                            <div class="step-content">
+                                <h4 data-translate="stepRun">Запуск приложения</h4>
+                                <code class="code-block">python app.py</code>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="description-card">
+                    <div class="card-header">
+                        <h3 data-translate="downloadServerConfiguration">Конфигурация</h3>
+                        <div class="decorative-line"></div>
+                    </div>
+                    <div class="config-table">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th data-translate="configParameter">Параметр</th>
+                                    <th data-translate="configDefault">По умолчанию</th>
+                                    <th data-translate="configDescription">Описание</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Порт сервера</td>
+                                    <td><code>8100</code></td>
+                                    <td data-translate="configPortDesc">Порт для запуска веб-сервера</td>
+                                </tr>
+                                <tr>
+                                    <td data-translate="configDownloadDir">Директория загрузок</td>
+                                    <td><code>./downloads</code></td>
+                                    <td data-translate="configDownloadDirDesc">Папка для сохранения файлов</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div class="support-section">
+                <a href="https://www.donationalerts.com/r/vl_play021" target="_blank" class="support-btn">
+                    <span class="btn-icon">❤️</span>
+                    <span data-translate="SupportDevelopment">Поддержать разработку</span>
+                </a>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="footer-buttons">
+                <a href="../../../index.html" class="footer-button" data-translate="nav_home">Главная</a>
+                <a href="../../../html/devs/devs.html" class="footer-button" data-translate="nav_developments">Разработки</a>
+                <a href="../../../html/about_me/about_me.html" class="footer-button" data-translate="nav_about_me">Обо мне</a>
+                <a href="../../../html/links/links.html" class="footer-button" data-translate="nav_contacts">Контакты</a>
+                <a href="../../../html/status/status.html" class="footer-button" data-translate="nav_status">Статус</a>
+            </div>
+            <p>VL_PLAY Games Site v<span status-info = "siteVersion"></span></p>
+        </footer>
+    </div>
+    <button id="scrollTopButton" class="btn_scroll_top">↑</button>
+    <script src="../../../js/main.js" type="module"></script>
+</body>
+</html>

@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../css/main.css">
+    <link rel="stylesheet" href="../../../css/header.css">
+    <link rel="stylesheet" href="../../../css/body.css">
+    <link rel="stylesheet" href="../../../css/games.css">
+    <link rel="stylesheet" href="../../../css/media.css">
+    <link rel="stylesheet" href="../../../css/ds.css">
+    <link rel="stylesheet" href="../../../css/ps.css">
+    <link rel="stylesheet" href="../../../css/projects.css">
+    <link rel="stylesheet" href="../../../css/mui.css">
+    <link rel="stylesheet" href="../../../css/footer.css">
+    <link rel="shortcut icon" href="..\..\..\img\header\LOGO VL_PLAY Games.png" />
+    <title>VL_PLAY Games - Music Local UI</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../../../js/translations.js" defer></script>
+    <script src="../../../js/status.js" defer></script>
+    <script src="../../../js/images.js"></script>
+    
+</head>
+<body>
+    <div class="spin-wrapper"><div class="spinner"></div></div>
+    <div class="page-container">
+        <header>
+            <div class="logo">
+                <img src="../../../img/header/LOGO VL_PLAY Games.png" alt="Логотип VL_PLAY Games" width="100" height="100" onclick="window.location.href='../../index.html';" style="cursor: pointer;">
+                <h1>VL_PLAY Games - Music Local UI</h1>
+            </div>
+            <nav>
+                <div class="language-buttons">
+                    <div class="language-dropdown">
+                        <button class="language-dropdown-btn" data-translate="site_language">Язык</button>
+                        <div class="language-dropdown-content">
+                            <button id="switchToEnglish" class="switchToEnglishBut">English</button>
+                            <button id="switchToRussian" class="switchToRussianBut">Русский</button>
+                        </div>
+                    </div>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="../../../index.html" data-translate="nav_home">Главная</a></li>
+                    <li><a href="../../../html/devs/devs.html" data-translate="nav_developments">Разработки</a></li>
+                    <li><a href="../../../html/about_me/about_me.html" data-translate="nav_about_me">Обо мне</a></li>
+                    <li><a href="../../../html/links/links.html" data-translate="nav_contacts">Ссылки</a></li>
+                    <li><a href="../../../html/status/status.html" data-translate="nav_status">Статус</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="devs-info">
+            <div class="game-header-card">
+                <div class="game-header-content">
+                    <div class="game-logo-section">
+                        <div class="logo-container">
+                            <img src="..\..\..\img\MusicLocalUI\music_local_ui_logo.png" alt="Music Local UI Logo" class="game-logo">
+                            <div class="logo-glow"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="game-info-section">
+                        <div class="game-title-section">
+                            <h1 class="game-title" data-translate="musicLocalUITitle">Music Local UI</h1>
+                            <div class="status-badge released" data-translate="released">Выпущено</div>
+                        </div>
+                        
+                        <div class="project-links-container">
+                            <a href="https://github.com/VLPLAY-Games/MusicLocalUI" target="_blank" class="project-link github-link">
+                                <span class="link-icon">📁</span>
+                                <span data-translate="viewOnGitHub">Смотреть на GitHub</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="devs-description">
+                <div class="description-card">
+                    <div class="card-header">
+                        <h3 data-translate="descriptionTitle">Описание</h3>
+                        <div class="decorative-line"></div>
+                    </div>
+                    <p data-translate="musicLocalUIDescription" class="description-text">
+                        Легковесный музыкальный проигрыватель для Windows для локальных аудиофайлов (размером менее 1 МБ). Компактное и эффективное приложение для прослушивания музыки с вашего компьютера.
+                    </p>
+                </div>
+
+                <div class="description-card">
+                    <div class="card-header">
+                        <h3 data-translate="musicLocalUIFeaturesTitle">Основные возможности</h3>
+                        <div class="decorative-line"></div>
+                    </div>
+                    <div class="features-grid">
+                        <div class="feature-card">
+                            <span class="feature-icon">📦</span>
+                            <div class="feature-content">
+                                <h4 data-translate="featureCompactSize">Компактный размер</h4>
+                                <p data-translate="featureCompactSizeDesc">Всего ~1 МБ общий размер</p>
+                            </div>
+                        </div>
+                        <div class="feature-card">
+                            <span class="feature-icon">🎵</span>
+                            <div class="feature-content">
+                                <h4 data-translate="featureFormatSupport">Поддержка форматов</h4>
+                                <p data-translate="featureFormatSupportDesc">MP3, WAV, FLAC, AAC, OGG, WMA, M4A</p>
+                            </div>
+                        </div>
+                        <div class="feature-card">
+                            <span class="feature-icon">📊</span>
+                            <div class="feature-content">
+                                <h4 data-translate="featureTrackInfo">Информация о треках</h4>
+                                <p data-translate="featureTrackInfoDesc">Длительность, битрейт, расширение, размер, дата создания</p>
+                            </div>
+                        </div>
+                        <div class="feature-card">
+                            <span class="feature-icon">⏯️</span>
+                            <div class="feature-content">
+                                <h4 data-translate="featurePlaybackControls">Управление воспроизведением</h4>
+                                <p data-translate="featurePlaybackControlsDesc">Play/Pause, Следующий, Предыдущий трек</p>
+                            </div>
+                        </div>
+                        <div class="feature-card">
+                            <span class="feature-icon">🌐</span>
+                            <div class="feature-content">
+                                <h4 data-translate="featureMultiLanguage">Мультиязычность</h4>
+                                <p data-translate="featureMultiLanguageDesc">Поддержка русского и английского языков</p>
+                            </div>
+                        </div>
+                        <div class="feature-card">
+                            <span class="feature-icon">🔄</span>
+                            <div class="feature-content">
+                                <h4 data-translate="featurePlaybackModes">Режимы воспроизведения</h4>
+                                <p data-translate="featurePlaybackModesDesc">По порядку, Случайно, Повтор</p>
+                            </div>
+                        </div>
+                        <div class="feature-card">
+                            <span class="feature-icon">⏱️</span>
+                            <div class="feature-content">
+                                <h4 data-translate="featureDurationCalc">Расчет длительности</h4>
+                                <p data-translate="featureDurationCalcDesc">Общая длительность всех треков</p>
+                            </div>
+                        </div>
+                        <div class="feature-card">
+                            <span class="feature-icon">📁</span>
+                            <div class="feature-content">
+                                <h4 data-translate="featureFolderScan">Сканирование папок</h4>
+                                <p data-translate="featureFolderScanDesc">Отображение статуса сканирования папок</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="specs-grid">
+                    <div class="spec-card">
+                        <h4 data-translate="musicLocalUISystemRequirements">Системные требования</h4>
+                        <div class="requirements-table">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th data-translate="sysReqItem">Компонент</th>
+                                        <th data-translate="sysReqMin">Минимальные требования</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td data-translate="sysReqOS">Операционная система</td>
+                                        <td>Windows 7 или новее</td>
+                                    </tr>
+                                    <tr>
+                                        <td>.NET Framework</td>
+                                        <td>4.7.2</td>
+                                    </tr>
+                                    <tr>
+                                        <td data-translate="sysReqDiskSpace">Место на диске</td>
+                                        <td>Менее 2 МБ</td>
+                                    </tr>
+                                    <tr>
+                                        <td data-translate="sysReqRAM">Оперативная память</td>
+                                        <td>512 МБ</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="info-cards">
+                        <div class="info-card">
+                            <span class="info-icon">🔄</span>
+                            <div class="info-content">
+                                <strong data-translate="stateTitle">Состояние:</strong>
+                                <span data-translate="released">Выпущено</span>
+                            </div>
+                        </div>
+
+                        <div class="info-card">
+                            <span class="info-icon">💻</span>
+                            <div class="info-content">
+                                <strong data-translate="musicLocalUIPlatforms">Платформы:</strong>
+                                <span>Windows</span>
+                            </div>
+                        </div>
+
+                        <div class="info-card">
+                            <span class="info-icon">👤</span>
+                            <div class="info-content">
+                                <strong data-translate="authorTitle">Автор:</strong>
+                                <span>VL_PLAY</span>
+                            </div>
+                        </div>
+
+                        <div class="info-card">
+                            <span class="info-icon">📱</span>
+                            <div class="info-content">
+                                <strong data-translate="musicLocalUIType">Тип:</strong>
+                                <span data-translate="desktopApplication">Десктопное приложение</span>
+                            </div>
+                        </div>
+
+                        <div class="info-card">
+                            <span class="info-icon">🌐</span>
+                            <div class="info-content">
+                                <strong data-translate="musicLocalUILanguages">Языки:</strong>
+                                <span>English, Русский</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="description-card">
+                    <div class="card-header">
+                        <h3 data-translate="musicLocalUIInstallation">Установка</h3>
+                        <div class="decorative-line"></div>
+                    </div>
+                    <div class="installation-steps">
+                        <div class="step-card">
+                            <div class="step-number">1</div>
+                            <div class="step-content">
+                                <h4 data-translate="stepDownload">Скачайте последний релиз</h4>
+                                <p data-translate="stepDownloadDesc">Перейдите в раздел Releases на GitHub</p>
+                            </div>
+                        </div>
+                        <div class="step-card">
+                            <div class="step-number">2</div>
+                            <div class="step-content">
+                                <h4 data-translate="stepExtract">Разархивируйте ZIP файл</h4>
+                                <p data-translate="stepExtractDesc">Извлеките содержимое архива</p>
+                            </div>
+                        </div>
+                        <div class="step-card">
+                            <div class="step-number">3</div>
+                            <div class="step-content">
+                                <h4 data-translate="stepRun">Запустите приложение</h4>
+                                <p data-translate="stepRunDesc">Запустите файл <code>MusicLocalUI.exe</code></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="included-files">
+                        <h4 data-translate="includedFilesTitle">Включенные файлы:</h4>
+                        <ul class="files-list">
+                            <li><code>MusicLocalUI.exe</code> - <span data-translate="mainApplication">Основное приложение</span></li>
+                            <li><code>TagLibSharp.dll</code> - <span data-translate="metadataLibrary">Библиотека метаданных</span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="description-card">
+                    <div class="card-header">
+                        <h3 data-translate="musicLocalUIUsage">Как использовать</h3>
+                        <div class="decorative-line"></div>
+                    </div>
+                    <div class="usage-steps">
+                        <div class="usage-step">
+                            <div class="step-number">1</div>
+                            <div class="step-content">
+                                <p data-translate="usageStep1Music">Нажмите "Open" чтобы выбрать папку с музыкой</p>
+                            </div>
+                        </div>
+                        <div class="usage-step">
+                            <div class="step-number">2</div>
+                            <div class="step-content">
+                                <p data-translate="usageStep2Music">Нажмите "Scan" чтобы загрузить треки</p>
+                            </div>
+                        </div>
+                        <div class="usage-step">
+                            <div class="step-number">3</div>
+                            <div class="step-content">
+                                <p data-translate="usageStep3Music">Используйте элементы управления воспроизведением:
+                                <br>▶️ Play/Pause текущего трека
+                                <br>'Next' для следующего трека
+                                <br>'Previous' для предыдущего трека</p>
+                            </div>
+                        </div>
+                        <div class="usage-step">
+                            <div class="step-number">4</div>
+                            <div class="step-content">
+                                <p data-translate="usageStep4Music">Просматривайте информацию о треках в разделе "Track info"</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="description-card warning-card">
+                    <div class="card-header">
+                        <h3 data-translate="musicLocalUITroubleshooting">Устранение неполадок</h3>
+                        <div class="decorative-line"></div>
+                    </div>
+                    <div class="troubleshooting-content">
+                        <p data-translate="troubleshootingIntro">Если приложение не запускается:</p>
+                        <ol class="troubleshooting-steps">
+                            <li data-translate="troubleshootingStep1">Установите <a href="https://dotnet.microsoft.com/download/dotnet-framework/net472" target="_blank">.NET Framework 4.7.2</a></li>
+                            <li data-translate="troubleshootingStep2">Убедитесь, что оба файла находятся в одной папке</li>
+                            <li data-translate="troubleshootingStep3">Запустите от имени Администратора при необходимости</li>
+                        </ol>
+                    </div>
+                </div>
+
+                <div class="description-card">
+                    <div class="card-header">
+                        <h3 data-translate="musicLocalUILicense">Лицензия</h3>
+                        <div class="decorative-line"></div>
+                    </div>
+                    <p data-translate="musicLocalUILicenseText" class="description-text">
+                        Этот проект лицензирован под MIT License - подробности в файле <a href="https://github.com/VLPLAY-Games/MusicLocalUI/blob/main/LICENSE" target="_blank">LICENSE</a>.
+                    </p>
+                </div>
+            </div>
+
+            <div class="support-section">
+                <a href="https://www.donationalerts.com/r/vl_play021" target="_blank" class="support-btn">
+                    <span class="btn-icon">❤️</span>
+                    <span data-translate="SupportDevelopment">Поддержать разработку</span>
+                </a>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="footer-buttons">
+                <a href="../../../index.html" class="footer-button" data-translate="nav_home">Главная</a>
+                <a href="../../../html/devs/devs.html" class="footer-button" data-translate="nav_developments">Разработки</a>
+                <a href="../../../html/about_me/about_me.html" class="footer-button" data-translate="nav_about_me">Обо мне</a>
+                <a href="../../../html/links/links.html" class="footer-button" data-translate="nav_contacts">Контакты</a>
+                <a href="../../../html/status/status.html" class="footer-button" data-translate="nav_status">Статус</a>
+            </div>
+            <p>VL_PLAY Games Site v<span status-info = "siteVersion"></span></p>
+        </footer>
+    </div>
+    <button id="scrollTopButton" class="btn_scroll_top">↑</button>
+    <script src="../../../js/main.js" type="module"></script>
+</body>
+</html>

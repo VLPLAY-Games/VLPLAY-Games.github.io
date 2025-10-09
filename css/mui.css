@@ -1,0 +1,121 @@
+/* Стили для списка файлов */
+.included-files {
+    margin-top: 1.5rem;
+    padding: 1.5rem;
+    background: rgba(45, 27, 78, 0.6);
+    border-radius: 10px;
+    border: 1px solid rgba(196, 122, 255, 0.2);
+}
+
+.included-files h4 {
+    color: #e8b4e1;
+    margin: 0 0 1rem 0;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.files-list {
+    color: #f8f0ff;
+    padding-left: 1.2rem;
+    margin: 0;
+}
+
+.files-list li {
+    margin-bottom: 0.5rem;
+    line-height: 1.5;
+}
+
+.files-list code {
+    background: rgba(7, 16, 23, 0.8);
+    color: #58a6ff;
+    padding: 2px 6px;
+    border-radius: 4px;
+    border: 1px solid rgba(88, 166, 255, 0.3);
+    font-family: 'Courier New', monospace;
+}
+
+/* Стили для устранения неполадок */
+.troubleshooting-content {
+    color: #f8f0ff;
+}
+
+.troubleshooting-content p {
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+.troubleshooting-steps {
+    padding-left: 1.2rem;
+    margin: 0;
+}
+
+.troubleshooting-steps li {
+    margin-bottom: 0.8rem;
+    line-height: 1.5;
+}
+
+.troubleshooting-steps a {
+    color: #e8b4e1;
+    text-decoration: none;
+    border-bottom: 1px dotted #e8b4e1;
+    transition: all 0.3s ease;
+}
+
+.troubleshooting-steps a:hover {
+    color: #c47aff;
+    border-bottom: 1px solid #c47aff;
+}
+
+/* Специфические стили для Music Local UI */
+.music-features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.format-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.format-badge {
+    background: rgba(156, 89, 209, 0.3);
+    color: #f8f0ff;
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    border: 1px solid rgba(196, 122, 255, 0.2);
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .included-files {
+        padding: 1rem;
+    }
+    
+    .files-list {
+        padding-left: 1rem;
+    }
+    
+    .troubleshooting-steps {
+        padding-left: 1rem;
+    }
+    
+    .format-badges {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .music-features-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .format-badge {
+        font-size: 0.7rem;
+        padding: 3px 6px;
+    }
+}
