@@ -1,0 +1,306 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../css/main.css">
+    <link rel="stylesheet" href="../../../css/header.css">
+    <link rel="stylesheet" href="../../../css/body.css">
+    <link rel="stylesheet" href="../../../css/bot.css">
+    <link rel="stylesheet" href="../../../css/games.css">
+    <link rel="stylesheet" href="../../../css/projects.css">
+    <link rel="stylesheet" href="../../../css/footer.css">
+    <link rel="shortcut icon" href="..\..\..\img\header\LOGO VL_PLAY Games.png" />
+    <title>VL_PLAY Games - Bot</title>
+    <script src="../../../js/status.js" defer></script>
+    <script src="../../../js/translations.js" defer></script>
+</head>
+<body>
+    <div class="spin-wrapper"><div class="spinner"></div></div>
+    <div class="page-container">
+        <header>
+            <div class="logo">
+                <img src="../../../img/header/LOGO VL_PLAY Games.png" alt="Логотип VL_PLAY Games" width="100" height="100" onclick="window.location.href='../../index.html';" style="cursor: pointer;">
+                <h1>VL_PLAY Games - Bot</h1>
+            </div>
+            <nav>
+                <div class="language-buttons">
+                    <div class="language-dropdown">
+                        <button class="language-dropdown-btn" data-translate="site_language">Язык</button>
+                        <div class="language-dropdown-content">
+                            <button id="switchToEnglish" class="switchToEnglishBut">English</button>
+                            <button id="switchToRussian" class="switchToRussianBut">Русский</button>
+                        </div>
+                    </div>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="../../../index.html" data-translate="nav_home">Главная</a></li>
+                    <li><a href="../../../html/devs/devs.html" data-translate="nav_developments">Разработки</a></li>
+                    <li><a href="../../../html/about_me/about_me.html" data-translate="nav_about_me">Обо мне</a></li>
+                    <li><a href="../../../html/links/links.html" data-translate="nav_contacts">Ссылки</a></li>
+                    <li><a href="../../../html/status/status.html" data-translate="nav_status">Статус</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="devs-info">
+            <div class="game-header-card">
+                <div class="game-header-content">
+                    <div class="game-logo-section">
+                        <div class="logo-container">
+                            <img src="../../../img/Bot/Bot Logo.jpg" alt="Bot Logo" class="game-logo">
+                            <div class="logo-glow"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="game-info-section">
+                        <div class="game-title-section">
+                            <h1 class="game-title" data-translate="botTitle">VL_PLAY Games Bot</h1>
+                            <div class="price-tag free" data-translate="botPrice">Бесплатно</div>
+                        </div>
+                        
+                        <div class="project-links-container">
+                            <a href="https://t.me/VL_PLAY_Bot" target="_blank" class="project-link telegram-link">
+                                <span class="link-icon">🤖</span>
+                                <span data-translate="botTelegramLink">Ссылка на Telegram</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="devs-description">
+                <div class="description-card">
+                    <div class="card-header">
+                        <h3 data-translate="botDescriptionTitle">Описание</h3>
+                        <div class="decorative-line"></div>
+                    </div>
+                    <p data-translate="botDescription" class="description-text">
+                        Мой собственный Telegram-бот, который информирует о новых разработках и имеет различные дополнительные функции.
+                    </p>
+                    
+                    <div class="bot-info-grid">
+                        <div class="info-card">
+                            <span class="info-icon">🤖</span>
+                            <div class="info-content">
+                                <strong data-translate="stateTitle">Состояние:</strong>
+                                <span class="status-released" data-translate="released">Работает</span>
+                            </div>
+                        </div>
+                        <div class="info-card">
+                            <span class="info-icon">🌐</span>
+                            <div class="info-content">
+                                <strong data-translate="botLanguageTitle">Язык бота:</strong>
+                                <span>Русский</span>
+                            </div>
+                        </div>
+                        <div class="info-card">
+                            <span class="info-icon">📱</span>
+                            <div class="info-content">
+                                <strong data-translate="platformsTitle">Платформа:</strong>
+                                <span>Telegram</span>
+                            </div>
+                        </div>
+                        <div class="info-card">
+                            <span class="info-icon">⚡</span>
+                            <div class="info-content">
+                                <strong data-translate="botCommandsTitle">Команд:</strong>
+                                <span>20+</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="commands-section">
+                    <div class="section-header">
+                        <h3 data-translate="botCommandsTitle">Команды бота</h3>
+                        <div class="title-decoration"></div>
+                    </div>
+                    
+                    <div class="commands-grid">
+                        <div class="command-card">
+                            <div class="command-icon">🚀</div>
+                            <div class="command-content">
+                                <code class="command-name">/start</code>
+                                <span class="command-desc" data-translate="botCommandStart">запуск бота</span>
+                            </div>
+                        </div>
+                        
+                        <div class="command-card">
+                            <div class="command-icon">🌍</div>
+                            <div class="command-content">
+                                <code class="command-name">/language</code>
+                                <span class="command-desc" data-translate="botCommandLang">изменить язык</span>
+                            </div>
+                        </div>
+                        
+                        <div class="command-card">
+                            <div class="command-icon">📋</div>
+                            <div class="command-content">
+                                <code class="command-name">/commands</code>
+                                <span class="command-desc" data-translate="botCommandList">список команд бота</span>
+                            </div>
+                        </div>
+                        
+                        <div class="command-card">
+                            <div class="command-icon">🎬</div>
+                            <div class="command-content">
+                                <code class="command-name">/download_youtube_video</code>
+                                <span class="command-desc" data-translate="botCommandDownloadYouTubeVideo">загрузить видео с YouTube</span>
+                            </div>
+                        </div>
+                        
+                        <div class="command-card">
+                            <div class="command-icon">🎵</div>
+                            <div class="command-content">
+                                <code class="command-name">/convert_mp4_to_mp3</code>
+                                <span class="command-desc" data-translate="botCommandConvertMP4toMP3">конвертировать видео формата mp4 в аудио формат mp3</span>
+                            </div>
+                        </div>
+                        
+                        <div class="command-card">
+                            <div class="command-icon">🔄</div>
+                            <div class="command-content">
+                                <code class="command-name">/convert_mov_to_mp4</code>
+                                <span class="command-desc" data-translate="botCommandConvertMOVtoMP4">конвертировать видео формата mov в видео формат mp4</span>
+                            </div>
+                        </div>
+                        
+                        <div class="command-card">
+                            <div class="command-icon">🔄</div>
+                            <div class="command-content">
+                                <code class="command-name">/convert_webm_to_mp4</code>
+                                <span class="command-desc" data-translate="botCommandConvertWebMtoMP4">конвертировать видео формата webm в видео формат mp4</span>
+                            </div>
+                        </div>
+                        
+                        <div class="command-card">
+                            <div class="command-icon">🎵</div>
+                            <div class="command-content">
+                                <code class="command-name">/convert_mp3_to_wav</code>
+                                <span class="command-desc" data-translate="botCommandConvertMP3toWAV">конвертировать аудио формата mp3 в аудио формат wav</span>
+                            </div>
+                        </div>
+                        
+                        <div class="command-card">
+                            <div class="command-icon">🔄</div>
+                            <div class="command-content">
+                                <code class="command-name">/convert_mp4_to_gif</code>
+                                <span class="command-desc" data-translate="botCommandConvertMP4toGIF">конвертировать видео формата mp4 в анимацию формата gif</span>
+                            </div>
+                        </div>
+                        
+                        <div class="command-card">
+                            <div class="command-icon">🖼️</div>
+                            <div class="command-content">
+                                <code class="command-name">/convert_png_to_jpeg</code>
+                                <span class="command-desc" data-translate="botCommandConvertPNGtoJPEG">конвертировать изображение формата png в изображение формата jpeg</span>
+                            </div>
+                        </div>
+                        
+                        <div class="command-card">
+                            <div class="command-icon">🖼️</div>
+                            <div class="command-content">
+                                <code class="command-name">/convert_ico_to_jpg</code>
+                                <span class="command-desc" data-translate="botCommandConvertICOtoJPG">конвертировать изображение формата ico в изображение формата jpg</span>
+                            </div>
+                        </div>
+                        
+                        <div class="command-card">
+                            <div class="command-icon">🖼️</div>
+                            <div class="command-content">
+                                <code class="command-name">/convert_webp_to_jpg</code>
+                                <span class="command-desc" data-translate="botCommandConvertWebPtoJPG">конвертировать изображение формата webp в изображение формата jpg</span>
+                            </div>
+                        </div>
+                        
+                        <div class="command-card">
+                            <div class="command-icon">🎙️</div>
+                            <div class="command-content">
+                                <code class="command-name">/audio_recognition_rus</code>
+                                <span class="command-desc" data-translate="botCommandAudioRecognitionRus">распознавание текста в аудиофайле на русском языке</span>
+                            </div>
+                        </div>
+                        
+                        <div class="command-card">
+                            <div class="command-icon">🎙️</div>
+                            <div class="command-content">
+                                <code class="command-name">/audio_recognition_en</code>
+                                <span class="command-desc" data-translate="botCommandAudioRecognitionEn">распознавание текста в аудиофайле на английском языке</span>
+                            </div>
+                        </div>
+                        
+                        <div class="command-card">
+                            <div class="command-icon">🔍</div>
+                            <div class="command-content">
+                                <code class="command-name">/image_text_recognition</code>
+                                <span class="command-desc" data-translate="botCommandImageTextRecognition">распознавание текста на изображении в форматах png или jpg</span>
+                            </div>
+                        </div>
+                        
+                        <div class="command-card">
+                            <div class="command-icon">📢</div>
+                            <div class="command-content">
+                                <code class="command-name">/text_to_audio</code>
+                                <span class="command-desc" data-translate="botCommandTextToAudio">конвертировать текст в аудио</span>
+                            </div>
+                        </div>
+                        
+                        <div class="command-card">
+                            <div class="command-icon">🔐</div>
+                            <div class="command-content">
+                                <code class="command-name">/password_generator</code>
+                                <span class="command-desc" data-translate="botCommandPasswordGenerator">генератор паролей заданной длины</span>
+                            </div>
+                        </div>
+                        
+                        <div class="command-card">
+                            <div class="command-icon">🔢</div>
+                            <div class="command-content">
+                                <code class="command-name">/hash_calculator</code>
+                                <span class="command-desc" data-translate="botCommandHashCalculator">вычислить хеш-сумму файла</span>
+                            </div>
+                        </div>
+                        
+                        <div class="command-card">
+                            <div class="command-icon">📚</div>
+                            <div class="command-content">
+                                <code class="command-name">/search_wikipedia</code>
+                                <span class="command-desc" data-translate="botCommandSearchWikipedia">поиск информации в Википедии</span>
+                            </div>
+                        </div>
+                        
+                        <div class="command-card">
+                            <div class="command-icon">💰</div>
+                            <div class="command-content">
+                                <code class="command-name">/currency</code>
+                                <span class="command-desc" data-translate="botCommandCurrency">получить список цен на покупку заданной валюты в разных валютах</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="support-section">
+                    <a href="https://www.donationalerts.com/r/vl_play021" target="_blank" class="support-btn">
+                        <span class="btn-icon">❤️</span>
+                        <span data-translate="SupportDevelopment">Поддержать разработку</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="footer-buttons">
+                <a href="../../../index.html" class="footer-button" data-translate="nav_home">Главная</a>
+                <a href="../../../html/devs/devs.html" class="footer-button" data-translate="nav_developments">Разработки</a>
+                <a href="../../../html/about_me/about_me.html" class="footer-button" data-translate="nav_about_me">Обо мне</a>
+                <a href="../../../html/contacts/contacts.html" class="footer-button" data-translate="nav_contacts">Контакты</a>
+                <a href="../../../html/status/status.html" class="footer-button" data-translate="nav_status">Статус</a>
+            </div>
+            <p>VL_PLAY Games Site v<span status-info = "siteVersion"></span></p>
+        </footer>
+    </div>
+    <button id="scrollTopButton" class="btn_scroll_top">↑</button>
+    <script src="../../../js/main.js" type="module"></script>
+</body>
+</html>

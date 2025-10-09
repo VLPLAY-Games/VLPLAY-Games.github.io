@@ -1,0 +1,226 @@
+body {
+    font-family: 'Segoe UI', 'Hiragino Sans', 'Yu Gothic UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #f9f0ff 0%, #f5e6ff 50%, #f0dbff 100%);
+    color: #f8f0ff;
+    opacity: 0;
+    transition: opacity 0.3s;
+    background-attachment: fixed;
+    display:flex;
+    flex-direction: column;
+    min-height: 100vh;
+    min-width: 100%;
+    position: relative;
+}
+
+/* Легкая текстура с нотками сакуры */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: 
+        radial-gradient(circle at 15% 70%, rgba(255, 200, 230, 0.3) 0%, transparent 40%),
+        radial-gradient(circle at 85% 30%, rgba(230, 180, 255, 0.2) 0%, transparent 40%),
+        radial-gradient(circle at 50% 50%, rgba(255, 220, 245, 0.1) 0%, transparent 50%);
+    pointer-events: none;
+    z-index: -1;
+}
+
+/* Декоративные элементы в стиле сакуры */
+body::after {
+    content: '🌸';
+    position: fixed;
+    bottom: 20px;
+    left: 15px;
+    color: rgba(255, 180, 220, 0.4);
+    font-size: 2.5rem;
+    animation: float 8s ease-in-out infinite;
+    pointer-events: none;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0) rotate(0deg) scale(1); }
+    25% { transform: translateY(-15px) rotate(5deg) scale(1.1); }
+    50% { transform: translateY(-5px) rotate(-3deg) scale(0.9); }
+    75% { transform: translateY(-10px) rotate(2deg) scale(1.05); }
+}
+
+/* Добавляем еще один цветочный элемент */
+body::before {
+    content: '💮';
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    color: rgba(255, 200, 230, 0.3);
+    font-size: 2rem;
+    animation: float 10s ease-in-out infinite reverse;
+    pointer-events: none;
+}
+
+
+.page-container{
+    border-left: 4px solid #e8b4e1;
+    height: 100%;
+    display: none;
+    background: rgba(45, 27, 78, 0.7);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 30px rgba(156, 89, 209, 0.3);
+    border-radius: 0;
+    margin: 0 auto;
+    animation: fadeInUp 0.8s ease-out;
+    position: relative;
+    flex: 1 0 auto;
+    width: 99.75%;
+}
+
+/* Добавляем градиентный эффект между границами */
+.page-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(90deg, 
+        rgba(232, 180, 225, 0.1) 0%, 
+        transparent 4px, 
+        transparent calc(100% - 4px), 
+        rgba(156, 89, 209, 0.1) 100%);
+    pointer-events: none;
+    z-index: -1;
+}
+
+.spin-wrapper{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(135deg, #1a0b2e 0%, #2d1b4e 100%);
+  
+    .spinner{
+      position: absolute;
+      height: 60px;
+      width: 60px;
+      border: 3px solid transparent;
+      border-top-color: #e8b4e1;
+      top: 50%;
+      left: 50%;
+      margin: -30px;
+      border-radius: 50%;
+      animation: spin 2s linear infinite;
+      
+      &:before, &:after{
+        content:'';
+        position: absolute;
+        border: 3px solid transparent;
+        border-radius: 50%;
+      }
+      
+      &:before{
+        border-top-color: #c47aff;
+        top: -12px;
+        left: -12px;
+        right: -12px;
+        bottom: -12px;
+        animation: spin 3s linear infinite;
+      }
+      
+      &:after{
+        border-top-color: #9c59d1;
+        top: 6px;
+        left: 6px;
+        right: 6px;
+        bottom: 6px;  
+        animation: spin 4s linear infinite;
+      }
+    }
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.btn_scroll_top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: linear-gradient(45deg, #e8b4e1, #c47aff);
+    color: #1a0b2e;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    cursor: default;
+    box-shadow: 0 4px 15px rgba(156, 89, 209, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: all 0.3s ease;
+    z-index: 1000;
+    font-weight: bold;
+}
+
+.btn_scroll_top:hover {
+    background: linear-gradient(45deg, #c47aff, #e8b4e1);
+    transform: scale(1.1) translateY(-5px);
+    box-shadow: 0 6px 20px rgba(228, 180, 225, 0.6);
+}
+
+.btn_scroll_top:active {
+    transform: scale(0.95);
+}
+
+/* Дополнительные стили для плавного появления */
+.page-container {
+    animation: fadeInUp 0.8s ease-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+::-webkit-scrollbar {
+    width: 10px; /* Уменьшил ширину для более изящного вида */
+}
+
+::-webkit-scrollbar-track {
+    background: linear-gradient(180deg, #2d1b4e 0%, #3d2a5e 100%); /* Градиентный фон трека */
+    border-radius: 0; /* Убрал скругление для более строгого вида */
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, #e8b4e1 0%, #c47aff 50%, #9c59d1 100%); /* Градиентный ползунок */
+    border-radius: 5px; /* Легкое скругление */
+    border: 1px solid rgba(228, 180, 225, 0.3); /* Тонкая обводка */
+    box-shadow: 0 2px 8px rgba(156, 89, 209, 0.4); /* Тень для объема */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(180deg, #f0c4eb 0%, #d18cff 50%, #b074e6 100%); /* Более светлый градиент при наведении */
+    box-shadow: 0 2px 12px rgba(228, 180, 225, 0.6); /* Усиленная тень */
+}
+
+::-webkit-scrollbar-thumb:active {
+    background: linear-gradient(180deg, #c47aff 0%, #9c59d1 50%, #7a3fb8 100%); /* Более темный при активации */
+}
+
+/* Дополнительно для Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #c47aff #2d1b4e;
+}

@@ -1,0 +1,157 @@
+.about-me {
+    padding: 30px;
+    max-width: 60%;
+    margin: 0 auto;
+    background: rgba(45, 27, 78, 0.8);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(156, 89, 209, 0.3);
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border: 1px solid rgba(196, 122, 255, 0.3);
+    text-align: center;
+}
+
+.about-me h2 {
+    font-size: 28px;
+    color: #e8b4e1;
+    text-align: center;
+    margin-bottom: 25px;
+    text-shadow: 0 2px 8px rgba(228, 180, 225, 0.3);
+    border-bottom: 2px solid #c47aff;
+    padding-bottom: 10px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-align: left;
+}
+
+.about-me p {
+    font-size: 18px;
+    line-height: 1.7;
+    color: #f8f0ff;
+    margin-bottom: 20px;
+    text-align: justify;
+    text-align: left;
+}
+
+.about-me img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    display: block; /* Делаем изображения блочными элементами */
+    margin-left: auto; /* Автоматические отступы слева */
+    margin-right: auto; /* Автоматические отступы справа */
+}
+
+.about-me img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 20px rgba(156, 89, 209, 0.4);
+}
+
+.about-me a {
+    color: #e8b4e1;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.about-me a:hover {
+    color: #c47aff;
+    border-bottom: 1px solid #c47aff;
+}
+
+.makaev_group_div {
+    text-align: center;
+    margin: 30px 0;
+    padding: 20px;
+    background: rgba(156, 89, 209, 0.1);
+    border-radius: 10px;
+    border: 1px solid rgba(196, 122, 255, 0.2);
+    position: relative;
+    overflow: hidden;
+}
+
+.makaev_group_div::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, transparent, rgba(228, 180, 225, 0.05), transparent);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.makaev_group_div:hover::before {
+    opacity: 1;
+}
+
+.makaev_group_div p {
+    padding-left: 0;
+    color: #f8f0ff;
+    font-size: 20px;
+    margin-top: 15px;
+    font-weight: 500;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+.makaev_group_div a {
+    display: inline-block;
+    position: relative;
+    z-index: 2;
+    text-decoration: none;
+    border: none;
+    outline: none;
+}
+
+.makaev_group_div img {
+    max-width: 250px;
+    transition: all 0.3s ease;
+    border-radius: 15px;
+    border: 2px solid transparent;
+    display: block;
+}
+
+.makaev_group_div img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 25px rgba(228, 180, 225, 0.4);
+    border: 2px solid rgba(228, 180, 225, 0.3);
+}
+
+/* Стили для логотипов проектов */
+.about-me img[alt*="Logo"] {
+    display: inline-block; /* Оставляем строчно-блочными для расположения в ряд */
+    margin: 15px; /* Сохраняем отступы */
+    vertical-align: middle; /* Выравнивание по вертикали */
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .about-me {
+        padding: 20px;
+        margin: 20px 15px;
+    }
+    
+    .about-me h2 {
+        font-size: 24px;
+    }
+    
+    .about-me p {
+        font-size: 16px;
+        text-align: left;
+    }
+    
+    .about-me img[alt*="Logo"] {
+        display: block; /* На мобильных делаем блочными */
+        margin: 10px auto; /* Центрируем с автоматическими отступами */
+    }
+    
+    .makaev_group_div {
+        margin: 20px 0;
+        padding: 15px;
+    }
+}
