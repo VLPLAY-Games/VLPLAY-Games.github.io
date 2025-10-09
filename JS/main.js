@@ -4,9 +4,11 @@
 window.addEventListener('scroll', function () {
     if (window.pageYOffset >= document.body.clientHeight / 4) {
         scrollTopButton.style.opacity = 1;
+        scrollTopButton.style.cursor = "pointer";
     }
     else {
         scrollTopButton.style.opacity = 0;
+        scrollTopButton.style.cursor = "default";
     }
 });
 
@@ -53,11 +55,4 @@ window.addEventListener('load', function () {
     spinnerparent.removeChild(spinner);
     var pageContainer = document.querySelector('.page-container');
     pageContainer.style.display = 'block';
-});
-
-
-document.addEventListener('mousemove', (e) => {
-    const cursor = document.querySelector('.custom-cursor');
-    cursor.style.left = e.pageX + 'px';
-    cursor.style.top = e.pageY + 'px';
 });

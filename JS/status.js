@@ -19,11 +19,17 @@ const status = {
     'psVersion': "1.0.1",
     'psDate': "09.01.2025",
 
+    'dsVersion': "0.3.0",
+    'dsDate': "02.10.2025",
+
+    'frameosVersion': "---",
+    'frameosDate': "---",
+
     'sd2Version': "---",
     'sd2Date': "---",
 
-    'ftVersion': "1.0.0",
-    'ftDate': "05.09.2025",
+    'ftVersion': "1.0.1",
+    'ftDate': "02.10.2025",
 
     'attsiVersion': "---",
     'attsiDate': "---",
@@ -33,8 +39,8 @@ const status = {
     'sdAndVersion': "1.1.0.120 (Test)",
     'sdAndDate': "30.03.2025",
 
-    'siteVersion': "2.0.0 preview 5",
-    'siteDate': "08.10.2025",
+    'siteVersion': "2.0.0 preview 6",
+    'siteDate': "09.10.2025",
 };
 
 function setStatus() {

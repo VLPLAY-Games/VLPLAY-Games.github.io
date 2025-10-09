@@ -35,7 +35,7 @@ body::after {
     content: '🌸';
     position: fixed;
     bottom: 20px;
-    right: 20px;
+    left: 15px;
     color: rgba(255, 180, 220, 0.4);
     font-size: 2.5rem;
     animation: float 8s ease-in-out infinite;
@@ -64,7 +64,6 @@ body::before {
 
 .page-container{
     border-left: 4px solid #e8b4e1;
-    border-right: 4px solid #e8b4e1;
     height: 100%;
     display: none;
     background: rgba(45, 27, 78, 0.7);
@@ -75,7 +74,7 @@ body::before {
     animation: fadeInUp 0.8s ease-out;
     position: relative;
     flex: 1 0 auto;
-    width: 100%;
+    width: 99.75%;
 }
 
 /* Добавляем градиентный эффект между границами */
@@ -156,7 +155,7 @@ body::before {
     width: 50px;
     height: 50px;
     font-size: 20px;
-    cursor: pointer;
+    cursor: default;
     box-shadow: 0 4px 15px rgba(156, 89, 209, 0.4);
     display: flex;
     justify-content: center;

@@ -566,7 +566,27 @@ const translations = {
     'pulseSensorTitle': {
         'en': 'Pulse sensor:',
         'ru': 'Датчик пульса:',
-    },  
+    },
+    'botLanguageTitle': {
+       'en': 'Bot language:',
+       'ru': 'Язык бота:', 
+    },
+    'device_specifications': {
+       'en': 'Device specifications:',
+       'ru': 'Характеристики устройства:',
+    },
+    'connection': {
+       'en': 'Connection:',
+       'ru': 'Связь:',
+    },
+    'built-in': {
+       'en': 'Built-in:',
+       'ru': 'Встроенный:',
+    },
+    'web_server': {
+       'en': 'Web-server:',
+       'ru': 'Веб-сервер:',
+    }
 };
 
 // Функция для установки куки
