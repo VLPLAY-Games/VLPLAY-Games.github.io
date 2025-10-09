@@ -24,8 +24,8 @@ const translations = {
         'ru': 'Ссылки',
     },
     'hero': {
-        'en': 'Clocks, Games, and More',
-        'ru': 'Часы, игры и многое другое',
+        'en': 'Games, Software and more',
+        'ru': 'Игры, ПО и многое другое',
     },
     'learn_more': {
         'en': 'Learn More',
@@ -580,8 +580,8 @@ const translations = {
        'ru': 'Связь:',
     },
     'built-in': {
-       'en': 'Built-in:',
-       'ru': 'Встроенный:',
+       'en': 'Built-in',
+       'ru': 'Встроенный',
     },
     'web_server': {
        'en': 'Web-server:',
@@ -651,6 +651,21 @@ const translations = {
         'en': 'Adventure',
         'ru': 'Приключение',
     },
+    'software': {
+        'en': 'Software',
+        'ru': "Программы"
+    },
+    'games': {
+        'en': 'Games',
+        'ru': "Игры"
+    },
+    'other': {
+        'en': 'Other',
+        'ru': "Другое"
+    },
+};
+
+const ds_translations = {
     // Новые ключи для Download Server
     'downloadServerTitle': {
         'en': 'Download Server',
@@ -796,6 +811,9 @@ const translations = {
         'en': 'View on GitHub',
         'ru': 'Смотреть на GitHub',
     },
+}
+
+const ps_translations = {
     // Новые ключи для Port Scanner
     'portScannerTitle': {
         'en': 'Port Scanner',
@@ -965,6 +983,9 @@ const translations = {
         'en': 'Use the additional buttons at the bottom to manage logs, clear results, or access the help menu',
         'ru': 'Используйте дополнительные кнопки внизу для управления логами, очистки результатов или доступа к меню помощи',
     },
+}
+
+const mui_translations = {
     // Новые ключи для Music Local UI
     'musicLocalUITitle': {
         'en': 'Music Local UI',
@@ -1154,7 +1175,323 @@ const translations = {
         'en': 'This project is licensed under the MIT License - see the <a href="https://github.com/VLPLAY-Games/MusicLocalUI/blob/main/LICENSE" target="_blank">LICENSE</a> file for details.',
         'ru': 'Этот проект лицензирован под MIT License - подробности в файле <a href="https://github.com/VLPLAY-Games/MusicLocalUI/blob/main/LICENSE" target="_blank">LICENSE</a>.',
     },
-};
+}
+
+const xos_translations = {
+    'xenoOSTitle': {
+        'en': 'XenoOS',
+        'ru': 'XenoOS'
+    },
+    'xenoOSDescription': {
+        'en': 'A command-line interface (CLI) system for interacting with various system components such as filesystems, Wi-Fi, SD cards, and other system settings. The system supports a variety of commands for managing files, directories, and system configurations.',
+        'ru': 'Командная оболочка (CLI) для взаимодействия с различными системными компонентами, такими как файловые системы, Wi-Fi, SD-карты и другие системные настройки. Система поддерживает множество команд для управления файлами, директориями и системными конфигурациями.'
+    },
+    'xenoOSTarget': {
+        'en': 'The system is designed for the entire ESP32 family of microcontrollers but is specifically tailored for the ESP32-C3 model.',
+        'ru': 'Система разработана для всего семейства микроконтроллеров ESP32, но специально адаптирована для модели ESP32-C3.'
+    },
+    'xenoOSFeaturesTitle': {
+        'en': 'Key Features',
+        'ru': 'Основные возможности'
+    },
+    'featureFileManagement': {
+        'en': 'File Management',
+        'ru': 'Управление файлами'
+    },
+    'featureFileManagementDesc': {
+        'en': 'Create, remove, rename files and directories',
+        'ru': 'Создание, удаление, переименование файлов и директорий'
+    },
+    'featureSystemDiagnostics': {
+        'en': 'System Diagnostics',
+        'ru': 'Системная диагностика'
+    },
+    'featureSystemDiagnosticsDesc': {
+        'en': 'Factory reset, reinstall, system check',
+        'ru': 'Фабричный сброс, переустановка, проверка системы'
+    },
+    'featureWiFiManagement': {
+        'en': 'Wi-Fi Management',
+        'ru': 'Управление Wi-Fi'
+    },
+    'featureWiFiManagementDesc': {
+        'en': 'Connect, disconnect, scan networks',
+        'ru': 'Подключение, отключение, сканирование сетей'
+    },
+    'featureSDCard': {
+        'en': 'SD Card Support',
+        'ru': 'Работа с SD-картой'
+    },
+    'featureSDCardDesc': {
+        'en': 'Card information and management',
+        'ru': 'Информация о карте и управление'
+    },
+    'featureCommandHistory': {
+        'en': 'Command History',
+        'ru': 'История команд'
+    },
+    'featureCommandHistoryDesc': {
+        'en': 'View and clear command history',
+        'ru': 'Просмотр и очистка истории введенных команд'
+    },
+    'featureSystemInfo': {
+        'en': 'System Information',
+        'ru': 'Системная информация'
+    },
+    'featureSystemInfoDesc': {
+        'en': 'Memory, CPU, MAC address and other information',
+        'ru': 'Память, CPU, MAC-адрес и другая информация'
+    },
+    'featureNetworkTools': {
+        'en': 'Network Tools',
+        'ru': 'Сетевые инструменты'
+    },
+    'featureNetworkToolsDesc': {
+        'en': 'Ping, file downloading (wget)',
+        'ru': 'Ping, скачивание файлов (wget)'
+    },
+    'featureArchives': {
+        'en': 'Archive Support',
+        'ru': 'Работа с архивами'
+    },
+    'featureArchivesDesc': {
+        'en': 'TAR archive extraction',
+        'ru': 'Распаковка TAR архивов'
+    },
+    'xenoOSCommandsTitle': {
+        'en': 'Available Commands',
+        'ru': 'Доступные команды'
+    },
+    'commandName': {
+        'en': 'Command',
+        'ru': 'Команда'
+    },
+    'commandDescription': {
+        'en': 'Description',
+        'ru': 'Описание'
+    },
+    'commandParameters': {
+        'en': 'Parameters',
+        'ru': 'Параметры'
+    },
+    'commandExample': {
+        'en': 'Example Usage',
+        'ru': 'Пример использования'
+    },
+    'commandWgetDesc': {
+        'en': 'Download files from URL',
+        'ru': 'Скачивание файлов из URL'
+    },
+    'commandHelpDesc': {
+        'en': 'Display help information',
+        'ru': 'Отображение справки'
+    },
+    'commandMkdirDesc': {
+        'en': 'Create a new directory',
+        'ru': 'Создание директории'
+    },
+    'commandLsDesc': {
+        'en': 'List directory contents',
+        'ru': 'Список содержимого директории'
+    },
+    'commandCdDesc': {
+        'en': 'Change the current directory',
+        'ru': 'Смена текущей директории'
+    },
+    'commandRmDesc': {
+        'en': 'Remove files or directories',
+        'ru': 'Удаление файлов или директорий'
+    },
+    'commandWifiDesc': {
+        'en': 'Manage Wi-Fi connection',
+        'ru': 'Управление Wi-Fi подключением'
+    },
+    'commandWifiParams': {
+        'en': 'connect, disconnect, reconnect, scan, status, ip, help',
+        'ru': 'connect, disconnect, reconnect, scan, status, ip, help'
+    },
+    'commandFreeDesc': {
+        'en': 'Show available memory',
+        'ru': 'Показать доступную память'
+    },
+    'commandSystemDesc': {
+        'en': 'System commands',
+        'ru': 'Системные команды'
+    },
+    'commandSystemParams': {
+        'en': 'restart, info, update, diagnostic, freset, check, installer, help',
+        'ru': 'restart, info, update, diagnostic, freset, check, installer, help'
+    },
+    'commandHistoryDesc': {
+        'en': 'Command history',
+        'ru': 'История команд'
+    },
+    'commandHistoryParams': {
+        'en': 'clear, read, help',
+        'ru': 'clear, read, help'
+    },
+    'xenoOSSystemRequirements': {
+        'en': 'System Requirements',
+        'ru': 'Системные требования'
+    },
+    'sysReqBoard': {
+        'en': 'Board',
+        'ru': 'Плата'
+    },
+    'sysReqFlash': {
+        'en': 'Flash Memory',
+        'ru': 'Flash память'
+    },
+    'sysReqSDCard': {
+        'en': 'SD Card',
+        'ru': 'SD карта'
+    },
+    'sysReqArduino': {
+        'en': 'Arduino IDE',
+        'ru': 'Arduino IDE'
+    },
+    'xenoOSPlatforms': {
+        'en': 'Platforms',
+        'ru': 'Платформы'
+    },
+    'xenoOSType': {
+        'en': 'Type',
+        'ru': 'Тип'
+    },
+    'embeddedSystem': {
+        'en': 'Embedded System',
+        'ru': 'Встроенная система'
+    },
+    'xenoOSArchitecture': {
+        'en': 'Architecture',
+        'ru': 'Архитектура'
+    },
+    'xenoOSInstallation': {
+        'en': 'Installation',
+        'ru': 'Установка'
+    },
+    'standardInstallation': {
+        'en': 'Standard Installation via Arduino IDE',
+        'ru': 'Стандартная установка через Arduino IDE'
+    },
+    'stepArduinoPrereq': {
+        'en': 'Prerequisites: Arduino IDE 2.x, ESP32 core 3.2.0+',
+        'ru': 'Предварительные требования: Arduino IDE 2.x, ESP32 core 3.2.0+'
+    },
+    'stepCloneRepo': {
+        'en': 'Clone repository:',
+        'ru': 'Клонируйте репозиторий:'
+    },
+    'stepOpenIDE': {
+        'en': 'Open in Arduino IDE',
+        'ru': 'Откройте в Arduino IDE'
+    },
+    'stepSelectBoard': {
+        'en': 'Select board',
+        'ru': 'Выберите плату'
+    },
+    'stepConfigureSettings': {
+        'en': 'Configure settings in Tools (see documentation)',
+        'ru': 'Настройте параметры в Tools (см. документацию)'
+    },
+    'stepUpload': {
+        'en': 'Click Upload to flash',
+        'ru': 'Нажмите Upload для прошивки'
+    },
+    'alternativeInstallation': {
+        'en': 'Alternative Installation for ESP32-C3',
+        'ru': 'Альтернативная установка для ESP32-C3'
+    },
+    'stepDownloadFirmware': {
+        'en': 'Download latest release from GitHub',
+        'ru': 'Скачайте последний релиз с GitHub'
+    },
+    'stepFlashMerged': {
+        'en': 'To flash merged firmware:',
+        'ru': 'Для прошивки объединенного файла:'
+    },
+    'stepFlashSeparate': {
+        'en': 'Or flash files separately:',
+        'ru': 'Или прошейте файлы отдельно:'
+    },
+    'xenoOSUsage': {
+        'en': 'How to Use',
+        'ru': 'Как использовать'
+    },
+    'usageStep1Xeno': {
+        'en': 'Connect to device via Serial port (speed 115200) in Putty or other terminal',
+        'ru': 'Подключитесь к устройству через Serial порт (скорость 115200) в Putty или другом терминале'
+    },
+    'usageStep2Xeno': {
+        'en': 'Type commands directly in terminal',
+        'ru': 'Введите команды напрямую в терминал'
+    },
+    'usageStep3Xeno': {
+        'en': 'Use to view all available commands',
+        'ru': 'Используйте для просмотра всех доступных команд'
+    },
+    'usageStep4Xeno': {
+        'en': 'For system diagnostics use:',
+        'ru': 'Для диагностики системы используйте:'
+    },
+    'xenoOSTechStack': {
+        'en': 'Technology Stack',
+        'ru': 'Технологический стек'
+    },
+    'techFramework': {
+        'en': 'Framework',
+        'ru': 'Фреймворк'
+    },
+    'techLibraries': {
+        'en': 'Libraries',
+        'ru': 'Библиотеки'
+    },
+    'techFilesystem': {
+        'en': 'Filesystem',
+        'ru': 'Файловая система'
+    },
+    'techProtocol': {
+        'en': 'Protocol',
+        'ru': 'Протокол'
+    },
+    'xenoOSTroubleshooting': {
+        'en': 'Troubleshooting',
+        'ru': 'Устранение неполадок'
+    },
+    'troubleshootingIntroXeno': {
+        'en': 'If the system does not start or works incorrectly:',
+        'ru': 'Если система не запускается или работает некорректно:'
+    },
+    'troubleshootingStep1Xeno': {
+        'en': 'Make sure you use the correct Arduino Core version (3.2.0+)',
+        'ru': 'Убедитесь, что используется правильная версия Arduino Core (3.2.0+)'
+    },
+    'troubleshootingStep2Xeno': {
+        'en': 'Check Serial port connection (speed 115200)',
+        'ru': 'Проверьте подключение Serial порта (скорость 115200)'
+    },
+    'troubleshootingStep3Xeno': {
+        'en': 'For SD cards use cards with capacity up to 4GB',
+        'ru': 'Для SD карт используйте карты объемом не более 4GB'
+    },
+    'troubleshootingStep4Xeno': {
+        'en': 'Run to check components',
+        'ru': 'Запустите для проверки компонентов'
+    },
+    'xenoOSLicense': {
+        'en': 'License',
+        'ru': 'Лицензия'
+    },
+    'xenoOSLicenseText': {
+        'en': 'This project is licensed under the MIT License - see the file for details.',
+        'ru': 'Этот проект лицензирован под MIT License - подробности в файле .'
+    }
+}
+
+Object.assign(translations, ds_translations);
+Object.assign(translations, ps_translations);
+Object.assign(translations, xos_translations);
+Object.assign(translations, mui_translations);
 
 // Функция для установки куки
 function setCookie(name, value, days) {

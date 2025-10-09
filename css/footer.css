@@ -21,21 +21,6 @@
     opacity: 0.6;
 }
 
-.footer-fixed {
-    background: linear-gradient(135deg, #2d1b4e 0%, #3d2a5e 100%);
-    color: #f8f0ff;
-    text-align: center;
-    padding: 1.5rem 0;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    border-top: 2px solid #c47aff;
-    z-index: 1000;
-    font-family: 'Segoe UI', 'Hiragino Sans', 'Yu Gothic UI', sans-serif;
-    box-shadow: 0 -4px 20px rgba(156, 89, 209, 0.4);
-}
-
 .footer-buttons {
     display: flex;
     justify-content: center;
@@ -145,16 +130,6 @@
         width: 200px;
         text-align: center;
     }
-}
-
-/* Анимация для фиксированного футера */
-@keyframes slideUp {
-    0% { transform: translateY(100%); }
-    100% { transform: translateY(0); }
-}
-
-.footer-fixed {
-    animation: slideUp 0.5s ease-out;
 }
 
 /* Дополнительная анимация для кнопок */

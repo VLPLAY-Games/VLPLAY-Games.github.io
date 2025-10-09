@@ -39,7 +39,7 @@ const status = {
     'sdAndVersion': "1.1.0.120 (Test)",
     'sdAndDate': "30.03.2025",
 
-    'siteVersion': "2.0.0 preview 7",
+    'siteVersion': "2.0.0 preview 8",
     'siteDate': "09.10.2025",
 };
 

@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../css/main.css">
+    <link rel="stylesheet" href="../../../css/header.css">
+    <link rel="stylesheet" href="../../../css/body.css">
+    <link rel="stylesheet" href="../../../css/games.css">
+    <link rel="stylesheet" href="../../../css/media.css">
+    <link rel="stylesheet" href="../../../css/ds.css">
+    <link rel="stylesheet" href="../../../css/ps.css">
+    <link rel="stylesheet" href="../../../css/projects.css">
+    <link rel="stylesheet" href="../../../css/mui.css">
+    <link rel="stylesheet" href="../../../css/footer.css">
+    <link rel="shortcut icon" href="..\..\..\img\header\LOGO VL_PLAY Games.png" />
+    <title>VL_PLAY Games - XenoOS</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../../../js/translations.js" defer></script>
+    <script src="../../../js/status.js" defer></script>
+    <script src="../../../js/images.js"></script>
+    
+</head>
+<body>
+    <div class="spin-wrapper"><div class="spinner"></div></div>
+    <div class="page-container">
+        <header>
+            <div class="logo">
+                <img src="../../../img/header/LOGO VL_PLAY Games.png" alt="Логотип VL_PLAY Games" width="100" height="100" onclick="window.location.href='../../index.html';" style="cursor: pointer;">
+                <h1>VL_PLAY Games - XenoOS</h1>
+            </div>
+            <nav>
+                <div class="language-buttons">
+                    <div class="language-dropdown">
+                        <button class="language-dropdown-btn" data-translate="site_language">Язык</button>
+                        <div class="language-dropdown-content">
+                            <button id="switchToEnglish" class="switchToEnglishBut">English</button>
+                            <button id="switchToRussian" class="switchToRussianBut">Русский</button>
+                        </div>
+                    </div>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="../../../index.html" data-translate="nav_home">Главная</a></li>
+                    <li><a href="../../../html/devs/devs.html" data-translate="nav_developments">Разработки</a></li>
+                    <li><a href="../../../html/about_me/about_me.html" data-translate="nav_about_me">Обо мне</a></li>
+                    <li><a href="../../../html/links/links.html" data-translate="nav_contacts">Ссылки</a></li>
+                    <li><a href="../../../html/status/status.html" data-translate="nav_status">Статус</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="devs-info">
+            <div class="game-header-card">
+                <div class="game-header-content">
+                    <div class="game-logo-section">
+                        <div class="logo-container">
+                            <img src="..\..\..\img\XenoOS\xenoos_logo.png" alt="XenoOS Logo" class="game-logo">
+                            <div class="logo-glow"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="game-info-section">
+                        <div class="game-title-section">
+                            <h1 class="game-title" data-translate="xenoOSTitle">XenoOS</h1>
+                            <div class="status-badge released" data-translate="released">Выпущено</div>
+                        </div>
+                        
+                        <div class="project-links-container">
+                            <a href="https://github.com/VLPLAY-Games/XenoOS" target="_blank" class="project-link github-link">
+                                <span class="link-icon">📁</span>
+                                <span data-translate="viewOnGitHub">Смотреть на GitHub</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="devs-description">
+                <div class="description-card">
+                    <div class="card-header">
+                        <h3 data-translate="descriptionTitle">Описание</h3>
+                        <div class="decorative-line"></div>
+                    </div>
+                    <p data-translate="xenoOSDescription" class="description-text">
+                        Командная оболочка (CLI) для взаимодействия с различными системными компонентами, такими как файловые системы, Wi-Fi, SD-карты и другие системные настройки. Система поддерживает множество команд для управления файлами, директориями и системными конфигурациями.
+                    </p>
+                    <p data-translate="xenoOSTarget" class="description-text">
+                        Система разработана для всего семейства микроконтроллеров ESP32, но специально адаптирована для модели ESP32-C3.
+                    </p>
+                </div>
+
+                <div class="description-card">
+                    <div class="card-header">
+                        <h3 data-translate="xenoOSFeaturesTitle">Основные возможности</h3>
+                        <div class="decorative-line"></div>
+                    </div>
+                    <div class="features-grid">
+                        <div class="feature-card">
+                            <span class="feature-icon">📁</span>
+                            <div class="feature-content">
+                                <h4 data-translate="featureFileManagement">Управление файлами</h4>
+                                <p data-translate="featureFileManagementDesc">Создание, удаление, переименование файлов и директорий</p>
+                            </div>
+                        </div>
+                        <div class="feature-card">
+                            <span class="feature-icon">🔧</span>
+                            <div class="feature-content">
+                                <h4 data-translate="featureSystemDiagnostics">Системная диагностика</h4>
+                                <p data-translate="featureSystemDiagnosticsDesc">Фабричный сброс, переустановка, проверка системы</p>
+                            </div>
+                        </div>
+                        <div class="feature-card">
+                            <span class="feature-icon">📶</span>
+                            <div class="feature-content">
+                                <h4 data-translate="featureWiFiManagement">Управление Wi-Fi</h4>
+                                <p data-translate="featureWiFiManagementDesc">Подключение, отключение, сканирование сетей</p>
+                            </div>
+                        </div>
+                        <div class="feature-card">
+                            <span class="feature-icon">💾</span>
+                            <div class="feature-content">
+                                <h4 data-translate="featureSDCard">Работа с SD-картой</h4>
+                                <p data-translate="featureSDCardDesc">Информация о карте и управление</p>
+                            </div>
+                        </div>
+                        <div class="feature-card">
+                            <span class="feature-icon">📜</span>
+                            <div class="feature-content">
+                                <h4 data-translate="featureCommandHistory">История команд</h4>
+                                <p data-translate="featureCommandHistoryDesc">Просмотр и очистка истории введенных команд</p>
+                            </div>
+                        </div>
+                        <div class="feature-card">
+                            <span class="feature-icon">💻</span>
+                            <div class="feature-content">
+                                <h4 data-translate="featureSystemInfo">Системная информация</h4>
+                                <p data-translate="featureSystemInfoDesc">Память, CPU, MAC-адрес и другая информация</p>
+                            </div>
+                        </div>
+                        <div class="feature-card">
+                            <span class="feature-icon">🌐</span>
+                            <div class="feature-content">
+                                <h4 data-translate="featureNetworkTools">Сетевые инструменты</h4>
+                                <p data-translate="featureNetworkToolsDesc">Ping, скачивание файлов (wget)</p>
+                            </div>
+                        </div>
+                        <div class="feature-card">
+                            <span class="feature-icon">📦</span>
+                            <div class="feature-content">
+                                <h4 data-translate="featureArchives">Работа с архивами</h4>
+                                <p data-translate="featureArchivesDesc">Распаковка TAR архивов</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="description-card">
+                    <div class="card-header">
+                        <h3 data-translate="xenoOSCommandsTitle">Доступные команды</h3>
+                        <div class="decorative-line"></div>
+                    </div>
+                    <div class="config-table">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th data-translate="commandName">Команда</th>
+                                    <th data-translate="commandDescription">Описание</th>
+                                    <th data-translate="commandParameters">Параметры</th>
+                                    <th data-translate="commandExample">Пример использования</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><code>wget</code></td>
+                                    <td data-translate="commandWgetDesc">Скачивание файлов из URL</td>
+                                    <td><code>&lt;url&gt; [&lt;path&gt;]</code></td>
+                                    <td><code>wget http://example.com/file.txt /path/to/save</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>help</code></td>
+                                    <td data-translate="commandHelpDesc">Отображение справки</td>
+                                    <td>-</td>
+                                    <td><code>help</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>mkdir</code></td>
+                                    <td data-translate="commandMkdirDesc">Создание директории</td>
+                                    <td><code>&lt;path&gt;</code></td>
+                                    <td><code>mkdir /new_directory</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>ls</code></td>
+                                    <td data-translate="commandLsDesc">Список содержимого директории</td>
+                                    <td><code>&lt;path&gt;</code></td>
+                                    <td><code>ls /sys</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>cd</code></td>
+                                    <td data-translate="commandCdDesc">Смена текущей директории</td>
+                                    <td><code>&lt;path&gt;</code></td>
+                                    <td><code>cd /path/to/directory</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>rm</code></td>
+                                    <td data-translate="commandRmDesc">Удаление файлов или директорий</td>
+                                    <td><code>&lt;path&gt;</code></td>
+                                    <td><code>rm /path/to/file</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>wifi</code></td>
+                                    <td data-translate="commandWifiDesc">Управление Wi-Fi подключением</td>
+                                    <td data-translate="commandWifiParams">connect, disconnect, reconnect, scan, status, ip, help</td>
+                                    <td><code>wifi connect SSID password</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>free</code></td>
+                                    <td data-translate="commandFreeDesc">Показать доступную память</td>
+                                    <td>-</td>
+                                    <td><code>free</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>system</code></td>
+                                    <td data-translate="commandSystemDesc">Системные команды</td>
+                                    <td data-translate="commandSystemParams">restart, info, update, diagnostic, freset, check, installer, help</td>
+                                    <td><code>system restart</code></td>
+                                </tr>
+                                <tr>
+                                    <td><code>history</code></td>
+                                    <td data-translate="commandHistoryDesc">История команд</td>
+                                    <td data-translate="commandHistoryParams">clear, read, help</td>
+                                    <td><code>history clear</code></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="specs-grid">
+                    <div class="spec-card">
+                        <h4 data-translate="xenoOSSystemRequirements">Системные требования</h4>
+                        <div class="requirements-table">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th data-translate="sysReqItem">Компонент</th>
+                                        <th data-translate="sysReqMin">Минимальные требования</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td data-translate="sysReqBoard">Плата</td>
+                                        <td>ESP32-C3 (рекомендуется) или другой ESP32</td>
+                                    </tr>
+                                    <tr>
+                                        <td data-translate="sysReqFlash">Flash память</td>
+                                        <td>4MB</td>
+                                    </tr>
+                                    <tr>
+                                        <td data-translate="sysReqSDCard">SD карта</td>
+                                        <td>До 4GB (опционально)</td>
+                                    </tr>
+                                    <tr>
+                                        <td data-translate="sysReqArduino">Arduino IDE</td>
+                                        <td>2.x с ESP32 core 3.2.0+</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="info-cards">
+                        <div class="info-card">
+                            <span class="info-icon">🔄</span>
+                            <div class="info-content">
+                                <strong data-translate="stateTitle">Состояние:</strong>
+                                <span data-translate="released">Выпущено</span>
+                            </div>
+                        </div>
+
+                        <div class="info-card">
+                            <span class="info-icon">💻</span>
+                            <div class="info-content">
+                                <strong data-translate="xenoOSPlatforms">Платформы:</strong>
+                                <span>ESP32 (ESP32-C3)</span>
+                            </div>
+                        </div>
+
+                        <div class="info-card">
+                            <span class="info-icon">👤</span>
+                            <div class="info-content">
+                                <strong data-translate="authorTitle">Автор:</strong>
+                                <span>VL_PLAY</span>
+                            </div>
+                        </div>
+
+                        <div class="info-card">
+                            <span class="info-icon">📱</span>
+                            <div class="info-content">
+                                <strong data-translate="xenoOSType">Тип:</strong>
+                                <span data-translate="embeddedSystem">Встроенная система</span>
+                            </div>
+                        </div>
+
+                        <div class="info-card">
+                            <span class="info-icon">🔧</span>
+                            <div class="info-content">
+                                <strong data-translate="xenoOSArchitecture">Архитектура:</strong>
+                                <span>RISC-V (ESP32-C3)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="description-card">
+                    <div class="card-header">
+                        <h3 data-translate="xenoOSInstallation">Установка</h3>
+                        <div class="decorative-line"></div>
+                    </div>
+                    
+                    <div class="installation-platforms">
+                        <div class="platform-card">
+                            <div class="platform-icon">🔧</div>
+                            <div class="platform-content">
+                                <h4 data-translate="standardInstallation">Стандартная установка через Arduino IDE</h4>
+                                <ol class="installation-steps">
+                                    <li data-translate="stepArduinoPrereq"><strong>Предварительные требования:</strong> Arduino IDE 2.x, ESP32 core 3.2.0+</li>
+                                    <li data-translate="stepCloneRepo">Клонируйте репозиторий: <code>git clone https://github.com/VLPLAY-Games/XenoOS.git</code></li>
+                                    <li data-translate="stepOpenIDE">Откройте <code>XenoOS.ino</code> в Arduino IDE</li>
+                                    <li data-translate="stepSelectBoard">Выберите плату <strong>ESP32-C3 Dev Module</strong></li>
+                                    <li data-translate="stepConfigureSettings">Настройте параметры в Tools (см. документацию)</li>
+                                    <li data-translate="stepUpload">Нажмите Upload для прошивки</li>
+                                </ol>
+                            </div>
+                        </div>
+
+                        <div class="platform-card">
+                            <div class="platform-icon">⚡</div>
+                            <div class="platform-content">
+                                <h4 data-translate="alternativeInstallation">Альтернативная установка для ESP32-C3</h4>
+                                <ol class="installation-steps">
+                                    <li data-translate="stepDownloadFirmware">Скачайте последний релиз с GitHub</li>
+                                    <li data-translate="stepFlashMerged">Для прошивки объединенного файла:<br>
+                                        <code>esptool.py --chip esp32c3 --baud 921600 write_flash 0x0 XenoOS.merged.bin</code>
+                                    </li>
+                                    <li data-translate="stepFlashSeparate">Или прошейте файлы отдельно:<br>
+                                        <code>esptool.py --chip esp32c3 --baud 921600 write_flash \<br>
+                                        &nbsp;&nbsp;0x1000 XenoOS.bootloader.bin \<br>
+                                        &nbsp;&nbsp;0x8000 XenoOS.partitions.bin \<br>
+                                        &nbsp;&nbsp;0x10000 XenoOS.bin</code>
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="description-card">
+                    <div class="card-header">
+                        <h3 data-translate="xenoOSUsage">Как использовать</h3>
+                        <div class="decorative-line"></div>
+                    </div>
+                    <div class="usage-steps">
+                        <div class="usage-step">
+                            <div class="step-number">1</div>
+                            <div class="step-content">
+                                <p data-translate="usageStep1Xeno">Подключитесь к устройству через Serial порт (скорость 115200) в Putty или другом терминале</p>
+                            </div>
+                        </div>
+                        <div class="usage-step">
+                            <div class="step-number">2</div>
+                            <div class="step-content">
+                                <p data-translate="usageStep2Xeno">Введите команды напрямую в терминал</p>
+                            </div>
+                        </div>
+                        <div class="usage-step">
+                            <div class="step-number">3</div>
+                            <div class="step-content">
+                                <p data-translate="usageStep3Xeno">Используйте <code>help</code> для просмотра всех доступных команд</p>
+                            </div>
+                        </div>
+                        <div class="usage-step">
+                            <div class="step-number">4</div>
+                            <div class="step-content">
+                                <p data-translate="usageStep4Xeno">Для диагностики системы используйте:<br>
+                                <code>system diagnostic</code> - запуск диагностики<br>
+                                <code>system check</code> - проверка системы</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="description-card">
+                    <div class="card-header">
+                        <h3 data-translate="xenoOSTechStack">Технологический стек</h3>
+                        <div class="decorative-line"></div>
+                    </div>
+                    <div class="tech-stack">
+                        <div class="tech-item">
+                            <span class="tech-icon">⚙️</span>
+                            <div class="tech-content">
+                                <strong data-translate="techFramework">Фреймворк:</strong>
+                                <span>Arduino Core for ESP32</span>
+                            </div>
+                        </div>
+                        <div class="tech-item">
+                            <span class="tech-icon">📚</span>
+                            <div class="tech-content">
+                                <strong data-translate="techLibraries">Библиотеки:</strong>
+                                <span>buildTime, ESPping, ESP32-targz</span>
+                            </div>
+                        </div>
+                        <div class="tech-item">
+                            <span class="tech-icon">💾</span>
+                            <div class="tech-content">
+                                <strong data-translate="techFilesystem">Файловая система:</strong>
+                                <span>SPIFFS</span>
+                            </div>
+                        </div>
+                        <div class="tech-item">
+                            <span class="tech-icon">🔌</span>
+                            <div class="tech-content">
+                                <strong data-translate="techProtocol">Протокол:</strong>
+                                <span>Serial (UART)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="description-card warning-card">
+                    <div class="card-header">
+                        <h3 data-translate="xenoOSTroubleshooting">Устранение неполадок</h3>
+                        <div class="decorative-line"></div>
+                    </div>
+                    <div class="troubleshooting-content">
+                        <p data-translate="troubleshootingIntroXeno">Если система не запускается или работает некорректно:</p>
+                        <ol class="troubleshooting-steps">
+                            <li data-translate="troubleshootingStep1Xeno">Убедитесь, что используется правильная версия Arduino Core (3.2.0+)</li>
+                            <li data-translate="troubleshootingStep2Xeno">Проверьте подключение Serial порта (скорость 115200)</li>
+                            <li data-translate="troubleshootingStep3Xeno">Для SD карт используйте карты объемом не более 4GB</li>
+                            <li data-translate="troubleshootingStep4Xeno">Запустите <code>system diagnostic</code> для проверки компонентов</li>
+                        </ol>
+                    </div>
+                </div>
+
+                <div class="description-card">
+                    <div class="card-header">
+                        <h3 data-translate="xenoOSLicense">Лицензия</h3>
+                        <div class="decorative-line"></div>
+                    </div>
+                    <p data-translate="xenoOSLicenseText" class="description-text">
+                        Этот проект лицензирован под MIT License - подробности в файле <a href="https://github.com/VLPLAY-Games/XenoOS/blob/main/LICENSE" target="_blank">LICENSE</a>.
+                    </p>
+                </div>
+            </div>
+
+            <div class="support-section">
+                <a href="https://www.donationalerts.com/r/vl_play021" target="_blank" class="support-btn">
+                    <span class="btn-icon">❤️</span>
+                    <span data-translate="SupportDevelopment">Поддержать разработку</span>
+                </a>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="footer-buttons">
+                <a href="../../../index.html" class="footer-button" data-translate="nav_home">Главная</a>
+                <a href="../../../html/devs/devs.html" class="footer-button" data-translate="nav_developments">Разработки</a>
+                <a href="../../../html/about_me/about_me.html" class="footer-button" data-translate="nav_about_me">Обо мне</a>
+                <a href="../../../html/links/links.html" class="footer-button" data-translate="nav_contacts">Контакты</a>
+                <a href="../../../html/status/status.html" class="footer-button" data-translate="nav_status">Статус</a>
+            </div>
+            <p>VL_PLAY Games Site v<span status-info = "siteVersion"></span></p>
+        </footer>
+    </div>
+    <button id="scrollTopButton" class="btn_scroll_top">↑</button>
+    <script src="../../../js/main.js" type="module"></script>
+</body>
+</html>
