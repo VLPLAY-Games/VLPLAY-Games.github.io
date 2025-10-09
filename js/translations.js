@@ -900,12 +900,12 @@ const ps_translations = {
         'ru': 'Интерфейс разделен на две основные секции:',
     },
     'interfaceSection1': {
-        'en': '<strong>Select Option:</strong> Features buttons for each main function',
-        'ru': '<strong>Выбор опции:</strong> Кнопки для каждой основной функции',
+        'en': 'Select Option: Features buttons for each main function',
+        'ru': 'Выбор опции: Кнопки для каждой основной функции',
     },
     'interfaceSection2': {
-        'en': '<strong>Result Panel:</strong> Displays the results and outputs of the selected operation',
-        'ru': '<strong>Панель результатов:</strong> Отображение результатов и выводов выбранной операции',
+        'en': 'Result Panel: Displays the results and outputs of the selected operation',
+        'ru': 'Панель результатов: Отображение результатов и выводов выбранной операции',
     },
     'portScannerLanguages': {
         'en': 'Languages:',
@@ -936,20 +936,20 @@ const ps_translations = {
         'ru': 'Для Linux',
     },
     'stepReleases': {
-        'en': 'Go to the <strong>Releases</strong> section',
-        'ru': 'Перейдите в раздел <strong>Releases</strong>',
+        'en': 'Go to the Releases section',
+        'ru': 'Перейдите в раздел Releases',
     },
     'stepDownloadWindows': {
-        'en': 'Download <code>port_scanner_windows.zip</code>',
-        'ru': 'Скачайте <code>port_scanner_windows.zip</code>',
+        'en': 'Download port_scanner_windows.zip',
+        'ru': 'Скачайте port_scanner_windows.zip',
     },
     'stepExtractWindows': {
-        'en': 'Extract the contents and run <code>port_scanner.exe</code>',
-        'ru': 'Разархивируйте содержимое и запустите <code>port_scanner.exe</code>',
+        'en': 'Extract the contents and run port_scanner.exe',
+        'ru': 'Разархивируйте содержимое и запустите port_scanner.exe',
     },
     'stepDownloadLinux': {
-        'en': 'Download <code>port_scanner_linux.zip</code>',
-        'ru': 'Скачайте <code>port_scanner_linux.zip</code>',
+        'en': 'Download port_scanner_linux.zip',
+        'ru': 'Скачайте port_scanner_linux.zip',
     },
     'stepExtractLinux': {
         'en': 'Extract the contents and execute in terminal:',
@@ -960,8 +960,8 @@ const ps_translations = {
         'ru': 'Важная информация',
     },
     'portScannerWarningText': {
-        'en': '<strong>If Windows complains about viruses:</strong><br>I use Pyinstaller to create an .exe file and since Pyinstaller creates a self-extracting archive, Windows (and Virus Total) shows it as a virus. You can look at the source code of the program and make sure that there are no viruses.',
-        'ru': '<strong>Если Windows жалуется на вирусы:</strong><br>Я использую Pyinstaller для создания .exe файла, и поскольку Pyinstaller создает самораспаковывающийся архив, Windows (и Virus Total) показывает его как вирус. Вы можете посмотреть исходный код программы и убедиться, что там нет вирусов.',
+        'en': 'If Windows complains about viruses:\nI use Pyinstaller to create an .exe file and since Pyinstaller creates a self-extracting archive, Windows (and Virus Total) shows it as a virus. You can look at the source code of the program and make sure that there are no viruses.',
+        'ru': 'Если Windows жалуется на вирусы:\nЯ использую Pyinstaller для создания .exe файла, и поскольку Pyinstaller создает самораспаковывающийся архив, Windows (и Virus Total) показывает его как вирус. Вы можете посмотреть исходный код программы и убедиться, что там нет вирусов.',
     },
     'portScannerWarningLink': {
         'en': 'Learn more about this issue',
@@ -1152,29 +1152,29 @@ const mui_translations = {
         'ru': 'Устранение неполадок',
     },
     'troubleshootingIntro': {
-        'en': 'If the application doesn\'t run:',
-        'ru': 'Если приложение не запускается:',
+        'en': 'If the application does not start:',
+        'ru': 'Если приложение не запускается:'
     },
     'troubleshootingStep1': {
-        'en': 'Install <a href="https://dotnet.microsoft.com/download/dotnet-framework/net472" target="_blank">.NET Framework 4.7.2</a>',
-        'ru': 'Установите <a href="https://dotnet.microsoft.com/download/dotnet-framework/net472" target="_blank">.NET Framework 4.7.2</a>',
+        'en': 'Install',
+        'ru': 'Установите'
     },
     'troubleshootingStep2': {
-        'en': 'Ensure both files are in the same folder',
-        'ru': 'Убедитесь, что оба файла находятся в одной папке',
+        'en': 'Make sure both files are in the same folder',
+        'ru': 'Убедитесь, что оба файла находятся в одной папке'
     },
     'troubleshootingStep3': {
-        'en': 'Run as Administrator if needed',
-        'ru': 'Запустите от имени Администратора при необходимости',
+        'en': 'Run as Administrator if necessary',
+        'ru': 'Запустите от имени Администратора при необходимости'
     },
     'musicLocalUILicense': {
         'en': 'License',
         'ru': 'Лицензия',
     },
     'musicLocalUILicenseText': {
-        'en': 'This project is licensed under the MIT License - see the <a href="https://github.com/VLPLAY-Games/MusicLocalUI/blob/main/LICENSE" target="_blank">LICENSE</a> file for details.',
-        'ru': 'Этот проект лицензирован под MIT License - подробности в файле <a href="https://github.com/VLPLAY-Games/MusicLocalUI/blob/main/LICENSE" target="_blank">LICENSE</a>.',
-    },
+        'en': 'This project is licensed under the MIT License - see the',
+        'ru': 'Этот проект лицензирован под MIT License - подробности в файле'
+    }
 }
 
 const xos_translations = {
@@ -1532,7 +1532,7 @@ function setLanguage(language) {
 }
 
 // Функция для инициализации языка при загрузке страницы
-export function initializeLanguage() {
+function initializeLanguage() {
     // Пытаемся получить язык из куков
     const savedLanguage = getCookie('language');
 

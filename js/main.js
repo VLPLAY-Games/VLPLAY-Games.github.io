@@ -1,6 +1,4 @@
-﻿import { initializeLanguage } from './translations.js';
-
-// Кнопка Вверх
+﻿// Кнопка Вверх
 window.addEventListener('scroll', function () {
     if (window.pageYOffset >= document.body.clientHeight / 4) {
         scrollTopButton.style.opacity = 1;

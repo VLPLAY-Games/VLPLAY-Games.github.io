@@ -54,7 +54,7 @@
     line-height: 1.5;
 }
 
-.troubleshooting-steps a {
+.troubleshooting-steps a, .description-text a {
     color: #e8b4e1;
     text-decoration: none;
     border-bottom: 1px dotted #e8b4e1;
