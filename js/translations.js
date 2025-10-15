@@ -11,17 +11,9 @@ const translations = {
         'en': 'Developments',
         'ru': 'Разработки',
     },
-    'nav_news': {
-        'en': 'News',
-        'ru': 'Новости',
-    },
     'nav_about_me': {
         'en': 'About Me',
         'ru': 'Обо мне',
-    },
-    'nav_contacts': {
-        'en': 'Links',
-        'ru': 'Ссылки',
     },
     'hero': {
         'en': 'Games, Software and more',
@@ -31,637 +23,13 @@ const translations = {
         'en': 'Learn More',
         'ru': 'Подробнее',
     },
-    'developments': {
-        'en': 'Developments',
-        'ru': 'Разработки',
-    },
-    'xcTitle': {
-        'en': 'XenoClock',
-        'ru': 'XenoClock',
-    },
-    'xcDescription': {
-        'en': 'I am creating unique clocks that combine high functionality using the ESP32 board and various modules.',
-        'ru': 'Я занимаюсь созданием уникальных часов, сочетающих в себе высокую функциональность с помощью платы ESP32.',
-    },
-    'botDescription': {
-        'en': 'My own Telegram bot, which informs about new developments and has many different additional functions, and also has a file converter.',
-        'ru': 'Мой собственный Telegram-бот, который информирует о новых разработках и имеет много различных дополнительных функций, а также имеет конвертер файлов.',
-    },
-    'sdDescription': {
-        'en': 'My game Silent Darkness is an exciting horror game that will immerse you in a dark world of secrets and horrors.',
-        'ru': 'Моя игра Silent Darkness представляет собой захватывающий хоррор, который погрузит вас в мрачный мир тайн и ужасов.',
-    },
-    'qlakeDescription': {
-        'en': 'Qlake is a first-person shooter with horror elements where you will carry out the main task - to kill the zombie leader.',
-        'ru': 'Qlake — шутер от первого лица с элементами хоррора, где вы будете выполнять основную задачу — убить предводителя зомби.',
-    },
-    'latest_news': {
-        'en': 'Latest News',
-        'ru': 'Последние новости',
-    },
-    'all_news': {
-        'en': 'All News',
-        'ru': 'Все новости',
-    },
-    'siteTitleAboutme':{
-        'en': 'VL_PLAY Games - About me',
-        'ru': 'VL_PLAY Games - Обо мне',
-    },
-    'aboutMeBegin': {
-        'en': 'About me',
-        'ru': 'Обо мне',
-    },
-    'aboutMe1': {
-        'en': "Hello! I'm the indie developer behind the moniker VL_PLAY. My passion is to create amazing technology and exciting games for audiences looking for something new and exciting.",
-        'ru': 'Привет! Я инди-разработчик, стоящий за псевдонимом VL_PLAY. Мое призвание — создавать удивительные технологии и захватывающие игры для аудитории, ищущей что-то новое и увлекательное.',
-    },
-    'aboutMe2': {
-        'en': 'My passion for programming started at an early age. Since then it has only gotten hotter. I am passionate about developing both software and hardware devices. My goal is to provide the users with incredible and innovative products that will make their life easier and more fun.',
-        'ru': 'Страсть к программированию началась еще в раннем возрасте. С тех пор она разгорелась только сильнее. Я увлечен разработкой как программного обеспечения, так и аппаратных устройств. Моя цель — предоставить пользователям невероятные и инновационные продукты, которые сделают их жизнь легче и увлекательнее.',
-    },
-    'aboutMe3': {
-        'en': 'Nowadays, the arsenal includes a variety of projects, ranging from exciting games in which players can plunge into a world of adventure and fantasy, to smart devices that combine advanced technology and design.',
-        'ru': 'Сейчас в арсенале разнообразные проекты, начиная от захватывающих игр, в которых игроки могут окунуться в мир приключений и фантазии, заканчивая умными устройствами, которые объединяют в себе передовые технологии и дизайн.',
-    },
-    'aboutMe4': {
-        'en': "When I'm not developing, I try to pay attention to learning and researching new technologies. And I really love sharing my knowledge and experience with other enthusiasts and developers in online communities.",
-        'ru': 'В то время, когда не занят разработкой, стараюсь уделять внимание обучению и исследованию новых технологий. И очень люблю делиться своими знаниями и опытом с другими энтузиастами и разработчиками в онлайн-сообществах.',
-    },
-    'aboutMe5': {
-        'en': 'Currently there are two completed projects: the Qlake game and the Telegram bot VL_PLAY Games Bot. In addition, I am working on two projects: the game Silent Darkness and the XenoClock smartwatch.',
-        'ru': 'В настоящее время есть два завершенных проекта: игра Qlake и Телеграм-бот VL_PLAY Games Bot. Кроме того, я работаю над двумя проектами: игрой Silent Darkness и умными часами XenoClock.',
-    },
-    'aboutMe6': {
-        'en': 'Nice to meet you! If there are any questions or comments, please feel free to contact me through the contact information on the page ',
-        'ru': 'Рад знакомству с вами! Если есть какие-либо вопросы или комментарии, пожалуйста, не стесняйтесь связаться со мной через контактную информацию на странице ',
-    },
-    'aboutMe7': {
-        'en': 'I am always happy to communicate with like-minded people and potential partners.',
-        'ru': 'Я всегда рад общению с единомышленниками и потенциальными партнерами.',
-    },
-    'aboutMe8': {
-        'en': 'You can also see my ',
-        'ru': 'Также вы можете посмотреть мой ',
-    },
-    'aboutMe9': {
-        'en': 'Contacts',
-        'ru': 'Контакты',
-    },
-    'siteTitleContacts': {
-        'en': 'VL_PLAY Games - Contacts',
-        'ru': 'VL_PLAY Games - Контакты',
-    },
-    'contactsMain': {
-        'en': 'Links',
-        'ru': 'Ссылки',
-    },
-    'contacts2': {
-        'en': 'Server in Discord',
-        'ru': 'Сервер в Discord',
-    },
-    'contacts3': {
-        'en': 'YouTube channel',
-        'ru': 'YouTube канал',
-    },
-    'siteTitleDevs': {
-        'en': 'VL_PLAY Games - My developments',
-        'ru': 'VL_PLAY Games - Мои разработки',
-    },
-    'siteTitleNewsMain': {
-        'en': 'VL_PLAY Games - News',
-        'ru': 'VL_PLAY Games - Новости',
-    },
-    'devsMain1': {
-        'en': 'All developments',
-        'ru': 'Все разработки',
-    },
-    'devsMain2': {
-        'en': 'My games',
-        'ru': 'Мои игры',
-    },
-    'sdDescriptionDevs': {
-        'en': 'Silent Darkness is an addictive first-person horror puzzle game. Gloomy and atmospheric locations await you, where every step puts you in front of a new puzzle. In order to move forward and uncover the secrets of this dark world, you will have to solve complex riddles and look for clues. Horrible surprises await you, and your survival will depend on your puzzle-solving skills and your composure in scary situations. Get ready to dive into a world of horror and mystery, where every step could cost you your life.',
-        'ru': 'Silent Darkness - это захватывающая хоррор-головоломка от первого лица. Вас ждут мрачные и атмосферные локации, где каждый шаг ставит вас перед новой головоломкой. Для того чтобы продвигаться дальше и раскрывать тайны этого мрачного мира, вам придется разгадать сложные загадки и искать ключи к разгадке. Вас ждут ужасные сюрпризы, и ваше выживание будет зависеть от ваших навыков решения головоломок и хладнокровия в страшных ситуациях. Готовьтесь к погружению в мир ужаса и загадок, где каждый шаг может стоить вам жизни.',
-    },
-    'qlakeDescriptionDevs': {
-        'en': 'Qlake is a small atmospheric first-person shooter in the survival genre with horror elements, developed on the Unreal Engine 5. In this game, the player will have to fight zombies and their leader, who is the main goal of the game. The player will go through several levels, each of which presents a set of challenges and dangers. He will look for first aid kits and ammunition for weapons that will help him cope with evil and survive on each level.',
-        'ru': 'Qlake - это небольшой атмосферный шутер от первого лица в жанре выживания с элементами хоррора, разработанный на движке Unreal Engine 5. В этой игре игроку предстоит сразиться с зомби и их лидером, который является основной целью игры. Игрок будет проходить через несколько уровней, каждый из которых представляет собой набор вызовов и опасностей. Он будет искать аптечки и боеприпасы к оружию, которое поможет ему справиться с злом и выжить на каждом уровне.',
-    },
-    'botDescriptionDevs': {
-        'en': 'A multifunctional Telegram bot that provides a number of useful commands for the convenience of users. It also informs you about new VL_PLAY Games news.',
-        'ru': 'Многофункциональный Telegram-бот, который предоставляет ряд полезных команд для удобства пользователей. А также информирует вас о новых новостях VL_PLAY Games.',
-    },
-    'xcDescriptionDevs': {
-        'en': "XenoClock is a compact, portable device designed for convenience and functionality. Stylish and precise, this device is ideal for those who value time and an unusual lifestyle. While you probably won't be able to wear it on your hand, XenoClock is always there, ready to help you stay ahead of the curve.",
-        'ru': 'XenoClock - это компактное переносное устройство, предназначенное для удобства и функциональности. Стильный и точный, это устройство идеально подходит для тех, кто ценит время и необычный стиль жизни. Хоть вы скорее всего не сможете надеть его на руку, XenoClock всегда рядом, готовый помочь вам оставаться впереди событий.',
-    },
-    'newsMainMain': {
-        'en': "All news",
-        'ru': 'Все новости',
-    },
-    'devsMain3': {
-        'en': 'My bots',
-        'ru': 'Мои боты',
-    },
-    'devsMain4': {
-        'en': 'My technologies',
-        'ru': 'Мои технологии',
-    },
-    'botLogo': {
-        'en': 'Bot Logo',
-        'ru': 'Логотип бота',
-    },
-    'botPrice': {
-        'en': 'Price: Free',
-        'ru': 'Цена: Бесплатно',
-    },
-    'free':{
-        'en': 'Free',
-        'ru': 'Бесплатно',
-    },
-    'botTelegramLink': {
-        'en': 'Telegram Link',
-        'ru': 'Ссылка на Telegram',
-    },
-    'botDescriptionTitle': {
-        'en': 'Description:',
-        'ru': 'Описание:',
-    },
-    'botLanguage': {
-        'en': "Bot Language: Russian",
-        'ru': 'Язык бота: Русский',
-    },
-    'botCommandsTitle': {
-        'en': 'Bot Commands',
-        'ru': 'Команды бота',
-    },
-    'botCommandStart': {
-        'en': '/start - start the bot',
-        'ru': '/start - запуск бота',
-    },
-    'SupportDevelopment': {
-        'en': 'Support Development',
-        'ru': 'Поддержать разработку',
-    },
-    'botCommandList': {
-        'en': '/commands - Bot command list',
-        'ru': '/commands - список команд бота',
-    },
-    'botCommandDownloadYouTubeVideo': {
-        'en': '/download_youtube_video - download video from YouTube',
-        'ru': '/download_youtube_video - загрузить видео с YouTube',
-    },
-    'botCommandConvertMP4toMP3': {
-        'en': '/convert_mp4_to_mp3 - convert video from mp4 to mp3',
-        'ru': '/convert_mp4_to_mp3 - конвертировать видео формата mp4 в аудио формат mp3',
-    },
-    'botCommandConvertMOVtoMP4': {
-        'en': '/convert_mov_to_mp4 - convert video from mov to mp4',
-        'ru': '/convert_mov_to_mp4 - конвертировать видео формата mov в видео формат mp4',
-    },
-    'botCommandConvertWebMtoMP4': {
-        'en': '/convert_webm_to_mp4 - convert video from webm to mp4',
-        'ru': '/convert_webm_to_mp4 - конвертировать видео формата webm в видео формат mp4',
-    },
-    'botCommandConvertMP3toWAV': {
-        'en': '/convert_mp3_to_wav - convert audio from mp3 to wav',
-        'ru': '/convert_mp3_to_wav - конвертировать аудио формата mp3 в аудио формат wav',
-    },
-    'botCommandConvertMP4toGIF': {
-        'en': '/convert_mp4_to_gif - convert video from mp4 to gif animation',
-        'ru': '/convert_mp4_to_gif - конвертировать видео формата mp4 в анимацию формата gif',
-    },
-    'botCommandConvertPNGtoJPEG': {
-        'en': '/convert_png_to_jpeg - convert image from png to jpeg',
-        'ru': '/convert_png_to_jpeg - конвертировать изображение формата png в изображение формата jpeg',
-    },
-    'botCommandConvertICOtoJPG': {
-        'en': '/convert_ico_to_jpg - convert image from ico to jpg',
-        'ru': '/convert_ico_to_jpg - конвертировать изображение формата ico в изображение формата jpg',
-    },
-    'botCommandConvertWebPtoJPG': {
-        'en': '/convert_webp_to_jpg - convert image from webp to jpg',
-        'ru': '/convert_webp_to_jpg - конвертировать изображение формата webp в изображение формата jpg',
-    },
-    'botCommandAudioRecognitionRus': {
-        'en': '/audio_recognition_rus - recognize text in audio file in Russian',
-        'ru': '/audio_recognition_rus - распознавание текста в аудиофайле на русском языке',
-    },
-    'botCommandAudioRecognitionEn': {
-        'en': '/audio_recognition_en - recognize text in audio file in English',
-        'ru': '/audio_recognition_en - распознавание текста в аудиофайле на английском языке',
-    },
-    'botCommandImageTextRecognition': {
-        'en': '/image_text_recognition - recognize text in image in png or jpg formats',
-        'ru': '/image_text_recognition - распознавание текста на изображении в форматах png или jpg',
-    },
-    'botCommandTextToAudio': {
-        'en': '/text_to_audio - convert text to audio',
-        'ru': '/text_to_audio - конвертировать текст в аудио',
-    },
-    'botCommandPasswordGenerator': {
-        'en': '/password_generator - generate a password of specified length',
-        'ru': '/password_generator - генератор паролей заданной длины',
-    },
-    'botCommandHashCalculator': {
-        'en': '/hash_calculator - calculate the hash sum of a file',
-        'ru': '/hash_calculator - вычислить хеш-сумму файла',
-    },
-    'botCommandSearchWikipedia': {
-        'en': '/search_wikipedia - search for information on Wikipedia',
-        'ru': '/search_wikipedia - поиск информации в Википедии',
-    },
-    'botCommandCurrency': {
-        'en': '/currency - get a list of prices to buy the specified currency in different currencies',
-        'ru': '/currency - получить список цен на покупку заданной валюты в разных валютах',
-    },
-    'xcPrice': {
-        'en': 'Price: ',
-        'ru': 'Цена: ',
-    },
-    'xcGithubLink': {
-        'en': 'GitHub Link',
-        'ru': 'Ссылка на GitHub',
-    },
-    'descriptionTitle': {
-        'en': 'Description:',
-        'ru': 'Описание:',
-    },
-    'descriptionContent': {
-        'en': "XenoClock is more than just a clock. It is a portable device designed with advanced technology to meet the needs of modern lifestyles. The main functionality includes accurate display of time, date and day of the week. However, XenoClock doesn't stop there. The functionality also includes the ability to synchronize with your smartphone, which makes the device more convenient. The watch also contains a portable Web server that allows you to configure the watch. With XenoClock you will always be one step ahead. This is not just a watch. It is your personal device for everyday life, optimally combining functionality and future technology.",
-        'ru': 'XenoClock — это больше, чем просто часы. Это переносное устройство, созданное с использованием передовых технологий для удовлетворения потребностей современного образа жизни. Основной функционал включает в себя точное отображение времени, даты и дня недели. Однако XenoClock не ограничивается только этим. Функционал также включает возможность синхронизации с вашим смартфоном, что делает устройство более удобным. В часах также находится портативный Web-сервер, с помощью которого можно настраивать часы. С XenoClock вы всегда будете на шаг впереди. Это не просто часы. Это ваше персональное устройство для повседневной жизни, оптимально сочетающее в себе функциональность и технологии будущего.',
-    },
-    'osTitle': {
-        'en': 'Operating System:',
-        'ru': 'Операционная система:',
-    },
-    'statusTitle': {
-        'en': 'Status:',
-        'ru': 'Статус:',
-    },
-    'boardTitle': {
-        'en': 'Board:',
-        'ru': 'Плата:',
-    },
-    'displayTitle': {
-        'en': 'Display:',
-        'ru': 'Дисплей:',
-    },
-    'displayResTitle': {
-        'en': 'Display Resolution:',
-        'ru': 'Разрешение дисплея:',
-    },
-    'memoryTitle': {
-        'en': 'Memory:',
-        'ru': 'Память:',
-    },
-    'ramTitle': {
-        'en': 'RAM:',
-        'ru': 'ОЗУ:',
-    },
-    'processorTitle': {
-        'en': 'Processor:',
-        'ru': 'Процессор:',
-    },
-    'languageTitle': {
-        'en': 'XenoClock Language:',
-        'ru': 'Язык XenoClock:',
-    },
-    'sdPrice': {
-        'en': 'Price',
-        'ru': 'Цена',
-    },
-    'sysReqDev': {
-        'en': 'In development',
-        'ru': 'В разработке',
-    },
-    'deprecated': {
-        'en': 'Deprecated',
-        'ru': 'Устарело',
-    },
-    'sysReqDevFreeSpace': {
-        'en': 'Free space',
-        'ru': 'Свободное место',
-    },
-    'sysReqItem': {
-        'en': 'Name',
-        'ru': 'Название',
-    },
-    'sysReqMin': {
-        'en': 'Minimum',
-        'ru': 'Минимальные',
-    },
-    'sysReqRecommended': {
-        'en': 'Recommended',
-        'ru': 'Рекомендуемые',
-    },
-    'sddescriptionContent': {
-        'en': 'Silent Darkness is an exciting puzzle game with elements of survival and horror that will immerse you in the atmosphere of a mysterious and enigmatic world. In this exciting game you will explore abandoned locations, revealing various secrets and solving riddles. Immerse yourself in the story of a mysterious hero whose fate is now connected with otherworldly forces. Your goal is to solve puzzles, solve riddles, and experience exciting moments in your search for the truth. Silent Darkness offers a unique combination of deep story, incredible adventure and challenging puzzles that will require your persistence and intelligence. The graphics and sound in the game create an atmosphere, immersing you in an amazing, mysterious world. Take on the challenge of Silent Darkness and embark on a journey through a mystical world that will not leave you indifferent. Will you be able to uncover all its secrets that will await you at every step?',
-        'ru': 'Silent Darkness — захватывающая головоломка с элементами выживания и хоррора, которая погрузит вас в атмосферу таинственного и загадочного мира. В этой увлекательной игре вам предстоит исследовать заброшенные локации, раскрывая различные тайны и разгадывая загадки. Погрузитесь в историю загадочного героя, чья судьба теперь связана с потусторонними силами. Ваша цель — решать головоломки, разгадывать загадки и переживать захватывающие моменты в поисках истины. Silent Darkness предлагает уникальное сочетание глубокого сюжета, невероятных приключений и сложных головоломок, которые потребуют вашей настойчивости и интеллекта. Графика и звук в игре создают атмосферу, погружая в удивительный загадочный мир. Примите вызов Silent Darkness и отправьтесь в путешествие по мистическому миру, которое не оставит вас равнодушным. Сможете ли вы раскрыть все его секреты, что будут поджидать вас на каждом шагу?',
-    },
-    'pageNewsCountNews': {
-        'en': 'Page: ',
-        'ru': 'Страница: ',
-    },
-    'qlakePrice': {
-        'en': 'Price: Free ',
-        'ru': 'Цена: Бесплатно ',
-    },
-    'qlakeDescription': {
-        'en': 'Qlake is a small indie first-person shooter in the Survival Horror genre, developed on the Unreal Engine 5. You have to communicate with zombies and their leader, which is the main goal of the game. The game requires you to complete several levels, each of which has a different set of tasks and dangers. You will be looking for weapons and ammunition that will help you prevent evil and survive. Qlake is a game that will stretch your nerves and force you to use all your survival skills. If you are a fan of games that combine horror and survival, then playing Qlake will be an additional way to spend your time.',
-        'ru': 'Qlake — это небольшой инди-шутер от первого лица в жанре Survival Horror, разработанный на движке Unreal Engine 5. Вам предстоит сражаться с зомби и их лидером, что является основной целью игры. В игре необходимо пройти несколько уровней, каждый из которых имеет различный набор задач и опасностей. Вы будете искать оружие и боеприпасы, которые помогут справиться со злом и выжить. Qlake — игра, которая натягивает ваши нервы и заставляет использовать все навыки выживания. Если вы любитель игр, сочетающих в себе ужасы и выживание, то игра в Qlake станет для вас отличным времяпрепровождением.',
-    },
-    'sysReqTitle': {
-        'en': 'System requirements on PC',
-        'ru': 'Системные требования на ПК',
-    },
-    'andMore': {
-        'en': 'and higher',
-        'ru': 'и выше',
-    },
-    'stateTitle': {
-        'en': 'State',
-        'ru': 'Состояние',
-    },
-    'platformsTitle': {
-        'en': 'Platforms:',
-        'ru': 'Платформы:',
-    },
-    'localizationTitle': {
-        'en': 'Game localization:',
-        'ru': 'Локализация игры:',
-    },
-    'authorTitle': {
-        'en': 'Author:',
-        'ru': 'Автор:',
-    },
-    'genreTitle': {
-        'en': 'Genre:',
-        'ru': 'Жанр:',
-    },
-    'tagsTitle': {
-        'en': 'Tags:',
-        'ru': 'Метки:',
-    },
-    'sessionTitle': {
-        'en': 'Average session:',
-        'ru': 'Средний сеанс:',
-    },
-    'langTitle': {
-        'en': 'Languages:',
-        'ru': 'Языки:',
-    },
-    'previousPageNews': {
-        'en': 'Previous page',
-        'ru': 'Предыдущая страница',
-    },
-    'nextPageNews': {
-        'en': 'Next page',
-        'ru': 'Следующая страница',
-    },
     'nav_status': {
         'en': 'Status',
         'ru': 'Статус',
     },
-    'puzzle': {
-        'en': 'Puzzle',
-        'ru': 'Головоломка',
-    },
-    'first_person': {
-        'en': 'First person',
-        'ru': 'От первого лица',
-    },
-    'indie': {
-        'en': 'Indie',
-        'ru': 'Инди',
-    },
-    'single': {
-        'en': 'Single Player',
-        'ru': 'Одиночная игра',
-    },
-    'horror': {
-        'en': 'Horror',
-        'ru': 'Хоррор',
-    },
-    'survival': {
-        'en': 'Survival',
-        'ru': 'Выживание',
-    },
-    'inches': {
-        'en': 'inches',
-        'ru': 'дюйма',
-    },
-    'MHz': {
-        'en': 'MHz',
-        'ru': 'МГц',
-    },
-    'localization_game': {
-        'en': 'Game localization:',
-        'ru': 'Локализация игры:',
-    },
-    'subtitles': {
-        'en': 'Subtitles',
-        'ru': 'Субтитры',
-    },
-    'voice_acting': {
-        'en': 'Voice acting',
-        'ru': 'Озвучка',
-    },
-    'interface': {
-        'en': 'Interface',
-        'ru': 'Интерфейс',
-    },
-    'note': {
-        'en': 'Note',
-        'ru': 'Примечание',
-    },
-    'sysReqQlakeAndroid': {
-        'en': 'System requirements for Android (approximate)',
-        'ru': 'Системные требования на Android (примерные)',
-    },
-    'Approximate_requirements': {
-        'en': 'Approximate requirements',
-        'ru': 'Примерные требования',
-    },
-    'released': {
-        'en': 'Released',
-        'ru': 'Выпущено',
-
-    },
-    'shooter': {
-        'en': 'Shooter',
-        'ru': 'Шутер',
-    },
-    'space': {
-        'en': 'Space',
-        'ru': 'Космос',
-    },
-    'sessionAverage': {
-        'en': 'Approximately 30 minutes',
-        'ru': 'Примерно 30 минут',
-    },
-    'trailers': {
-        'en': 'Trailers',
-        'ru': 'Трейлеры',
-    },
-    'screenshots': {
-        'en': 'Screenshots',
-        'ru': 'Скриншоты',
-    },
-    'siteTitleStatus': {
-        'en': 'VL_PLAY Games - Status',
-        'ru': 'VL_PLAY Games - Статус',
-    },
-    'status': {
-        'en': 'Status',
-        'ru': 'Статус',
-    },
-    'working': {
-        'en': 'Working',
-        'ru': 'Работает',
-    },
-    'release_date': {
-        'en': 'Last update',
-        'ru': 'Последнее обновление',
-    },
-    'name_dev_status': {
-        'en': 'Development name ',
-        'ru': 'Название разработки',
-    },
-    'version_status': {
-        'en': 'Version',
-        'ru': 'Версия',
-    },
-    'links_status': {
-        'en': 'Links',
-        'ru': 'Ссылки',
-    },
-    'botCommandLang': {
-        'en': '/language - change language',
-        'ru': '/language - изменить язык',
-    },
-    'aboutMePartnersLabel': {
-        'en': 'Unofficial partners',
-        'ru': 'Неофициальные партнеры',
-    },
-    'qlakeDescriptionTitle': {
-        'en': 'Qlake is a first-person shooter with horror elements, where you have to complete the main task - kill the leader of the zombies.',
-        'ru': 'Qlake — шутер от первого лица с элементами хоррора, где вы будете выполнять основную задачу — убить предводителя зомби.',
-    },
-
     'site_language': {
         'en': 'Language',
         'ru': 'Язык',
-        'fr': 'Langue',
-        'es': 'Idioma'
-    },
-    'hours': {
-        'en': 'Hours',
-        'ru': 'Часов',
-    },
-    'batTitle': {
-        'en': 'Battery:',
-        'ru': 'Батарея:',
-    },
-    'pulseSensorTitle': {
-        'en': 'Pulse sensor:',
-        'ru': 'Датчик пульса:',
-    },
-    'botLanguageTitle': {
-       'en': 'Bot language:',
-       'ru': 'Язык бота:', 
-    },
-    'device_specifications': {
-       'en': 'Device specifications:',
-       'ru': 'Характеристики устройства:',
-    },
-    'connection': {
-       'en': 'Connection:',
-       'ru': 'Связь:',
-    },
-    'built-in': {
-       'en': 'Built-in',
-       'ru': 'Встроенный',
-    },
-    'web_server': {
-       'en': 'Web-server:',
-       'ru': 'Веб-сервер:',
-    },
-    'viewAllDevelopments': {
-       'en': 'All developments',
-       'ru': 'Все разработки',
-    },
-    'tanabataTitle': {
-        'en': 'Tanabata: Path to the Stars',
-        'ru': 'Танабата: Путь к звездам',
-    },
-    'tanabataDescription': {
-        'en': 'A relaxing atmospheric puzzle game with adventure elements. Embark on a mystical journey through Tokyo and beyond to discover the secret Tanabata festival! Explore beautiful locations, solve ancient puzzles, and play magical mini-games where your choices determine the spectacular starry finale.',
-        'ru': 'Расслабляющая атмосферная головоломка с элементами приключения. Отправьтесь в мистическое путешествие по Токио и не только, чтобы открыть для себя секретный фестиваль Танабата! Исследуйте красивые локации, решайте древние головоломки и играйте в волшебные мини-игры, где ваши выборы определяют зрелищную звездную развязку.',
-    },
-    'tanabataFeaturesTitle': {
-        'en': 'Features',
-        'ru': 'Особенности',
-    },
-    'tanabataFeatures': {
-        'en': '✨ Authentic Japanese atmosphere – from cozy Tokyo streets to mysterious caves and a hidden village under the starry sky<br>🎮 Three unique levels – featuring different mechanics from social interactions to environmental puzzles<br>🎵 Soothing soundtrack – traditional Japanese instruments blended with natural ambient sounds<br>🎆 Dynamic ending – your performance determines the scale of the grand celestial celebration<br>⏳ Gentle time pressure – the stars won\'t wait, so reach the festival before the climax!',
-        'ru': '✨ Аутентичная японская атмосфера – от уютных улиц Токио до загадочных пещер и скрытой деревни под звездным небом<br>🎮 Три уникальных уровня – с различными механиками от социальных взаимодействий до головоломок окружающей среды<br>🎵 Успокаивающий саундтрек – традиционные японские инструменты в сочетании с естественными окружающими звуками<br>🎆 Динамичная концовка – ваши действия определяют масштаб грандиозного небесного праздника<br>⏳ Легкое давление времени – звезды не будут ждать, так что успевайте на фестиваль до кульминации!',
-    },
-    'tanabataPrice': {
-        'en': 'Free',
-        'ru': 'Бесплатно',
-    },
-    'tanabataPlatforms': {
-        'en': 'Windows',
-        'ru': 'Windows',
-    },
-    'tanabataLocalizationTitle': {
-        'en': 'Localization',
-        'ru': 'Локализация',
-    },
-    'tanabataLocalization': {
-        'en': '🌐 English – subtitles and user interface<br>🌐 Russian – subtitles only',
-        'ru': '🌐 Английский – субтитры и пользовательский интерфейс<br>🌐 Русский – только субтитры',
-    },
-    'tanabataGenre': {
-        'en': 'Puzzle, Adventure',
-        'ru': 'Головоломка, Приключение',
-    },
-    'tanabataSession': {
-        'en': '1-2 hours',
-        'ru': '1-2 часа',
-    },
-    'tanabataSoundtrack': {
-        'en': 'Soundtrack:',
-        'ru': 'Саундтрек:',
-    },
-    'tanabataSoundtrackType': {
-        'en': 'Traditional Japanese instruments',
-        'ru': 'Традиционные японские инструменты',
-    },
-    'sysReqOS': {
-        'en': 'Operating System',
-        'ru': 'Операционная система',
-    },
-    'sysReqPerformance': {
-        'en': 'Target Performance',
-        'ru': 'Целевая производительность',
-    },
-    'adventure': {
-        'en': 'Adventure',
-        'ru': 'Приключение',
-    },
-    'software': {
-        'en': 'Software',
-        'ru': "Программы"
-    },
-    'games': {
-        'en': 'Games',
-        'ru': "Игры"
-    },
-    'other': {
-        'en': 'Other',
-        'ru': "Другое"
     },
 };
 
@@ -982,6 +350,10 @@ const ps_translations = {
     'usageStep3': {
         'en': 'Use the additional buttons at the bottom to manage logs, clear results, or access the help menu',
         'ru': 'Используйте дополнительные кнопки внизу для управления логами, очистки результатов или доступа к меню помощи',
+    },
+    'interface': {
+        'en': 'Interface',
+        'ru': 'Интерфейс',
     },
 }
 
@@ -1488,10 +860,653 @@ const xos_translations = {
     }
 }
 
-Object.assign(translations, ds_translations);
-Object.assign(translations, ps_translations);
-Object.assign(translations, xos_translations);
-Object.assign(translations, mui_translations);
+const bot_translations = {
+    'botTitle': {
+        'en': 'VL_PLAY Games Bot',
+        'ru': 'VL_PLAY Games Bot'
+    },
+    'botPrice': {
+        'en': 'Free',
+        'ru': 'Бесплатно'
+    },
+    'botTelegramLink': {
+        'en': 'Telegram Link',
+        'ru': 'Ссылка на Telegram'
+    },
+    'botDescriptionTitle': {
+        'en': 'Description:',
+        'ru': 'Описание:'
+    },
+    'botDescription': {
+        'en': 'My own Telegram bot, which informs about new developments and has various additional functions.',
+        'ru': 'Мой собственный Telegram-бот, который информирует о новых разработках и имеет различные дополнительные функции.'
+    },
+    'botLanguageTitle': {
+        'en': 'Bot language:',
+        'ru': 'Язык бота:'
+    },
+    'botCommandsTitle': {
+        'en': 'Bot Commands',
+        'ru': 'Команды бота'
+    },
+    'botCommandStart': {
+        'en': 'start the bot',
+        'ru': 'запуск бота'
+    },
+    'botCommandLang': {
+        'en': 'change language',
+        'ru': 'изменить язык'
+    },
+    'botCommandList': {
+        'en': 'Bot command list',
+        'ru': 'список команд бота'
+    },
+    'botCommandDownloadYouTubeVideo': {
+        'en': 'download video from YouTube',
+        'ru': 'загрузить видео с YouTube'
+    },
+    'botCommandConvertMP4toMP3': {
+        'en': 'convert video from mp4 to mp3',
+        'ru': 'конвертировать видео формата mp4 в аудио формат mp3'
+    },
+    'botCommandConvertMOVtoMP4': {
+        'en': 'convert video from mov to mp4',
+        'ru': 'конвертировать видео формата mov в видео формат mp4'
+    },
+    'botCommandConvertWebMtoMP4': {
+        'en': 'convert video from webm to mp4',
+        'ru': 'конвертировать видео формата webm в видео формат mp4'
+    },
+    'botCommandConvertMP3toWAV': {
+        'en': 'convert audio from mp3 to wav',
+        'ru': 'конвертировать аудио формата mp3 в аудио формат wav'
+    },
+    'botCommandConvertMP4toGIF': {
+        'en': 'convert video from mp4 to gif animation',
+        'ru': 'конвертировать видео формата mp4 в анимацию формата gif'
+    },
+    'botCommandConvertPNGtoJPEG': {
+        'en': 'convert image from png to jpeg',
+        'ru': 'конвертировать изображение формата png в изображение формата jpeg'
+    },
+    'botCommandConvertICOtoJPG': {
+        'en': 'convert image from ico to jpg',
+        'ru': 'конвертировать изображение формата ico в изображение формата jpg'
+    },
+    'botCommandConvertWebPtoJPG': {
+        'en': 'convert image from webp to jpg',
+        'ru': 'конвертировать изображение формата webp в изображение формата jpg'
+    },
+    'botCommandAudioRecognitionRus': {
+        'en': 'recognize text in audio file in Russian',
+        'ru': 'распознавание текста в аудиофайле на русском языке'
+    },
+    'botCommandAudioRecognitionEn': {
+        'en': 'recognize text in audio file in English',
+        'ru': 'распознавание текста в аудиофайле на английском языке'
+    },
+    'botCommandImageTextRecognition': {
+        'en': 'recognize text in image in png or jpg formats',
+        'ru': 'распознавание текста на изображении в форматах png или jpg'
+    },
+    'botCommandTextToAudio': {
+        'en': 'convert text to audio',
+        'ru': 'конвертировать текст в аудио'
+    },
+    'botCommandPasswordGenerator': {
+        'en': 'generate a password of specified length',
+        'ru': 'генератор паролей заданной длины'
+    },
+    'botCommandHashCalculator': {
+        'en': 'calculate the hash sum of a file',
+        'ru': 'вычислить хеш-сумму файла'
+    },
+    'botCommandSearchWikipedia': {
+        'en': 'search for information on Wikipedia',
+        'ru': 'поиск информации в Википедии'
+    },
+    'botCommandCurrency': {
+        'en': 'get a list of prices to buy the specified currency in different currencies',
+        'ru': 'получить список цен на покупку заданной валюты в разных валютах'
+    },
+    'botDescriptionDevs': {
+        'en': 'A multifunctional Telegram bot that provides a number of useful commands for the convenience of users. It also informs you about new VL_PLAY Games news.',
+        'ru': 'Многофункциональный Telegram-бот, который предоставляет ряд полезных команд для удобства пользователей. А также информирует вас о новых новостях VL_PLAY Games.',
+    },
+};
+
+const qlake_translations = {
+    'botDescriptionTitle': {
+        'en': 'Description',
+        'ru': 'Описание'
+    },
+    'qlakeDescription': {
+        'en': 'Qlake is a small indie first-person shooter in the Survival Horror genre, developed on the Unreal Engine 5. You have to communicate with zombies and their leader, which is the main goal of the game. The game requires you to complete several levels, each of which has a different set of tasks and dangers. You will be looking for weapons and ammunition that will help you prevent evil and survive. Qlake is a game that will stretch your nerves and force you to use all your survival skills. If you are a fan of games that combine horror and survival, then playing Qlake will be an additional way to spend your time.',
+        'ru': 'Qlake — это небольшой инди-шутер от первого лица в жанре Survival Horror, разработанный на движке Unreal Engine 5. Вам предстоит сражаться с зомби и их лидером, что является основной целью игры. В игре необходимо пройти несколько уровней, каждый из которых имеет различный набор задач и опасностей. Вы будете искать оружие и боеприпасы, которые помогут справиться со злом и выжить. Qlake — игра, которая натягивает ваши нервы и заставляет использовать все навыки выживания. Если вы любитель игр, сочетающих в себе ужасы и выживание, то игра в Qlake станет для вас отличным времяпрепровведением.'
+    },
+    'localization_game': {
+        'en': 'Game localization:',
+        'ru': 'Локализация игры:'
+    },
+    'subtitles': {
+        'en': 'Subtitles',
+        'ru': 'Субтитры'
+    },
+    'voice_acting': {
+        'en': 'Voice acting',
+        'ru': 'Озвучка'
+    },
+    'interface': {
+        'en': 'Interface',
+        'ru': 'Интерфейс'
+    },
+    'sessionAverage': {
+        'en': 'Approximately 30 minutes',
+        'ru': 'Примерно 30 минут'
+    },
+    'sysReqQlakeAndroid': {
+        'en': 'System requirements for Android (approximate)',
+        'ru': 'Системные требования на Android (примерные)'
+    },
+    'Approximate_requirements': {
+        'en': 'Approximate requirements',
+        'ru': 'Примерные требования'
+    },
+    'qlakeDescriptionTitle': {
+        'en': 'Qlake is a first-person shooter with horror elements, where you have to complete the main task - kill the leader of the zombies.',
+        'ru': 'Qlake — шутер от первого лица с элементами хоррора, где вы будете выполнять основную задачу — убить предводителя зомби.',
+    },
+    'qlakeDescriptionDevs': {
+        'en': 'Qlake is a small atmospheric first-person shooter in the survival genre with horror elements, developed on the Unreal Engine 5. In this game, the player will have to fight zombies and their leader, who is the main goal of the game. The player will go through several levels, each of which presents a set of challenges and dangers. He will look for first aid kits and ammunition for weapons that will help him cope with evil and survive on each level.',
+        'ru': 'Qlake - это небольшой атмосферный шутер от первого лица в жанре выживания с элементами хоррора, разработанный на движке Unreal Engine 5. В этой игре игроку предстоит сразиться с зомби и их лидером, который является основной целью игры. Игрок будет проходить через несколько уровней, каждый из которых представляет собой набор вызовов и опасностей. Он будет искать аптечки и боеприпасы к оружию, которое поможет ему справиться с злом и выжить на каждом уровне.',
+    },
+};
+
+const sd_translations = {
+    'sddescriptionContent': {
+        'en': 'Silent Darkness is an exciting puzzle game with elements of survival and horror that will immerse you in the atmosphere of a mysterious and enigmatic world. In this exciting game you will explore abandoned locations, revealing various secrets and solving riddles. Immerse yourself in the story of a mysterious hero whose fate is now connected with otherworldly forces. Your goal is to solve puzzles, solve riddles, and experience exciting moments in your search for the truth. Silent Darkness offers a unique combination of deep story, incredible adventure and challenging puzzles that will require your persistence and intelligence. The graphics and sound in the game create an atmosphere, immersing you in an amazing, mysterious world. Take on the challenge of Silent Darkness and embark on a journey through a mystical world that will not leave you indifferent. Will you be able to uncover all its secrets that will await you at every step?',
+        'ru': 'Silent Darkness — захватывающая головоломка с элементами выживания и хоррора, которая погрузит вас в атмосферу таинственного и загадочного мира. В этой увлекательной игре вам предстоит исследовать заброшенные локации, раскрывая различные тайны и разгадывая загадки. Погрузитесь в историю загадочного героя, чья судьба теперь связана с потусторонними силами. Ваша цель — решать головоломки, разгадывать загадки и переживать захватывающие моменты в поисках истины. Silent Darkness предлагает уникальное сочетание глубокого сюжета, невероятных приключений и сложных головоломок, которые потребуют вашей настойчивости и интеллекта. Графика и звук в игре создают атмосферу, погружая в удивительный загадочный мир. Примите вызов Silent Darkness и отправьтесь в путешествие по мистическому миру, которое не оставит вас равнодушным. Сможете ли вы раскрыть все его секреты, что будут поджидать вас на каждом шагу?'
+    },
+    'localizationTitle': {
+        'en': 'Game localization:',
+        'ru': 'Локализация игры:'
+    },
+    'sdDescription': {
+        'en': 'My game Silent Darkness is an exciting horror game that will immerse you in a dark world of secrets and horrors.',
+        'ru': 'Моя игра Silent Darkness представляет собой захватывающий хоррор, который погрузит вас в мрачный мир тайн и ужасов.',
+    },
+    'sdDescriptionDevs': {
+        'en': 'Silent Darkness is an addictive first-person horror puzzle game. Gloomy and atmospheric locations await you, where every step puts you in front of a new puzzle. In order to move forward and uncover the secrets of this dark world, you will have to solve complex riddles and look for clues. Horrible surprises await you, and your survival will depend on your puzzle-solving skills and your composure in scary situations. Get ready to dive into a world of horror and mystery, where every step could cost you your life.',
+        'ru': 'Silent Darkness - это захватывающая хоррор-головоломка от первого лица. Вас ждут мрачные и атмосферные локации, где каждый шаг ставит вас перед новой головоломкой. Для того чтобы продвигаться дальше и раскрывать тайны этого мрачного мира, вам придется разгадать сложные загадки и искать ключи к разгадке. Вас ждут ужасные сюрпризы, и ваше выживание будет зависеть от ваших навыков решения головоломок и хладнокровия в страшных ситуациях. Готовьтесь к погружению в мир ужаса и загадок, где каждый шаг может стоить вам жизни.',
+    },
+};
+
+const xc_translations = {
+    'pageTitle': {
+        'en': 'VL_PLAY Games - XenoClock',
+        'ru': 'VL_PLAY Games - XenoClock'
+    },
+    'xcDescription': {
+        'en': 'I am creating unique clocks that combine high functionality using the ESP32 board and various modules.',
+        'ru': 'Я занимаюсь созданием уникальных часов, сочетающих в себе высокую функциональность с помощью платы ESP32.',
+    },
+    'xcTitle': {
+        'en': 'XenoClock',
+        'ru': 'XenoClock'
+    },
+    'xcGithubLink': {
+        'en': 'GitHub Link',
+        'ru': 'Ссылка на GitHub'
+    },
+    'descriptionContent': {
+        'en': "XenoClock is more than just a clock. It is a portable device designed with advanced technology to meet the needs of modern lifestyles. The main functionality includes accurate display of time, date and day of the week. However, XenoClock doesn't stop there. The functionality also includes the ability to synchronize with your smartphone, which makes the device more convenient. The watch also contains a portable Web server that allows you to configure the watch. With XenoClock you will always be one step ahead. This is not just a watch. It is your personal device for everyday life, optimally combining functionality and future technology.",
+        'ru': 'XenoClock — это больше, чем просто часы. Это переносное устройство, созданное с использованием передовых технологий для удовлетворения потребностей современного образа жизни. Основной функционал включает в себя точное отображение времени, даты и дня недели. Однако XenoClock не ограничивается только этим. Функционал также включает возможность синхронизации с вашим смартфоном, что делает устройство более удобным. В часах также находится портативный Web-сервер, с помощью которого можно настраивать часы. С XenoClock вы всегда будете на шаг впереди. Это не просто часы. Это ваше персональное устройство для повседневной жизни, оптимально сочетающее в себе функциональность и технологии будущего.'
+    },
+    'device_specifications': {
+        'en': 'Device specifications:',
+        'ru': 'Характеристики устройства:'
+    },
+    'osTitle': {
+        'en': 'Operating System:',
+        'ru': 'Операционная система:'
+    },
+    'boardTitle': {
+        'en': 'Board:',
+        'ru': 'Плата:'
+    },
+    'displayTitle': {
+        'en': 'Display:',
+        'ru': 'Дисплей:'
+    },
+    'displayResTitle': {
+        'en': 'Display Resolution:',
+        'ru': 'Разрешение дисплея:'
+    },
+    'memoryTitle': {
+        'en': 'Memory:',
+        'ru': 'Память:'
+    },
+    'ramTitle': {
+        'en': 'RAM:',
+        'ru': 'ОЗУ:'
+    },
+    'processorTitle': {
+        'en': 'Processor:',
+        'ru': 'Процессор:'
+    },
+    'pulseSensorTitle': {
+        'en': 'Pulse sensor:',
+        'ru': 'Датчик пульса:'
+    },
+    'batTitle': {
+        'en': 'Battery:',
+        'ru': 'Батарея:'
+    },
+    'languageTitle': {
+        'en': 'XenoClock Language:',
+        'ru': 'Язык XenoClock:'
+    },
+    'connection': {
+        'en': 'Connection:',
+        'ru': 'Связь:'
+    },
+    'web_server': {
+        'en': 'Web-server:',
+        'ru': 'Веб-сервер:'
+    },
+    'xcDescriptionDevs': {
+        'en': "XenoClock is a compact, portable device designed for convenience and functionality. Stylish and precise, this device is ideal for those who value time and an unusual lifestyle. While you probably won't be able to wear it on your hand, XenoClock is always there, ready to help you stay ahead of the curve.",
+        'ru': 'XenoClock - это компактное переносное устройство, предназначенное для удобства и функциональности. Стильный и точный, это устройство идеально подходит для тех, кто ценит время и необычный стиль жизни. Хоть вы скорее всего не сможете надеть его на руку, XenoClock всегда рядом, готовый помочь вам оставаться впереди событий.',
+    },
+    'built-in': {
+       'en': 'Built-in',
+       'ru': 'Встроенный',
+    },
+    'inches': {
+        'en': 'inches',
+        'ru': 'дюйма',
+    },
+    'MHz': {
+        'en': 'MHz',
+        'ru': 'МГц',
+    },
+};
+
+const ft_translations = {
+        'tanabataTitle': {
+        'en': 'Tanabata: Path to the Stars',
+        'ru': 'Танабата: Путь к звездам',
+    },
+    'tanabataDescription': {
+        'en': 'A relaxing atmospheric puzzle game with adventure elements. Embark on a mystical journey through Tokyo and beyond to discover the secret Tanabata festival! Explore beautiful locations, solve ancient puzzles, and play magical mini-games where your choices determine the spectacular starry finale.',
+        'ru': 'Расслабляющая атмосферная головоломка с элементами приключения. Отправьтесь в мистическое путешествие по Токио и не только, чтобы открыть для себя секретный фестиваль Танабата! Исследуйте красивые локации, решайте древние головоломки и играйте в волшебные мини-игры, где ваши выборы определяют зрелищную звездную развязку.',
+    },
+    'tanabataFeaturesTitle': {
+        'en': 'Features',
+        'ru': 'Особенности',
+    },
+    'tanabataFeature1': {
+        'en': '✨ Authentic Japanese atmosphere – from cozy Tokyo streets to mysterious caves and a hidden village under the starry sky',
+        'ru': '✨ Аутентичная японская атмосфера – от уютных улиц Токио до загадочных пещер и скрытой деревни под звездным небом'
+    },
+    'tanabataFeature2': {
+        'en': '🎮 Three unique levels – featuring different mechanics from social interactions to environmental puzzles',
+        'ru': '🎮 Три уникальных уровня – с различными механиками от социальных взаимодействий до головоломок окружающей среды'
+    },
+    'tanabataFeature3': {
+        'en': '🎵 Soothing soundtrack – traditional Japanese instruments blended with natural ambient sounds',
+        'ru': '🎵 Успокаивающий саундтрек – традиционные японские инструменты в сочетании с естественными окружающими звуками'
+    },
+    'tanabataFeature4': {
+        'en': '🎆 Dynamic ending – your performance determines the scale of the grand celestial celebration',
+        'ru': '🎆 Динамичная концовка – ваши действия определяют масштаб грандиозного небесного праздника'
+    },
+    'tanabataFeature5': {
+        'en': '⏳ Gentle time pressure – the stars won\'t wait, so reach the festival before the climax!',
+        'ru': '⏳ Легкое давление времени – звезды не будут ждать, так что успевайте на фестиваль до кульминации!'
+    },
+    'tanabataPrice': {
+        'en': 'Free',
+        'ru': 'Бесплатно',
+    },
+    'tanabataPlatforms': {
+        'en': 'Windows',
+        'ru': 'Windows',
+    },
+    'tanabataLocalizationTitle': {
+        'en': 'Localization',
+        'ru': 'Локализация',
+    },
+    'tanabataLocalization': {
+        'en': '🌐 English – subtitles and user interface<br>🌐 Russian – subtitles only',
+        'ru': '🌐 Английский – субтитры и пользовательский интерфейс<br>🌐 Русский – только субтитры',
+    },
+    'tanabataGenre': {
+        'en': 'Puzzle, Adventure',
+        'ru': 'Головоломка, Приключение',
+    },
+    'tanabataSession': {
+        'en': '1-2 hours',
+        'ru': '1-2 часа',
+    },
+}
+
+const aboutme_translations = {
+    'siteTitleAboutme':{
+        'en': 'VL_PLAY Games - About me',
+        'ru': 'VL_PLAY Games - Обо мне',
+    },
+    'aboutMeBegin': {
+        'en': 'About me',
+        'ru': 'Обо мне',
+    },
+    'aboutMe1': {
+        'en': "Hello! I'm the indie developer behind the moniker VL_PLAY. My passion is to create amazing technology and exciting games for audiences looking for something new and exciting.",
+        'ru': 'Привет! Я инди-разработчик, стоящий за псевдонимом VL_PLAY. Мое призвание — создавать удивительные технологии и захватывающие игры для аудитории, ищущей что-то новое и увлекательное.',
+    },
+    'aboutMe2': {
+        'en': 'My passion for programming started at an early age. Since then it has only gotten hotter. I am passionate about developing both software and hardware devices. My goal is to provide the users with incredible and innovative products that will make their life easier and more fun.',
+        'ru': 'Страсть к программированию началась еще в раннем возрасте. С тех пор она разгорелась только сильнее. Я увлечен разработкой как программного обеспечения, так и аппаратных устройств. Моя цель — предоставить пользователям невероятные и инновационные продукты, которые сделают их жизнь легче и увлекательнее.',
+    },
+    'aboutMe3': {
+        'en': 'Nowadays, the arsenal includes a variety of projects, ranging from exciting games in which players can plunge into a world of adventure and fantasy, to smart devices that combine advanced technology and design.',
+        'ru': 'Сейчас в арсенале разнообразные проекты, начиная от захватывающих игр, в которых игроки могут окунуться в мир приключений и фантазии, заканчивая умными устройствами, которые объединяют в себе передовые технологии и дизайн.',
+    },
+    'aboutMe4': {
+        'en': "When I'm not developing, I try to pay attention to learning and researching new technologies. And I really love sharing my knowledge and experience with other enthusiasts and developers in online communities.",
+        'ru': 'В то время, когда не занят разработкой, стараюсь уделять внимание обучению и исследованию новых технологий. И очень люблю делиться своими знаниями и опытом с другими энтузиастами и разработчиками в онлайн-сообществах.',
+    },
+    'aboutMe5': {
+        'en': 'Currently there are two completed projects: the Qlake game and the Telegram bot VL_PLAY Games Bot. In addition, I am working on two projects: the game Silent Darkness and the XenoClock smartwatch.',
+        'ru': 'В настоящее время есть два завершенных проекта: игра Qlake и Телеграм-бот VL_PLAY Games Bot. Кроме того, я работаю над двумя проектами: игрой Silent Darkness и умными часами XenoClock.',
+    },
+    'aboutMe6': {
+        'en': 'Nice to meet you! If there are any questions or comments, please feel free to contact me through the contact information on the page ',
+        'ru': 'Рад знакомству с вами! Если есть какие-либо вопросы или комментарии, пожалуйста, не стесняйтесь связаться со мной через контактную информацию на странице ',
+    },
+    'aboutMe7': {
+        'en': 'I am always happy to communicate with like-minded people and potential partners.',
+        'ru': 'Я всегда рад общению с единомышленниками и потенциальными партнерами.',
+    },
+    'aboutMe8': {
+        'en': 'You can also see my ',
+        'ru': 'Также вы можете посмотреть мой ',
+    },
+    'aboutMe9': {
+        'en': 'Contacts',
+        'ru': 'Контакты',
+    },
+    'aboutMePartnersLabel': {
+        'en': 'Unofficial partners',
+        'ru': 'Неофициальные партнеры',
+    },
+}
+
+const status_translations = {
+    'release_date': {
+        'en': 'Last update',
+        'ru': 'Последнее обновление',
+    },
+    'name_dev_status': {
+        'en': 'Development name ',
+        'ru': 'Название разработки',
+    },
+    'version_status': {
+        'en': 'Version',
+        'ru': 'Версия',
+    },
+    'links_status': {
+        'en': 'Links',
+        'ru': 'Ссылки',
+    },
+    'stateTitle': {
+        'en': 'State',
+        'ru': 'Состояние',
+    },
+    'siteTitleStatus': {
+        'en': 'VL_PLAY Games - Status',
+        'ru': 'VL_PLAY Games - Статус',
+    },
+    'status': {
+        'en': 'Status',
+        'ru': 'Статус',
+    },
+    'working': {
+        'en': 'Working',
+        'ru': 'Работает',
+    },
+    'released': {
+        'en': 'Released',
+        'ru': 'Выпущено',
+    },
+    'statusTitle': {
+        'en': 'Status:',
+        'ru': 'Статус:',
+    },
+    'sysReqDev': {
+        'en': 'In development',
+        'ru': 'В разработке',
+    },
+    'deprecated': {
+        'en': 'Deprecated',
+        'ru': 'Устарело',
+    },
+}
+
+const games_main_translations = {
+    'games': {
+        'en': 'Games',
+        'ru': "Игры"
+    },
+    'sysReqOS': {
+        'en': 'Operating System',
+        'ru': 'Операционная система',
+    },
+    'sysReqPerformance': {
+        'en': 'Target Performance',
+        'ru': 'Целевая производительность',
+    },
+    'adventure': {
+        'en': 'Adventure',
+        'ru': 'Приключение',
+    },
+    'hours': {
+        'en': 'Hours',
+        'ru': 'Часов',
+    },
+    'note': {
+        'en': 'Note',
+        'ru': 'Примечание',
+    },
+    'Approximate_requirements': {
+        'en': 'Approximate requirements',
+        'ru': 'Примерные требования',
+    },
+    'shooter': {
+        'en': 'Shooter',
+        'ru': 'Шутер',
+    },
+    'space': {
+        'en': 'Space',
+        'ru': 'Космос',
+    },
+    'sessionAverage': {
+        'en': 'Approximately 30 minutes',
+        'ru': 'Примерно 30 минут',
+    },
+    'trailers': {
+        'en': 'Trailers',
+        'ru': 'Трейлеры',
+    },
+    'genreTitle': {
+        'en': 'Genre:',
+        'ru': 'Жанр:',
+    },
+    'tagsTitle': {
+        'en': 'Tags:',
+        'ru': 'Метки:',
+    },
+    'sessionTitle': {
+        'en': 'Average session:',
+        'ru': 'Средний сеанс:',
+    },
+    'free':{
+        'en': 'Free',
+        'ru': 'Бесплатно',
+    },
+    'puzzle': {
+        'en': 'Puzzle',
+        'ru': 'Головоломка',
+    },
+    'first_person': {
+        'en': 'First person',
+        'ru': 'От первого лица',
+    },
+    'indie': {
+        'en': 'Indie',
+        'ru': 'Инди',
+    },
+    'single': {
+        'en': 'Single Player',
+        'ru': 'Одиночная игра',
+    },
+    'horror': {
+        'en': 'Horror',
+        'ru': 'Хоррор',
+    },
+    'survival': {
+        'en': 'Survival',
+        'ru': 'Выживание',
+    },
+    'localization_game': {
+        'en': 'Game localization:',
+        'ru': 'Локализация игры:',
+    },
+    'subtitles': {
+        'en': 'Subtitles',
+        'ru': 'Субтитры',
+    },
+    'voice_acting': {
+        'en': 'Voice acting',
+        'ru': 'Озвучка',
+    },
+    'sysReqDevFreeSpace': {
+        'en': 'Free space',
+        'ru': 'Свободное место',
+    },
+    'sysReqItem': {
+        'en': 'Name',
+        'ru': 'Название',
+    },
+    'sysReqMin': {
+        'en': 'Minimum',
+        'ru': 'Минимальные',
+    },
+    'sysReqRecommended': {
+        'en': 'Recommended',
+        'ru': 'Рекомендуемые',
+    },
+    'sysReqTitle': {
+        'en': 'System requirements on PC',
+        'ru': 'Системные требования на ПК',
+    },
+    'andMore': {
+        'en': 'and higher',
+        'ru': 'и выше',
+    },
+    'platformsTitle': {
+        'en': 'Platforms:',
+        'ru': 'Платформы:',
+    },
+    'localizationTitle': {
+        'en': 'Game localization:',
+        'ru': 'Локализация игры:',
+    },
+    'langTitle': {
+        'en': 'Languages:',
+        'ru': 'Языки:',
+    },
+}
+
+const devs_main_translations = {
+    'screenshots': {
+        'en': 'Screenshots',
+        'ru': 'Скриншоты',
+    },
+    'software': {
+        'en': 'Software',
+        'ru': "Программы"
+    },
+    'other': {
+        'en': 'Other',
+        'ru': "Другое"
+    },
+    'SupportDevelopment': {
+        'en': 'Support Development',
+        'ru': 'Поддержать разработку',
+    },
+    'descriptionTitle': {
+        'en': 'Description:',
+        'ru': 'Описание:',
+    },
+    'authorTitle': {
+        'en': 'Author:',
+        'ru': 'Автор:',
+    },
+    'devsMain1': {
+        'en': 'All developments',
+        'ru': 'Все разработки',
+    },
+    'devsMain2': {
+        'en': 'My games',
+        'ru': 'Мои игры',
+    },
+    'devsMain3': {
+        'en': 'My bots',
+        'ru': 'Мои боты',
+    },
+    'devsMain4': {
+        'en': 'My software',
+        'ru': 'Моё ПО',
+    },
+    'viewAllDevelopments': {
+       'en': 'All developments',
+       'ru': 'Все разработки',
+    },
+    'developments': {
+        'en': 'Developments',
+        'ru': 'Разработки',
+    },
+    'siteTitleDevs': {
+        'en': 'VL_PLAY Games - My developments',
+        'ru': 'VL_PLAY Games - Мои разработки',
+    },
+}
+
+const contacts_translations = {
+    'siteTitleContacts': {
+        'en': 'VL_PLAY Games - Contacts',
+        'ru': 'VL_PLAY Games - Контакты',
+    },
+    'contactsMain': {
+        'en': 'Links',
+        'ru': 'Ссылки',
+    },
+    'contacts2': {
+        'en': 'Server in Discord',
+        'ru': 'Сервер в Discord',
+    },
+    'contacts3': {
+        'en': 'YouTube channel',
+        'ru': 'YouTube канал',
+    },
+    'nav_contacts': {
+        'en': 'Links',
+        'ru': 'Ссылки',
+    },
+}
+
+Object.assign(translations, ds_translations, ps_translations, xos_translations, mui_translations, bot_translations, qlake_translations, sd_translations, xc_translations, ft_translations, aboutme_translations, status_translations, games_main_translations, devs_main_translations, contacts_translations);
 
 // Функция для установки куки
 function setCookie(name, value, days) {
