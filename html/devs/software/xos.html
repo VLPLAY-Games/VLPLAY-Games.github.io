@@ -249,19 +249,19 @@
                                 <tbody>
                                     <tr>
                                         <td data-translate="sysReqBoard">Плата</td>
-                                        <td>ESP32-C3 (рекомендуется) или другой ESP32</td>
+                                        <td data-translate="esp32Board">ESP32-C3 (рекомендуется) или другой ESP32</td>
                                     </tr>
                                     <tr>
                                         <td data-translate="sysReqFlash">Flash память</td>
-                                        <td>4MB</td>
+                                        <td data-translate="flashMemory4MB">4MB</td>
                                     </tr>
                                     <tr>
                                         <td data-translate="sysReqSDCard">SD карта</td>
-                                        <td>До 4GB (опционально)</td>
+                                        <td data-translate="sdCardUpTo4GB">До 4GB (опционально)</td>
                                     </tr>
                                     <tr>
                                         <td data-translate="sysReqArduino">Arduino IDE</td>
-                                        <td>2.x с ESP32 core 3.2.0+</td>
+                                        <td data-translate="arduinoIDE">2.x с ESP32 core 3.2.0+</td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -323,11 +323,40 @@
                             <div class="platform-content">
                                 <h4 data-translate="standardInstallation">Стандартная установка через Arduino IDE</h4>
                                 <ol class="installation-steps">
-                                    <li data-translate="stepArduinoPrereq"><strong>Предварительные требования:</strong> Arduino IDE 2.x, ESP32 core 3.2.0+</li>
-                                    <li data-translate="stepCloneRepo">Клонируйте репозиторий: <code>git clone https://github.com/VLPLAY-Games/XenoOS.git</code></li>
-                                    <li data-translate="stepOpenIDE">Откройте <code>XenoOS.ino</code> в Arduino IDE</li>
-                                    <li data-translate="stepSelectBoard">Выберите плату <strong>ESP32-C3 Dev Module</strong></li>
-                                    <li data-translate="stepConfigureSettings">Настройте параметры в Tools (см. документацию)</li>
+                                    <li>
+                                        <strong data-translate="stepArduinoPrereqTitle">Предварительные требования:</strong> 
+                                        <span data-translate="stepArduinoPrereq">Arduino IDE 2.x, ESP32 core 3.2.0+</span>
+                                    </li>
+                                    <li>
+                                        <span data-translate="stepCloneRepo">Клонируйте репозиторий:</span>
+                                        <div class="code-block"><code>git clone https://github.com/VLPLAY-Games/XenoOS.git</code></div>
+                                        
+                                    </li>
+                                    <li>
+                                        <span data-translate="stepOpenIDE">Откройте</span> 
+                                        <code>XenoOS.ino</code> 
+                                        <span data-translate="stepOpenIDE2">в Arduino IDE</span>
+                                    </li>
+                                    <li>
+                                        <span data-translate="stepSelectBoard">Выберите плату</span> 
+                                        <strong>ESP32-C3 Dev Module</strong>
+                                    </li>
+                                    <li>
+                                        <span data-translate="stepConfigureSettings">Настройте параметры в Tools:</span>
+                                        <ul class="settings-list">
+                                            <li><code>USB CDC On Boot</code>: <span data-translate="settingEnabled">"Enabled"</span></li>
+                                            <li><code>CPU Frequency</code>: <span data-translate="setting160MHz">"160MHz (WiFi)"</span> (<span data-translate="defaultValue">default value</span>)</li>
+                                            <li><code>Core Debug Level</code>: <span data-translate="settingNone">"None"</span> (<span data-translate="defaultValue">default value</span>)</li>
+                                            <li><code>Erase All Flash Before Sketch Upload</code>: <span data-translate="settingDisabled">"Disabled"</span> (<span data-translate="defaultValue">default value</span>)</li>
+                                            <li><code>Flash Frequency</code>: <span data-translate="setting80MHz">"80MHz"</span> (<span data-translate="defaultValue">default value</span>)</li>
+                                            <li><code>Flash Mode</code>: <span data-translate="settingQIO">"QIO"</span> (<span data-translate="defaultValue">default value</span>)</li>
+                                            <li><code>Flash Size</code>: <span data-translate="setting4MB">"4MB (32Mb)"</span> (<span data-translate="defaultValue">default value</span>)</li>
+                                            <li><code>JTAG Adapter</code>: <span data-translate="settingDisabled">"Disabled"</span> (<span data-translate="defaultValue">default value</span>)</li>
+                                            <li><code>Partition Scheme</code>: <span data-translate="settingPartitionScheme">"Minimal SPIFFS (1.9MB APP with OTA/190KB SPIFFS)"</span></li>
+                                            <li><code>Upload Speed</code>: <span data-translate="setting921600">"921600"</span> (<span data-translate="defaultValue">default value</span>)</li>
+                                            <li><code>Zigbee Mode</code>: <span data-translate="settingDisabled">"Disabled"</span> (<span data-translate="defaultValue">default value</span>)</li>
+                                        </ul>
+                                    </li>
                                     <li data-translate="stepUpload">Нажмите Upload для прошивки</li>
                                 </ol>
                             </div>
@@ -339,14 +368,13 @@
                                 <h4 data-translate="alternativeInstallation">Альтернативная установка для ESP32-C3</h4>
                                 <ol class="installation-steps">
                                     <li data-translate="stepDownloadFirmware">Скачайте последний релиз с GitHub</li>
-                                    <li data-translate="stepFlashMerged">Для прошивки объединенного файла:<br>
-                                        <code>esptool.py --chip esp32c3 --baud 921600 write_flash 0x0 XenoOS.merged.bin</code>
+                                    <li>
+                                        <span data-translate="stepFlashMerged">Для прошивки объединенного файла:</span>
+                                        <div class="code-block"><code>esptool.py --chip esp32c3 --baud 921600 write_flash 0x0 XenoOS.merged.bin</code></div>
                                     </li>
-                                    <li data-translate="stepFlashSeparate">Или прошейте файлы отдельно:<br>
-                                        <code>esptool.py --chip esp32c3 --baud 921600 write_flash \<br>
-                                        &nbsp;&nbsp;0x1000 XenoOS.bootloader.bin \<br>
-                                        &nbsp;&nbsp;0x8000 XenoOS.partitions.bin \<br>
-                                        &nbsp;&nbsp;0x10000 XenoOS.bin</code>
+                                    <li>
+                                        <span data-translate="stepFlashSeparate">Или прошейте файлы отдельно:</span>
+                                        <div class="code-block"><code>esptool.py --chip esp32c3 --baud 921600 write_flash \<br>&nbsp;&nbsp;0x1000 XenoOS.bootloader.bin \<br>&nbsp;&nbsp;0x8000 XenoOS.partitions.bin \<br>&nbsp;&nbsp;0x10000 XenoOS.bin</code></div>
                                     </li>
                                 </ol>
                             </div>
@@ -381,9 +409,15 @@
                         <div class="usage-step">
                             <div class="step-number">4</div>
                             <div class="step-content">
-                                <p data-translate="usageStep4Xeno">Для диагностики системы используйте:<br>
-                                <code>system diagnostic</code> - запуск диагностики<br>
-                                <code>system check</code> - проверка системы</p>
+                                <p data-translate="usageStep4Xeno">Для диагностики системы используйте:</p>
+                                <ul class="command-list">
+                                    <li>
+                                        <code>system diagnostic</code> - <span data-translate="systemDiagnosticDesc">запуск диагностики</span>
+                                    </li>
+                                    <li>
+                                        <code>system check</code> - <span data-translate="systemCheckDesc">проверка системы</span>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                     </div>

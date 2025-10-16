@@ -158,13 +158,13 @@
                                 <thead>
                                     <tr>
                                         <th data-translate="sysReqItem">Компонент</th>
-                                        <th data-translate="sysReqMin">Минимальные требования</th>
+                                        <th data-translate="sysReqRecommended">Рекомендуемые требования</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
                                         <td data-translate="sysReqOS">Операционная система</td>
-                                        <td>Windows 7 или новее</td>
+                                        <td data-translate="windows10OrNewer">Windows 10 или новее</td>
                                     </tr>
                                     <tr>
                                         <td>.NET Framework</td>
@@ -172,11 +172,7 @@
                                     </tr>
                                     <tr>
                                         <td data-translate="sysReqDiskSpace">Место на диске</td>
-                                        <td>Менее 2 МБ</td>
-                                    </tr>
-                                    <tr>
-                                        <td data-translate="sysReqRAM">Оперативная память</td>
-                                        <td>512 МБ</td>
+                                        <td data-translate="diskSpace1MB">1 МБ</td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -236,7 +232,11 @@
                             <div class="step-number">1</div>
                             <div class="step-content">
                                 <h4 data-translate="stepDownload">Скачайте последний релиз</h4>
-                                <p data-translate="stepDownloadDesc">Перейдите в раздел Releases на GitHub</p>
+                                <p class="description-text">
+                                    <span data-translate="stepDownloadDesc">Перейдите в раздел</span> 
+                                    <a href="https://github.com/VLPLAY-Games/MusicLocalUI/releases" target="_blank">Releases</a>
+                                    <span data-translate="stepDownloadDesc2">на GitHub</span>
+                                </p>
                             </div>
                         </div>
                         <div class="step-card">
@@ -250,7 +250,9 @@
                             <div class="step-number">3</div>
                             <div class="step-content">
                                 <h4 data-translate="stepRun">Запустите приложение</h4>
-                                <p data-translate="stepRunDesc">Запустите файл <code>MusicLocalUI.exe</code></p>
+                                <p class="description-text">
+                                    <span data-translate="stepRunDesc">Запустите файл</span> <code>MusicLocalUI.exe</code>
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -285,10 +287,12 @@
                         <div class="usage-step">
                             <div class="step-number">3</div>
                             <div class="step-content">
-                                <p data-translate="usageStep3Music">Используйте элементы управления воспроизведением:
-                                <br>▶️ Play/Pause текущего трека
-                                <br>'Next' для следующего трека
-                                <br>'Previous' для предыдущего трека</p>
+                                <p data-translate="usageStep3MusicIntro">Используйте элементы управления воспроизведением:</p>
+                                <ul class="playback-controls-list">
+                                    <li data-translate="usageStep3Music1">▶️ Play/Pause текущего трека</li>
+                                    <li data-translate="usageStep3Music2">'Next' для следующего трека</li>
+                                    <li data-translate="usageStep3Music3">'Previous' для предыдущего трека</li>
+                                </ul>
                             </div>
                         </div>
                         <div class="usage-step">

@@ -179,6 +179,10 @@ const ds_translations = {
         'en': 'View on GitHub',
         'ru': 'Смотреть на GitHub',
     },
+    "serverPort": {
+        'en': "Server port",
+        'ru': 'Порт сервера'
+    }
 }
 
 const ps_translations = {
@@ -468,8 +472,12 @@ const mui_translations = {
         'ru': 'Скачайте последний релиз',
     },
     'stepDownloadDesc': {
-        'en': 'Go to the Releases section on GitHub',
-        'ru': 'Перейдите в раздел Releases на GitHub',
+        'en': 'Go to the',
+        'ru': 'Перейдите в раздел'
+    },
+    'stepDownloadDesc2': {
+        'en': 'section on GitHub',
+        'ru': 'на GitHub'
     },
     'stepExtract': {
         'en': 'Extract the ZIP file',
@@ -484,8 +492,8 @@ const mui_translations = {
         'ru': 'Запустите приложение',
     },
     'stepRunDesc': {
-        'en': 'Run the <code>MusicLocalUI.exe</code> file',
-        'ru': 'Запустите файл <code>MusicLocalUI.exe</code>',
+        'en': 'Run the file',
+        'ru': 'Запустите файл'
     },
     'includedFilesTitle': {
         'en': 'Included Files:',
@@ -511,9 +519,21 @@ const mui_translations = {
         'en': 'Click "Scan" to load tracks',
         'ru': 'Нажмите "Scan" чтобы загрузить треки',
     },
-    'usageStep3Music': {
-        'en': 'Use playback controls:<br>▶️ Play/Pause current track<br>\'Next\' button for next track<br>\'Previous\' button for previous track',
-        'ru': 'Используйте элементы управления воспроизведением:<br>▶️ Play/Pause текущего трека<br>\'Next\' для следующего трека<br>\'Previous\' для предыдущего трека',
+    'usageStep3MusicIntro': {
+        'en': 'Use playback controls:',
+        'ru': 'Используйте элементы управления воспроизведением:'
+    },
+    'usageStep3Music1': {
+        'en': '▶️ Play/Pause current track',
+        'ru': '▶️ Play/Pause текущего трека'
+    },
+    'usageStep3Music2': {
+        'en': "'Next' button for next track",
+        'ru': "'Next' для следующего трека"
+    },
+    'usageStep3Music3': {
+        'en': "'Previous' button for previous track",
+        'ru': "'Previous' для предыдущего трека"
     },
     'usageStep4Music': {
         'en': 'View track details in "Track info" section',
@@ -746,25 +766,33 @@ const xos_translations = {
         'en': 'Standard Installation via Arduino IDE',
         'ru': 'Стандартная установка через Arduino IDE'
     },
+    'stepArduinoPrereqTitle': {
+        'en': 'Prerequisites:',
+        'ru': 'Предварительные требования:'
+    },
     'stepArduinoPrereq': {
-        'en': 'Prerequisites: Arduino IDE 2.x, ESP32 core 3.2.0+',
-        'ru': 'Предварительные требования: Arduino IDE 2.x, ESP32 core 3.2.0+'
+        'en': 'Arduino IDE 2.x, ESP32 core 3.2.0+',
+        'ru': 'Arduino IDE 2.x, ESP32 core 3.2.0+'
     },
     'stepCloneRepo': {
         'en': 'Clone repository:',
         'ru': 'Клонируйте репозиторий:'
     },
     'stepOpenIDE': {
-        'en': 'Open in Arduino IDE',
-        'ru': 'Откройте в Arduino IDE'
+        'en': 'Open',
+        'ru': 'Откройте'
+    },
+    'stepOpenIDE2': {
+        'en': 'in Arduino IDE',
+        'ru': 'в Arduino IDE'
     },
     'stepSelectBoard': {
         'en': 'Select board',
         'ru': 'Выберите плату'
     },
     'stepConfigureSettings': {
-        'en': 'Configure settings in Tools (see documentation)',
-        'ru': 'Настройте параметры в Tools (см. документацию)'
+        'en': 'Configure settings in Tools:',
+        'ru': 'Настройте параметры в Tools:'
     },
     'stepUpload': {
         'en': 'Click Upload to flash',
@@ -857,8 +885,72 @@ const xos_translations = {
     'xenoOSLicenseText': {
         'en': 'This project is licensed under the MIT License - see the file for details.',
         'ru': 'Этот проект лицензирован под MIT License - подробности в файле .'
+    },
+    'esp32Board': {
+        'en': 'ESP32-C3 (recommended) or other ESP32',
+        'ru': 'ESP32-C3 (рекомендуется) или другой ESP32'
+    },
+    'flashMemory4MB': {
+        'en': '4MB',
+        'ru': '4MB'
+    },
+    'sdCardUpTo4GB': {
+        'en': 'Up to 4GB (optional)',
+        'ru': 'До 4GB (опционально)'
+    },
+    'arduinoIDE': {
+        'en': '2.x with ESP32 core 3.2.0+',
+        'ru': '2.x с ESP32 core 3.2.0+'
+    },
+    'defaultValue': {
+        'en': 'default value',
+        'ru': 'значение по умолчанию'
+    },
+    'settingEnabled': {
+        'en': '"Enabled"',
+        'ru': '"Enabled"'
+    },
+    'settingDisabled': {
+        'en': '"Disabled"',
+        'ru': '"Disabled"'
+    },
+    'setting160MHz': {
+        'en': '"160MHz (WiFi)"',
+        'ru': '"160MHz (WiFi)"'
+    },
+    'settingNone': {
+        'en': '"None"',
+        'ru': '"None"'
+    },
+    'setting80MHz': {
+        'en': '"80MHz"',
+        'ru': '"80MHz"'
+    },
+    'settingQIO': {
+        'en': '"QIO"',
+        'ru': '"QIO"'
+    },
+    'setting4MB': {
+        'en': '"4MB (32Mb)"',
+        'ru': '"4MB (32Mb)"'
+    },
+    'settingPartitionScheme': {
+        'en': '"Minimal SPIFFS (1.9MB APP with OTA/190KB SPIFFS)"',
+        'ru': '"Minimal SPIFFS (1.9MB APP with OTA/190KB SPIFFS)"'
+    },
+    'setting921600': {
+        'en': '"921600"',
+        'ru': '"921600"'
+    },
+    'systemDiagnosticDesc': {
+        'en': 'run diagnostics',
+        'ru': 'запуск диагностики'
+    },
+    'systemCheckDesc': {
+        'en': 'system check',
+        'ru': 'проверка системы'
     }
-}
+};
 
 const bot_translations = {
     'botTitle': {
@@ -1133,7 +1225,7 @@ const xc_translations = {
 };
 
 const ft_translations = {
-        'tanabataTitle': {
+    'tanabataTitle': {
         'en': 'Tanabata: Path to the Stars',
         'ru': 'Танабата: Путь к звездам',
     },
@@ -1177,9 +1269,21 @@ const ft_translations = {
         'en': 'Localization',
         'ru': 'Локализация',
     },
-    'tanabataLocalization': {
-        'en': '🌐 English – subtitles and user interface<br>🌐 Russian – subtitles only',
-        'ru': '🌐 Английский – субтитры и пользовательский интерфейс<br>🌐 Русский – только субтитры',
+    'tanabataEnglish': {
+        'en': 'English',
+        'ru': 'Английский'
+    },
+    'tanabataEnglishDesc': {
+        'en': 'subtitles and user interface',
+        'ru': 'субтитры и пользовательский интерфейс'
+    },
+    'tanabataRussian': {
+        'en': 'Russian',
+        'ru': 'Русский'
+    },
+    'tanabataRussianDesc': {
+        'en': 'subtitles only',
+        'ru': 'только субтитры'
     },
     'tanabataGenre': {
         'en': 'Puzzle, Adventure',
@@ -1426,6 +1530,14 @@ const games_main_translations = {
         'en': 'Languages:',
         'ru': 'Языки:',
     },
+    'windows10OrNewer': {
+        'en': 'Windows 10 or newer',
+        'ru': 'Windows 10 или новее'
+    },
+    'diskSpace1MB': {
+        'en': '1 MB',
+        'ru': '1 МБ'
+    }
 }
 
 const devs_main_translations = {
