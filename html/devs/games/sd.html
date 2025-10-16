@@ -46,6 +46,7 @@
                         <div class="language-dropdown-content">
                             <button id="switchToEnglish" class="switchToEnglishBut">English</button>
                             <button id="switchToRussian" class="switchToRussianBut">Русский</button>
+                            <button id="switchToJapanese" class="switchToJapaneseBut">日本語</button>
                         </div>
                     </div>
                 </div>
@@ -138,113 +139,147 @@
             </div>
 
             <div class="specs-grid">
-                <div class="spec-card">
-                    <h4 data-translate="sysReqTitle">Системные требования на ПК</h4>
-                    <div class="requirements-table">
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th data-translate="sysReqItem">Название</th>
-                                    <th data-translate="sysReqMin">Минимальные</th>
-                                    <th data-translate="sysReqRecommended">Рекомендуемые</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>CPU</td>
-                                    <td>Intel(R) Core(TM) i5-7400</td>
-                                    <td>Intel(R) Core(TM) i5-11400</td>
-                                </tr>
-                                <tr>
-                                    <td>RAM</td>
-                                    <td>8 GB</td>
-                                    <td>16 GB</td>
-                                </tr>
-                                <tr>
-                                    <td>GPU</td>
-                                    <td>NVIDIA GeForce GTX 1060</td>
-                                    <td>NVIDIA GeForce RTX 2060</td>
-                                </tr>
-                                <tr>
-                                    <td data-translate="sysReqDevFreeSpace">Свободное место</td>
-                                    <td>17 GB</td>
-                                    <td>17 GB</td>
-                                </tr>
-                            </tbody>
-                        </table>
+                <!-- Левая колонка - Системные требования -->
+                <div class="specs-column">
+                    <div class="spec-card">
+                        <h4 data-translate="sysReqTitle">Системные требования на ПК</h4>
+                        <div class="requirements-table">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th data-translate="sysReqItem">Название</th>
+                                        <th data-translate="sysReqMin">Минимальные</th>
+                                        <th data-translate="sysReqRecommended">Рекомендуемые</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>CPU</td>
+                                        <td>Intel(R) Core(TM) i5-7400</td>
+                                        <td>Intel(R) Core(TM) i5-11400</td>
+                                    </tr>
+                                    <tr>
+                                        <td>RAM</td>
+                                        <td>8 GB</td>
+                                        <td>16 GB</td>
+                                    </tr>
+                                    <tr>
+                                        <td>GPU</td>
+                                        <td>NVIDIA GeForce GTX 1060</td>
+                                        <td>NVIDIA GeForce RTX 2060</td>
+                                    </tr>
+                                    <tr>
+                                        <td data-translate="sysReqDevFreeSpace">Свободное место</td>
+                                        <td>17 GB</td>
+                                        <td>17 GB</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="spec-card">
+                        <h4 data-translate="sysReqAndroidTitle">Системные требования на Android</h4>
+                        <div class="requirements-table">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th data-translate="sysReqItem">Компонент</th>
+                                        <th data-translate="sysReqRecommended">Рекомендуемые</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td data-translate="androidVersion">Версия Android</td>
+                                        <td data-translate="androidVersionValue">Android 9.0+</td>
+                                    </tr>
+                                    <tr>
+                                        <td data-translate="controlMethod">Управление</td>
+                                        <td data-translate="gamepadOnly">Только геймпад</td>
+                                    </tr>
+                                    <tr>
+                                        <td data-translate="processor">Процессор</td>
+                                        <td data-translate="processorValue">Snapdragon 7s Gen 2+ и 6GB RAM+ рекомендуется</td>
+                                    </tr>
+                                    <tr>
+                                        <td data-translate="architecture">Архитектура</td>
+                                        <td data-translate="architectureValue">Поддержка arm64_v8a / x86_x64 не поддерживается</td>
+                                    </tr>
+                                    <tr>
+                                        <td data-translate="graphicsApi">Графический API</td>
+                                        <td data-translate="graphicsApiValue">Поддержка OpenGL ES 3.1-3.2 / Vulkan не поддерживается</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                 </div>
 
-                <div class="info-cards">
-                    <div class="info-card">
-                        <span class="info-icon">🎮</span>
-                        <div class="info-content">
-                            <strong data-translate="stateTitle">Состояние:</strong>
-                            <span data-translate="released" class="status-released">Выпущено</span>
-                        </div>
-                    </div>
-
-                    <div class="info-card">
-                        <span class="info-icon">📱</span>
-                        <div class="info-content">
-                            <strong data-translate="platformsTitle">Платформы:</strong>
-                            <span>Windows, Android</span>
-                        </div>
-                    </div>
-
-                    <div class="info-card">
-                        <span class="info-icon">🌐</span>
-                        <div class="info-content">
-                            <strong data-translate="localizationTitle">Локализация:</strong>
-                            <span>English, Русский</span>
-                        </div>
-                    </div>
-
-                    <div class="info-card">
-                        <span class="info-icon">👤</span>
-                        <div class="info-content">
-                            <strong data-translate="authorTitle">Автор:</strong>
-                            <span>VL_PLAY</span>
-                        </div>
-                    </div>
-
-                    <div class="info-card">
-                        <span class="info-icon">🎭</span>
-                        <div class="info-content">
-                            <strong data-translate="genreTitle">Жанр:</strong>
-                            <span data-translate="puzzle">Головоломка</span>
-                        </div>
-                    </div>
-
-                    <div class="info-card">
-                        <span class="info-icon">🏷️</span>
-                        <div class="info-content">
-                            <strong data-translate="tagsTitle">Метки:</strong>
-                            <div class="tags">
-                                <span class="tag">3D</span>
-                                <span class="tag" data-translate="first_person">От первого лица</span>
-                                <span class="tag" data-translate="indie">Инди</span>
-                                <span class="tag" data-translate="single">Одиночная</span>
-                                <span class="tag" data-translate="horror">Хоррор</span>
-                                <span class="tag">Unreal Engine</span>
-                                <span class="tag" data-translate="survival">Выживание</span>
+                <!-- Правая колонка - Информационные карточки -->
+                <div class="info-column">
+                    <div class="info-cards">
+                        <div class="info-card">
+                            <span class="info-icon">🎮</span>
+                            <div class="info-content">
+                                <strong data-translate="stateTitle">Состояние:</strong>
+                                <span data-translate="released" class="status-released">Выпущено</span>
                             </div>
                         </div>
-                    </div>
 
-                    <div class="info-card">
-                        <span class="info-icon">⏱️</span>
-                        <div class="info-content">
-                            <strong data-translate="sessionTitle">Средний сеанс:</strong>
-                            <span>3-5 <span data-translate="hours">Часов</span></span>
+                        <div class="info-card">
+                            <span class="info-icon">📱</span>
+                            <div class="info-content">
+                                <strong data-translate="platformsTitle">Платформы:</strong>
+                                <span>Windows, Android</span>
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="info-card">
-                        <span class="info-icon">🗣️</span>
-                        <div class="info-content">
-                            <strong data-translate="langTitle">Языки:</strong>
-                            <span>English, Русский</span>
+                        <div class="info-card">
+                            <span class="info-icon">🌐</span>
+                            <div class="info-content">
+                                <strong data-translate="localizationTitle">Локализация:</strong>
+                                <span>English, Русский</span>
+                            </div>
+                        </div>
+
+                        <div class="info-card">
+                            <span class="info-icon">👤</span>
+                            <div class="info-content">
+                                <strong data-translate="authorTitle">Автор:</strong>
+                                <span>VL_PLAY</span>
+                            </div>
+                        </div>
+
+                        <div class="info-card">
+                            <span class="info-icon">🎭</span>
+                            <div class="info-content">
+                                <strong data-translate="genreTitle">Жанр:</strong>
+                                <span data-translate="puzzle">Головоломка</span>
+                            </div>
+                        </div>
+
+                        <div class="info-card">
+                            <span class="info-icon">⏱️</span>
+                            <div class="info-content">
+                                <strong data-translate="sessionTitle">Средний сеанс:</strong>
+                                <span>3-5 <span data-translate="hours">Часов</span></span>
+                            </div>
+                        </div>
+
+                        <div class="info-card tags-card">
+                            <span class="info-icon">🏷️</span>
+                            <div class="info-content">
+                                <strong data-translate="tagsTitle">Метки:</strong>
+                                <div class="tags">
+                                    <span class="tag">3D</span>
+                                    <span class="tag" data-translate="first_person">От первого лица</span>
+                                    <span class="tag" data-translate="indie">Инди</span>
+                                    <span class="tag" data-translate="single">Одиночная</span>
+                                    <span class="tag" data-translate="horror">Хоррор</span>
+                                    <span class="tag">Unreal Engine</span>
+                                    <span class="tag" data-translate="survival">Выживание</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
