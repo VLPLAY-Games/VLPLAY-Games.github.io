@@ -1188,9 +1188,9 @@ const xos_translations = {
 
 const bot_translations = {
     'botTitle': {
-        'en': 'VL_PLAY Games Bot',
-        'ru': 'VL_PLAY Games Bot',
-        'ja': 'VL_PLAY Games Bot'
+        'en': 'VL_PLAY Games Bot (Deprecated)',
+        'ru': 'VL_PLAY Games Bot (Устарел)',
+        'ja': 'VL_PLAY Games Bot (非推奨)'
     },
     'botPrice': {
         'en': 'Free',
@@ -1208,9 +1208,9 @@ const bot_translations = {
         'ja': '説明：'
     },
     'botDescription': {
-        'en': 'My own Telegram bot, which informs about new developments and has various additional functions.',
-        'ru': 'Мой собственный Telegram-бот, который информирует о новых разработках и имеет различные дополнительные функции.',
-        'ja': '新着情報をお知らせし、様々な追加機能を備えた私自身のTelegramボットです。'
+        'en': 'My own Telegram bot, which informed about new developments and had various additional functions. Currently deprecated and no longer supported.',
+        'ru': 'Мой собственный Telegram-бот, который информировал о новых разработках и имел различные дополнительные функции. В настоящее время устарел и не поддерживается.',
+        'ja': '新着情報をお知らせし、様々な追加機能を備えた私自身のTelegramボットです。現在は非推奨であり、サポートされていません。'
     },
     'botLanguageTitle': {
         'en': 'Bot language:',
@@ -1323,9 +1323,9 @@ const bot_translations = {
         'ja': '指定された通貨を様々な通貨で購入する価格リストを取得'
     },
     'botDescriptionDevs': {
-        'en': 'A multifunctional Telegram bot that provides a number of useful commands for the convenience of users. It also informs you about new VL_PLAY Games news.',
-        'ru': 'Многофункциональный Telegram-бот, который предоставляет ряд полезных команд для удобства пользователей. А также информирует вас о новых новостях VL_PLAY Games.',
-        'ja': 'ユーザーの利便性のため多数の便利なコマンドを提供する多機能Telegramボット。また、VL_PLAY Gamesの最新ニュースをお知らせします。'
+        'en': 'A multifunctional Telegram bot that provided a number of useful commands for the convenience of users. Currently deprecated and no longer supported.',
+        'ru': 'Многофункциональный Telegram-бот, который предоставлял ряд полезных команд для удобства пользователей. В настоящее время устарел и не поддерживается.',
+        'ja': 'ユーザーの利便性のため多数の便利なコマンドを提供した多機能Telegramボット。現在は非推奨であり、サポートされていません。'
     },
 };
 
@@ -1698,9 +1698,9 @@ const aboutme_translations = {
         'ja': '開発に没頭していない時は、新しい技術の学習と研究に注意を払うようにしています。また、オンラインコミュニティで他の愛好家や開発者と知識や経験を共有することが大好きです。'
     },
     'aboutMe5': {
-        'en': 'Currently there are two completed projects: the Qlake game and the Telegram bot VL_PLAY Games Bot. In addition, I am working on two projects: the game Silent Darkness and the XenoClock smartwatch.',
-        'ru': 'В настоящее время есть два завершенных проекта: игра Qlake и Телеграм-бот VL_PLAY Games Bot. Кроме того, я работаю над двумя проектами: игрой Silent Darkness и умными часами XenoClock.',
-        'ja': '現在、2つの完了したプロジェクトがあります：QlakeゲームとTelegramボットVL_PLAY Games Botです。さらに、2つのプロジェクトに取り組んでいます：Silent DarknessゲームとXenoClockスマートウォッチです。'
+        'en': 'Currently, the portfolio includes several completed projects: games <strong>Qlake</strong> and <strong>Tanabata: Path to the Stars</strong>, the horror-puzzle <strong>Silent Darkness</strong>, as well as software products <strong>QWebUI</strong> (quantum laboratory), <strong>MusicLocalUI</strong> (music player) and <strong>Port Scanner</strong>. Active development is underway on the <strong>Yuki</strong> ecosystem for smart devices, the <strong>XenoOS</strong> operating system, the <strong>Download Server</strong> download manager and other projects. The <strong>Xeno Language</strong> programming language for ESP32 with its own development environment has also been released.',
+        'ru': 'В настоящее время в портфолио несколько завершённых проектов: игры <strong>Qlake</strong> и <strong>Tanabata: Path to the Stars</strong>, хоррор-головоломка <strong>Silent Darkness</strong>, а также программные продукты <strong>QWebUI</strong> (квантовая лаборатория), <strong>MusicLocalUI</strong> (музыкальный плеер) и <strong>Port Scanner</strong>. Активно ведутся разработки экосистемы <strong>Yuki</strong> для умных устройств, операционной системы <strong>XenoOS</strong>, менеджера загрузок <strong>Download Server</strong> и других проектов. Также выпущен язык программирования <strong>Xeno Language</strong> для ESP32 с собственной средой разработки.',
+        'ja': '現在、ポートフォリオにはいくつかの完了したプロジェクトが含まれています：ゲーム <strong>Qlake</strong> と <strong>Tanabata: Path to the Stars</strong>、ホラーパズル <strong>Silent Darkness</strong>、およびソフトウェア製品 <strong>QWebUI</strong>（量子ラボ）、<strong>MusicLocalUI</strong>（音楽プレーヤー）、<strong>Port Scanner</strong>。スマートデバイス向けエコシステム <strong>Yuki</strong>、オペレーティングシステム <strong>XenoOS</strong>、ダウンロードマネージャー <strong>Download Server</strong> などの開発が活発に進められています。また、ESP32向けプログラミング言語 <strong>Xeno Language</strong> とその開発環境もリリースされています。'
     },
     'aboutMe6': {
         'en': 'Nice to meet you! If there are any questions or comments, please feel free to contact me through the contact information on the page ',
@@ -1967,7 +1967,98 @@ const games_main_translations = {
         'en': '1 MB',
         'ru': '1 МБ',
         'ja': '1 MB'
-    }
+    },
+        // Tanabata
+    'tanabataTitle': {
+        'en': 'Tanabata: Path to the Stars',
+        'ru': 'Танабата: Путь к звёздам',
+        'ja': '七夕：星への道'
+    },
+    'tanabataDescriptionShort': {
+        'en': 'A relaxing atmospheric puzzle game with adventure elements. Embark on a mystical journey through Tokyo and beyond to discover the secret Tanabata festival!',
+        'ru': 'Расслабляющая атмосферная головоломка с элементами приключения. Отправьтесь в мистическое путешествие по Токио и откройте секретный фестиваль Танабата.',
+        'ja': 'アドベンチャー要素のあるリラックスできる雰囲気のあるパズルゲーム。東京とその先を巡る神秘的な旅に出て、秘密の七夕祭りを発見しましょう！'
+    },
+    'tanabataDescriptionDevs': {
+        'en': 'A relaxing atmospheric puzzle game with adventure elements. Embark on a mystical journey through Tokyo and beyond to discover the secret Tanabata festival! Explore beautiful locations, solve ancient puzzles, and play magical mini-games where your choices determine the spectacular starry finale.',
+        'ru': 'Расслабляющая атмосферная головоломка с элементами приключения. Отправьтесь в мистическое путешествие по Токио и не только, чтобы открыть для себя секретный фестиваль Танабата! Исследуйте красивые локации, решайте древние головоломки и играйте в волшебные мини-игры, где ваши выборы определяют зрелищную звездную развязку.',
+        'ja': 'アドベンチャー要素のあるリラックスできる雰囲気のあるパズルゲーム。東京とその先を巡る神秘的な旅に出て、秘密の七夕祭りを発見しましょう！美しい場所を探索し、古代のパズルを解き、あなたの選択が壮大な星空のフィナーレを決定する魔法のミニゲームをプレイしてください。'
+    },
+    'tanabataPlatforms': {
+        'en': 'Windows',
+        'ru': 'Windows',
+        'ja': 'Windows'
+    },
+    'tanabataLocalizationTitle': {
+        'en': 'Localization:',
+        'ru': 'Локализация:',
+        'ja': 'ローカライズ：'
+    },
+    'tanabataEnglish': {
+        'en': 'English',
+        'ru': 'Английский',
+        'ja': '英語'
+    },
+    'tanabataEnglishDesc': {
+        'en': 'subtitles and user interface',
+        'ru': 'субтитры и пользовательский интерфейс',
+        'ja': '字幕とユーザーインターフェース'
+    },
+    'tanabataRussian': {
+        'en': 'Russian',
+        'ru': 'Русский',
+        'ja': 'ロシア語'
+    },
+    'tanabataRussianDesc': {
+        'en': 'subtitles only',
+        'ru': 'только субтитры',
+        'ja': '字幕のみ'
+    },
+    'tanabataGenre': {
+        'en': 'Puzzle, Adventure',
+        'ru': 'Головоломка, Приключение',
+        'ja': 'パズル、アドベンチャー'
+    },
+    'tanabataSession': {
+        'en': '1-2 hours',
+        'ru': '1-2 часа',
+        'ja': '1-2時間'
+    },
+    'tanabataPrice': {
+        'en': 'Free',
+        'ru': 'Бесплатно',
+        'ja': '無料'
+    },
+    'tanabataFeaturesTitle': {
+        'en': 'Features',
+        'ru': 'Особенности',
+        'ja': '特徴'
+    },
+    'tanabataFeature1': {
+        'en': '✨ Authentic Japanese atmosphere – from cozy Tokyo streets to mysterious caves and a hidden village under the starry sky',
+        'ru': '✨ Аутентичная японская атмосфера – от уютных улиц Токио до загадочных пещер и скрытой деревни под звёздным небом',
+        'ja': '✨ 本格的な日本の雰囲気 - 居心地の良い東京の街並みから神秘的な洞窟、星空の下の隠れ里まで'
+    },
+    'tanabataFeature2': {
+        'en': '🎮 Three unique levels – featuring different mechanics from social interactions to environmental puzzles',
+        'ru': '🎮 Три уникальных уровня – с различными механиками от социальных взаимодействий до головоломок окружающей среды',
+        'ja': '🎮 3つのユニークなレベル - 社会的交流から環境パズルまで異なるメカニズムを特徴'
+    },
+    'tanabataFeature3': {
+        'en': '🎵 Soothing soundtrack – traditional Japanese instruments blended with natural ambient sounds',
+        'ru': '🎵 Успокаивающий саундтрек – традиционные японские инструменты в сочетании с естественными окружающими звуками',
+        'ja': '🎵 心地よいサウンドトラック - 伝統的な日本の楽器と自然の環境音が調和'
+    },
+    'tanabataFeature4': {
+        'en': '🎆 Dynamic ending – your performance determines the scale of the grand celestial celebration',
+        'ru': '🎆 Динамичная концовка – ваши действия определяют масштаб грандиозного небесного праздника',
+        'ja': '🎆 ダイナミックなエンディング - あなたのパフォーマンスが壮大な天の祭典の規模を決定'
+    },
+    'tanabataFeature5': {
+        'en': '⏳ Gentle time pressure – the stars won\'t wait, so reach the festival before the climax!',
+        'ru': '⏳ Лёгкое давление времени – звёзды не будут ждать, так что успевайте на фестиваль до кульминации!',
+        'ja': '⏳ 優しい時間制限 - 星々は待ってくれないので、クライマックスの前に祭りに到着しよう！'
+    },
 }
 
 const devs_main_translations = {
@@ -2066,6 +2157,744 @@ const contacts_translations = {
     },
 }
 
+const yuki_translations = {
+    'yukiTitle': {
+        'en': 'Yuki Ecosystem',
+        'ru': 'Yuki Экосистема',
+        'ja': 'Yuki エコシステム'
+    },
+    'yukiDescription': {
+        'en': 'A modern platform for managing smart devices and creating distributed IoT systems. Includes Core server, unified protocol, Windows and Android clients, and a web-based administration interface.',
+        'ru': 'Современная платформа для управления умными устройствами и создания распределённых IoT-систем. Включает Core-сервер, единый протокол, клиенты для Windows и Android, а также веб-интерфейс для администрирования.',
+        'ja': 'スマートデバイスを管理し、分散型IoTシステムを構築するためのモダンなプラットフォーム。Coreサーバー、統一プロトコル、Windows/Androidクライアント、およびWebベースの管理インターフェースを備えています。'
+    },
+    'yukiCore': {
+        'en': 'Yuki Core',
+        'ru': 'Yuki Core',
+        'ja': 'Yuki Core'
+    },
+    'yukiProtocol': {
+        'en': 'Yuki Protocol',
+        'ru': 'Yuki Protocol',
+        'ja': 'Yuki Protocol'
+    },
+    'yukiWindows': {
+        'en': 'Yuki Windows Client',
+        'ru': 'Yuki Windows Client',
+        'ja': 'Yuki Windows Client'
+    },
+    'yukiAndroid': {
+        'en': 'Yuki Android Client',
+        'ru': 'Yuki Android Client',
+        'ja': 'Yuki Android Client'
+    },
+    'yukiWebUI': {
+        'en': 'Yuki Web UI',
+        'ru': 'Yuki Web UI',
+        'ja': 'Yuki Web UI'
+    },
+    'yukiHumidifier': {
+        'en': 'Yuki Humidifier',
+        'ru': 'Yuki Humidifier',
+        'ja': 'Yuki Humidifier'
+    },
+};
+
+const yuki_components_translations = {
+    // ===== Yuki Core =====
+    'yukiCoreTitle': {
+        'en': 'Yuki Core',
+        'ru': 'Yuki Core',
+        'ja': 'Yuki Core'
+    },
+    'yukiCoreDescription': {
+        'en': 'The central server of the Yuki ecosystem. Provides device management, authentication, command routing, metrics collection, and logging. Built with Python, Flask, and WebSockets for real-time communication.',
+        'ru': 'Центральный сервер экосистемы Yuki. Обеспечивает управление устройствами, аутентификацию, маршрутизацию команд, сбор метрик и ведение логов. Реализован на Python с использованием Flask для веб-интерфейса и WebSockets для реального времени.',
+        'ja': 'Yukiエコシステムの中央サーバー。デバイス管理、認証、コマンドルーティング、メトリクス収集、ロギングを提供します。Python、Flask、WebSocketsを使用してリアルタイム通信を実現。'
+    },
+    'yukiCoreDescription2': {
+        'en': 'Core supports an unlimited number of devices, management via Web UI, device authorization, token rotation, blacklists, audit actions, and system metrics collection.',
+        'ru': 'Core поддерживает подключение неограниченного количества устройств, управление через Web UI, авторизацию устройств, ротацию токенов, чёрные списки, аудит действий и сбор системных метрик.',
+        'ja': 'Coreは無制限のデバイス接続、Web UIによる管理、デバイス認証、トークンローテーション、ブラックリスト、監査アクション、システムメトリクス収集をサポートします。'
+    },
+    'yukiCoreFeature1': {
+        'en': 'Device Management',
+        'ru': 'Управление устройствами',
+        'ja': 'デバイス管理'
+    },
+    'yukiCoreFeature1Desc': {
+        'en': 'Connection, authorization, blacklists, online/offline statuses',
+        'ru': 'Подключение, авторизация, чёрные списки, статусы онлайн/офлайн',
+        'ja': '接続、認証、ブラックリスト、オンライン/オフラインステータス'
+    },
+    'yukiCoreFeature2': {
+        'en': 'Command Routing',
+        'ru': 'Маршрутизация команд',
+        'ja': 'コマンドルーティング'
+    },
+    'yukiCoreFeature2Desc': {
+        'en': 'Command sending, broadcast, device-to-device communication',
+        'ru': 'Отправка команд, широковещательные рассылки, связь устройство–устройство',
+        'ja': 'コマンド送信、ブロードキャスト、デバイス間通信'
+    },
+    'yukiCoreFeature3': {
+        'en': 'Metrics and Logs',
+        'ru': 'Метрики и логи',
+        'ja': 'メトリクスとログ'
+    },
+    'yukiCoreFeature3Desc': {
+        'en': 'System metrics, audit events, command history, uptime statistics',
+        'ru': 'Системные метрики, аудит событий, история команд, uptime статистика',
+        'ja': 'システムメトリクス、監査イベント、コマンド履歴、アップタイム統計'
+    },
+    'yukiCoreFeature4': {
+        'en': 'Security',
+        'ru': 'Безопасность',
+        'ja': 'セキュリティ'
+    },
+    'yukiCoreFeature4Desc': {
+        'en': 'Token-based authentication, token rotation, blacklists, rate limiting',
+        'ru': 'Аутентификация по токену, ротация токенов, чёрные списки, rate limiting',
+        'ja': 'トークンベース認証、トークンローテーション、ブラックリスト、レート制限'
+    },
+    'yukiCoreFeature5': {
+        'en': 'Client API',
+        'ru': 'API для клиентов',
+        'ja': 'クライアントAPI'
+    },
+    'yukiCoreFeature5Desc': {
+        'en': 'WebSocket API for devices and clients, REST API for Web UI',
+        'ru': 'WebSocket API для устройств и клиентов, REST API для Web UI',
+        'ja': 'デバイスとクライアント向けWebSocket API、Web UI向けREST API'
+    },
+    'yukiCoreFeature6': {
+        'en': 'Data Storage',
+        'ru': 'Хранение данных',
+        'ja': 'データストレージ'
+    },
+    'yukiCoreFeature6Desc': {
+        'en': 'SQLite database for devices, commands, metrics, and audit',
+        'ru': 'SQLite база данных для устройств, команд, метрик и аудита',
+        'ja': 'デバイス、コマンド、メトリクス、監査のためのSQLiteデータベース'
+    },
+
+    // ===== Yuki Protocol =====
+    'yukiProtocolTitle': {
+        'en': 'Yuki Protocol',
+        'ru': 'Yuki Protocol',
+        'ja': 'Yuki Protocol'
+    },
+    'yukiProtocolDescription': {
+        'en': 'A unified data exchange protocol v1.1. Implemented in Python, JavaScript, C#, and Kotlin. Provides a unified message format for all devices and clients in the ecosystem.',
+        'ru': 'Унифицированный протокол обмена данными версии 1.1. Реализован на Python, JavaScript, C# и Kotlin. Обеспечивает единый формат сообщений для всех устройств и клиентов экосистемы.',
+        'ja': '統一データ交換プロトコル v1.1。Python、JavaScript、C#、Kotlinで実装。エコシステム内のすべてのデバイスとクライアントに統一メッセージフォーマットを提供。'
+    },
+    'yukiProtocolDescription2': {
+        'en': 'The protocol is implemented in four languages, allowing devices and clients to communicate in a unified format regardless of platform.',
+        'ru': 'Протокол реализован на четырёх языках, что позволяет устройствам и клиентам обмениваться сообщениями в едином формате независимо от платформы.',
+        'ja': 'プロトコルは4つの言語で実装されており、デバイスとクライアントがプラットフォームに関係なく統一フォーマットで通信できます。'
+    },
+    'messageTypes': {
+        'en': 'Message Types',
+        'ru': 'Типы сообщений',
+        'ja': 'メッセージタイプ'
+    },
+    'msgConnection': {
+        'en': 'Connection Management',
+        'ru': 'Управление подключением',
+        'ja': '接続管理'
+    },
+    'msgStatus': {
+        'en': 'Statuses and Metrics',
+        'ru': 'Статусы и метрики',
+        'ja': 'ステータスとメトリクス'
+    },
+    'msgCommands': {
+        'en': 'Commands',
+        'ru': 'Команды',
+        'ja': 'コマンド'
+    },
+    'msgAuth': {
+        'en': 'Authorization',
+        'ru': 'Авторизация',
+        'ja': '認証'
+    },
+    'msgTokens': {
+        'en': 'Tokens',
+        'ru': 'Токены',
+        'ja': 'トークン'
+    },
+    'msgDeviceComm': {
+        'en': 'Device Communication',
+        'ru': 'Связь устройств',
+        'ja': 'デバイス通信'
+    },
+    'implementations': {
+        'en': 'Implementations',
+        'ru': 'Реализации',
+        'ja': '実装'
+    },
+
+    // ===== Yuki Windows Client =====
+    'yukiWindowsTitle': {
+        'en': 'Yuki Windows Client',
+        'ru': 'Yuki Windows Client',
+        'ja': 'Yuki Windows Client'
+    },
+    'yukiWindowsDescription': {
+        'en': 'A desktop application for Windows built on .NET / WPF. Allows connecting to Core, managing devices, executing commands, and monitoring system status. Supports full Yuki Protocol functionality: authorization, command sending, result receiving, extended status management, system metrics collection, and device-to-device communication.',
+        'ru': 'Десктопное приложение для Windows, разработанное на платформе .NET / WPF. Позволяет подключаться к Core, управлять устройствами, выполнять команды и отслеживать состояние системы. Поддерживает полный набор возможностей Yuki Protocol: авторизацию, отправку команд, приём результатов, управление расширенными статусами, сбор системных метрик и связь между устройствами.',
+        'ja': '.NET / WPFで構築されたWindowsデスクトップアプリケーション。Coreへの接続、デバイス管理、コマンド実行、システム状態の監視が可能。Yuki Protocolの全機能（認証、コマンド送信、結果受信、拡張ステータス管理、システムメトリクス収集、デバイス間通信）をサポート。'
+    },
+    'yukiWindowsDescription2': {
+        'en': 'The client supports all Yuki Protocol features: authorization, command sending, result handling, extended status management, system metrics collection, and device-to-device communication.',
+        'ru': 'Клиент поддерживает полный набор возможностей Yuki Protocol: авторизацию, отправку команд, приём результатов, управление расширенными статусами, сбор системных метрик и связь между устройствами.',
+        'ja': 'クライアントはYuki Protocolの全機能（認証、コマンド送信、結果処理、拡張ステータス管理、システムメトリクス収集、デバイス間通信）をサポートします。'
+    },
+    'yukiWindowsFeature1': {
+        'en': 'Connect to Core',
+        'ru': 'Подключение к Core',
+        'ja': 'Coreへの接続'
+    },
+    'yukiWindowsFeature1Desc': {
+        'en': 'WebSocket connection with token authentication',
+        'ru': 'WebSocket соединение с авторизацией по токену',
+        'ja': 'トークン認証付きWebSocket接続'
+    },
+    'yukiWindowsFeature2': {
+        'en': 'Send Commands',
+        'ru': 'Отправка команд',
+        'ja': 'コマンド送信'
+    },
+    'yukiWindowsFeature2Desc': {
+        'en': 'Any commands to devices with JSON parameters',
+        'ru': 'Любые команды устройствам с JSON-параметрами',
+        'ja': 'JSONパラメータ付きの任意のデバイスコマンド'
+    },
+    'yukiWindowsFeature3': {
+        'en': 'Monitoring',
+        'ru': 'Мониторинг',
+        'ja': 'モニタリング'
+    },
+    'yukiWindowsFeature3Desc': {
+        'en': 'Display of statuses, metrics and extended states',
+        'ru': 'Отображение статусов, метрик и расширенных состояний',
+        'ja': 'ステータス、メトリクス、拡張状態の表示'
+    },
+    'yukiWindowsFeature4': {
+        'en': 'Device Communication',
+        'ru': 'Связь устройств',
+        'ja': 'デバイス通信'
+    },
+    'yukiWindowsFeature4Desc': {
+        'en': 'Direct command sending between devices via Core',
+        'ru': 'Прямая отправка команд между устройствами через Core',
+        'ja': 'Coreを介したデバイス間の直接コマンド送信'
+    },
+    'yukiWindowsFeature5': {
+        'en': 'Metrics Collection',
+        'ru': 'Сбор метрик',
+        'ja': 'メトリクス収集'
+    },
+    'yukiWindowsFeature5Desc': {
+        'en': 'CPU, RAM, disk, network — sending to Core',
+        'ru': 'CPU, RAM, диск, сеть — отправка в Core',
+        'ja': 'CPU、RAM、ディスク、ネットワーク — Coreへの送信'
+    },
+    'yukiWindowsFeature6': {
+        'en': 'Modern Interface',
+        'ru': 'Современный интерфейс',
+        'ja': 'モダンなインターフェース'
+    },
+    'yukiWindowsFeature6Desc': {
+        'en': 'Dark/light theme, convenient navigation',
+        'ru': 'Тёмная/светлая тема, удобная навигация',
+        'ja': 'ダーク/ライトテーマ、便利なナビゲーション'
+    },
+
+    // ===== Yuki Android Client =====
+    'yukiAndroidTitle': {
+        'en': 'Yuki Android Client',
+        'ru': 'Yuki Android Client',
+        'ja': 'Yuki Android Client'
+    },
+    'yukiAndroidDescription': {
+        'en': 'A mobile application for Android developed in Kotlin. Provides remote device management through Core, supports extended commands, and collects system metrics. Runs as a background service with auto-reconnect, authorization, command execution, result handling, extended status management, and device metrics (battery, CPU, memory).',
+        'ru': 'Мобильное приложение для Android, разработанное на Kotlin. Обеспечивает удалённое управление устройствами через Core, поддержку расширенных команд и сбор системных метрик. Работает как фоновый сервис с автовосстановлением, поддерживает авторизацию, отправку команд, приём результатов, управление расширенными статусами и сбор метрик устройства (батарея, CPU, память).',
+        'ja': 'Kotlinで開発されたAndroidモバイルアプリケーション。Coreを介したリモートデバイス管理、拡張コマンドのサポート、システムメトリクスの収集を提供。バックグラウンドサービスとして動作し、自動再接続、認証、コマンド実行、結果処理、拡張ステータス管理、デバイスメトリクス（バッテリー、CPU、メモリ）をサポート。'
+    },
+    'yukiAndroidDescription2': {
+        'en': 'The application runs as a background service, supports authorization, command sending, result handling, extended status management, and device metrics collection (battery, CPU, memory).',
+        'ru': 'Приложение работает как сервис в фоновом режиме, поддерживает авторизацию, отправку команд, приём результатов, управление расширенными статусами и сбор метрик устройства (батарея, CPU, память).',
+        'ja': 'アプリケーションはバックグラウンドサービスとして動作し、認証、コマンド送信、結果処理、拡張ステータス管理、デバイスメトリクス（バッテリー、CPU、メモリ）の収集をサポートします。'
+    },
+    'yukiAndroidFeature1': {
+        'en': 'Background Service',
+        'ru': 'Фоновый сервис',
+        'ja': 'バックグラウンドサービス'
+    },
+    'yukiAndroidFeature1Desc': {
+        'en': 'Permanent connection to Core with auto-reconnect',
+        'ru': 'Постоянное подключение к Core с автовосстановлением',
+        'ja': 'Coreへの常時接続と自動再接続'
+    },
+    'yukiAndroidFeature2': {
+        'en': 'Send Commands',
+        'ru': 'Отправка команд',
+        'ja': 'コマンド送信'
+    },
+    'yukiAndroidFeature2Desc': {
+        'en': 'Any commands to devices with JSON parameters',
+        'ru': 'Любые команды устройствам с JSON-параметрами',
+        'ja': 'JSONパラメータ付きの任意のデバイスコマンド'
+    },
+    'yukiAndroidFeature3': {
+        'en': 'Metrics Collection',
+        'ru': 'Сбор метрик',
+        'ja': 'メトリクス収集'
+    },
+    'yukiAndroidFeature3Desc': {
+        'en': 'Battery, CPU, memory, charging status',
+        'ru': 'Батарея, CPU, память, статус зарядки',
+        'ja': 'バッテリー、CPU、メモリ、充電ステータス'
+    },
+    'yukiAndroidFeature4': {
+        'en': 'Device Communication',
+        'ru': 'Связь устройств',
+        'ja': 'デバイス通信'
+    },
+    'yukiAndroidFeature4Desc': {
+        'en': 'Direct command sending between devices',
+        'ru': 'Прямая отправка команд между устройствами',
+        'ja': 'デバイス間の直接コマンド送信'
+    },
+    'yukiAndroidFeature5': {
+        'en': 'Flashlight Control',
+        'ru': 'Управление фонариком',
+        'ja': 'フラッシュライト制御'
+    },
+    'yukiAndroidFeature5Desc': {
+        'en': 'Turn camera flash on/off',
+        'ru': 'Включение/выключение вспышки камеры',
+        'ja': 'カメラフラッシュのオン/オフ'
+    },
+    'yukiAndroidFeature6': {
+        'en': 'Volume Control',
+        'ru': 'Управление громкостью',
+        'ja': '音量制御'
+    },
+    'yukiAndroidFeature6Desc': {
+        'en': 'Change volume and mute sound',
+        'ru': 'Изменение громкости и приглушение звука',
+        'ja': '音量変更とミュート'
+    },
+
+    // ===== Yuki Web UI =====
+    'yukiWebUITitle': {
+        'en': 'Yuki Web UI',
+        'ru': 'Yuki Web UI',
+        'ja': 'Yuki Web UI'
+    },
+    'yukiWebUIDescription': {
+        'en': 'A modern web administration interface for the ecosystem. Built on Flask (backend) and vanilla JavaScript with Chart.js for data visualization. Provides a dashboard with widgets, device management, command history, audit events, system settings, blacklists, and system metrics monitoring.',
+        'ru': 'Современный веб-интерфейс для администрирования экосистемы. Разработан на Flask (бэкенд) и чистом JavaScript с Chart.js для визуализации данных. Предоставляет дашборд с виджетами, управление устройствами, историю команд, аудит событий, настройки системы, чёрные списки и мониторинг системных метрик.',
+        'ja': 'エコシステムのためのモダンなWeb管理インターフェース。Flask（バックエンド）とChart.jsを使用したバニラJavaScriptで構築。ウィジェット付きダッシュボード、デバイス管理、コマンド履歴、監査イベント、システム設定、ブラックリスト、システムメトリクス監視を提供。'
+    },
+    'yukiWebUIDescription2': {
+        'en': 'The interface provides a dashboard with widgets, device management, command history, audit events, system settings, administration, blacklists, and system metrics monitoring.',
+        'ru': 'Интерфейс предоставляет дашборд с виджетами, управление устройствами, историю команд, аудит событий, настройки системы, администрирование, чёрные списки и мониторинг системных метрик.',
+        'ja': 'インターフェースは、ウィジェット付きダッシュボード、デバイス管理、コマンド履歴、監査イベント、システム設定、管理、ブラックリスト、システムメトリクス監視を提供します。'
+    },
+    'yukiWebUIFeature1': {
+        'en': 'Dashboard',
+        'ru': 'Дашборд',
+        'ja': 'ダッシュボード'
+    },
+    'yukiWebUIFeature1Desc': {
+        'en': 'Widgets with statistics, metrics, charts, and tokens',
+        'ru': 'Виджеты со статистикой, метриками, графиками и токенами',
+        'ja': '統計、メトリクス、チャート、トークンを含むウィジェット'
+    },
+    'yukiWebUIFeature2': {
+        'en': 'Device Management',
+        'ru': 'Управление устройствами',
+        'ja': 'デバイス管理'
+    },
+    'yukiWebUIFeature2Desc': {
+        'en': 'Device list, filtering, command sending, groups, tags',
+        'ru': 'Список устройств, фильтрация, отправка команд, группы, теги',
+        'ja': 'デバイス一覧、フィルタリング、コマンド送信、グループ、タグ'
+    },
+    'yukiWebUIFeature3': {
+        'en': 'History and Audit',
+        'ru': 'История и аудит',
+        'ja': '履歴と監査'
+    },
+    'yukiWebUIFeature3Desc': {
+        'en': 'Command history, audit events, filters and search',
+        'ru': 'История команд, аудит событий, фильтры и поиск',
+        'ja': 'コマンド履歴、監査イベント、フィルターと検索'
+    },
+    'yukiWebUIFeature4': {
+        'en': 'Settings',
+        'ru': 'Настройки',
+        'ja': '設定'
+    },
+    'yukiWebUIFeature4Desc': {
+        'en': 'Core connection, theme, auto-reconnect, limits',
+        'ru': 'Подключение к Core, тема, авто-переподключение, лимиты',
+        'ja': 'Core接続、テーマ、自動再接続、制限'
+    },
+    'yukiWebUIFeature5': {
+        'en': 'Administration',
+        'ru': 'Администрирование',
+        'ja': '管理'
+    },
+    'yukiWebUIFeature5Desc': {
+        'en': 'Blacklists, system metrics, token management',
+        'ru': 'Чёрные списки, системные метрики, управление токенами',
+        'ja': 'ブラックリスト、システムメトリクス、トークン管理'
+    },
+    'yukiWebUIFeature6': {
+        'en': 'Visualization',
+        'ru': 'Визуализация',
+        'ja': '可視化'
+    },
+    'yukiWebUIFeature6Desc': {
+        'en': 'CPU, RAM, Disk, Network charts using Chart.js',
+        'ru': 'Графики CPU, RAM, Disk, Network с использованием Chart.js',
+        'ja': 'Chart.jsを使用したCPU、RAM、ディスク、ネットワークのチャート'
+    },
+
+    // ===== Yuki Humidifier =====
+    'yukiHumidifierTitle': {
+        'en': 'Yuki Humidifier',
+        'ru': 'Yuki Humidifier',
+        'ja': 'Yuki Humidifier'
+    },
+    'yukiHumidifierDescription': {
+        'en': 'A reference IoT device based on the ESP32-C3 Super Mini microcontroller. A smart air humidifier with full Yuki Protocol v1.1 support. Connects to Core via WebSocket, supports auto-mode, web-based control, metrics collection, command processing, and interaction with other ecosystem devices.',
+        'ru': 'Референсное IoT-устройство на базе микроконтроллера ESP32-C3 Super Mini. Умный увлажнитель воздуха с полной поддержкой Yuki Protocol v1.1. Подключается к Core через WebSocket, поддерживает авто-режим, управление через веб-интерфейс, сбор метрик, обработку команд и взаимодействие с другими устройствами экосистемы.',
+        'ja': 'ESP32-C3 Super MiniマイクロコントローラーベースのリファレンスIoTデバイス。Yuki Protocol v1.1を完全サポートするスマート空気加湿器。WebSocketでCoreに接続、自動モード、Webベースの制御、メトリクス収集、コマンド処理、他のエコシステムデバイスとの連携をサポート。'
+    },
+    'yukiHumidifierDescription2': {
+        'en': 'The device connects to Core via WebSocket, supports auto-mode, web-based control, metrics collection, command processing, and interaction with other ecosystem devices.',
+        'ru': 'Устройство подключается к Core через WebSocket, поддерживает авто-режим, управление через веб-интерфейс, сбор метрик, обработку команд и взаимодействие с другими устройствами экосистемы.',
+        'ja': 'デバイスはWebSocketでCoreに接続し、自動モード、Webベースの制御、メトリクス収集、コマンド処理、他のエコシステムデバイスとの連携をサポートします。'
+    },
+    'yukiHumidifierFeature1': {
+        'en': 'Humidification Control',
+        'ru': 'Управление увлажнением',
+        'ja': '加湿制御'
+    },
+    'yukiHumidifierFeature1Desc': {
+        'en': 'Turn on/off, set target humidity',
+        'ru': 'Включение/выключение, установка целевой влажности',
+        'ja': 'オン/オフ、目標湿度設定'
+    },
+    'yukiHumidifierFeature2': {
+        'en': 'Auto Mode',
+        'ru': 'Авто-режим',
+        'ja': '自動モード'
+    },
+    'yukiHumidifierFeature2Desc': {
+        'en': 'Automatic maintenance of the set humidity level',
+        'ru': 'Автоматическое поддержание заданного уровня влажности',
+        'ja': '設定湿度レベルの自動維持'
+    },
+    'yukiHumidifierFeature3': {
+        'en': 'Web Interface',
+        'ru': 'Веб-интерфейс',
+        'ja': 'Webインターフェース'
+    },
+    'yukiHumidifierFeature3Desc': {
+        'en': 'Built-in web server for local control',
+        'ru': 'Встроенный веб-сервер для локального управления',
+        'ja': 'ローカル制御用の内蔵Webサーバー'
+    },
+    'yukiHumidifierFeature4': {
+        'en': 'Core Connection',
+        'ru': 'Связь с Core',
+        'ja': 'Core接続'
+    },
+    'yukiHumidifierFeature4Desc': {
+        'en': 'WebSocket connection, token authorization',
+        'ru': 'WebSocket подключение, авторизация по токену',
+        'ja': 'WebSocket接続、トークン認証'
+    },
+    'yukiHumidifierFeature5': {
+        'en': 'Metrics',
+        'ru': 'Метрики',
+        'ja': 'メトリクス'
+    },
+    'yukiHumidifierFeature5Desc': {
+        'en': 'Current humidity, state, uptime, CPU frequency',
+        'ru': 'Текущая влажность, состояние, uptime, CPU частота',
+        'ja': '現在の湿度、状態、アップタイム、CPU周波数'
+    },
+    'yukiHumidifierFeature6': {
+        'en': 'Interaction',
+        'ru': 'Взаимодействие',
+        'ja': '相互作用'
+    },
+    'yukiHumidifierFeature6Desc': {
+        'en': 'Command exchange with other ecosystem devices',
+        'ru': 'Обмен командами с другими устройствами экосистемы',
+        'ja': '他のエコシステムデバイスとのコマンド交換'
+    },
+
+    // ===== Yuki Ecosystem main page =====
+    'aboutEcosystem': {
+        'en': 'About the Ecosystem',
+        'ru': 'Об экосистеме',
+        'ja': 'エコシステムについて'
+    },
+    'yukiDescription': {
+        'en': 'Yuki Ecosystem is a modern platform for managing smart devices and creating distributed IoT systems. The ecosystem includes a central server (Core), a unified data exchange protocol, client applications for Windows and Android, a web-based administration interface, and a reference device implementation based on ESP32-C3 — an air humidifier.',
+        'ru': 'Yuki Ecosystem — это современная платформа для управления умными устройствами и создания распределённых систем IoT. Экосистема включает центральный сервер (Core), единый протокол обмена данными, клиентские приложения для Windows и Android, веб-интерфейс для администрирования, а также референсную реализацию устройства на базе ESP32-C3 — увлажнитель воздуха.',
+        'ja': 'Yuki Ecosystemは、スマートデバイスを管理し、分散型IoTシステムを構築するためのモダンなプラットフォームです。エコシステムには、中央サーバー（Core）、統一データ交換プロトコル、WindowsおよびAndroid向けクライアントアプリケーション、Webベースの管理インターフェース、およびESP32-C3ベースのリファレンスデバイス（空気加湿器）が含まれます。'
+    },
+    'yukiDescription2': {
+        'en': 'The architecture is built on WebSocket-based communication and the unified Yuki Protocol v1.1, ensuring reliable real-time interaction between all components.',
+        'ru': 'Архитектура построена на базе WebSocket-связи и унифицированного протокола Yuki Protocol v1.1, что обеспечивает надёжное взаимодействие между всеми компонентами в реальном времени.',
+        'ja': 'アーキテクチャはWebSocketベースの通信と統一Yuki Protocol v1.1に基づいて構築されており、すべてのコンポーネント間の信頼性の高いリアルタイム相互作用を保証します。'
+    },
+    'ecosystemComponents': {
+        'en': 'Ecosystem Components',
+        'ru': 'Компоненты экосистемы',
+        'ja': 'エコシステムコンポーネント'
+    },
+    'yukiCoreShortDesc': {
+        'en': 'Central server of the ecosystem. Provides device management, authentication, command routing, metrics collection, and logging. Implemented in Python + Flask + WebSockets.',
+        'ru': 'Центральный сервер экосистемы. Обеспечивает управление устройствами, аутентификацию, маршрутизацию команд, сбор метрик и ведение логов. Реализован на Python + Flask + WebSockets.',
+        'ja': 'エコシステムの中央サーバー。デバイス管理、認証、コマンドルーティング、メトリクス収集、ロギングを提供。Python + Flask + WebSocketsで実装。'
+    },
+    'yukiProtocolShortDesc': {
+        'en': 'Unified data exchange protocol v1.1. Implemented in Python, JavaScript, C#, and Kotlin. Provides a unified message format for all devices and clients of the ecosystem.',
+        'ru': 'Унифицированный протокол обмена данными v1.1. Реализован на Python, JavaScript, C# и Kotlin. Обеспечивает единый формат сообщений для всех устройств и клиентов экосистемы.',
+        'ja': '統一データ交換プロトコル v1.1。Python、JavaScript、C#、Kotlinで実装。エコシステムの全デバイスとクライアントに統一メッセージフォーマットを提供。'
+    },
+    'yukiWindowsShortDesc': {
+        'en': 'Desktop application for Windows (WPF / .NET). Allows connecting to Core, managing devices, executing commands, and monitoring system status.',
+        'ru': 'Десктопное приложение для Windows (WPF / .NET). Позволяет подключаться к Core, управлять устройствами, выполнять команды и отслеживать состояние системы.',
+        'ja': 'Windowsデスクトップアプリケーション（WPF / .NET）。Coreへの接続、デバイス管理、コマンド実行、システム状態の監視が可能。'
+    },
+    'yukiAndroidShortDesc': {
+        'en': 'Mobile application for Android (Kotlin). Provides remote device management through Core, supports extended commands, and collects system metrics.',
+        'ru': 'Мобильное приложение для Android (Kotlin). Обеспечивает удалённое управление устройствами через Core, поддержку расширенных команд и сбор системных метрик.',
+        'ja': 'Androidモバイルアプリケーション（Kotlin）。Coreを介したリモートデバイス管理、拡張コマンドのサポート、システムメトリクスの収集を提供。'
+    },
+    'yukiWebUIShortDesc': {
+        'en': 'Modern web administration interface for the system. Dashboard with widgets, device management, command history, audit, and settings. Implemented on Flask + JS.',
+        'ru': 'Современный веб-интерфейс для администрирования системы. Дашборд с виджетами, управление устройствами, история команд, аудит и настройки. Реализован на Flask + JS.',
+        'ja': 'システムのためのモダンなWeb管理インターフェース。ウィジェット付きダッシュボード、デバイス管理、コマンド履歴、監査、設定。Flask + JSで実装。'
+    },
+    'yukiHumidifierShortDesc': {
+        'en': 'Reference device based on ESP32-C3 Super Mini. Smart air humidifier with Yuki Protocol support, auto-mode, control via Core, and built-in web interface.',
+        'ru': 'Референсное устройство на базе ESP32-C3 Super Mini. Умный увлажнитель воздуха с поддержкой Yuki Protocol, авто-режимом, управлением через Core и встроенным веб-интерфейсом.',
+        'ja': 'ESP32-C3 Super Miniベースのリファレンスデバイス。Yuki Protocolサポート、自動モード、Core経由の制御、内蔵Webインターフェースを備えたスマート空気加湿器。'
+    },
+    'statusDev': {
+        'en': 'Development Status',
+        'ru': 'Статус разработки',
+        'ja': '開発ステータス'
+    },
+    'component': {
+        'en': 'Component',
+        'ru': 'Компонент',
+        'ja': 'コンポーネント'
+    },
+    'allInDevelopment': {
+        'en': 'All ecosystem components are under active development.',
+        'ru': 'Все компоненты экосистемы находятся в активной разработке.',
+        'ja': 'すべてのエコシステムコンポーネントは活発に開発中です。'
+    },
+    'hardwarePlatform': {
+        'en': 'Hardware Platform',
+        'ru': 'Аппаратная платформа',
+        'ja': 'ハードウェアプラットフォーム'
+    },
+    'hardwarePins': {
+        'en': 'Pins',
+        'ru': 'Пины',
+        'ja': 'ピン'
+    },
+    'hardwareMemory': {
+        'en': 'Memory',
+        'ru': 'Память',
+        'ja': 'メモリ'
+    },
+    'hardwareConnectivity': {
+        'en': 'Connectivity',
+        'ru': 'Связь',
+        'ja': '接続'
+    },
+
+    // ===== Shared UI keys =====
+    'features': {
+        'en': 'Features',
+        'ru': 'Возможности',
+        'ja': '機能'
+    },
+    'techStack': {
+        'en': 'Technology Stack',
+        'ru': 'Технологический стек',
+        'ja': '技術スタック'
+    },
+    'techLanguage': {
+        'en': 'Language',
+        'ru': 'Язык',
+        'ja': '言語'
+    },
+    'techMainLanguage': {
+        'en': 'Main language',
+        'ru': 'Основной язык',
+        'ja': '主要言語'
+    },
+    'techWebSocket': {
+        'en': 'WebSocket client',
+        'ru': 'WebSocket клиент',
+        'ja': 'WebSocketクライアント'
+    },
+    'techJSON': {
+        'en': 'JSON serialization',
+        'ru': 'JSON сериализация',
+        'ja': 'JSONシリアライゼーション'
+    },
+    'techForegroundService': {
+        'en': 'Foreground Service',
+        'ru': 'Foreground Service',
+        'ja': 'フォアグラウンドサービス'
+    },
+    'techForegroundServiceDesc': {
+        'en': 'Background mode with notification',
+        'ru': 'Фоновый режим с уведомлением',
+        'ja': '通知付きバックグラウンドモード'
+    },
+    'techWebFramework': {
+        'en': 'Web Framework',
+        'ru': 'Веб-фреймворк',
+        'ja': 'Webフレームワーク'
+    },
+    'techRealtime': {
+        'en': 'Real-time',
+        'ru': 'Реальное время',
+        'ja': 'リアルタイム'
+    },
+    'techDataStorage': {
+        'en': 'Data Storage',
+        'ru': 'Хранение данных',
+        'ja': 'データストレージ'
+    },
+    'techSystemMetrics': {
+        'en': 'System Metrics',
+        'ru': 'Системные метрики',
+        'ja': 'システムメトリクス'
+    },
+    'techBackendAPI': {
+        'en': 'Backend and API',
+        'ru': 'Бэкенд и API',
+        'ja': 'バックエンドとAPI'
+    },
+    'techFrontendWidgets': {
+        'en': 'Frontend and Widgets',
+        'ru': 'Фронтенд и виджеты',
+        'ja': 'フロントエンドとウィジェット'
+    },
+    'techCharts': {
+        'en': 'Charts',
+        'ru': 'Графики',
+        'ja': 'チャート'
+    },
+    'techStylesIcons': {
+        'en': 'Styles and Icons',
+        'ru': 'Стили и иконки',
+        'ja': 'スタイルとアイコン'
+    },
+    'techWPF': {
+        'en': 'Windows Presentation Foundation',
+        'ru': 'Windows Presentation Foundation',
+        'ja': 'Windows Presentation Foundation'
+    },
+    'techVolumeControl': {
+        'en': 'Volume Control',
+        'ru': 'Управление громкостью',
+        'ja': '音量制御'
+    },
+};
+
+const xl_translations = {
+    'xlTitle': {
+        'en': 'Xeno Language Ecosystem',
+        'ru': 'Xeno Language Экосистема',
+        'ja': 'Xeno Language エコシステム'
+    },
+    'xlDescription': {
+        'en': 'A compact interpreted programming language and virtual machine for the ESP32 ecosystem. The ecosystem includes the language core, a Windows executable for IDE integration, and a development environment with syntax highlighting and real-time code execution.',
+        'ru': 'Компактный интерпретируемый язык программирования и виртуальная машина для экосистемы ESP32. Экосистема включает ядро языка, Windows-исполняемый файл для интеграции с IDE и среду разработки с подсветкой синтаксиса и выполнением кода в реальном времени.',
+        'ja': 'ESP32エコシステム向けのコンパクトなインタプリタ型プログラミング言語と仮想マシン。エコシステムには、言語コア、IDE統合用のWindows実行可能ファイル、構文ハイライトとリアルタイムコード実行を備えた開発環境が含まれています。'
+    },
+    'xlComponent1': {
+        'en': 'Language Core',
+        'ru': 'Ядро языка',
+        'ja': '言語コア'
+    },
+    'xlComponent2': {
+        'en': 'Windows Executable',
+        'ru': 'Windows-исполняемый файл',
+        'ja': 'Windows実行可能ファイル'
+    },
+    'xlComponent3': {
+        'en': 'Xeno IDE',
+        'ru': 'Xeno IDE',
+        'ja': 'Xeno IDE'
+    },
+};
+
+const qwebui_translations = {
+    'qwebuiTitle': {
+        'en': 'QWebUI',
+        'ru': 'QWebUI',
+        'ja': 'QWebUI'
+    },
+    'qwebuiDescription': {
+        'en': 'A web-based quantum computing laboratory with interactive notebooks. Built on Flask + React with Qiskit integration. Public archive under MIT license.',
+        'ru': 'Веб-лаборатория квантовых вычислений с интерактивными блокнотами. Разработана на Flask + React с использованием Qiskit. Публичный архив под лицензией MIT.',
+        'ja': 'インタラクティブなノートブックを備えたWebベースの量子コンピューティングラボラトリー。Flask + React + Qiskitで構築。MITライセンスのパブリックアーカイブ。'
+    },
+    'qwebuiStatus': {
+        'en': 'Public Archive',
+        'ru': 'Публичный архив',
+        'ja': 'パブリックアーカイブ'
+    },
+};
+
+const xenos_translations = {
+    'xenoosTitle': {
+        'en': 'XenoOS',
+        'ru': 'XenoOS',
+        'ja': 'XenoOS'
+    },
+    'xenoosDescription': {
+        'en': 'A command-line interface (CLI) system for interacting with various system components such as filesystems, Wi-Fi, SD cards, and other system settings on ESP32 microcontrollers.',
+        'ru': 'Командная оболочка (CLI) для взаимодействия с различными системными компонентами ESP32: файловые системы, Wi-Fi, SD-карты и другие системные настройки.',
+        'ja': 'ESP32マイクロコントローラーのファイルシステム、Wi-Fi、SDカードなどのシステムコンポーネントと対話するためのコマンドラインインターフェース（CLI）システム。'
+    },
+};
+
+const lufiraos_translations = {
+    'lufiraosTitle': {
+        'en': 'LufiraOS',
+        'ru': 'LufiraOS',
+        'ja': 'LufiraOS'
+    },
+    'lufiraosDescription': {
+        'en': 'A new operating system project currently in active development.',
+        'ru': 'Новый проект операционной системы, находящийся в активной разработке.',
+        'ja': '現在活発に開発中の新しいオペレーティングシステムプロジェクト。'
+    },
+};
+
 Object.assign(translations, ds_translations, 
             ps_translations, xos_translations, 
             mui_translations, bot_translations, 
@@ -2073,7 +2902,10 @@ Object.assign(translations, ds_translations,
             xc_translations, ft_translations, 
             aboutme_translations, status_translations, 
             games_main_translations, devs_main_translations, 
-            contacts_translations);
+            contacts_translations, yuki_translations,
+            xl_translations, qwebui_translations,
+            xenos_translations, lufiraos_translations,
+            yuki_components_translations);
 
 // Функция для установки куки
 function setCookie(name, value, days) {

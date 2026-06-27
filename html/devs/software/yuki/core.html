@@ -12,7 +12,7 @@
     <link rel="shortcut icon" href="../../../img/header/LOGO VL_PLAY Games.png" />
     <script src="../../../js/translations.js" defer></script>
     <script src="../../../js/status.js" defer></script>
-    <title>VL_PLAY Games - Yuki Core</title>
+    <title data-translate="yukiCoreTitle">VL_PLAY Games - Yuki Core</title>
 </head>
 <body>
     <div class="spin-wrapper"><div class="spinner"></div></div>
@@ -20,7 +20,7 @@
         <header>
             <div class="logo">
                 <img src="../../../img/header/LOGO VL_PLAY Games.png" alt="Логотип VL_PLAY Games" width="100" height="100" onclick="window.location.href='../../../index.html';" style="cursor: pointer;">
-                <h1>VL_PLAY Games - Yuki Core</h1>
+                <h1 data-translate="yukiCoreTitle">VL_PLAY Games - Yuki Core</h1>
             </div>
             <nav>
                 <div class="language-buttons">
@@ -44,7 +44,7 @@
         </header>
 
         <div class="centered-text">
-            <h1>Yuki Core</h1>
+            <h1 data-translate="yukiCoreTitle">Yuki Core</h1>
             <div class="title-decoration"></div>
         </div>
 
@@ -58,7 +58,7 @@
                     </div>
                     <div class="game-info-section">
                         <div class="game-title-section">
-                            <h1 class="game-title">Yuki Core</h1>
+                            <h1 class="game-title" data-translate="yukiCoreTitle">Yuki Core</h1>
                             <div class="status-badge in-development" data-translate="sysReqDev">В разработке</div>
                         </div>
                     </div>
@@ -67,15 +67,15 @@
 
             <div class="description-card">
                 <div class="card-header">
-                    <h3>Описание</h3>
+                    <h3 data-translate="descriptionTitle">Описание</h3>
                     <div class="decorative-line"></div>
                 </div>
-                <p class="description-text">
+                <p class="description-text" data-translate="yukiCoreDescription">
                     <strong>Yuki Core</strong> — центральный сервер экосистемы Yuki. Обеспечивает управление устройствами, 
                     аутентификацию, маршрутизацию команд, сбор метрик и ведение логов. Реализован на <strong>Python</strong> 
                     с использованием <strong>Flask</strong> для веб-интерфейса и <strong>WebSockets</strong> для реального времени.
                 </p>
-                <p class="description-text">
+                <p class="description-text" data-translate="yukiCoreDescription2">
                     Core поддерживает подключение неограниченного количества устройств, управление через Web UI, 
                     авторизацию устройств, ротацию токенов, чёрные списки, аудит действий и сбор системных метрик.
                 </p>
@@ -83,50 +83,50 @@
 
             <div class="description-card">
                 <div class="card-header">
-                    <h3>Ключевые возможности</h3>
+                    <h3 data-translate="features">Ключевые возможности</h3>
                     <div class="decorative-line"></div>
                 </div>
                 <div class="features-grid">
                     <div class="feature-card">
                         <span class="feature-icon">🔌</span>
                         <div class="feature-content">
-                            <h4>Управление устройствами</h4>
-                            <p>Подключение, авторизация, чёрные списки, статусы онлайн/офлайн</p>
+                            <h4 data-translate="yukiCoreFeature1">Управление устройствами</h4>
+                            <p data-translate="yukiCoreFeature1Desc">Подключение, авторизация, чёрные списки, статусы онлайн/офлайн</p>
                         </div>
                     </div>
                     <div class="feature-card">
                         <span class="feature-icon">📨</span>
                         <div class="feature-content">
-                            <h4>Маршрутизация команд</h4>
-                            <p>Отправка команд, широковещательные рассылки, связь устройство–устройство</p>
+                            <h4 data-translate="yukiCoreFeature2">Маршрутизация команд</h4>
+                            <p data-translate="yukiCoreFeature2Desc">Отправка команд, широковещательные рассылки, связь устройство–устройство</p>
                         </div>
                     </div>
                     <div class="feature-card">
                         <span class="feature-icon">📊</span>
                         <div class="feature-content">
-                            <h4>Метрики и логи</h4>
-                            <p>Системные метрики, аудит событий, история команд, uptime статистика</p>
+                            <h4 data-translate="yukiCoreFeature3">Метрики и логи</h4>
+                            <p data-translate="yukiCoreFeature3Desc">Системные метрики, аудит событий, история команд, uptime статистика</p>
                         </div>
                     </div>
                     <div class="feature-card">
                         <span class="feature-icon">🔐</span>
                         <div class="feature-content">
-                            <h4>Безопасность</h4>
-                            <p>Аутентификация по токену, ротация токенов, чёрные списки, rate limiting</p>
+                            <h4 data-translate="yukiCoreFeature4">Безопасность</h4>
+                            <p data-translate="yukiCoreFeature4Desc">Аутентификация по токену, ротация токенов, чёрные списки, rate limiting</p>
                         </div>
                     </div>
                     <div class="feature-card">
                         <span class="feature-icon">📱</span>
                         <div class="feature-content">
-                            <h4>API для клиентов</h4>
-                            <p>WebSocket API для устройств и клиентов, REST API для Web UI</p>
+                            <h4 data-translate="yukiCoreFeature5">API для клиентов</h4>
+                            <p data-translate="yukiCoreFeature5Desc">WebSocket API для устройств и клиентов, REST API для Web UI</p>
                         </div>
                     </div>
                     <div class="feature-card">
                         <span class="feature-icon">🗄️</span>
                         <div class="feature-content">
-                            <h4>Хранение данных</h4>
-                            <p>SQLite база данных для устройств, команд, метрик и аудита</p>
+                            <h4 data-translate="yukiCoreFeature6">Хранение данных</h4>
+                            <p data-translate="yukiCoreFeature6Desc">SQLite база данных для устройств, команд, метрик и аудита</p>
                         </div>
                     </div>
                 </div>
@@ -134,7 +134,7 @@
 
             <div class="description-card">
                 <div class="card-header">
-                    <h3>Технологический стек</h3>
+                    <h3 data-translate="techStack">Технологический стек</h3>
                     <div class="decorative-line"></div>
                 </div>
                 <div class="tech-stack">
@@ -149,28 +149,28 @@
                         <span class="tech-icon">🌶️</span>
                         <div class="tech-content">
                             <strong>Flask</strong>
-                            <span>Веб-фреймворк</span>
+                            <span data-translate="techWebFramework">Веб-фреймворк</span>
                         </div>
                     </div>
                     <div class="tech-item">
                         <span class="tech-icon">📡</span>
                         <div class="tech-content">
                             <strong>WebSockets</strong>
-                            <span>Реальное время</span>
+                            <span data-translate="techRealtime">Реальное время</span>
                         </div>
                     </div>
                     <div class="tech-item">
                         <span class="tech-icon">💾</span>
                         <div class="tech-content">
                             <strong>SQLite</strong>
-                            <span>Хранение данных</span>
+                            <span data-translate="techDataStorage">Хранение данных</span>
                         </div>
                     </div>
                     <div class="tech-item">
                         <span class="tech-icon">📊</span>
                         <div class="tech-content">
                             <strong>psutil</strong>
-                            <span>Системные метрики</span>
+                            <span data-translate="techSystemMetrics">Системные метрики</span>
                         </div>
                     </div>
                 </div>

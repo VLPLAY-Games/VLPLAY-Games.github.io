@@ -12,9 +12,8 @@
     <link rel="shortcut icon" href="../../../../img/header/LOGO VL_PLAY Games.png" />
     <script src="../../../../js/translations.js" defer></script>
     <script src="../../../../js/status.js" defer></script>
-    <title>VL_PLAY Games - Yuki Ecosystem</title>
+    <title data-translate="yukiTitle">VL_PLAY Games - Yuki Ecosystem</title>
     <style>
-        /* Стили для снежинок */
         .snowflake {
             position: fixed;
             color: #ffffff;
@@ -26,23 +25,12 @@
             user-select: none;
             animation: fall linear infinite;
         }
-        
         @keyframes fall {
-            0% {
-                transform: translateY(0) rotate(0deg) scale(1);
-                opacity: 0.8;
-            }
-            100% {
-                transform: translateY(110vh) rotate(720deg) scale(0.3);
-                opacity: 0.2;
-            }
+            0% { transform: translateY(0) rotate(0deg) scale(1); opacity: 0.8; }
+            100% { transform: translateY(110vh) rotate(720deg) scale(0.3); opacity: 0.2; }
         }
-        
-        /* Адаптивность: на мобильных меньше снежинок */
         @media (max-width: 768px) {
-            .snowflake {
-                font-size: 0.8rem;
-            }
+            .snowflake { font-size: 0.8rem; }
         }
     </style>
 </head>
@@ -52,7 +40,7 @@
         <header>
             <div class="logo">
                 <img src="../../../img/header/LOGO VL_PLAY Games.png" alt="Логотип VL_PLAY Games" width="100" height="100" onclick="window.location.href='../../../index.html';" style="cursor: pointer;">
-                <h1>VL_PLAY Games - Yuki Ecosystem</h1>
+                <h1 data-translate="yukiTitle">VL_PLAY Games - Yuki Ecosystem</h1>
             </div>
             <nav>
                 <div class="language-buttons">
@@ -76,33 +64,31 @@
         </header>
 
         <div class="centered-text">
-            <h1>Yuki Ecosystem</h1>
+            <h1 data-translate="yukiTitle">Yuki Ecosystem</h1>
             <div class="title-decoration"></div>
         </div>
 
-        <!-- Описание экосистемы -->
         <div class="devs-description">
             <div class="description-card">
                 <div class="card-header">
-                    <h3>Об экосистеме</h3>
+                    <h3 data-translate="aboutEcosystem">Об экосистеме</h3>
                     <div class="decorative-line"></div>
                 </div>
-                <p class="description-text">
+                <p class="description-text" data-translate="yukiDescription">
                     <strong>Yuki Ecosystem</strong> — это современная платформа для управления умными устройствами и создания распределённых систем IoT. 
                     Экосистема включает центральный сервер (Core), единый протокол обмена данными, клиентские приложения для Windows и Android, 
                     веб-интерфейс для администрирования, а также референсную реализацию устройства на базе ESP32-C3 — увлажнитель воздуха.
                 </p>
-                <p class="description-text">
+                <p class="description-text" data-translate="yukiDescription2">
                     Архитектура построена на базе WebSocket-связи и унифицированного протокола Yuki Protocol v1.1, 
                     что обеспечивает надёжное взаимодействие между всеми компонентами в реальном времени.
                 </p>
             </div>
         </div>
 
-        <!-- Карточки компонентов -->
         <div class="tech-section">
             <div class="section-header">
-                <h2>Компоненты экосистемы</h2>
+                <h2 data-translate="ecosystemComponents">Компоненты экосистемы</h2>
                 <div class="title-decoration"></div>
             </div>
 
@@ -115,12 +101,9 @@
                             <div style="width:120px; height:120px; border-radius:20px; background:#0d0d1a; display:flex; align-items:center; justify-content:center; font-size:3rem; color:#e8b4e1; border:2px solid rgba(228,180,225,0.3);">⚙️</div>
                         </div>
                         <div class="card-info">
-                            <h3>Yuki Core</h3>
+                            <h3 data-translate="yukiCore">Yuki Core</h3>
                             <span class="status-badge in-development" data-translate="sysReqDev">В разработке</span>
-                            <p>
-                                Центральный сервер экосистемы. Обеспечивает управление устройствами, аутентификацию, 
-                                маршрутизацию команд, сбор метрик и ведение логов. Реализован на Python + Flask + WebSockets.
-                            </p>
+                            <p data-translate="yukiCoreShortDesc">Центральный сервер экосистемы. Обеспечивает управление устройствами, аутентификацию, маршрутизацию команд, сбор метрик и ведение логов. Реализован на Python + Flask + WebSockets.</p>
                         </div>
                         <div class="card-action">
                             <a href="core.html" class="card-btn" data-translate="learn_more">Подробнее</a>
@@ -136,12 +119,9 @@
                             <div style="width:120px; height:120px; border-radius:20px; background:#0d1b2a; display:flex; align-items:center; justify-content:center; font-size:3rem; color:#e8b4e1; border:2px solid rgba(228,180,225,0.3);">📡</div>
                         </div>
                         <div class="card-info">
-                            <h3>Yuki Protocol</h3>
+                            <h3 data-translate="yukiProtocol">Yuki Protocol</h3>
                             <span class="status-badge in-development" data-translate="sysReqDev">В разработке</span>
-                            <p>
-                                Унифицированный протокол обмена данными v1.1. Реализован на Python, JavaScript, C# и Kotlin. 
-                                Обеспечивает единый формат сообщений для всех устройств и клиентов экосистемы.
-                            </p>
+                            <p data-translate="yukiProtocolShortDesc">Унифицированный протокол обмена данными v1.1. Реализован на Python, JavaScript, C# и Kotlin. Обеспечивает единый формат сообщений для всех устройств и клиентов экосистемы.</p>
                         </div>
                         <div class="card-action">
                             <a href="protocol.html" class="card-btn" data-translate="learn_more">Подробнее</a>
@@ -157,12 +137,9 @@
                             <div style="width:120px; height:120px; border-radius:20px; background:#1a0b2e; display:flex; align-items:center; justify-content:center; font-size:3rem; color:#e8b4e1; border:2px solid rgba(228,180,225,0.3);">🖥️</div>
                         </div>
                         <div class="card-info">
-                            <h3>Yuki Windows Client</h3>
+                            <h3 data-translate="yukiWindows">Yuki Windows Client</h3>
                             <span class="status-badge in-development" data-translate="sysReqDev">В разработке</span>
-                            <p>
-                                Десктопное приложение для Windows (WPF / .NET). Позволяет подключаться к Core, 
-                                управлять устройствами, выполнять команды и отслеживать состояние системы.
-                            </p>
+                            <p data-translate="yukiWindowsShortDesc">Десктопное приложение для Windows (WPF / .NET). Позволяет подключаться к Core, управлять устройствами, выполнять команды и отслеживать состояние системы.</p>
                         </div>
                         <div class="card-action">
                             <a href="windows.html" class="card-btn" data-translate="learn_more">Подробнее</a>
@@ -178,12 +155,9 @@
                             <div style="width:120px; height:120px; border-radius:20px; background:#0d1a12; display:flex; align-items:center; justify-content:center; font-size:3rem; color:#e8b4e1; border:2px solid rgba(228,180,225,0.3);">📱</div>
                         </div>
                         <div class="card-info">
-                            <h3>Yuki Android Client</h3>
+                            <h3 data-translate="yukiAndroid">Yuki Android Client</h3>
                             <span class="status-badge in-development" data-translate="sysReqDev">В разработке</span>
-                            <p>
-                                Мобильное приложение для Android (Kotlin). Обеспечивает удалённое управление устройствами 
-                                через Core, поддержку расширенных команд и сбор системных метрик.
-                            </p>
+                            <p data-translate="yukiAndroidShortDesc">Мобильное приложение для Android (Kotlin). Обеспечивает удалённое управление устройствами через Core, поддержку расширенных команд и сбор системных метрик.</p>
                         </div>
                         <div class="card-action">
                             <a href="android.html" class="card-btn" data-translate="learn_more">Подробнее</a>
@@ -199,12 +173,9 @@
                             <div style="width:120px; height:120px; border-radius:20px; background:#1a0b2e; display:flex; align-items:center; justify-content:center; font-size:3rem; color:#e8b4e1; border:2px solid rgba(228,180,225,0.3);">🌐</div>
                         </div>
                         <div class="card-info">
-                            <h3>Yuki Web UI</h3>
+                            <h3 data-translate="yukiWebUI">Yuki Web UI</h3>
                             <span class="status-badge in-development" data-translate="sysReqDev">В разработке</span>
-                            <p>
-                                Современный веб-интерфейс для администрирования системы. Дашборд с виджетами, 
-                                управление устройствами, история команд, аудит и настройки. Реализован на Flask + JS.
-                            </p>
+                            <p data-translate="yukiWebUIShortDesc">Современный веб-интерфейс для администрирования системы. Дашборд с виджетами, управление устройствами, история команд, аудит и настройки. Реализован на Flask + JS.</p>
                         </div>
                         <div class="card-action">
                             <a href="webui.html" class="card-btn" data-translate="learn_more">Подробнее</a>
@@ -220,12 +191,9 @@
                             <div style="width:120px; height:120px; border-radius:20px; background:#0a0f1a; display:flex; align-items:center; justify-content:center; font-size:3rem; color:#e8b4e1; border:2px solid rgba(228,180,225,0.3);">💨</div>
                         </div>
                         <div class="card-info">
-                            <h3>Yuki Humidifier</h3>
+                            <h3 data-translate="yukiHumidifier">Yuki Humidifier</h3>
                             <span class="status-badge in-development" data-translate="sysReqDev">В разработке</span>
-                            <p>
-                                Референсное устройство на базе ESP32-C3 Super Mini. Умный увлажнитель воздуха с 
-                                поддержкой Yuki Protocol, авто-режимом, управлением через Core и встроенным веб-интерфейсом.
-                            </p>
+                            <p data-translate="yukiHumidifierShortDesc">Референсное устройство на базе ESP32-C3 Super Mini. Умный увлажнитель воздуха с поддержкой Yuki Protocol, авто-режимом, управлением через Core и встроенным веб-интерфейсом.</p>
                         </div>
                         <div class="card-action">
                             <a href="humidifier.html" class="card-btn" data-translate="learn_more">Подробнее</a>
@@ -235,56 +203,55 @@
             </div>
         </div>
 
-        <!-- Таблица статусов -->
         <div class="devs-description">
             <div class="description-card">
                 <div class="card-header">
-                    <h3>Статус разработки</h3>
+                    <h3 data-translate="statusDev">Статус разработки</h3>
                     <div class="decorative-line"></div>
                 </div>
                 <div class="config-table">
                     <table>
                         <thead>
                             <tr>
-                                <th>Компонент</th>
-                                <th>Версия</th>
-                                <th>Последнее обновление</th>
-                                <th>Статус</th>
+                                <th data-translate="component">Компонент</th>
+                                <th data-translate="version_status">Версия</th>
+                                <th data-translate="release_date">Последнее обновление</th>
+                                <th data-translate="stateTitle">Статус</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td>Yuki Core</td>
+                                <td data-translate="yukiCore">Yuki Core</td>
                                 <td>---</td>
                                 <td>---</td>
                                 <td data-translate="sysReqDev">В разработке</td>
                             </tr>
                             <tr>
-                                <td>Yuki Protocol</td>
+                                <td data-translate="yukiProtocol">Yuki Protocol</td>
                                 <td>---</td>
                                 <td>---</td>
                                 <td data-translate="sysReqDev">В разработке</td>
                             </tr>
                             <tr>
-                                <td>Yuki Windows Client</td>
+                                <td data-translate="yukiWindows">Yuki Windows Client</td>
                                 <td>---</td>
                                 <td>---</td>
                                 <td data-translate="sysReqDev">В разработке</td>
                             </tr>
                             <tr>
-                                <td>Yuki Android Client</td>
+                                <td data-translate="yukiAndroid">Yuki Android Client</td>
                                 <td>---</td>
                                 <td>---</td>
                                 <td data-translate="sysReqDev">В разработке</td>
                             </tr>
                             <tr>
-                                <td>Yuki Web UI</td>
+                                <td data-translate="yukiWebUI">Yuki Web UI</td>
                                 <td>---</td>
                                 <td>---</td>
                                 <td data-translate="sysReqDev">В разработке</td>
                             </tr>
                             <tr>
-                                <td>Yuki Humidifier</td>
+                                <td data-translate="yukiHumidifier">Yuki Humidifier</td>
                                 <td>---</td>
                                 <td>---</td>
                                 <td data-translate="sysReqDev">В разработке</td>
@@ -292,7 +259,7 @@
                         </tbody>
                     </table>
                 </div>
-                <p style="margin-top:1.5rem; text-align:center; color: var(--text-secondary);">
+                <p style="margin-top:1.5rem; text-align:center; color: var(--text-secondary);" data-translate="allInDevelopment">
                     Все компоненты экосистемы находятся в активной разработке.
                 </p>
             </div>
@@ -318,19 +285,15 @@
     </div>
     <button id="scrollTopButton" class="btn_scroll_top">↑</button>
     <script src="../../../../js/main.js" type="module"></script>
-
     <!-- Пасхалка: падающий снег -->
     <script>
         (function() {
-            // Конфигурация снега
-            const SNOWFLAKE_COUNT = 50; // Количество снежинок
-            const SNOWFLAKE_SYMBOLS = ['❄', '❅', '❆', '✦']; // Символы снежинок
-            const MIN_FONT_SIZE = 0.8; // rem
-            const MAX_FONT_SIZE = 2.0; // rem
-            const MIN_DURATION = 8; // секунды
-            const MAX_DURATION = 18; // секунды
-            
-            // Создаём контейнер для снежинок
+            const SNOWFLAKE_COUNT = 50;
+            const SNOWFLAKE_SYMBOLS = ['❄', '❅', '❆', '✦'];
+            const MIN_FONT_SIZE = 0.8;
+            const MAX_FONT_SIZE = 2.0;
+            const MIN_DURATION = 8;
+            const MAX_DURATION = 18;
             const container = document.createElement('div');
             container.style.position = 'fixed';
             container.style.top = '0';
@@ -341,61 +304,20 @@
             container.style.zIndex = '9999';
             container.style.overflow = 'hidden';
             document.body.appendChild(container);
-            
-            // Массив для хранения снежинок
-            const snowflakes = [];
-            
-            // Функция создания одной снежинки
-            function createSnowflake() {
+            for (let i = 0; i < SNOWFLAKE_COUNT; i++) {
                 const el = document.createElement('div');
                 el.className = 'snowflake';
-                
-                // Случайный символ
                 const symbol = SNOWFLAKE_SYMBOLS[Math.floor(Math.random() * SNOWFLAKE_SYMBOLS.length)];
                 el.textContent = symbol;
-                
-                // Случайный размер
                 const size = MIN_FONT_SIZE + Math.random() * (MAX_FONT_SIZE - MIN_FONT_SIZE);
                 el.style.fontSize = size + 'rem';
-                
-                // Случайное начальное положение по горизонтали
                 el.style.left = Math.random() * 100 + '%';
-                
-                // Случайная прозрачность
                 el.style.opacity = 0.3 + Math.random() * 0.5;
-                
-                // Случайная длительность анимации
                 const duration = MIN_DURATION + Math.random() * (MAX_DURATION - MIN_DURATION);
                 el.style.animationDuration = duration + 's';
-                
-                // Случайная задержка (чтобы снежинки не падали синхронно)
                 el.style.animationDelay = Math.random() * -duration + 's';
-                
-                // Сохраняем данные о снежинке
-                const data = {
-                    el: el,
-                    duration: duration,
-                    left: el.style.left,
-                    size: size,
-                    opacity: el.style.opacity
-                };
-                
                 container.appendChild(el);
-                return data;
             }
-            
-            // Создаём все снежинки
-            for (let i = 0; i < SNOWFLAKE_COUNT; i++) {
-                const flake = createSnowflake();
-                snowflakes.push(flake);
-            }
-            
-            // Периодически обновляем позиции (для более естественного эффекта)
-            // Можно менять скорость или другие параметры
-            // Но CSS анимация уже делает всё сама, так что оставляем как есть.
-            
-            // При изменении размера окна можно адаптировать, но CSS справляется.
-            
             console.log('❄️ Yuki Snow Easter Egg activated!');
         })();
     </script>
