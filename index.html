@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css\footer.css">
     <link rel="shortcut icon" href="img\header\LOGO VL_PLAY Games.png" />
     <script src="js/translations.js" defer></script>
-    <script src="../../js/status.js" defer></script>
+    <script src="js/status.js" defer></script>
     <title data-translate="siteTitle">VL_PLAY Games - Главная</title>
 </head>
 <body>
@@ -18,7 +18,7 @@
     <div class="page-container">
         <header>
             <div class="logo">
-                <img src="../../img/header/LOGO VL_PLAY Games.png" alt="Логотип VL_PLAY Games" width="100" height="100" onclick="window.location.href='../../index.html';" style="cursor: pointer;">
+                <img src="img/header/LOGO VL_PLAY Games.png" alt="Логотип VL_PLAY Games" width="100" height="100" onclick="window.location.href='index.html';" style="cursor: pointer;">
                 <h1 data-translate="siteTitle">VL_PLAY Games - Главная</h1>
             </div>
             <nav>
@@ -62,7 +62,10 @@
                     </div>
                     <div class="card-info">
                         <h3>Yuki Ecosystem</h3>
-                        <span class="status-badge in-development" data-translate="sysReqDev">В разработке</span>
+                        <div class="project-status-row">
+                            <span class="status-badge in-development" data-translate="sysReqDev">В разработке</span>
+                            <span class="version-badge" data-version-key="yukiCoreVersion">---</span>
+                        </div>
                         <p>Современная платформа для управления умными устройствами и создания распределённых IoT-систем. Включает Core, Protocol, клиенты для Windows/Android и веб-интерфейс.</p>
                     </div>
                     <div class="card-action">
@@ -80,7 +83,10 @@
                     </div>
                     <div class="card-info">
                         <h3>Xeno Language</h3>
-                        <span class="status-badge released" data-translate="released">Выпущено</span>
+                        <div class="project-status-row">
+                            <span class="status-badge released" data-translate="released">Выпущено</span>
+                            <span class="version-badge" data-version-key="xenolangVersion">---</span>
+                        </div>
                         <p>Компактный интерпретируемый язык и VM для ESP32. Экосистема включает ядро, Windows-исполняемый файл и IDE для разработки.</p>
                     </div>
                     <div class="card-action">
@@ -98,6 +104,10 @@
                     </div>
                     <div class="card-info">
                         <h3>Silent Darkness</h3>
+                        <div class="project-status-row">
+                            <span class="status-badge released" data-translate="released">Выпущено</span>
+                            <span class="version-badge" data-version-key="sdPCVersion">---</span>
+                        </div>
                         <p data-translate="sdDescription">Моя игра Silent Darkness представляет собой захватывающий хоррор, который погрузит вас в мрачный мир тайн и ужасов.</p>
                     </div>
                     <div class="card-action">
@@ -115,6 +125,10 @@
                     </div>
                     <div class="card-info">
                         <h3 data-translate="tanabataTitle">Tanabata: Path to the Stars</h3>
+                        <div class="project-status-row">
+                            <span class="status-badge released" data-translate="released">Выпущено</span>
+                            <span class="version-badge" data-version-key="ftVersion">---</span>
+                        </div>
                         <p data-translate="tanabataDescriptionShort">Расслабляющая атмосферная головоломка с элементами приключения. Отправьтесь в мистическое путешествие по Токио и откройте секретный фестиваль Танабата.</p>
                     </div>
                     <div class="card-action">

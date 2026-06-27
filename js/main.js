@@ -54,3 +54,19 @@ window.addEventListener('load', function () {
     var pageContainer = document.querySelector('.page-container');
     pageContainer.style.display = 'block';
 });
+
+// Функция для заполнения версий проектов из status.js
+function setProjectVersions() {
+    const versionElements = document.querySelectorAll('[data-version-key]');
+    versionElements.forEach(element => {
+        const key = element.getAttribute('data-version-key');
+        if (status[key]) {
+            element.textContent = status[key];
+        }
+    });
+}
+
+// Вызываем после загрузки статусов
+document.addEventListener('DOMContentLoaded', function() {
+    setProjectVersions();
+});
