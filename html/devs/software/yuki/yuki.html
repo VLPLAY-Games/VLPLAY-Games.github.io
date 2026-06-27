@@ -13,6 +13,38 @@
     <script src="../../../../js/translations.js" defer></script>
     <script src="../../../../js/status.js" defer></script>
     <title>VL_PLAY Games - Yuki Ecosystem</title>
+    <style>
+        /* Стили для снежинок */
+        .snowflake {
+            position: fixed;
+            color: #ffffff;
+            font-size: 1.2rem;
+            top: -10px;
+            z-index: 9999;
+            pointer-events: none;
+            opacity: 0.7;
+            user-select: none;
+            animation: fall linear infinite;
+        }
+        
+        @keyframes fall {
+            0% {
+                transform: translateY(0) rotate(0deg) scale(1);
+                opacity: 0.8;
+            }
+            100% {
+                transform: translateY(110vh) rotate(720deg) scale(0.3);
+                opacity: 0.2;
+            }
+        }
+        
+        /* Адаптивность: на мобильных меньше снежинок */
+        @media (max-width: 768px) {
+            .snowflake {
+                font-size: 0.8rem;
+            }
+        }
+    </style>
 </head>
 <body>
     <div class="spin-wrapper"><div class="spinner"></div></div>
@@ -286,5 +318,86 @@
     </div>
     <button id="scrollTopButton" class="btn_scroll_top">↑</button>
     <script src="../../../../js/main.js" type="module"></script>
+
+    <!-- Пасхалка: падающий снег -->
+    <script>
+        (function() {
+            // Конфигурация снега
+            const SNOWFLAKE_COUNT = 50; // Количество снежинок
+            const SNOWFLAKE_SYMBOLS = ['❄', '❅', '❆', '✦']; // Символы снежинок
+            const MIN_FONT_SIZE = 0.8; // rem
+            const MAX_FONT_SIZE = 2.0; // rem
+            const MIN_DURATION = 8; // секунды
+            const MAX_DURATION = 18; // секунды
+            
+            // Создаём контейнер для снежинок
+            const container = document.createElement('div');
+            container.style.position = 'fixed';
+            container.style.top = '0';
+            container.style.left = '0';
+            container.style.width = '100%';
+            container.style.height = '100%';
+            container.style.pointerEvents = 'none';
+            container.style.zIndex = '9999';
+            container.style.overflow = 'hidden';
+            document.body.appendChild(container);
+            
+            // Массив для хранения снежинок
+            const snowflakes = [];
+            
+            // Функция создания одной снежинки
+            function createSnowflake() {
+                const el = document.createElement('div');
+                el.className = 'snowflake';
+                
+                // Случайный символ
+                const symbol = SNOWFLAKE_SYMBOLS[Math.floor(Math.random() * SNOWFLAKE_SYMBOLS.length)];
+                el.textContent = symbol;
+                
+                // Случайный размер
+                const size = MIN_FONT_SIZE + Math.random() * (MAX_FONT_SIZE - MIN_FONT_SIZE);
+                el.style.fontSize = size + 'rem';
+                
+                // Случайное начальное положение по горизонтали
+                el.style.left = Math.random() * 100 + '%';
+                
+                // Случайная прозрачность
+                el.style.opacity = 0.3 + Math.random() * 0.5;
+                
+                // Случайная длительность анимации
+                const duration = MIN_DURATION + Math.random() * (MAX_DURATION - MIN_DURATION);
+                el.style.animationDuration = duration + 's';
+                
+                // Случайная задержка (чтобы снежинки не падали синхронно)
+                el.style.animationDelay = Math.random() * -duration + 's';
+                
+                // Сохраняем данные о снежинке
+                const data = {
+                    el: el,
+                    duration: duration,
+                    left: el.style.left,
+                    size: size,
+                    opacity: el.style.opacity
+                };
+                
+                container.appendChild(el);
+                return data;
+            }
+            
+            // Создаём все снежинки
+            for (let i = 0; i < SNOWFLAKE_COUNT; i++) {
+                const flake = createSnowflake();
+                snowflakes.push(flake);
+            }
+            
+            // Периодически обновляем позиции (для более естественного эффекта)
+            // Можно менять скорость или другие параметры
+            // Но CSS анимация уже делает всё сама, так что оставляем как есть.
+            
+            // При изменении размера окна можно адаптировать, но CSS справляется.
+            
+            console.log('❄️ Yuki Snow Easter Egg activated!');
+        })();
+    </script>
 </body>
 </html>
