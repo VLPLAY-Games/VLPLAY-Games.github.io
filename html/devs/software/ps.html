@@ -149,6 +149,51 @@
                     </div>
                 </div>
 
+                <!-- Дополнительные инструменты -->
+                <div class="description-card">
+                    <div class="card-header">
+                        <h3 data-translate="portScannerAdditionalToolsTitle">Дополнительные инструменты</h3>
+                        <div class="decorative-line"></div>
+                    </div>
+                    <div class="features-grid">
+                        <div class="feature-card">
+                            <span class="feature-icon">❓</span>
+                            <div class="feature-content">
+                                <h4 data-translate="portScannerHelp">Справка</h4>
+                                <p data-translate="portScannerHelpDesc">Руководство по использованию и обзор функций</p>
+                            </div>
+                        </div>
+                        <div class="feature-card">
+                            <span class="feature-icon">📋</span>
+                            <div class="feature-content">
+                                <h4 data-translate="portScannerLog">Логи</h4>
+                                <p data-translate="portScannerLogDesc">Просмотр логов программы в реальном времени</p>
+                            </div>
+                        </div>
+                        <div class="feature-card">
+                            <span class="feature-icon">🧹</span>
+                            <div class="feature-content">
+                                <h4 data-translate="portScannerClear">Очистить</h4>
+                                <p data-translate="portScannerClearDesc">Очистить панель вывода</p>
+                            </div>
+                        </div>
+                        <div class="feature-card">
+                            <span class="feature-icon">⚙️</span>
+                            <div class="feature-content">
+                                <h4 data-translate="portScannerSettings">Настройки</h4>
+                                <p data-translate="portScannerSettingsDesc">Настройка уровня логов и языка интерфейса</p>
+                            </div>
+                        </div>
+                        <div class="feature-card">
+                            <span class="feature-icon">ℹ️</span>
+                            <div class="feature-content">
+                                <h4 data-translate="portScannerAbout">О программе</h4>
+                                <p data-translate="portScannerAboutDesc">Информация о версии и авторе</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="specs-grid">
                     <div class="spec-card">
                         <h4 data-translate="portScannerInterface">Интерфейс</h4>
@@ -171,10 +216,17 @@
                         </div>
 
                         <div class="info-card">
+                            <span class="info-icon">📌</span>
+                            <div class="info-content">
+                                <strong data-translate="portScannerVersionInfo">Версия:</strong>
+                            </div>
+                        </div>
+
+                        <div class="info-card">
                             <span class="info-icon">🌐</span>
                             <div class="info-content">
                                 <strong data-translate="portScannerLanguages">Языки:</strong>
-                                <span>English, Русский</span>
+                                <span data-translate="portScannerLanguagesList">English, Русский, 日本語, Deutsch, Français, Español, 中文(简体)</span>
                             </div>
                         </div>
 
@@ -216,7 +268,7 @@
                                 <h4 data-translate="platformWindows">Для Windows</h4>
                                 <ol class="installation-steps">
                                     <li data-translate="stepReleases">Перейдите в раздел <strong>Releases</strong></li>
-                                    <li data-translate="stepDownloadWindows">Скачайте <code>port_scanner_windows.zip</code></li>
+                                    <li data-translate="stepDownloadWindows">Скачайте port_scanner_windows.zip (версия 2.0.0)</li>
                                     <li data-translate="stepExtractWindows">Разархивируйте содержимое и запустите <code>port_scanner.exe</code></li>
                                 </ol>
                             </div>
@@ -228,28 +280,11 @@
                                 <h4 data-translate="platformLinux">Для Linux</h4>
                                 <ol class="installation-steps">
                                     <li data-translate="stepReleases">Перейдите в раздел <strong>Releases</strong></li>
-                                    <li data-translate="stepDownloadLinux">Скачайте <code>port_scanner_linux.zip</code></li>
+                                    <li data-translate="stepDownloadLinux">Скачайте port_scanner_linux.zip (версия 1.0.1)</li>
                                     <li data-translate="stepExtractLinux">Разархивируйте содержимое и выполните в терминале:</li>
                                     <code class="code-block">./port_scanner</code>
                                 </ol>
                             </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="description-card warning-card">
-                    <div class="card-header">
-                        <h3 data-translate="portScannerWarning">Важная информация</h3>
-                        <div class="decorative-line"></div>
-                    </div>
-                    <div class="warning-content">
-                        <div class="warning-icon">⚠️</div>
-                        <div class="warning-text">
-                            <p data-translate="portScannerWarningText">
-                                <strong>Если Windows жалуется на вирусы:</strong><br>
-                                Я использую Pyinstaller для создания .exe файла, и поскольку Pyinstaller создает самораспаковывающийся архив, Windows (и Virus Total) показывает его как вирус. Вы можете посмотреть исходный код программы и убедиться, что там нет вирусов.
-                            </p>
-                            <a href="https://stackoverflow.com/questions/43777106/program-made-with-pyinstaller-now-seen-as-a-trojan-horse-by-avg" target="_blank" class="warning-link" data-translate="portScannerWarningLink">Подробнее об этой проблеме</a>
                         </div>
                     </div>
                 </div>

@@ -392,40 +392,15 @@ const ps_translations = {
         'ru': 'Перейдите в раздел Releases',
         'ja': 'Releasesセクションに移動'
     },
-    'stepDownloadWindows': {
-        'en': 'Download port_scanner_windows.zip',
-        'ru': 'Скачайте port_scanner_windows.zip',
-        'ja': 'port_scanner_windows.zipをダウンロード'
-    },
     'stepExtractWindows': {
         'en': 'Extract the contents and run port_scanner.exe',
         'ru': 'Разархивируйте содержимое и запустите port_scanner.exe',
         'ja': '内容を展開しport_scanner.exeを実行'
     },
-    'stepDownloadLinux': {
-        'en': 'Download port_scanner_linux.zip',
-        'ru': 'Скачайте port_scanner_linux.zip',
-        'ja': 'port_scanner_linux.zipをダウンロード'
-    },
     'stepExtractLinux': {
         'en': 'Extract the contents and execute in terminal:',
         'ru': 'Разархивируйте содержимое и выполните в терминале:',
         'ja': '内容を展開しターミナルで実行：'
-    },
-    'portScannerWarning': {
-        'en': 'Important Information',
-        'ru': 'Важная информация',
-        'ja': '重要情報'
-    },
-    'portScannerWarningText': {
-        'en': 'If Windows complains about viruses:\nI use Pyinstaller to create an .exe file and since Pyinstaller creates a self-extracting archive, Windows (and Virus Total) shows it as a virus. You can look at the source code of the program and make sure that there are no viruses.',
-        'ru': 'Если Windows жалуется на вирусы:\nЯ использую Pyinstaller для создания .exe файла, и поскольку Pyinstaller создает самораспаковывающийся архив, Windows (и Virus Total) показывает его как вирус. Вы можете посмотреть исходный код программы и убедиться, что там нет вирусов.',
-        'ja': 'Windowsがウイルスを報告する場合：\n私は.exeファイルを作成するためにPyinstallerを使用しており、Pyinstallerは自己解凍アーカイブを作成するため、Windows（およびVirus Total）はそれをウイルスとして表示します。プログラムのソースコードを確認し、ウイルスがないことを確認できます。'
-    },
-    'portScannerWarningLink': {
-        'en': 'Learn more about this issue',
-        'ru': 'Подробнее об этой проблеме',
-        'ja': 'この問題について詳しく知る'
     },
     'portScannerUsage': {
         'en': 'How to Use',
@@ -456,6 +431,85 @@ const ps_translations = {
         'en': 'A versatile tool for analyzing and interacting with networks. Provides IP checking, port scanning, server pinging, log viewing, and terminal command access.',
         'ru': 'Многофункциональный инструмент для анализа и взаимодействия с сетями. Предоставляет возможности для проверки IP-адресов, сканирования портов, пинга серверов, просмотра логов и доступа к терминальным командам.',
         'ja': 'ネットワークの分析と対話のための多機能ツール。IPチェック、ポートスキャン、サーバーピング、ログ表示、ターミナルコマンドアクセスを提供します。'
+    },
+    'portScannerVersionInfo': {
+        'en': 'Version 2.0.0 (Windows) / 1.0.1 (Linux)',
+        'ru': 'Версия 2.0.0 (Windows) / 1.0.1 (Linux)',
+        'ja': 'バージョン 2.0.0 (Windows) / 1.0.1 (Linux)'
+    },
+    'portScannerLanguagesList': {
+        'en': 'English, Русский, 日本語, Deutsch, Français, Español, 中文(简体)',
+        'ru': 'English, Русский, 日本語, Deutsch, Français, Español, 中文(简体)',
+        'ja': 'English, Русский, 日本語, Deutsch, Français, Español, 中文(简体)'
+    },
+
+    // Новые ключи для дополнительных инструментов
+    'portScannerAdditionalToolsTitle': {
+        'en': 'Additional Tools',
+        'ru': 'Дополнительные инструменты',
+        'ja': '追加ツール'
+    },
+    'portScannerHelp': {
+        'en': 'Help',
+        'ru': 'Справка',
+        'ja': 'ヘルプ'
+    },
+    'portScannerHelpDesc': {
+        'en': 'Usage guide and feature overview',
+        'ru': 'Руководство по использованию и обзор функций',
+        'ja': '使用方法ガイドと機能概要'
+    },
+    'portScannerLog': {
+        'en': 'Log',
+        'ru': 'Логи',
+        'ja': 'ログ'
+    },
+    'portScannerLogDesc': {
+        'en': 'View real-time program logs',
+        'ru': 'Просмотр логов программы в реальном времени',
+        'ja': 'リアルタイムプログラムログの表示'
+    },
+    'portScannerClear': {
+        'en': 'Clear',
+        'ru': 'Очистить',
+        'ja': 'クリア'
+    },
+    'portScannerClearDesc': {
+        'en': 'Clear the output panel',
+        'ru': 'Очистить панель вывода',
+        'ja': '出力パネルをクリア'
+    },
+    'portScannerSettings': {
+        'en': 'Settings',
+        'ru': 'Настройки',
+        'ja': '設定'
+    },
+    'portScannerSettingsDesc': {
+        'en': 'Adjust log level and interface language',
+        'ru': 'Настройка уровня логов и языка интерфейса',
+        'ja': 'ログレベルとインターフェース言語の調整'
+    },
+    'portScannerAbout': {
+        'en': 'About',
+        'ru': 'О программе',
+        'ja': 'このプログラムについて'
+    },
+    'portScannerAboutDesc': {
+        'en': 'Version and author information',
+        'ru': 'Информация о версии и авторе',
+        'ja': 'バージョンと作者情報'
+    },
+
+    // Обновлённые ключи для установки (с указанием версий)
+    'stepDownloadWindows': {
+        'en': 'Download port_scanner_windows.zip (version 2.0.0)',
+        'ru': 'Скачайте port_scanner_windows.zip (версия 2.0.0)',
+        'ja': 'port_scanner_windows.zip（バージョン2.0.0）をダウンロード'
+    },
+    'stepDownloadLinux': {
+        'en': 'Download port_scanner_linux.zip (version 1.0.1)',
+        'ru': 'Скачайте port_scanner_linux.zip (версия 1.0.1)',
+        'ja': 'port_scanner_linux.zip（バージョン1.0.1）をダウンロード'
     }
 }
 
