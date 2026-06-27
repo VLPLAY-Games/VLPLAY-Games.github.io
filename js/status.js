@@ -13,11 +13,11 @@ const status = {
     'xenoosVersion': "0.2.3",
     'xenoosDate': "29.06.2025",
 
-    'musicVersion': "0.3.0",
-    'musicDate': "25.03.2025",
+    'musicVersion': "0.4.0",
+    'musicDate': "01.12.2025",
 
-    'psVersion': "1.0.1",
-    'psDate': "09.01.2025",
+    'psVersion': "2.0.0",
+    'psDate': "07.04.2026",
 
     'dsVersion': "0.3.0",
     'dsDate': "02.10.2025",
@@ -41,6 +41,19 @@ const status = {
 
     'siteVersion': "2.0.0 preview 9",
     'siteDate': "16.10.2025",
+
+    // Новые проекты
+    'qwebuiVersion': "1.0.0",
+    'qwebuiDate': "27.06.2026",
+
+    'xenolangVersion': "0.1.4",
+    'xenolangDate': "01.12.2025",
+
+    'xenolangIDEVersion': "1.0.0",
+    'xenolangIDEDate': "01.12.2025",
+
+    'xenolangEXEVersion': "0.1.4.1",
+    'xenolangEXEDate': "30.11.2025",
 };
 
 function setStatus() {
