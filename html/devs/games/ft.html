@@ -15,7 +15,87 @@
     <script src="../../../js/translations.js" defer></script>
     <script src="../../../js/status.js" defer></script>
     <script src="../../../js/images.js"></script>
-    
+    <style>
+        /* ===== ЛЕТАЮЩИЕ ФОНАРИКИ (пасхалка) ===== */
+        .lantern-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 9998;
+            overflow: hidden;
+        }
+        
+        .lantern {
+            position: absolute;
+            bottom: -80px;
+            background: radial-gradient(ellipse at center, rgba(255, 200, 100, 0.9) 0%, rgba(255, 150, 50, 0.7) 40%, rgba(200, 80, 30, 0.3) 70%, transparent 100%);
+            border-radius: 50% 50% 40% 40%;
+            opacity: 0;
+            box-shadow: 0 0 30px rgba(255, 180, 80, 0.4), inset 0 -10px 20px rgba(200, 80, 30, 0.2);
+            animation: floatLantern linear infinite;
+            transform-origin: center bottom;
+        }
+        
+        .lantern::before {
+            content: '✧';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: rgba(255, 220, 150, 0.6);
+            font-size: 1.2rem;
+            text-shadow: 0 0 10px rgba(255, 200, 100, 0.5);
+        }
+        
+        .lantern::after {
+            content: '';
+            position: absolute;
+            bottom: -12px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 4px;
+            height: 15px;
+            background: linear-gradient(to bottom, rgba(200, 150, 100, 0.6), transparent);
+            border-radius: 2px;
+        }
+        
+        @keyframes floatLantern {
+            0% {
+                transform: translateY(0) rotate(0deg) scale(0.6);
+                opacity: 0;
+            }
+            10% {
+                opacity: 0.8;
+            }
+            80% {
+                opacity: 0.8;
+            }
+            100% {
+                transform: translateY(-110vh) rotate(15deg) scale(1.2);
+                opacity: 0;
+            }
+        }
+        
+        /* Вариант с более тёплым свечением для разнообразия */
+        .lantern.warm {
+            background: radial-gradient(ellipse at center, rgba(255, 220, 150, 0.9) 0%, rgba(255, 180, 80, 0.7) 40%, rgba(200, 120, 50, 0.3) 70%, transparent 100%);
+            box-shadow: 0 0 40px rgba(255, 200, 120, 0.5), inset 0 -10px 20px rgba(200, 120, 50, 0.3);
+        }
+        
+        .lantern.warm::before {
+            color: rgba(255, 240, 200, 0.7);
+        }
+        
+        /* Адаптивность: на мобильных меньше фонариков */
+        @media (max-width: 768px) {
+            .lantern {
+                display: none;
+            }
+        }
+    </style>
 </head>
 <body>
     <!-- Модальное окно для изображений -->
@@ -310,6 +390,87 @@
           var ytFrame = '<iframe width="560" height="315" src="https://www.youtube.com/embed/ieuLEvnPGfQ?si=5V9LX5i1ZL989IoV" loading="lazy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
           $('.tanabataTrailers').html(ytFrame);
         });
+
+        // ===== ПАСХАЛКА: ЛЕТАЮЩИЕ ФОНАРИКИ =====
+        (function() {
+            // Конфигурация
+            const MAX_LANTERNS = 6;          // Максимум одновременно на экране
+            const SPAWN_INTERVAL = 4000;      // Интервал появления (мс)
+            const LANTERN_LIFETIME = 8000;    // Время жизни фонарика (мс)
+            const MIN_SIZE = 40;              // Минимальный размер (px)
+            const MAX_SIZE = 80;              // Максимальный размер (px)
+            
+            let activeLanterns = 0;
+            let spawnTimer = null;
+            
+            // Создаём контейнер для фонариков
+            const container = document.createElement('div');
+            container.className = 'lantern-container';
+            document.body.appendChild(container);
+            
+            // Функция создания фонарика
+            function createLantern() {
+                if (activeLanterns >= MAX_LANTERNS) return;
+                
+                const lantern = document.createElement('div');
+                lantern.className = 'lantern';
+                
+                // Случайный размер
+                const size = MIN_SIZE + Math.random() * (MAX_SIZE - MIN_SIZE);
+                lantern.style.width = size + 'px';
+                lantern.style.height = (size * 1.2) + 'px';
+                
+                // Случайное положение по горизонтали
+                lantern.style.left = (Math.random() * 85 + 5) + '%';
+                
+                // Случайная длительность анимации (чтобы фонарики летели с разной скоростью)
+                const duration = 8 + Math.random() * 6; // 8-14 секунд
+                lantern.style.animationDuration = duration + 's';
+                
+                // Случайная задержка старта (для плавного появления)
+                const delay = Math.random() * 2;
+                lantern.style.animationDelay = delay + 's';
+                
+                // Случайный вариант (тёплый или обычный)
+                if (Math.random() > 0.5) {
+                    lantern.classList.add('warm');
+                }
+                
+                // Добавляем на страницу
+                container.appendChild(lantern);
+                activeLanterns++;
+                
+                // Удаляем фонарик после завершения анимации
+                setTimeout(() => {
+                    if (lantern.parentNode) {
+                        lantern.parentNode.removeChild(lantern);
+                        activeLanterns--;
+                    }
+                }, (duration + delay) * 1000 + 500);
+            }
+            
+            // Запускаем периодическое создание фонариков
+            spawnTimer = setInterval(createLantern, SPAWN_INTERVAL);
+            
+            // Создаём несколько фонариков сразу при загрузке
+            setTimeout(() => {
+                for (let i = 0; i < 3; i++) {
+                    setTimeout(createLantern, i * 800);
+                }
+            }, 500);
+            
+            // Останавливаем пасхалку, если страница закрыта
+            window.addEventListener('beforeunload', function() {
+                if (spawnTimer) {
+                    clearInterval(spawnTimer);
+                }
+                if (container.parentNode) {
+                    container.parentNode.removeChild(container);
+                }
+            });
+            
+            console.log('🏮 Tanabata Lantern Easter Egg activated!');
+        })();
     </script> 
 </body>
 </html>

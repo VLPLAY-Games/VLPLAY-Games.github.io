@@ -1,123 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../../css/main.css">
     <link rel="stylesheet" href="../../../css/header.css">
     <link rel="stylesheet" href="../../../css/body.css">
+    <link rel="stylesheet" href="../../../css/devs.css">
     <link rel="stylesheet" href="../../../css/games.css">
-    <link rel="stylesheet" href="../../../css/media.css">
+    <link rel="stylesheet" href="../../../css/ds.css">
+    <link rel="stylesheet" href="../../../css/projects.css">
     <link rel="stylesheet" href="../../../css/footer.css">
-    <link rel="shortcut icon" href="..\..\..\img\header\LOGO VL_PLAY Games.png" />
-    <title>VL_PLAY Games - Tanabata: Path to the Stars</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="shortcut icon" href="../../../img/header/LOGO VL_PLAY Games.png" />
     <script src="../../../js/translations.js" defer></script>
     <script src="../../../js/status.js" defer></script>
-    <script src="../../../js/images.js"></script>
-    <style>
-        /* ===== ЛЕТАЮЩИЕ ФОНАРИКИ (пасхалка) ===== */
-        .lantern-container {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            pointer-events: none;
-            z-index: 9998;
-            overflow: hidden;
-        }
-        
-        .lantern {
-            position: absolute;
-            bottom: -80px;
-            background: radial-gradient(ellipse at center, rgba(255, 200, 100, 0.9) 0%, rgba(255, 150, 50, 0.7) 40%, rgba(200, 80, 30, 0.3) 70%, transparent 100%);
-            border-radius: 50% 50% 40% 40%;
-            opacity: 0;
-            box-shadow: 0 0 30px rgba(255, 180, 80, 0.4), inset 0 -10px 20px rgba(200, 80, 30, 0.2);
-            animation: floatLantern linear infinite;
-            transform-origin: center bottom;
-        }
-        
-        .lantern::before {
-            content: '✧';
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            color: rgba(255, 220, 150, 0.6);
-            font-size: 1.2rem;
-            text-shadow: 0 0 10px rgba(255, 200, 100, 0.5);
-        }
-        
-        .lantern::after {
-            content: '';
-            position: absolute;
-            bottom: -12px;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 4px;
-            height: 15px;
-            background: linear-gradient(to bottom, rgba(200, 150, 100, 0.6), transparent);
-            border-radius: 2px;
-        }
-        
-        @keyframes floatLantern {
-            0% {
-                transform: translateY(0) rotate(0deg) scale(0.6);
-                opacity: 0;
-            }
-            10% {
-                opacity: 0.8;
-            }
-            80% {
-                opacity: 0.8;
-            }
-            100% {
-                transform: translateY(-110vh) rotate(15deg) scale(1.2);
-                opacity: 0;
-            }
-        }
-        
-        /* Вариант с более тёплым свечением для разнообразия */
-        .lantern.warm {
-            background: radial-gradient(ellipse at center, rgba(255, 220, 150, 0.9) 0%, rgba(255, 180, 80, 0.7) 40%, rgba(200, 120, 50, 0.3) 70%, transparent 100%);
-            box-shadow: 0 0 40px rgba(255, 200, 120, 0.5), inset 0 -10px 20px rgba(200, 120, 50, 0.3);
-        }
-        
-        .lantern.warm::before {
-            color: rgba(255, 240, 200, 0.7);
-        }
-        
-        /* Адаптивность: на мобильных меньше фонариков */
-        @media (max-width: 768px) {
-            .lantern {
-                display: none;
-            }
-        }
-    </style>
+    <title data-translate="qwebuiTitle">VL_PLAY Games - QWebUI</title>
 </head>
 <body>
-    <!-- Модальное окно для изображений -->
-    <div id="image-modal" class="modal">
-        <div class="modal-content">
-            <span class="close-btn" onclick="closeModal()">✕</span>
-            <div class="modal-navigation">
-                <button class="nav-btn prev-btn" onclick="navigateModal(-1)">‹</button>
-                <img id="modal-image" class="modal-image" src="" alt="Modal Image">
-                <button class="nav-btn next-btn" onclick="navigateModal(1)">›</button>
-            </div>
-            <div class="modal-info">
-                <span id="modal-counter" class="modal-counter">1 / 1</span>
-            </div>
-        </div>
-    </div>
     <div class="spin-wrapper"><div class="spinner"></div></div>
     <div class="page-container">
         <header>
             <div class="logo">
                 <img src="../../../img/header/LOGO VL_PLAY Games.png" alt="Логотип VL_PLAY Games" width="100" height="100" onclick="window.location.href='../../../index.html';" style="cursor: pointer;">
-                <h1>VL_PLAY Games - Tanabata: Path to the Stars</h1>
+                <h1 data-translate="qwebuiTitle">VL_PLAY Games - QWebUI</h1>
             </div>
             <nav>
                 <div class="language-buttons">
@@ -140,227 +45,222 @@
             </nav>
         </header>
 
-        <div class="devs-info">
+        <div class="devs-description">
+            <!-- Header Card -->
             <div class="game-header-card">
                 <div class="game-header-content">
                     <div class="game-logo-section">
                         <div class="logo-container">
-                            <img src="..\..\..\img\Tanabata\Tanabata_Logo.png" alt="Tanabata Logo" class="game-logo">
-                            <div class="logo-glow"></div>
+                            <div style="width:120px; height:120px; border-radius:20px; background:linear-gradient(135deg, #1a2a4a, #2a4a7a); display:flex; align-items:center; justify-content:center; font-size:3rem; color:#e8b4e1; border:2px solid rgba(228,180,225,0.3); margin: 0 auto;">⚛️</div>
                         </div>
                     </div>
-                    
                     <div class="game-info-section">
                         <div class="game-title-section">
-                            <h1 class="game-title" data-translate="tanabataTitle">Tanabata: Path to the Stars</h1>
-                            <div class="price-tag free" data-translate="tanabataPrice">Бесплатно</div>
+                            <h1 class="game-title" data-translate="qwebuiTitle">QWebUI</h1>
+                            <div class="status-badge" style="background: rgba(156, 89, 209, 0.3); color: #c47aff;" data-translate="qwebuiStatus">Public Archive</div>
                         </div>
-                        
-                        <div class="itch-embed-container">
-                            <iframe frameborder="0" src="https://itch.io/embed/3697974" width="552" height="167"><a href="https://vl-play.itch.io/tanabata-path-to-the-stars">Tanabata: Path to the Stars by VL_PLAY Games</a></iframe>
+                        <div class="project-links-container">
+                            <a href="https://github.com/VLPLAY-Games/QWebUI" target="_blank" class="project-link github-link">
+                                <span class="link-icon">📁</span>
+                                <span data-translate="viewOnGitHub">Смотреть на GitHub</span>
+                            </a>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="media-section">
-                <div class="section-header">
-                    <h2 data-translate="trailers" class="media-title">Трейлеры</h2>
-                    <div class="title-decoration"></div>
-                </div>
-                
-                <div class="trailers-grid tanabataTrailers">
-                    <!-- Трейлеры будут добавляться через js -->
                 </div>
             </div>
 
-            <div class="media-section">
-                <div class="section-header">
-                    <h2 data-translate="screenshots" class="media-title">Скриншоты</h2>
-                    <div class="title-decoration"></div>
-                </div>
-                
-                <div class="screenshots-grid tanabataImgs">
-                    <div class="screenshot-card" onclick="openModal(this)">
-                        <img src="..\..\..\img\Tanabata\Tanabata1.jpg" alt="Tanabata Screenshot 1">
-                        <div class="screenshot-overlay">
-                            <span class="zoom-icon">🔍</span>
-                        </div>
-                    </div>
-                    <div class="screenshot-card" onclick="openModal(this)">
-                        <img src="..\..\..\img\Tanabata\Tanabata2.jpg" alt="Tanabata Screenshot 2">
-                        <div class="screenshot-overlay">
-                            <span class="zoom-icon">🔍</span>
-                        </div>
-                    </div>
-                    <div class="screenshot-card" onclick="openModal(this)">
-                        <img src="..\..\..\img\Tanabata\Tanabata3.jpg" alt="Tanabata Screenshot 3">
-                        <div class="screenshot-overlay">
-                            <span class="zoom-icon">🔍</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="devs-description">
+            <!-- Description -->
             <div class="description-card">
                 <div class="card-header">
                     <h3 data-translate="descriptionTitle">Описание</h3>
                     <div class="decorative-line"></div>
                 </div>
-                <p data-translate="tanabataDescription" class="description-text">
-                    A relaxing atmospheric puzzle game with adventure elements. Embark on a mystical journey through Tokyo and beyond to discover the secret Tanabata festival! Explore beautiful locations, solve ancient puzzles, and play magical mini-games where your choices determine the spectacular starry finale.
+                <p class="description-text" data-translate="qwebuiDescription">
+                    <strong>QWebUI</strong> — веб-лаборатория квантовых вычислений с интерактивными блокнотами. 
+                    Проект разработан в рамках курсовой работы второго курса и предоставляет среду, похожую на Jupyter, 
+                    для разработки и выполнения квантовых алгоритмов с использованием <strong>Qiskit</strong>.
+                </p>
+                <p class="description-text" data-translate="qwebuiDescription2">
+                    Пользователи могут создавать несколько блокнотов, добавлять ячейки разных типов (код, Markdown, raw, заголовок), 
+                    запускать квантовые схемы и визуализировать результаты в современном веб-интерфейсе.
+                </p>
+                <p class="description-text" style="margin-top: 10px; font-style: italic; color: var(--text-muted);" data-translate="qwebuiArchiveNote">
+                    📦 Репозиторий является публичным архивом и распространяется под лицензией MIT.
                 </p>
             </div>
 
+            <!-- Features -->
             <div class="description-card">
                 <div class="card-header">
-                    <h3 data-translate="tanabataFeaturesTitle">Особенности</h3>
+                    <h3 data-translate="qwebuiFeaturesTitle">Ключевые возможности</h3>
                     <div class="decorative-line"></div>
                 </div>
-                <p data-translate="tanabataFeatures" class="description-text">
-                    <ul class="description-text tanabata-features-list">
-                        <li data-translate="tanabataFeature1">✨ Authentic Japanese atmosphere – from cozy Tokyo streets to mysterious caves and a hidden village under the starry sky</li>
-                        <li data-translate="tanabataFeature2">🎮 Three unique levels – featuring different mechanics from social interactions to environmental puzzles</li>
-                        <li data-translate="tanabataFeature3">🎵 Soothing soundtrack – traditional Japanese instruments blended with natural ambient sounds</li>
-                        <li data-translate="tanabataFeature4">🎆 Dynamic ending – your performance determines the scale of the grand celestial celebration</li>
-                        <li data-translate="tanabataFeature5">⏳ Gentle time pressure – the stars won't wait, so reach the festival before the climax!</li>
-                    </ul>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <span class="feature-icon">📓</span>
+                        <div class="feature-content">
+                            <h4 data-translate="qwebuiFeature1">Интерактивные блокноты</h4>
+                            <p data-translate="qwebuiFeature1Desc">Редактирование ячеек (код, Markdown, raw, заголовки) с сохранением прогресса</p>
+                        </div>
+                    </div>
+                    <div class="feature-card">
+                        <span class="feature-icon">🔬</span>
+                        <div class="feature-content">
+                            <h4 data-translate="qwebuiFeature2">Квантовые вычисления</h4>
+                            <p data-translate="qwebuiFeature2Desc">Выполнение кода на Qiskit Aer симуляторе с автоматической визуализацией схем и гистограмм</p>
+                        </div>
+                    </div>
+                    <div class="feature-card">
+                        <span class="feature-icon">🔐</span>
+                        <div class="feature-content">
+                            <h4 data-translate="qwebuiFeature3">Аутентификация</h4>
+                            <p data-translate="qwebuiFeature3Desc">Регистрация, вход, гостевой режим с JWT токенами и ролью администратора</p>
+                        </div>
+                    </div>
+                    <div class="feature-card">
+                        <span class="feature-icon">🌓</span>
+                        <div class="feature-content">
+                            <h4 data-translate="qwebuiFeature4">Тёмная/светлая тема</h4>
+                            <p data-translate="qwebuiFeature4Desc">Автоматическое определение темы системы и ручное переключение</p>
+                        </div>
+                    </div>
+                    <div class="feature-card">
+                        <span class="feature-icon">🌐</span>
+                        <div class="feature-content">
+                            <h4 data-translate="qwebuiFeature5">Интернационализация</h4>
+                            <p data-translate="qwebuiFeature5Desc">Поддержка английского и русского языков с сохранением выбора</p>
+                        </div>
+                    </div>
+                    <div class="feature-card">
+                        <span class="feature-icon">📊</span>
+                        <div class="feature-content">
+                            <h4 data-translate="qwebuiFeature6">Административная панель</h4>
+                            <p data-translate="qwebuiFeature6Desc">Управление пользователями, статистика выполнения, мониторинг активности</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Technology Stack -->
+            <div class="description-card">
+                <div class="card-header">
+                    <h3 data-translate="techStack">Технологический стек</h3>
+                    <div class="decorative-line"></div>
+                </div>
+                <div class="tech-stack">
+                    <div class="tech-item">
+                        <span class="tech-icon">🐍</span>
+                        <div class="tech-content">
+                            <strong data-translate="qwebuiBackend">Backend</strong>
+                            <span>Flask, Flask-SQLAlchemy, Flask-CORS</span>
+                        </div>
+                    </div>
+                    <div class="tech-item">
+                        <span class="tech-icon">⚛️</span>
+                        <div class="tech-content">
+                            <strong data-translate="qwebuiQuantum">Quantum</strong>
+                            <span>Qiskit, Qiskit-Aer, Matplotlib, NumPy</span>
+                        </div>
+                    </div>
+                    <div class="tech-item">
+                        <span class="tech-icon">⚛️</span>
+                        <div class="tech-content">
+                            <strong data-translate="qwebuiFrontend">Frontend</strong>
+                            <span>React 18, React Router 6, Axios, Vite</span>
+                        </div>
+                    </div>
+                    <div class="tech-item">
+                        <span class="tech-icon">🔐</span>
+                        <div class="tech-content">
+                            <strong data-translate="qwebuiAuth">Authentication</strong>
+                            <span>PyJWT, bcrypt (password hashing)</span>
+                        </div>
+                    </div>
+                    <div class="tech-item">
+                        <span class="tech-icon">💾</span>
+                        <div class="tech-content">
+                            <strong data-translate="qwebuiDatabase">Database</strong>
+                            <span>SQLite (configurable)</span>
+                        </div>
+                    </div>
+                    <div class="tech-item">
+                        <span class="tech-icon">📝</span>
+                        <div class="tech-content">
+                            <strong data-translate="qwebuiPatterns">Patterns</strong>
+                            <span>Singleton (Logger), Factory (CircuitFactory)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Installation -->
+            <div class="description-card">
+                <div class="card-header">
+                    <h3 data-translate="qwebuiInstallation">Установка и запуск</h3>
+                    <div class="decorative-line"></div>
+                </div>
+                <div class="installation-steps">
+                    <div class="step-card">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h4 data-translate="qwebuiStep1">Клонирование репозитория</h4>
+                            <code class="code-block">git clone https://github.com/VLPLAY-Games/QWebUI<br>cd QWebUI</code>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h4 data-translate="qwebuiStep2">Настройка бэкенда</h4>
+                            <code class="code-block">cd backend<br>python -m venv venv<br>source venv/bin/activate  # или venv\Scripts\activate (Windows)<br>pip install -r requirements.txt<br>python app.py</code>
+                            <p style="margin-top: 10px; font-size: 0.9rem; color: var(--text-secondary);" data-translate="qwebuiStep2Note">
+                                Бэкенд запустится на <code>http://localhost:5000</code>. Будет создана БД с пользователем <strong>admin / admin123</strong>.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h4 data-translate="qwebuiStep3">Настройка фронтенда</h4>
+                            <code class="code-block">cd frontend<br>npm install<br>npm run dev</code>
+                            <p style="margin-top: 10px; font-size: 0.9rem; color: var(--text-secondary);" data-translate="qwebuiStep3Note">
+                                Фронтенд запустится на <code>http://localhost:5173</code>.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Usage Example -->
+            <div class="description-card">
+                <div class="card-header">
+                    <h3 data-translate="qwebuiExampleTitle">Пример квантового кода</h3>
+                    <div class="decorative-line"></div>
+                </div>
+                <div style="background: rgba(7, 16, 23, 0.8); padding: 15px; border-radius: 10px; border: 1px solid rgba(88, 166, 255, 0.3);">
+                    <pre style="color: #58a6ff; font-family: 'Courier New', monospace; font-size: 0.9rem; white-space: pre-wrap; word-break: break-all; margin: 0;">
+from qiskit import QuantumCircuit
+
+circuit = QuantumCircuit(2, 2)
+
+circuit.h(0)
+circuit.cx(0, 1)
+
+circuit.measure([0, 1], [0, 1])</pre>
+                </div>
+                <p style="margin-top: 15px; color: var(--text-secondary);" data-translate="qwebuiExampleNote">
+                    После выполнения ячейки отображаются: результаты измерений, схема цепи и гистограмма.
                 </p>
             </div>
 
-            <div class="specs-grid">
-                <div class="spec-card">
-                    <h4 data-translate="sysReqTitle">Системные требования на ПК</h4>
-                    <div class="requirements-table">
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th data-translate="sysReqItem">Название</th>
-                                    <th data-translate="sysReqMin">Минимальные</th>
-                                    <th data-translate="sysReqRecommended">Рекомендуемые</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td data-translate="sysReqOS">Операционная система</td>
-                                    <td>Windows 10 or 11 (64-bit)</td>
-                                    <td>Windows 10 or 11 (64-bit)</td>
-                                </tr>
-                                <tr>
-                                    <td>CPU</td>
-                                    <td>AMD Ryzen 5 1600</td>
-                                    <td>Intel Core i5-10400</td>
-                                </tr>
-                                <tr>
-                                    <td>GPU</td>
-                                    <td>NVIDIA GeForce GTX 1060 (3 GB)</td>
-                                    <td>AMD Radeon RX 7600 (8 GB)</td>
-                                </tr>
-                                <tr>
-                                    <td>RAM</td>
-                                    <td>6 GB</td>
-                                    <td>12 GB</td>
-                                </tr>
-                                <tr>
-                                    <td data-translate="sysReqDevFreeSpace">Свободное место</td>
-                                    <td>1.8 GB</td>
-                                    <td>1.8 GB</td>
-                                </tr>
-                                <tr>
-                                    <td data-translate="sysReqPerformance">Целевая производительность</td>
-                                    <td>1080p Low Settings 30 FPS</td>
-                                    <td>1080p High Settings 60 FPS</td>
-                                </tr>
-                                <tr>
-                                    <td data-translate="note">Примечание</td>
-                                    <td data-translate="Approximate_requirements">Примерные требования</td>
-                                    <td data-translate="Approximate_requirements">Примерные требования</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
+            <!-- License -->
+            <div class="description-card">
+                <div class="card-header">
+                    <h3 data-translate="license">Лицензия</h3>
+                    <div class="decorative-line"></div>
                 </div>
-
-                <div class="info-cards">
-                    <div class="info-card">
-                        <span class="info-icon">🎮</span>
-                        <div class="info-content">
-                            <strong data-translate="stateTitle">Состояние:</strong>
-                            <span data-translate="released">Выпущено</span>
-                        </div>
-                    </div>
-
-                    <div class="info-card">
-                        <span class="info-icon">📱</span>
-                        <div class="info-content">
-                            <strong data-translate="platformsTitle">Платформы:</strong>
-                            <span data-translate="tanabataPlatforms">Windows</span>
-                        </div>
-                    </div>
-
-                    <div class="info-card">
-                        <span class="info-icon">🌐</span>
-                        <div class="info-content">
-                            <strong data-translate="tanabataLocalizationTitle">Локализация:</strong>
-                            <div class="localization-details">
-                                <div class="localization-items">
-                                    <div class="localization-item">
-                                        <div class="localization-content">
-                                            <span data-translate="tanabataEnglish">English</span> – 
-                                            <span data-translate="tanabataEnglishDesc">subtitles and user interface</span>
-                                        </div>
-                                    </div>
-                                    <div class="localization-item">
-                                        <div class="localization-content">
-                                            <span data-translate="tanabataRussian">Russian</span> – 
-                                            <span data-translate="tanabataRussianDesc">subtitles only</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="info-card">
-                        <span class="info-icon">👤</span>
-                        <div class="info-content">
-                            <strong data-translate="authorTitle">Автор:</strong>
-                            <span>VL_PLAY</span>
-                        </div>
-                    </div>
-
-                    <div class="info-card">
-                        <span class="info-icon">🎭</span>
-                        <div class="info-content">
-                            <strong data-translate="genreTitle">Жанр:</strong>
-                            <span data-translate="tanabataGenre">Головоломка, Приключение</span>
-                        </div>
-                    </div>
-
-                    <div class="info-card">
-                        <span class="info-icon">🏷️</span>
-                        <div class="info-content">
-                            <strong data-translate="tagsTitle">Метки:</strong>
-                            <div class="tags">
-                                <span class="tag" data-translate="puzzle">Головоломка</span>
-                                <span class="tag" data-translate="adventure">Приключение</span>
-                                <span class="tag" data-translate="indie">Инди</span>
-                                <span class="tag">Atmospheric</span>
-                                <span class="tag" data-translate="single">Одиночная</span>
-                                <span class="tag">Japanese</span>
-                                <span class="tag">Relaxing</span>
-                                <span class="tag">Festival</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="info-card">
-                        <span class="info-icon">⏱️</span>
-                        <div class="info-content">
-                            <strong data-translate="sessionTitle">Средний сеанс:</strong>
-                            <span data-translate="tanabataSession">1-2 часа</span>
-                        </div>
-                    </div>
-                </div>
+                <p class="description-text" data-translate="qwebuiLicense">
+                    Этот проект распространяется под лицензией <strong>MIT</strong>. Подробности в файле <a href="https://github.com/VLPLAY-Games/QWebUI/blob/main/LICENSE" target="_blank">LICENSE</a>.
+                </p>
             </div>
 
             <div class="support-section">
@@ -384,93 +284,5 @@
     </div>
     <button id="scrollTopButton" class="btn_scroll_top">↑</button>
     <script src="../../../js/main.js" type="module"></script>
-    <script>
-        $(document).ready(function () {
-          // Добавьте трейлеры YouTube когда они будут доступны
-          var ytFrame = '<iframe width="560" height="315" src="https://www.youtube.com/embed/ieuLEvnPGfQ?si=5V9LX5i1ZL989IoV" loading="lazy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
-          $('.tanabataTrailers').html(ytFrame);
-        });
-
-        // ===== ПАСХАЛКА: ЛЕТАЮЩИЕ ФОНАРИКИ =====
-        (function() {
-            // Конфигурация
-            const MAX_LANTERNS = 6;          // Максимум одновременно на экране
-            const SPAWN_INTERVAL = 4000;      // Интервал появления (мс)
-            const LANTERN_LIFETIME = 8000;    // Время жизни фонарика (мс)
-            const MIN_SIZE = 40;              // Минимальный размер (px)
-            const MAX_SIZE = 80;              // Максимальный размер (px)
-            
-            let activeLanterns = 0;
-            let spawnTimer = null;
-            
-            // Создаём контейнер для фонариков
-            const container = document.createElement('div');
-            container.className = 'lantern-container';
-            document.body.appendChild(container);
-            
-            // Функция создания фонарика
-            function createLantern() {
-                if (activeLanterns >= MAX_LANTERNS) return;
-                
-                const lantern = document.createElement('div');
-                lantern.className = 'lantern';
-                
-                // Случайный размер
-                const size = MIN_SIZE + Math.random() * (MAX_SIZE - MIN_SIZE);
-                lantern.style.width = size + 'px';
-                lantern.style.height = (size * 1.2) + 'px';
-                
-                // Случайное положение по горизонтали
-                lantern.style.left = (Math.random() * 85 + 5) + '%';
-                
-                // Случайная длительность анимации (чтобы фонарики летели с разной скоростью)
-                const duration = 8 + Math.random() * 6; // 8-14 секунд
-                lantern.style.animationDuration = duration + 's';
-                
-                // Случайная задержка старта (для плавного появления)
-                const delay = Math.random() * 2;
-                lantern.style.animationDelay = delay + 's';
-                
-                // Случайный вариант (тёплый или обычный)
-                if (Math.random() > 0.5) {
-                    lantern.classList.add('warm');
-                }
-                
-                // Добавляем на страницу
-                container.appendChild(lantern);
-                activeLanterns++;
-                
-                // Удаляем фонарик после завершения анимации
-                setTimeout(() => {
-                    if (lantern.parentNode) {
-                        lantern.parentNode.removeChild(lantern);
-                        activeLanterns--;
-                    }
-                }, (duration + delay) * 1000 + 500);
-            }
-            
-            // Запускаем периодическое создание фонариков
-            spawnTimer = setInterval(createLantern, SPAWN_INTERVAL);
-            
-            // Создаём несколько фонариков сразу при загрузке
-            setTimeout(() => {
-                for (let i = 0; i < 3; i++) {
-                    setTimeout(createLantern, i * 800);
-                }
-            }, 500);
-            
-            // Останавливаем пасхалку, если страница закрыта
-            window.addEventListener('beforeunload', function() {
-                if (spawnTimer) {
-                    clearInterval(spawnTimer);
-                }
-                if (container.parentNode) {
-                    container.parentNode.removeChild(container);
-                }
-            });
-            
-            console.log('🏮 Tanabata Lantern Easter Egg activated!');
-        })();
-    </script> 
 </body>
 </html>

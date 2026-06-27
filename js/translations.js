@@ -2897,15 +2897,165 @@ const qwebui_translations = {
         'ru': 'QWebUI',
         'ja': 'QWebUI'
     },
-    'qwebuiDescription': {
-        'en': 'A web-based quantum computing laboratory with interactive notebooks. Built on Flask + React with Qiskit integration. Public archive under MIT license.',
-        'ru': 'Веб-лаборатория квантовых вычислений с интерактивными блокнотами. Разработана на Flask + React с использованием Qiskit. Публичный архив под лицензией MIT.',
-        'ja': 'インタラクティブなノートブックを備えたWebベースの量子コンピューティングラボラトリー。Flask + React + Qiskitで構築。MITライセンスのパブリックアーカイブ。'
-    },
     'qwebuiStatus': {
         'en': 'Public Archive',
         'ru': 'Публичный архив',
         'ja': 'パブリックアーカイブ'
+    },
+    'qwebuiDescription': {
+        'en': 'QWebUI is a web-based quantum computing laboratory with interactive notebooks. The project was developed as a second-year course assignment and provides a Jupyter-like environment for developing and executing quantum algorithms using Qiskit.',
+        'ru': 'QWebUI — веб-лаборатория квантовых вычислений с интерактивными блокнотами. Проект разработан в рамках курсовой работы второго курса и предоставляет среду, похожую на Jupyter, для разработки и выполнения квантовых алгоритмов с использованием Qiskit.',
+        'ja': 'QWebUIはインタラクティブなノートブックを備えたWebベースの量子コンピューティングラボラトリーです。このプロジェクトは2年次のコース課題として開発され、Qiskitを使用した量子アルゴリズムの開発と実行のためのJupyterライクな環境を提供します。'
+    },
+    'qwebuiDescription2': {
+        'en': 'Users can create multiple notebooks, add different cell types (code, Markdown, raw, heading), run quantum circuits and visualize results in a modern web interface.',
+        'ru': 'Пользователи могут создавать несколько блокнотов, добавлять ячейки разных типов (код, Markdown, raw, заголовок), запускать квантовые схемы и визуализировать результаты в современном веб-интерфейсе.',
+        'ja': 'ユーザーは複数のノートブックを作成し、異なるタイプのセル（コード、Markdown、raw、見出し）を追加し、量子回路を実行して最新のWebインターフェースで結果を可視化できます。'
+    },
+    'qwebuiArchiveNote': {
+        'en': '📦 The repository is a public archive and is distributed under the MIT license.',
+        'ru': '📦 Репозиторий является публичным архивом и распространяется под лицензией MIT.',
+        'ja': '📦 このリポジトリはパブリックアーカイブであり、MITライセンスの下で配布されています。'
+    },
+    'qwebuiFeaturesTitle': {
+        'en': 'Key Features',
+        'ru': 'Ключевые возможности',
+        'ja': '主な機能'
+    },
+    'qwebuiFeature1': {
+        'en': 'Interactive Notebooks',
+        'ru': 'Интерактивные блокноты',
+        'ja': 'インタラクティブノートブック'
+    },
+    'qwebuiFeature1Desc': {
+        'en': 'Edit cells (code, Markdown, raw, headings) with progress saving',
+        'ru': 'Редактирование ячеек (код, Markdown, raw, заголовки) с сохранением прогресса',
+        'ja': 'セル（コード、Markdown、raw、見出し）の編集と進捗保存'
+    },
+    'qwebuiFeature2': {
+        'en': 'Quantum Computing',
+        'ru': 'Квантовые вычисления',
+        'ja': '量子コンピューティング'
+    },
+    'qwebuiFeature2Desc': {
+        'en': 'Execute code on Qiskit Aer simulator with automatic visualization of circuits and histograms',
+        'ru': 'Выполнение кода на Qiskit Aer симуляторе с автоматической визуализацией схем и гистограмм',
+        'ja': 'Qiskit Aerシミュレーターでのコード実行と回路図・ヒストグラムの自動可視化'
+    },
+    'qwebuiFeature3': {
+        'en': 'Authentication',
+        'ru': 'Аутентификация',
+        'ja': '認証'
+    },
+    'qwebuiFeature3Desc': {
+        'en': 'Registration, login, guest mode with JWT tokens and admin role',
+        'ru': 'Регистрация, вход, гостевой режим с JWT токенами и ролью администратора',
+        'ja': 'JWTトークンと管理者ロールによる登録、ログイン、ゲストモード'
+    },
+    'qwebuiFeature4': {
+        'en': 'Dark/Light Theme',
+        'ru': 'Тёмная/светлая тема',
+        'ja': 'ダーク/ライトテーマ'
+    },
+    'qwebuiFeature4Desc': {
+        'en': 'Automatic system theme detection and manual switching',
+        'ru': 'Автоматическое определение темы системы и ручное переключение',
+        'ja': 'システムテーマの自動検出と手動切り替え'
+    },
+    'qwebuiFeature5': {
+        'en': 'Internationalization',
+        'ru': 'Интернационализация',
+        'ja': '国際化'
+    },
+    'qwebuiFeature5Desc': {
+        'en': 'English and Russian support with persistent language choice',
+        'ru': 'Поддержка английского и русского языков с сохранением выбора',
+        'ja': '英語とロシア語のサポートと言語選択の保存'
+    },
+    'qwebuiFeature6': {
+        'en': 'Admin Panel',
+        'ru': 'Административная панель',
+        'ja': '管理パネル'
+    },
+    'qwebuiFeature6Desc': {
+        'en': 'User management, execution statistics, activity monitoring',
+        'ru': 'Управление пользователями, статистика выполнения, мониторинг активности',
+        'ja': 'ユーザー管理、実行統計、アクティビティ監視'
+    },
+    'qwebuiBackend': {
+        'en': 'Backend',
+        'ru': 'Бэкенд',
+        'ja': 'バックエンド'
+    },
+    'qwebuiQuantum': {
+        'en': 'Quantum',
+        'ru': 'Quantum',
+        'ja': '量子'
+    },
+    'qwebuiFrontend': {
+        'en': 'Frontend',
+        'ru': 'Фронтенд',
+        'ja': 'フロントエンド'
+    },
+    'qwebuiAuth': {
+        'en': 'Authentication',
+        'ru': 'Аутентификация',
+        'ja': '認証'
+    },
+    'qwebuiDatabase': {
+        'en': 'Database',
+        'ru': 'База данных',
+        'ja': 'データベース'
+    },
+    'qwebuiPatterns': {
+        'en': 'Patterns',
+        'ru': 'Паттерны',
+        'ja': 'パターン'
+    },
+    'qwebuiInstallation': {
+        'en': 'Installation and Setup',
+        'ru': 'Установка и запуск',
+        'ja': 'インストールとセットアップ'
+    },
+    'qwebuiStep1': {
+        'en': 'Clone Repository',
+        'ru': 'Клонирование репозитория',
+        'ja': 'リポジトリのクローン'
+    },
+    'qwebuiStep2': {
+        'en': 'Backend Setup',
+        'ru': 'Настройка бэкенда',
+        'ja': 'バックエンド設定'
+    },
+    'qwebuiStep2Note': {
+        'en': 'The backend will run on http://localhost:5000. A database with user admin / admin123 will be created.',
+        'ru': 'Бэкенд запустится на http://localhost:5000. Будет создана БД с пользователем admin / admin123.',
+        'ja': 'バックエンドはhttp://localhost:5000で実行されます。ユーザーadmin / admin123のデータベースが作成されます。'
+    },
+    'qwebuiStep3': {
+        'en': 'Frontend Setup',
+        'ru': 'Настройка фронтенда',
+        'ja': 'フロントエンド設定'
+    },
+    'qwebuiStep3Note': {
+        'en': 'The frontend will run on http://localhost:5173.',
+        'ru': 'Фронтенд запустится на http://localhost:5173.',
+        'ja': 'フロントエンドはhttp://localhost:5173で実行されます。'
+    },
+    'qwebuiExampleTitle': {
+        'en': 'Quantum Code Example',
+        'ru': 'Пример квантового кода',
+        'ja': '量子コード例'
+    },
+    'qwebuiExampleNote': {
+        'en': 'After cell execution, measurement results, circuit diagram, and histogram are displayed.',
+        'ru': 'После выполнения ячейки отображаются: результаты измерений, схема цепи и гистограмма.',
+        'ja': 'セル実行後、測定結果、回路図、ヒストグラムが表示されます。'
+    },
+    'qwebuiLicense': {
+        'en': 'This project is distributed under the MIT license. Details in the LICENSE file.',
+        'ru': 'Этот проект распространяется под лицензией MIT. Подробности в файле LICENSE.',
+        'ja': 'このプロジェクトはMITライセンスの下で配布されています。詳細はLICENSEファイルをご覧ください。'
     },
 };
 
