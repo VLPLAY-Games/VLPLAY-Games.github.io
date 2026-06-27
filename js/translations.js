@@ -227,6 +227,11 @@ const ds_translations = {
         'en': "Server port",
         'ru': 'Порт сервера',
         'ja': 'サーバーポート'
+    },
+    'downloadServerDevsDescription': {
+        'en': 'A modern web-based download manager with real-time progress tracking and user-friendly interface. Provides full control over file downloads with advanced management features.',
+        'ru': 'Современный веб-менеджер загрузок с отслеживанием прогресса в реальном времени и удобным интерфейсом. Предоставляет полный контроль над процессом загрузки файлов с расширенными функциями управления.',
+        'ja': 'リアルタイムの進捗追跡とユーザーフレンドリーなインターフェースを備えた最新のWebベースのダウンロードマネージャー。高度な管理機能により、ファイルダウンロードを完全に制御できます。'
     }
 }
 
@@ -447,6 +452,11 @@ const ps_translations = {
         'ru': 'Интерфейс',
         'ja': 'インターフェース'
     },
+    'portScannerDevsDescription': {
+        'en': 'A versatile tool for analyzing and interacting with networks. Provides IP checking, port scanning, server pinging, log viewing, and terminal command access.',
+        'ru': 'Многофункциональный инструмент для анализа и взаимодействия с сетями. Предоставляет возможности для проверки IP-адресов, сканирования портов, пинга серверов, просмотра логов и доступа к терминальным командам.',
+        'ja': 'ネットワークの分析と対話のための多機能ツール。IPチェック、ポートスキャン、サーバーピング、ログ表示、ターミナルコマンドアクセスを提供します。'
+    }
 }
 
 const mui_translations = {
@@ -705,6 +715,11 @@ const mui_translations = {
         'en': 'This project is licensed under the MIT License - see the',
         'ru': 'Этот проект лицензирован под MIT License - подробности в файле',
         'ja': 'このプロジェクトはMITライセンスの下でライセンスされています - 詳細は'
+    },
+    'musicLocalUIDevsDescription': {
+        'en': 'A lightweight Windows music player for local audio files (under 1MB in size). Compact and efficient application for listening to music from your computer.',
+        'ru': 'Легковесный музыкальный проигрыватель для Windows для локальных аудиофайлов (размером менее 1 МБ). Компактное и эффективное приложение для прослушивания музыки с вашего компьютера.',
+        'ja': 'ローカルオーディオファイル用の軽量Windows音楽プレーヤー（1MB未満）。コンピューターから音楽を再生するためのコンパクトで効率的なアプリケーション。'
     }
 }
 
@@ -1183,6 +1198,11 @@ const xos_translations = {
         'en': 'system check',
         'ru': 'проверка системы',
         'ja': 'システムチェック'
+    },
+    'xenoOSDevsDescription': {
+        'en': 'A command-line interface (CLI) system for interacting with various system components such as filesystems, Wi-Fi, SD cards, and other system settings. Supports many commands for managing files, directories, and system configurations.',
+        'ru': 'Командная оболочка (CLI) для взаимодействия с различными системными компонентами, такими как файловые системы, Wi-Fi, SD-карты и другие системные настройки. Поддерживает множество команд для управления файлами, директориями и системными конфигурациями.',
+        'ja': 'ファイルシステム、Wi-Fi、SDカード、その他のシステム設定などの様々なシステムコンポーネントと対話するためのコマンドラインインターフェース（CLI）システム。ファイル、ディレクトリ、システム構成を管理するための多数のコマンドをサポートします。'
     }
 };
 
@@ -1790,6 +1810,11 @@ const status_translations = {
         'ru': 'Устарело',
         'ja': '非推奨'
     },
+    'publicArchive': {
+        'en': 'Public Archive',
+        'ru': 'Публичный архив',
+        'ja': 'パブリックアーカイブ'
+    }
 }
 
 const games_main_translations = {
@@ -2198,6 +2223,16 @@ const yuki_translations = {
         'ru': 'Yuki Humidifier',
         'ja': 'Yuki Humidifier'
     },
+    'yukiHomeDescription': {
+        'en': 'A modern platform for managing smart devices and creating distributed IoT systems. Includes Core, Protocol, Windows/Android clients, and web interface.',
+        'ru': 'Современная платформа для управления умными устройствами и создания распределённых IoT-систем. Включает Core, Protocol, клиенты для Windows/Android и веб-интерфейс.',
+        'ja': 'スマートデバイスを管理し、分散型IoTシステムを構築するためのモダンなプラットフォーム。Core、Protocol、Windows/Androidクライアント、Webインターフェースを含みます。'
+    },
+    'yukiDevsDescription': {
+        'en': 'A modern platform for managing smart devices and creating distributed IoT systems. Includes Core, Protocol, Windows/Android clients, and web interface.',
+        'ru': 'Современная платформа для управления умными устройствами и создания распределённых IoT-систем. Включает Core, Protocol, клиенты для Windows/Android и веб-интерфейс.',
+        'ja': 'スマートデバイスを管理し、分散型IoTシステムを構築するためのモダンなプラットフォーム。Core、Protocol、Windows/Androidクライアント、Webインターフェースを含みます。'
+    }
 };
 
 const yuki_components_translations = {
@@ -2889,6 +2924,16 @@ const xl_translations = {
         'ru': 'Все компоненты экосистемы Xeno Language распространяются под лицензией <strong>Apache 2.0</strong>.',
         'ja': 'Xeno Languageエコシステムの全コンポーネントは<strong>Apache 2.0</strong>ライセンスの下で配布されています。'
     },
+    'xenoLangHomeDescription': {
+        'en': 'A compact interpreted language and VM for ESP32. Ecosystem includes core, Windows executable, and IDE for development.',
+        'ru': 'Компактный интерпретируемый язык и VM для ESP32. Экосистема включает ядро, Windows-исполняемый файл и IDE для разработки.',
+        'ja': 'ESP32向けのコンパクトなインタプリタ型言語とVM。エコシステムにはコア、Windows実行可能ファイル、開発用IDEが含まれます。'
+    },
+    'xenoLangDevsDescription': {
+        'en': 'A compact interpreted language and VM for ESP32. The ecosystem includes the language core, a Windows executable, and the Xeno IDE integrated development environment.',
+        'ru': 'Компактный интерпретируемый язык и VM для ESP32. Экосистема включает ядро языка, Windows-исполняемый файл и интегрированную среду разработки Xeno IDE.',
+        'ja': 'ESP32向けのコンパクトなインタプリタ型言語とVM。エコシステムには言語コア、Windows実行可能ファイル、統合開発環境Xeno IDEが含まれます。'
+    }
 };
 
 const qwebui_translations = {
@@ -3057,6 +3102,11 @@ const qwebui_translations = {
         'ru': 'Этот проект распространяется под лицензией MIT. Подробности в файле LICENSE.',
         'ja': 'このプロジェクトはMITライセンスの下で配布されています。詳細はLICENSEファイルをご覧ください。'
     },
+    'qwebuiDevsDescription': {
+        'en': 'A web-based quantum computing laboratory with interactive notebooks. Built with Flask + React using Qiskit. Public archive under MIT license.',
+        'ru': 'Веб-лаборатория квантовых вычислений с интерактивными блокнотами. Разработана на Flask + React с использованием Qiskit. Публичный архив под лицензией MIT.',
+        'ja': 'インタラクティブなノートブックを備えたWebベースの量子コンピューティングラボラトリー。Flask + ReactとQiskitを使用して構築。MITライセンスのパブリックアーカイブ。'
+    }
 };
 
 const xenos_translations = {
