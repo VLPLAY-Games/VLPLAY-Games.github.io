@@ -1,7 +1,7 @@
 ﻿/* main.css */
 
 .hero {
-    background: linear-gradient(135deg, #e8d4ff 0%, #d8c0ff 50%, #c8acff 100%);
+    background: linear-gradient(135deg, #e8d4ff 0%, #d8c0ff 40%, rgba(61, 42, 94, 0.9) 100%);
     padding: 5rem 0;
     text-align: center;
     position: relative;

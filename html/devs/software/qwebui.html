@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../css/main.css">
+    <link rel="stylesheet" href="../../../css/header.css">
+    <link rel="stylesheet" href="../../../css/body.css">
+    <link rel="stylesheet" href="../../../css/devs.css">
+    <link rel="stylesheet" href="../../../css/projects.css">
+    <link rel="stylesheet" href="../../../css/footer.css">
+    <link rel="shortcut icon" href="../../../img/header/LOGO VL_PLAY Games.png" />
+    <script src="../../../js/translations.js" defer></script>
+    <script src="../../../js/status.js" defer></script>
+    <title>VL_PLAY Games - QWebUI</title>
+</head>
+<body>
+    <div class="spin-wrapper"><div class="spinner"></div></div>
+    <div class="page-container">
+        <header>
+            <div class="logo">
+                <img src="../../../img/header/LOGO VL_PLAY Games.png" alt="Логотип VL_PLAY Games" width="100" height="100" onclick="window.location.href='../../../index.html';" style="cursor: pointer;">
+                <h1>VL_PLAY Games - QWebUI</h1>
+            </div>
+            <nav>
+                <div class="language-buttons">
+                    <div class="language-dropdown">
+                        <button class="language-dropdown-btn" data-translate="site_language">Язык</button>
+                        <div class="language-dropdown-content">
+                            <button id="switchToEnglish" class="switchToEnglishBut">English</button>
+                            <button id="switchToRussian" class="switchToRussianBut">Русский</button>
+                            <button id="switchToJapanese" class="switchToJapaneseBut">日本語</button>
+                        </div>
+                    </div>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="../../../index.html" data-translate="nav_home">Главная</a></li>
+                    <li><a href="../../../html/devs/devs.html" data-translate="nav_developments">Разработки</a></li>
+                    <li><a href="../../../html/about_me/about_me.html" data-translate="nav_about_me">Обо мне</a></li>
+                    <li><a href="../../../html/links/links.html" data-translate="nav_contacts">Ссылки</a></li>
+                    <li><a href="../../../html/status/status.html" data-translate="nav_status">Статус</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="centered-text">
+            <h1>QWebUI</h1>
+            <div class="title-decoration"></div>
+        </div>
+
+        <div class="devs-description">
+            <!-- Header Card -->
+            <div class="game-header-card">
+                <div class="game-header-content">
+                    <div class="game-logo-section">
+                        <div class="logo-container">
+                            <div style="width:120px; height:120px; border-radius:20px; background:linear-gradient(135deg, #1a2a4a, #2a4a7a); display:flex; align-items:center; justify-content:center; font-size:3rem; color:#e8b4e1; border:2px solid rgba(228,180,225,0.3);">⚛️</div>
+                        </div>
+                    </div>
+                    <div class="game-info-section">
+                        <div class="game-title-section">
+                            <h1 class="game-title">QWebUI</h1>
+                            <div class="status-badge" style="background: rgba(156, 89, 209, 0.3); color: #c47aff;">Public Archive</div>
+                        </div>
+                        <div class="project-links-container">
+                            <a href="https://github.com/VLPLAY-Games/QWebUI" target="_blank" class="project-link github-link">
+                                <span class="link-icon">📁</span>
+                                <span data-translate="viewOnGitHub">Смотреть на GitHub</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Description -->
+            <div class="description-card">
+                <div class="card-header">
+                    <h3>Описание</h3>
+                    <div class="decorative-line"></div>
+                </div>
+                <p class="description-text">
+                    <strong>QWebUI</strong> — веб-лаборатория квантовых вычислений с интерактивными блокнотами. 
+                    Проект разработан в рамках курсовой работы второго курса и предоставляет среду, похожую на Jupyter, 
+                    для разработки и выполнения квантовых алгоритмов с использованием <strong>Qiskit</strong>.
+                </p>
+                <p class="description-text">
+                    Пользователи могут создавать несколько блокнотов, добавлять ячейки разных типов (код, Markdown, raw, заголовок), 
+                    запускать квантовые схемы и визуализировать результаты в современном веб-интерфейсе.
+                </p>
+                <p class="description-text" style="margin-top: 10px; font-style: italic; color: var(--text-muted);">
+                    📦 Репозиторий является публичным архивом и распространяется под лицензией MIT.
+                </p>
+            </div>
+
+            <!-- Features -->
+            <div class="description-card">
+                <div class="card-header">
+                    <h3>Ключевые возможности</h3>
+                    <div class="decorative-line"></div>
+                </div>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <span class="feature-icon">📓</span>
+                        <div class="feature-content">
+                            <h4>Интерактивные блокноты</h4>
+                            <p>Редактирование ячеек (код, Markdown, raw, заголовки) с сохранением прогресса</p>
+                        </div>
+                    </div>
+                    <div class="feature-card">
+                        <span class="feature-icon">🔬</span>
+                        <div class="feature-content">
+                            <h4>Квантовые вычисления</h4>
+                            <p>Выполнение кода на Qiskit Aer симуляторе с автоматической визуализацией схем и гистограмм</p>
+                        </div>
+                    </div>
+                    <div class="feature-card">
+                        <span class="feature-icon">🔐</span>
+                        <div class="feature-content">
+                            <h4>Аутентификация</h4>
+                            <p>Регистрация, вход, гостевой режим с JWT токенами и ролью администратора</p>
+                        </div>
+                    </div>
+                    <div class="feature-card">
+                        <span class="feature-icon">🌓</span>
+                        <div class="feature-content">
+                            <h4>Тёмная/светлая тема</h4>
+                            <p>Автоматическое определение темы системы и ручное переключение</p>
+                        </div>
+                    </div>
+                    <div class="feature-card">
+                        <span class="feature-icon">🌐</span>
+                        <div class="feature-content">
+                            <h4>Интернационализация</h4>
+                            <p>Поддержка английского и русского языков с сохранением выбора</p>
+                        </div>
+                    </div>
+                    <div class="feature-card">
+                        <span class="feature-icon">📊</span>
+                        <div class="feature-content">
+                            <h4>Административная панель</h4>
+                            <p>Управление пользователями, статистика выполнения, мониторинг активности</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Technology Stack -->
+            <div class="description-card">
+                <div class="card-header">
+                    <h3>Технологический стек</h3>
+                    <div class="decorative-line"></div>
+                </div>
+                <div class="tech-stack">
+                    <div class="tech-item">
+                        <span class="tech-icon">🐍</span>
+                        <div class="tech-content">
+                            <strong>Backend</strong>
+                            <span>Flask, Flask-SQLAlchemy, Flask-CORS</span>
+                        </div>
+                    </div>
+                    <div class="tech-item">
+                        <span class="tech-icon">⚛️</span>
+                        <div class="tech-content">
+                            <strong>Quantum</strong>
+                            <span>Qiskit, Qiskit-Aer, Matplotlib, NumPy</span>
+                        </div>
+                    </div>
+                    <div class="tech-item">
+                        <span class="tech-icon">⚛️</span>
+                        <div class="tech-content">
+                            <strong>Frontend</strong>
+                            <span>React 18, React Router 6, Axios, Vite</span>
+                        </div>
+                    </div>
+                    <div class="tech-item">
+                        <span class="tech-icon">🔐</span>
+                        <div class="tech-content">
+                            <strong>Authentication</strong>
+                            <span>PyJWT, bcrypt (password hashing)</span>
+                        </div>
+                    </div>
+                    <div class="tech-item">
+                        <span class="tech-icon">💾</span>
+                        <div class="tech-content">
+                            <strong>Database</strong>
+                            <span>SQLite (configurable)</span>
+                        </div>
+                    </div>
+                    <div class="tech-item">
+                        <span class="tech-icon">📝</span>
+                        <div class="tech-content">
+                            <strong>Patterns</strong>
+                            <span>Singleton (Logger), Factory (CircuitFactory)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Installation -->
+            <div class="description-card">
+                <div class="card-header">
+                    <h3>Установка и запуск</h3>
+                    <div class="decorative-line"></div>
+                </div>
+                <div class="installation-steps">
+                    <div class="step-card">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h4>Клонирование репозитория</h4>
+                            <code class="code-block">git clone https://github.com/VLPLAY-Games/QWebUI<br>cd QWebUI</code>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h4>Настройка бэкенда</h4>
+                            <code class="code-block">cd backend<br>python -m venv venv<br>source venv/bin/activate  # или venv\Scripts\activate (Windows)<br>pip install -r requirements.txt<br>python app.py</code>
+                            <p style="margin-top: 10px; font-size: 0.9rem; color: var(--text-secondary);">
+                                Бэкенд запустится на <code>http://localhost:5000</code>. Будет создана БД с пользователем <strong>admin / admin123</strong>.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h4>Настройка фронтенда</h4>
+                            <code class="code-block">cd frontend<br>npm install<br>npm run dev</code>
+                            <p style="margin-top: 10px; font-size: 0.9rem; color: var(--text-secondary);">
+                                Фронтенд запустится на <code>http://localhost:5173</code>.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Usage Example -->
+            <div class="description-card">
+                <div class="card-header">
+                    <h3>Пример квантового кода</h3>
+                    <div class="decorative-line"></div>
+                </div>
+                <div style="background: rgba(7, 16, 23, 0.8); padding: 15px; border-radius: 10px; border: 1px solid rgba(88, 166, 255, 0.3);">
+                    <pre style="color: #58a6ff; font-family: 'Courier New', monospace; font-size: 0.9rem; white-space: pre-wrap; word-break: break-all; margin: 0;">
+from qiskit import QuantumCircuit
+
+circuit = QuantumCircuit(2, 2)
+
+circuit.h(0)
+circuit.cx(0, 1)
+
+circuit.measure([0, 1], [0, 1])</pre>
+                </div>
+                <p style="margin-top: 15px; color: var(--text-secondary);">
+                    После выполнения ячейки отображаются: результаты измерений, схема цепи и гистограмма.
+                </p>
+            </div>
+
+            <!-- License -->
+            <div class="description-card">
+                <div class="card-header">
+                    <h3>Лицензия</h3>
+                    <div class="decorative-line"></div>
+                </div>
+                <p class="description-text">
+                    Этот проект распространяется под лицензией <strong>MIT</strong>. Подробности в файле <a href="https://github.com/VLPLAY-Games/QWebUI/blob/main/LICENSE" target="_blank">LICENSE</a>.
+                </p>
+            </div>
+
+            <div class="support-section">
+                <a href="https://www.donationalerts.com/r/vl_play021" target="_blank" class="support-btn">
+                    <span class="btn-icon">❤️</span>
+                    <span data-translate="SupportDevelopment">Поддержать разработку</span>
+                </a>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="footer-buttons">
+                <a href="../../../index.html" class="footer-button" data-translate="nav_home">Главная</a>
+                <a href="../../../html/devs/devs.html" class="footer-button" data-translate="nav_developments">Разработки</a>
+                <a href="../../../html/about_me/about_me.html" class="footer-button" data-translate="nav_about_me">Обо мне</a>
+                <a href="../../../html/links/links.html" class="footer-button" data-translate="nav_contacts">Контакты</a>
+                <a href="../../../html/status/status.html" class="footer-button" data-translate="nav_status">Статус</a>
+            </div>
+            <p>VL_PLAY Games Site v<span status-info = "siteVersion"></span></p>
+        </footer>
+    </div>
+    <button id="scrollTopButton" class="btn_scroll_top">↑</button>
+    <script src="../../../js/main.js" type="module"></script>
+</body>
+</html>
