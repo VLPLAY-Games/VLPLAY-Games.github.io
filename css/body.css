@@ -62,7 +62,6 @@ body::before {
 .page-container {
     border-left: 4px solid #e8b4e1;
     min-height: 100vh;
-    /* height: 100%; */
     display: none;
     background: #3d2a5e;
     box-shadow: 0 0 30px rgba(156, 89, 209, 0.3);

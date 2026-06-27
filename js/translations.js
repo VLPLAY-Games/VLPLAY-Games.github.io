@@ -2435,11 +2435,6 @@ const yuki_components_translations = {
         'ru': 'Десктопное приложение для Windows, разработанное на платформе .NET / WPF. Позволяет подключаться к Core, управлять устройствами, выполнять команды и отслеживать состояние системы. Поддерживает полный набор возможностей Yuki Protocol: авторизацию, отправку команд, приём результатов, управление расширенными статусами, сбор системных метрик и связь между устройствами.',
         'ja': '.NET / WPFで構築されたWindowsデスクトップアプリケーション。Coreへの接続、デバイス管理、コマンド実行、システム状態の監視が可能。Yuki Protocolの全機能（認証、コマンド送信、結果受信、拡張ステータス管理、システムメトリクス収集、デバイス間通信）をサポート。'
     },
-    'yukiWindowsDescription2': {
-        'en': 'The client supports all Yuki Protocol features: authorization, command sending, result handling, extended status management, system metrics collection, and device-to-device communication.',
-        'ru': 'Клиент поддерживает полный набор возможностей Yuki Protocol: авторизацию, отправку команд, приём результатов, управление расширенными статусами, сбор системных метрик и связь между устройствами.',
-        'ja': 'クライアントはYuki Protocolの全機能（認証、コマンド送信、結果処理、拡張ステータス管理、システムメトリクス収集、デバイス間通信）をサポートします。'
-    },
     'yukiWindowsFeature1': {
         'en': 'Connect to Core',
         'ru': 'Подключение к Core',
@@ -2511,11 +2506,6 @@ const yuki_components_translations = {
         'en': 'A mobile application for Android developed in Kotlin. Provides remote device management through Core, supports extended commands, and collects system metrics. Runs as a background service with auto-reconnect, authorization, command execution, result handling, extended status management, and device metrics (battery, CPU, memory).',
         'ru': 'Мобильное приложение для Android, разработанное на Kotlin. Обеспечивает удалённое управление устройствами через Core, поддержку расширенных команд и сбор системных метрик. Работает как фоновый сервис с автовосстановлением, поддерживает авторизацию, отправку команд, приём результатов, управление расширенными статусами и сбор метрик устройства (батарея, CPU, память).',
         'ja': 'Kotlinで開発されたAndroidモバイルアプリケーション。Coreを介したリモートデバイス管理、拡張コマンドのサポート、システムメトリクスの収集を提供。バックグラウンドサービスとして動作し、自動再接続、認証、コマンド実行、結果処理、拡張ステータス管理、デバイスメトリクス（バッテリー、CPU、メモリ）をサポート。'
-    },
-    'yukiAndroidDescription2': {
-        'en': 'The application runs as a background service, supports authorization, command sending, result handling, extended status management, and device metrics collection (battery, CPU, memory).',
-        'ru': 'Приложение работает как сервис в фоновом режиме, поддерживает авторизацию, отправку команд, приём результатов, управление расширенными статусами и сбор метрик устройства (батарея, CPU, память).',
-        'ja': 'アプリケーションはバックグラウンドサービスとして動作し、認証、コマンド送信、結果処理、拡張ステータス管理、デバイスメトリクス（バッテリー、CPU、メモリ）の収集をサポートします。'
     },
     'yukiAndroidFeature1': {
         'en': 'Background Service',
@@ -2589,11 +2579,6 @@ const yuki_components_translations = {
         'ru': 'Современный веб-интерфейс для администрирования экосистемы. Разработан на Flask (бэкенд) и чистом JavaScript с Chart.js для визуализации данных. Предоставляет дашборд с виджетами, управление устройствами, историю команд, аудит событий, настройки системы, чёрные списки и мониторинг системных метрик.',
         'ja': 'エコシステムのためのモダンなWeb管理インターフェース。Flask（バックエンド）とChart.jsを使用したバニラJavaScriptで構築。ウィジェット付きダッシュボード、デバイス管理、コマンド履歴、監査イベント、システム設定、ブラックリスト、システムメトリクス監視を提供。'
     },
-    'yukiWebUIDescription2': {
-        'en': 'The interface provides a dashboard with widgets, device management, command history, audit events, system settings, administration, blacklists, and system metrics monitoring.',
-        'ru': 'Интерфейс предоставляет дашборд с виджетами, управление устройствами, историю команд, аудит событий, настройки системы, администрирование, чёрные списки и мониторинг системных метрик.',
-        'ja': 'インターフェースは、ウィジェット付きダッシュボード、デバイス管理、コマンド履歴、監査イベント、システム設定、管理、ブラックリスト、システムメトリクス監視を提供します。'
-    },
     'yukiWebUIFeature1': {
         'en': 'Dashboard',
         'ru': 'Дашборд',
@@ -2665,11 +2650,6 @@ const yuki_components_translations = {
         'en': 'A reference IoT device based on the ESP32-C3 Super Mini microcontroller. A smart air humidifier with full Yuki Protocol v1.1 support. Connects to Core via WebSocket, supports auto-mode, web-based control, metrics collection, command processing, and interaction with other ecosystem devices.',
         'ru': 'Референсное IoT-устройство на базе микроконтроллера ESP32-C3 Super Mini. Умный увлажнитель воздуха с полной поддержкой Yuki Protocol v1.1. Подключается к Core через WebSocket, поддерживает авто-режим, управление через веб-интерфейс, сбор метрик, обработку команд и взаимодействие с другими устройствами экосистемы.',
         'ja': 'ESP32-C3 Super MiniマイクロコントローラーベースのリファレンスIoTデバイス。Yuki Protocol v1.1を完全サポートするスマート空気加湿器。WebSocketでCoreに接続、自動モード、Webベースの制御、メトリクス収集、コマンド処理、他のエコシステムデバイスとの連携をサポート。'
-    },
-    'yukiHumidifierDescription2': {
-        'en': 'The device connects to Core via WebSocket, supports auto-mode, web-based control, metrics collection, command processing, and interaction with other ecosystem devices.',
-        'ru': 'Устройство подключается к Core через WebSocket, поддерживает авто-режим, управление через веб-интерфейс, сбор метрик, обработку команд и взаимодействие с другими устройствами экосистемы.',
-        'ja': 'デバイスはWebSocketでCoreに接続し、自動モード、Webベースの制御、メトリクス収集、コマンド処理、他のエコシステムデバイスとの連携をサポートします。'
     },
     'yukiHumidifierFeature1': {
         'en': 'Humidification Control',
@@ -3160,7 +3140,12 @@ const qwebui_translations = {
         'en': 'A web-based quantum computing laboratory with interactive notebooks. Built with Flask + React using Qiskit. Public archive under MIT license.',
         'ru': 'Веб-лаборатория квантовых вычислений с интерактивными блокнотами. Разработана на Flask + React с использованием Qiskit. Публичный архив под лицензией MIT.',
         'ja': 'インタラクティブなノートブックを備えたWebベースの量子コンピューティングラボラトリー。Flask + ReactとQiskitを使用して構築。MITライセンスのパブリックアーカイブ。'
-    }
+    },
+    'license': {
+        'en': 'License',
+        'ru': 'Лицензия',
+        'ja': 'ライセンス'
+    },
 };
 
 const xenos_translations = {
@@ -3231,11 +3216,9 @@ function setLanguage(language) {
     elementsToTranslate.forEach(element => {
         const translationKey = element.getAttribute('data-translate');
         if (translations[translationKey] && translations[translationKey][language]) {
-            element.textContent = translations[translationKey][language];
+            element.innerHTML = translations[translationKey][language]; // заменяем textContent на innerHTML
         }
     });
-
-    // Сохраняем выбранный язык в куки
     setCookie('language', language, 30);
 }
 

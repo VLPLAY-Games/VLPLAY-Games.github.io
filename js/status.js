@@ -39,10 +39,9 @@ const status = {
     'sdAndVersion': "1.1.0.120 (Test)",
     'sdAndDate': "30.03.2025",
 
-    'siteVersion': "2.0.0 preview 9",
-    'siteDate': "16.10.2025",
+    'siteVersion': "2.0.0",
+    'siteDate': "27.06.2026",
 
-    // Новые проекты
     'qwebuiVersion': "1.0.0",
     'qwebuiDate': "27.06.2026",
 
@@ -55,7 +54,6 @@ const status = {
     'xenolangEXEVersion': "0.1.4.1",
     'xenolangEXEDate': "30.11.2025",
 
-    // Yuki Ecosystem (все в разработке)
     'yukiCoreVersion': "---",
     'yukiCoreDate': "---",
 
@@ -74,7 +72,6 @@ const status = {
     'yukiHumidifierVersion': "---",
     'yukiHumidifierDate': "---",
 
-    // Новый проект LufiraOS (в разработке)
     'lufiraosVersion': "---",
     'lufiraosDate': "---",
 };
