@@ -7,14 +7,14 @@
     <link rel="stylesheet" href="../../../css/header.css">
     <link rel="stylesheet" href="../../../css/body.css">
     <link rel="stylesheet" href="../../../css/devs.css">
+    <link rel="stylesheet" href="../../../css/games.css">
+    <link rel="stylesheet" href="../../../css/ds.css">
     <link rel="stylesheet" href="../../../css/projects.css">
     <link rel="stylesheet" href="../../../css/footer.css">
-    <link rel="stylesheet" href="../../../css/games.css">
-    <link rel="stylesheet" href="../../../../css/ds.css">
     <link rel="shortcut icon" href="../../../img/header/LOGO VL_PLAY Games.png" />
     <script src="../../../js/translations.js" defer></script>
     <script src="../../../js/status.js" defer></script>
-    <title>VL_PLAY Games - Xeno Language</title>
+    <title data-translate="xlTitle">VL_PLAY Games - Xeno Language</title>
 </head>
 <body>
     <div class="spin-wrapper"><div class="spinner"></div></div>
@@ -22,7 +22,7 @@
         <header>
             <div class="logo">
                 <img src="../../../img/header/LOGO VL_PLAY Games.png" alt="Логотип VL_PLAY Games" width="100" height="100" onclick="window.location.href='../../../index.html';" style="cursor: pointer;">
-                <h1>VL_PLAY Games - Xeno Language</h1>
+                <h1 data-translate="xlTitle">VL_PLAY Games - Xeno Language</h1>
             </div>
             <nav>
                 <div class="language-buttons">
@@ -46,7 +46,7 @@
         </header>
 
         <div class="centered-text">
-            <h1>Xeno Language</h1>
+            <h1 data-translate="xlTitle">Xeno Language</h1>
             <div class="title-decoration"></div>
         </div>
 
@@ -54,15 +54,15 @@
         <div class="devs-description">
             <div class="description-card">
                 <div class="card-header">
-                    <h3>О проекте</h3>
+                    <h3 data-translate="aboutProject">О проекте</h3>
                     <div class="decorative-line"></div>
                 </div>
-                <p class="description-text">
+                <p class="description-text" data-translate="xlDescription">
                     <strong>Xeno Language</strong> — это компактный интерпретируемый язык программирования и виртуальная машина для экосистемы ESP32 (Arduino). 
                     Реализован как компилятор → байт-код → VM со встроенными командами для работы с числами, строками, ветвлениями, циклами и базовым управлением GPIO.
                     Язык создан для обучения, быстрого прототипирования и автоматизации на микроконтроллерах.
                 </p>
-                <p class="description-text">
+                <p class="description-text" data-translate="xlDescription2">
                     Экосистема включает три основных компонента, обеспечивающих полный цикл разработки: 
                     <strong>ядро языка для ESP32</strong>, 
                     <strong>Windows-исполняемый файл для интеграции с IDE</strong> и 
@@ -74,7 +74,7 @@
         <!-- Карточки проектов -->
         <div class="tech-section">
             <div class="section-header">
-                <h2>Компоненты экосистемы</h2>
+                <h2 data-translate="ecosystemComponents">Компоненты экосистемы</h2>
                 <div class="title-decoration"></div>
             </div>
 
@@ -84,12 +84,12 @@
                     <div class="card-background" style="background: linear-gradient(135deg, #2d1b4e, #4a2a7a);"></div>
                     <div class="card-content">
                         <div class="card-image">
-                            <div style="width:120px; height:120px; border-radius:20px; background:#1a0b2e; display:flex; align-items:center; justify-content:center; font-size:3rem; color:#e8b4e1; border:2px solid rgba(228,180,225,0.3);">🧠</div>
+                            <div style="width:120px; height:120px; border-radius:20px; background:#1a0b2e; display:flex; align-items:center; justify-content:center; font-size:3rem; color:#e8b4e1; border:2px solid rgba(228,180,225,0.3); margin: 0 auto;">🧠</div>
                         </div>
                         <div class="card-info">
-                            <h3>Xeno Language</h3>
+                            <h3 data-translate="xlComponent1">Xeno Language</h3>
                             <span class="status-badge released" data-translate="released">Выпущено</span>
-                            <p>
+                            <p data-translate="xlComponent1Desc">
                                 Компактный интерпретируемый язык и VM для ESP32. 
                                 Поддерживает числа, строки, условия, циклы, математические функции и базовое управление GPIO.
                                 Оптимален для обучения и быстрой автоматизации.
@@ -106,12 +106,12 @@
                     <div class="card-background" style="background: linear-gradient(135deg, #1e3a5f, #2a5298);"></div>
                     <div class="card-content">
                         <div class="card-image">
-                            <div style="width:120px; height:120px; border-radius:20px; background:#0d1b2a; display:flex; align-items:center; justify-content:center; font-size:3rem; color:#e8b4e1; border:2px solid rgba(228,180,225,0.3);">🖥️</div>
+                            <div style="width:120px; height:120px; border-radius:20px; background:#0d1b2a; display:flex; align-items:center; justify-content:center; font-size:3rem; color:#e8b4e1; border:2px solid rgba(228,180,225,0.3); margin: 0 auto;">🖥️</div>
                         </div>
                         <div class="card-info">
-                            <h3>Xeno Language EXE</h3>
+                            <h3 data-translate="xlComponent2">Xeno Language EXE</h3>
                             <span class="status-badge released" data-translate="released">Выпущено</span>
-                            <p>
+                            <p data-translate="xlComponent2Desc">
                                 Windows-исполняемый файл, обеспечивающий совместимость кода Xeno с Windows. 
                                 Используется в Xeno IDE для компиляции и выполнения программ локально. 
                                 Включает эмуляцию Arduino API и автоматическую конвертацию кода.
@@ -128,12 +128,12 @@
                     <div class="card-background" style="background: linear-gradient(135deg, #2d1b4e, #6a1b7a);"></div>
                     <div class="card-content">
                         <div class="card-image">
-                            <div style="width:120px; height:120px; border-radius:20px; background:#1a0b2e; display:flex; align-items:center; justify-content:center; font-size:3rem; color:#e8b4e1; border:2px solid rgba(228,180,225,0.3);">📝</div>
+                            <div style="width:120px; height:120px; border-radius:20px; background:#1a0b2e; display:flex; align-items:center; justify-content:center; font-size:3rem; color:#e8b4e1; border:2px solid rgba(228,180,225,0.3); margin: 0 auto;">📝</div>
                         </div>
                         <div class="card-info">
-                            <h3>Xeno IDE</h3>
+                            <h3 data-translate="xlComponent3">Xeno IDE</h3>
                             <span class="status-badge released" data-translate="released">Выпущено</span>
-                            <p>
+                            <p data-translate="xlComponent3Desc">
                                 Современная среда разработки для Xeno Language на Windows. 
                                 Подсветка синтаксиса, выполнение кода в реальном времени, 
                                 управление версиями языка, встроенная консоль, тёмная тема и интеграция с VM.
@@ -151,34 +151,34 @@
         <div class="devs-description">
             <div class="description-card">
                 <div class="card-header">
-                    <h3>Текущие версии</h3>
+                    <h3 data-translate="currentVersions">Текущие версии</h3>
                     <div class="decorative-line"></div>
                 </div>
                 <div class="config-table">
                     <table>
                         <thead>
                             <tr>
-                                <th>Компонент</th>
-                                <th>Версия</th>
-                                <th>Последнее обновление</th>
-                                <th>Статус</th>
+                                <th data-translate="component">Компонент</th>
+                                <th data-translate="version_status">Версия</th>
+                                <th data-translate="release_date">Последнее обновление</th>
+                                <th data-translate="stateTitle">Статус</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td>Xeno Language</td>
+                                <td data-translate="xlComponent1">Xeno Language</td>
                                 <td><span status-info="xenolangVersion"></span></td>
                                 <td><span status-info="xenolangDate"></span></td>
                                 <td data-translate="released">Выпущено</td>
                             </tr>
                             <tr>
-                                <td>XenoLanguageIDE</td>
+                                <td data-translate="xlComponent3">Xeno IDE</td>
                                 <td><span status-info="xenolangIDEVersion"></span></td>
                                 <td><span status-info="xenolangIDEDate"></span></td>
                                 <td data-translate="released">Выпущено</td>
                             </tr>
                             <tr>
-                                <td>XenoLanguageEXE-for-IDE</td>
+                                <td data-translate="xlComponent2">Xeno Language EXE</td>
                                 <td><span status-info="xenolangEXEVersion"></span></td>
                                 <td><span status-info="xenolangEXEDate"></span></td>
                                 <td data-translate="released">Выпущено</td>
@@ -186,7 +186,7 @@
                         </tbody>
                     </table>
                 </div>
-                <p style="margin-top:1.5rem; text-align:center;">
+                <p style="margin-top:1.5rem; text-align:center;" data-translate="xlLicense">
                     Все компоненты экосистемы Xeno Language распространяются под лицензией <strong>Apache 2.0</strong>.
                 </p>
             </div>

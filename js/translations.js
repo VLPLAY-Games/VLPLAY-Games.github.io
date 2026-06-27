@@ -2829,25 +2829,65 @@ const xl_translations = {
         'ru': 'Xeno Language Экосистема',
         'ja': 'Xeno Language エコシステム'
     },
+    'aboutProject': {
+        'en': 'About the Project',
+        'ru': 'О проекте',
+        'ja': 'プロジェクトについて'
+    },
     'xlDescription': {
-        'en': 'A compact interpreted programming language and virtual machine for the ESP32 ecosystem. The ecosystem includes the language core, a Windows executable for IDE integration, and a development environment with syntax highlighting and real-time code execution.',
-        'ru': 'Компактный интерпретируемый язык программирования и виртуальная машина для экосистемы ESP32. Экосистема включает ядро языка, Windows-исполняемый файл для интеграции с IDE и среду разработки с подсветкой синтаксиса и выполнением кода в реальном времени.',
-        'ja': 'ESP32エコシステム向けのコンパクトなインタプリタ型プログラミング言語と仮想マシン。エコシステムには、言語コア、IDE統合用のWindows実行可能ファイル、構文ハイライトとリアルタイムコード実行を備えた開発環境が含まれています。'
+        'en': 'Xeno Language is a compact interpreted programming language and virtual machine for the ESP32 (Arduino) ecosystem. Implemented as compiler → bytecode → VM with built-in commands for numbers, strings, branching, loops, and basic GPIO control. The language is designed for learning, rapid prototyping, and automation on microcontrollers.',
+        'ru': 'Xeno Language — это компактный интерпретируемый язык программирования и виртуальная машина для экосистемы ESP32 (Arduino). Реализован как компилятор → байт-код → VM со встроенными командами для работы с числами, строками, ветвлениями, циклами и базовым управлением GPIO. Язык создан для обучения, быстрого прототипирования и автоматизации на микроконтроллерах.',
+        'ja': 'Xeno LanguageはESP32（Arduino）エコシステム向けのコンパクトなインタプリタ型プログラミング言語および仮想マシンです。コンパイラ→バイトコード→VMとして実装され、数値、文字列、分岐、ループ、基本的なGPIO制御のための組み込みコマンドを備えています。この言語は、マイクロコントローラーでの学習、ラピッドプロトタイピング、自動化のために設計されています。'
+    },
+    'xlDescription2': {
+        'en': 'The ecosystem includes three main components that provide a full development cycle: the language core for ESP32, a Windows executable for IDE integration, and the Xeno IDE development environment with syntax highlighting, code execution, and version management.',
+        'ru': 'Экосистема включает три основных компонента, обеспечивающих полный цикл разработки: ядро языка для ESP32, Windows-исполняемый файл для интеграции с IDE и среду разработки Xeno IDE с подсветкой синтаксиса, выполнением кода и управлением версиями.',
+        'ja': 'エコシステムは、完全な開発サイクルを提供する3つの主要コンポーネントで構成されています：ESP32用言語コア、IDE統合用のWindows実行可能ファイル、および構文ハイライト、コード実行、バージョン管理を備えたXeno IDE開発環境。'
+    },
+    'ecosystemComponents': {
+        'en': 'Ecosystem Components',
+        'ru': 'Компоненты экосистемы',
+        'ja': 'エコシステムコンポーネント'
     },
     'xlComponent1': {
-        'en': 'Language Core',
-        'ru': 'Ядро языка',
-        'ja': '言語コア'
+        'en': 'Xeno Language',
+        'ru': 'Xeno Language',
+        'ja': 'Xeno Language'
+    },
+    'xlComponent1Desc': {
+        'en': 'Compact interpreted language and VM for ESP32. Supports numbers, strings, conditions, loops, mathematical functions, and basic GPIO control. Optimal for learning and fast automation.',
+        'ru': 'Компактный интерпретируемый язык и VM для ESP32. Поддерживает числа, строки, условия, циклы, математические функции и базовое управление GPIO. Оптимален для обучения и быстрой автоматизации.',
+        'ja': 'ESP32向けコンパクトなインタプリタ型言語とVM。数値、文字列、条件分岐、ループ、数学関数、基本的なGPIO制御をサポート。学習と高速自動化に最適。'
     },
     'xlComponent2': {
-        'en': 'Windows Executable',
-        'ru': 'Windows-исполняемый файл',
-        'ja': 'Windows実行可能ファイル'
+        'en': 'Xeno Language EXE',
+        'ru': 'Xeno Language EXE',
+        'ja': 'Xeno Language EXE'
+    },
+    'xlComponent2Desc': {
+        'en': 'Windows executable that ensures Xeno code compatibility with Windows. Used in Xeno IDE for local compilation and execution. Includes Arduino API emulation and automatic code conversion.',
+        'ru': 'Windows-исполняемый файл, обеспечивающий совместимость кода Xeno с Windows. Используется в Xeno IDE для компиляции и выполнения программ локально. Включает эмуляцию Arduino API и автоматическую конвертацию кода.',
+        'ja': 'XenoコードのWindows互換性を保証するWindows実行可能ファイル。Xeno IDEでローカルコンパイルと実行に使用されます。Arduino APIエミュレーションと自動コード変換を含みます。'
     },
     'xlComponent3': {
         'en': 'Xeno IDE',
         'ru': 'Xeno IDE',
         'ja': 'Xeno IDE'
+    },
+    'xlComponent3Desc': {
+        'en': 'Modern development environment for Xeno Language on Windows. Syntax highlighting, real-time code execution, language version management, built-in console, dark theme, and VM integration.',
+        'ru': 'Современная среда разработки для Xeno Language на Windows. Подсветка синтаксиса, выполнение кода в реальном времени, управление версиями языка, встроенная консоль, тёмная тема и интеграция с VM.',
+        'ja': 'Windows上のXeno Language向けモダンな開発環境。構文ハイライト、リアルタイムコード実行、言語バージョン管理、内蔵コンソール、ダークテーマ、VM統合。'
+    },
+    'currentVersions': {
+        'en': 'Current Versions',
+        'ru': 'Текущие версии',
+        'ja': '現在のバージョン'
+    },
+    'xlLicense': {
+        'en': 'All components of the Xeno Language ecosystem are distributed under the <strong>Apache 2.0</strong> license.',
+        'ru': 'Все компоненты экосистемы Xeno Language распространяются под лицензией <strong>Apache 2.0</strong>.',
+        'ja': 'Xeno Languageエコシステムの全コンポーネントは<strong>Apache 2.0</strong>ライセンスの下で配布されています。'
     },
 };
 
