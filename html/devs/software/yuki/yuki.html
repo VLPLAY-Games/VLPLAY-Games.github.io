@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../../css/main.css">
+    <link rel="stylesheet" href="../../../../css/header.css">
+    <link rel="stylesheet" href="../../../../css/body.css">
+    <link rel="stylesheet" href="../../../../css/devs.css">
+    <link rel="stylesheet" href="../../../../css/projects.css">
+    <link rel="stylesheet" href="../../../../css/footer.css">
+    <link rel="shortcut icon" href="../../../../img/header/LOGO VL_PLAY Games.png" />
+    <script src="../../../../js/translations.js" defer></script>
+    <script src="../../../../js/status.js" defer></script>
+    <title>VL_PLAY Games - Yuki Ecosystem</title>
+</head>
+<body>
+    <div class="spin-wrapper"><div class="spinner"></div></div>
+    <div class="page-container">
+        <header>
+            <div class="logo">
+                <img src="../../../img/header/LOGO VL_PLAY Games.png" alt="Логотип VL_PLAY Games" width="100" height="100" onclick="window.location.href='../../../index.html';" style="cursor: pointer;">
+                <h1>VL_PLAY Games - Yuki Ecosystem</h1>
+            </div>
+            <nav>
+                <div class="language-buttons">
+                    <div class="language-dropdown">
+                        <button class="language-dropdown-btn" data-translate="site_language">Язык</button>
+                        <div class="language-dropdown-content">
+                            <button id="switchToEnglish" class="switchToEnglishBut">English</button>
+                            <button id="switchToRussian" class="switchToRussianBut">Русский</button>
+                            <button id="switchToJapanese" class="switchToJapaneseBut">日本語</button>
+                        </div>
+                    </div>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="../../../index.html" data-translate="nav_home">Главная</a></li>
+                    <li><a href="../../../html/devs/devs.html" data-translate="nav_developments">Разработки</a></li>
+                    <li><a href="../../../html/about_me/about_me.html" data-translate="nav_about_me">Обо мне</a></li>
+                    <li><a href="../../../html/links/links.html" data-translate="nav_contacts">Ссылки</a></li>
+                    <li><a href="../../../html/status/status.html" data-translate="nav_status">Статус</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="centered-text">
+            <h1>Yuki Ecosystem</h1>
+            <div class="title-decoration"></div>
+        </div>
+
+        <!-- Описание экосистемы -->
+        <div class="devs-description">
+            <div class="description-card">
+                <div class="card-header">
+                    <h3>Об экосистеме</h3>
+                    <div class="decorative-line"></div>
+                </div>
+                <p class="description-text">
+                    <strong>Yuki Ecosystem</strong> — это современная платформа для управления умными устройствами и создания распределённых систем IoT. 
+                    Экосистема включает центральный сервер (Core), единый протокол обмена данными, клиентские приложения для Windows и Android, 
+                    веб-интерфейс для администрирования, а также референсную реализацию устройства на базе ESP32-C3 — увлажнитель воздуха.
+                </p>
+                <p class="description-text">
+                    Архитектура построена на базе WebSocket-связи и унифицированного протокола Yuki Protocol v1.1, 
+                    что обеспечивает надёжное взаимодействие между всеми компонентами в реальном времени.
+                </p>
+            </div>
+        </div>
+
+        <!-- Карточки компонентов -->
+        <div class="tech-section">
+            <div class="section-header">
+                <h2>Компоненты экосистемы</h2>
+                <div class="title-decoration"></div>
+            </div>
+
+            <div class="developments-grid">
+                <!-- Yuki Core -->
+                <div class="development-card" onclick="window.location.href='core.html';" style="cursor: pointer;">
+                    <div class="card-background" style="background: linear-gradient(135deg, #1a1a2e, #2d1b4e);"></div>
+                    <div class="card-content">
+                        <div class="card-image">
+                            <div style="width:120px; height:120px; border-radius:20px; background:#0d0d1a; display:flex; align-items:center; justify-content:center; font-size:3rem; color:#e8b4e1; border:2px solid rgba(228,180,225,0.3);">⚙️</div>
+                        </div>
+                        <div class="card-info">
+                            <h3>Yuki Core</h3>
+                            <span class="status-badge in-development" data-translate="sysReqDev">В разработке</span>
+                            <p>
+                                Центральный сервер экосистемы. Обеспечивает управление устройствами, аутентификацию, 
+                                маршрутизацию команд, сбор метрик и ведение логов. Реализован на Python + Flask + WebSockets.
+                            </p>
+                        </div>
+                        <div class="card-action">
+                            <a href="core.html" class="card-btn" data-translate="learn_more">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Yuki Protocol -->
+                <div class="development-card" onclick="window.location.href='protocol.html';" style="cursor: pointer;">
+                    <div class="card-background" style="background: linear-gradient(135deg, #1a3a5f, #2a5298);"></div>
+                    <div class="card-content">
+                        <div class="card-image">
+                            <div style="width:120px; height:120px; border-radius:20px; background:#0d1b2a; display:flex; align-items:center; justify-content:center; font-size:3rem; color:#e8b4e1; border:2px solid rgba(228,180,225,0.3);">📡</div>
+                        </div>
+                        <div class="card-info">
+                            <h3>Yuki Protocol</h3>
+                            <span class="status-badge in-development" data-translate="sysReqDev">В разработке</span>
+                            <p>
+                                Унифицированный протокол обмена данными v1.1. Реализован на Python, JavaScript, C# и Kotlin. 
+                                Обеспечивает единый формат сообщений для всех устройств и клиентов экосистемы.
+                            </p>
+                        </div>
+                        <div class="card-action">
+                            <a href="protocol.html" class="card-btn" data-translate="learn_more">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Yuki Windows Client -->
+                <div class="development-card" onclick="window.location.href='windows.html';" style="cursor: pointer;">
+                    <div class="card-background" style="background: linear-gradient(135deg, #2d1b4e, #4a2a7a);"></div>
+                    <div class="card-content">
+                        <div class="card-image">
+                            <div style="width:120px; height:120px; border-radius:20px; background:#1a0b2e; display:flex; align-items:center; justify-content:center; font-size:3rem; color:#e8b4e1; border:2px solid rgba(228,180,225,0.3);">🖥️</div>
+                        </div>
+                        <div class="card-info">
+                            <h3>Yuki Windows Client</h3>
+                            <span class="status-badge in-development" data-translate="sysReqDev">В разработке</span>
+                            <p>
+                                Десктопное приложение для Windows (WPF / .NET). Позволяет подключаться к Core, 
+                                управлять устройствами, выполнять команды и отслеживать состояние системы.
+                            </p>
+                        </div>
+                        <div class="card-action">
+                            <a href="windows.html" class="card-btn" data-translate="learn_more">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Yuki Android Client -->
+                <div class="development-card" onclick="window.location.href='android.html';" style="cursor: pointer;">
+                    <div class="card-background" style="background: linear-gradient(135deg, #1a3a2e, #2a5a4a);"></div>
+                    <div class="card-content">
+                        <div class="card-image">
+                            <div style="width:120px; height:120px; border-radius:20px; background:#0d1a12; display:flex; align-items:center; justify-content:center; font-size:3rem; color:#e8b4e1; border:2px solid rgba(228,180,225,0.3);">📱</div>
+                        </div>
+                        <div class="card-info">
+                            <h3>Yuki Android Client</h3>
+                            <span class="status-badge in-development" data-translate="sysReqDev">В разработке</span>
+                            <p>
+                                Мобильное приложение для Android (Kotlin). Обеспечивает удалённое управление устройствами 
+                                через Core, поддержку расширенных команд и сбор системных метрик.
+                            </p>
+                        </div>
+                        <div class="card-action">
+                            <a href="android.html" class="card-btn" data-translate="learn_more">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Yuki Web UI -->
+                <div class="development-card" onclick="window.location.href='webui.html';" style="cursor: pointer;">
+                    <div class="card-background" style="background: linear-gradient(135deg, #2d1b4e, #6a1b7a);"></div>
+                    <div class="card-content">
+                        <div class="card-image">
+                            <div style="width:120px; height:120px; border-radius:20px; background:#1a0b2e; display:flex; align-items:center; justify-content:center; font-size:3rem; color:#e8b4e1; border:2px solid rgba(228,180,225,0.3);">🌐</div>
+                        </div>
+                        <div class="card-info">
+                            <h3>Yuki Web UI</h3>
+                            <span class="status-badge in-development" data-translate="sysReqDev">В разработке</span>
+                            <p>
+                                Современный веб-интерфейс для администрирования системы. Дашборд с виджетами, 
+                                управление устройствами, история команд, аудит и настройки. Реализован на Flask + JS.
+                            </p>
+                        </div>
+                        <div class="card-action">
+                            <a href="webui.html" class="card-btn" data-translate="learn_more">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Yuki Humidifier -->
+                <div class="development-card" onclick="window.location.href='humidifier.html';" style="cursor: pointer;">
+                    <div class="card-background" style="background: linear-gradient(135deg, #1e3a5f, #0d1b2a);"></div>
+                    <div class="card-content">
+                        <div class="card-image">
+                            <div style="width:120px; height:120px; border-radius:20px; background:#0a0f1a; display:flex; align-items:center; justify-content:center; font-size:3rem; color:#e8b4e1; border:2px solid rgba(228,180,225,0.3);">💨</div>
+                        </div>
+                        <div class="card-info">
+                            <h3>Yuki Humidifier</h3>
+                            <span class="status-badge in-development" data-translate="sysReqDev">В разработке</span>
+                            <p>
+                                Референсное устройство на базе ESP32-C3 Super Mini. Умный увлажнитель воздуха с 
+                                поддержкой Yuki Protocol, авто-режимом, управлением через Core и встроенным веб-интерфейсом.
+                            </p>
+                        </div>
+                        <div class="card-action">
+                            <a href="humidifier.html" class="card-btn" data-translate="learn_more">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Таблица статусов -->
+        <div class="devs-description">
+            <div class="description-card">
+                <div class="card-header">
+                    <h3>Статус разработки</h3>
+                    <div class="decorative-line"></div>
+                </div>
+                <div class="config-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Компонент</th>
+                                <th>Версия</th>
+                                <th>Последнее обновление</th>
+                                <th>Статус</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Yuki Core</td>
+                                <td>---</td>
+                                <td>---</td>
+                                <td data-translate="sysReqDev">В разработке</td>
+                            </tr>
+                            <tr>
+                                <td>Yuki Protocol</td>
+                                <td>---</td>
+                                <td>---</td>
+                                <td data-translate="sysReqDev">В разработке</td>
+                            </tr>
+                            <tr>
+                                <td>Yuki Windows Client</td>
+                                <td>---</td>
+                                <td>---</td>
+                                <td data-translate="sysReqDev">В разработке</td>
+                            </tr>
+                            <tr>
+                                <td>Yuki Android Client</td>
+                                <td>---</td>
+                                <td>---</td>
+                                <td data-translate="sysReqDev">В разработке</td>
+                            </tr>
+                            <tr>
+                                <td>Yuki Web UI</td>
+                                <td>---</td>
+                                <td>---</td>
+                                <td data-translate="sysReqDev">В разработке</td>
+                            </tr>
+                            <tr>
+                                <td>Yuki Humidifier</td>
+                                <td>---</td>
+                                <td>---</td>
+                                <td data-translate="sysReqDev">В разработке</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p style="margin-top:1.5rem; text-align:center; color: var(--text-secondary);">
+                    Все компоненты экосистемы находятся в активной разработке.
+                </p>
+            </div>
+        </div>
+
+        <div class="support-section">
+            <a href="https://www.donationalerts.com/r/vl_play021" target="_blank" class="support-btn">
+                <span class="btn-icon">❤️</span>
+                <span data-translate="SupportDevelopment">Поддержать разработку</span>
+            </a>
+        </div>
+
+        <footer class="footer">
+            <div class="footer-buttons">
+                <a href="../../../../index.html" class="footer-button" data-translate="nav_home">Главная</a>
+                <a href="../../../../html/devs/devs.html" class="footer-button" data-translate="nav_developments">Разработки</a>
+                <a href="../../../../html/about_me/about_me.html" class="footer-button" data-translate="nav_about_me">Обо мне</a>
+                <a href="../../../../html/links/links.html" class="footer-button" data-translate="nav_contacts">Контакты</a>
+                <a href="../../../../html/status/status.html" class="footer-button" data-translate="nav_status">Статус</a>
+            </div>
+            <p>VL_PLAY Games Site v<span status-info = "siteVersion"></span></p>
+        </footer>
+    </div>
+    <button id="scrollTopButton" class="btn_scroll_top">↑</button>
+    <script src="../../../../js/main.js" type="module"></script>
+</body>
+</html>

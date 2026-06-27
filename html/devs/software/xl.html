@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../css/main.css">
+    <link rel="stylesheet" href="../../../css/header.css">
+    <link rel="stylesheet" href="../../../css/body.css">
+    <link rel="stylesheet" href="../../../css/devs.css">
+    <link rel="stylesheet" href="../../../css/projects.css">
+    <link rel="stylesheet" href="../../../css/footer.css">
+    <link rel="shortcut icon" href="../../../img/header/LOGO VL_PLAY Games.png" />
+    <script src="../../../js/translations.js" defer></script>
+    <script src="../../../js/status.js" defer></script>
+    <title>VL_PLAY Games - Xeno Language</title>
+</head>
+<body>
+    <div class="spin-wrapper"><div class="spinner"></div></div>
+    <div class="page-container">
+        <header>
+            <div class="logo">
+                <img src="../../../img/header/LOGO VL_PLAY Games.png" alt="Логотип VL_PLAY Games" width="100" height="100" onclick="window.location.href='../../../index.html';" style="cursor: pointer;">
+                <h1>VL_PLAY Games - Xeno Language</h1>
+            </div>
+            <nav>
+                <div class="language-buttons">
+                    <div class="language-dropdown">
+                        <button class="language-dropdown-btn" data-translate="site_language">Язык</button>
+                        <div class="language-dropdown-content">
+                            <button id="switchToEnglish" class="switchToEnglishBut">English</button>
+                            <button id="switchToRussian" class="switchToRussianBut">Русский</button>
+                            <button id="switchToJapanese" class="switchToJapaneseBut">日本語</button>
+                        </div>
+                    </div>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="../../../index.html" data-translate="nav_home">Главная</a></li>
+                    <li><a href="../../../html/devs/devs.html" data-translate="nav_developments">Разработки</a></li>
+                    <li><a href="../../../html/about_me/about_me.html" data-translate="nav_about_me">Обо мне</a></li>
+                    <li><a href="../../../html/links/links.html" data-translate="nav_contacts">Ссылки</a></li>
+                    <li><a href="../../../html/status/status.html" data-translate="nav_status">Статус</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="centered-text">
+            <h1>Xeno Language</h1>
+            <div class="title-decoration"></div>
+        </div>
+
+        <!-- Описание экосистемы -->
+        <div class="devs-description">
+            <div class="description-card">
+                <div class="card-header">
+                    <h3>О проекте</h3>
+                    <div class="decorative-line"></div>
+                </div>
+                <p class="description-text">
+                    <strong>Xeno Language</strong> — это компактный интерпретируемый язык программирования и виртуальная машина для экосистемы ESP32 (Arduino). 
+                    Реализован как компилятор → байт-код → VM со встроенными командами для работы с числами, строками, ветвлениями, циклами и базовым управлением GPIO.
+                    Язык создан для обучения, быстрого прототипирования и автоматизации на микроконтроллерах.
+                </p>
+                <p class="description-text">
+                    Экосистема включает три основных компонента, обеспечивающих полный цикл разработки: 
+                    <strong>ядро языка для ESP32</strong>, 
+                    <strong>Windows-исполняемый файл для интеграции с IDE</strong> и 
+                    <strong>среду разработки Xeno IDE</strong> с подсветкой синтаксиса, выполнением кода и управлением версиями.
+                </p>
+            </div>
+        </div>
+
+        <!-- Карточки проектов -->
+        <div class="tech-section">
+            <div class="section-header">
+                <h2>Компоненты экосистемы</h2>
+                <div class="title-decoration"></div>
+            </div>
+
+            <div class="developments-grid">
+                <!-- Xeno Language (ядро) -->
+                <div class="development-card" onclick="window.location.href='https://github.com/VLPLAY-Games/Xeno-Language';" style="cursor: pointer;">
+                    <div class="card-background" style="background: linear-gradient(135deg, #2d1b4e, #4a2a7a);"></div>
+                    <div class="card-content">
+                        <div class="card-image">
+                            <div style="width:120px; height:120px; border-radius:20px; background:#1a0b2e; display:flex; align-items:center; justify-content:center; font-size:3rem; color:#e8b4e1; border:2px solid rgba(228,180,225,0.3);">🧠</div>
+                        </div>
+                        <div class="card-info">
+                            <h3>Xeno Language</h3>
+                            <span class="status-badge released" data-translate="released">Выпущено</span>
+                            <p>
+                                Компактный интерпретируемый язык и VM для ESP32. 
+                                Поддерживает числа, строки, условия, циклы, математические функции и базовое управление GPIO.
+                                Оптимален для обучения и быстрой автоматизации.
+                            </p>
+                        </div>
+                        <div class="card-action">
+                            <a href="https://github.com/VLPLAY-Games/Xeno-Language" target="_blank" class="card-btn">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Xeno Language EXE for Windows IDE -->
+                <div class="development-card" onclick="window.location.href='https://github.com/VLPLAY-Games/XenoLanguageEXE-for-IDE';" style="cursor: pointer;">
+                    <div class="card-background" style="background: linear-gradient(135deg, #1e3a5f, #2a5298);"></div>
+                    <div class="card-content">
+                        <div class="card-image">
+                            <div style="width:120px; height:120px; border-radius:20px; background:#0d1b2a; display:flex; align-items:center; justify-content:center; font-size:3rem; color:#e8b4e1; border:2px solid rgba(228,180,225,0.3);">🖥️</div>
+                        </div>
+                        <div class="card-info">
+                            <h3>Xeno Language EXE</h3>
+                            <span class="status-badge released" data-translate="released">Выпущено</span>
+                            <p>
+                                Windows-исполняемый файл, обеспечивающий совместимость кода Xeno с Windows. 
+                                Используется в Xeno IDE для компиляции и выполнения программ локально. 
+                                Включает эмуляцию Arduino API и автоматическую конвертацию кода.
+                            </p>
+                        </div>
+                        <div class="card-action">
+                            <a href="https://github.com/VLPLAY-Games/XenoLanguageEXE-for-IDE" target="_blank" class="card-btn">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Xeno IDE -->
+                <div class="development-card" onclick="window.location.href='https://github.com/VLPLAY-Games/XenoLanguageIDE';" style="cursor: pointer;">
+                    <div class="card-background" style="background: linear-gradient(135deg, #2d1b4e, #6a1b7a);"></div>
+                    <div class="card-content">
+                        <div class="card-image">
+                            <div style="width:120px; height:120px; border-radius:20px; background:#1a0b2e; display:flex; align-items:center; justify-content:center; font-size:3rem; color:#e8b4e1; border:2px solid rgba(228,180,225,0.3);">📝</div>
+                        </div>
+                        <div class="card-info">
+                            <h3>Xeno IDE</h3>
+                            <span class="status-badge released" data-translate="released">Выпущено</span>
+                            <p>
+                                Современная среда разработки для Xeno Language на Windows. 
+                                Подсветка синтаксиса, выполнение кода в реальном времени, 
+                                управление версиями языка, встроенная консоль, тёмная тема и интеграция с VM.
+                            </p>
+                        </div>
+                        <div class="card-action">
+                            <a href="https://github.com/VLPLAY-Games/XenoLanguageIDE" target="_blank" class="card-btn">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Дополнительная информация: версии и ссылки -->
+        <div class="devs-description">
+            <div class="description-card">
+                <div class="card-header">
+                    <h3>Текущие версии</h3>
+                    <div class="decorative-line"></div>
+                </div>
+                <div class="config-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Компонент</th>
+                                <th>Версия</th>
+                                <th>Последнее обновление</th>
+                                <th>Статус</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Xeno Language</td>
+                                <td><span status-info="xenolangVersion"></span></td>
+                                <td><span status-info="xenolangDate"></span></td>
+                                <td data-translate="released">Выпущено</td>
+                            </tr>
+                            <tr>
+                                <td>XenoLanguageIDE</td>
+                                <td><span status-info="xenolangIDEVersion"></span></td>
+                                <td><span status-info="xenolangIDEDate"></span></td>
+                                <td data-translate="released">Выпущено</td>
+                            </tr>
+                            <tr>
+                                <td>XenoLanguageEXE-for-IDE</td>
+                                <td><span status-info="xenolangEXEVersion"></span></td>
+                                <td><span status-info="xenolangEXEDate"></span></td>
+                                <td data-translate="released">Выпущено</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p style="margin-top:1.5rem; text-align:center;">
+                    Все компоненты экосистемы Xeno Language распространяются под лицензией <strong>Apache 2.0</strong>.
+                </p>
+            </div>
+        </div>
+
+        <div class="support-section">
+            <a href="https://www.donationalerts.com/r/vl_play021" target="_blank" class="support-btn">
+                <span class="btn-icon">❤️</span>
+                <span data-translate="SupportDevelopment">Поддержать разработку</span>
+            </a>
+        </div>
+
+        <footer class="footer">
+            <div class="footer-buttons">
+                <a href="../../../index.html" class="footer-button" data-translate="nav_home">Главная</a>
+                <a href="../../../html/devs/devs.html" class="footer-button" data-translate="nav_developments">Разработки</a>
+                <a href="../../../html/about_me/about_me.html" class="footer-button" data-translate="nav_about_me">Обо мне</a>
+                <a href="../../../html/links/links.html" class="footer-button" data-translate="nav_contacts">Контакты</a>
+                <a href="../../../html/status/status.html" class="footer-button" data-translate="nav_status">Статус</a>
+            </div>
+            <p>VL_PLAY Games Site v<span status-info = "siteVersion"></span></p>
+        </footer>
+    </div>
+    <button id="scrollTopButton" class="btn_scroll_top">↑</button>
+    <script src="../../../js/main.js" type="module"></script>
+</body>
+</html>

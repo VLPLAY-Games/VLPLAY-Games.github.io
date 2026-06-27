@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+﻿﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -47,6 +47,7 @@
             <div class="title-decoration"></div>
         </div>
 
+        <!-- ========== ИГРЫ ========== -->
         <div class="games-section">
             <div class="section-header">
                 <h2 data-translate="devsMain2">Мои игры</h2>
@@ -54,6 +55,7 @@
             </div>
             
             <div class="developments-grid">
+                <!-- Silent Darkness -->
                 <div class="development-card" onclick="window.location.href='games/sd.html';" style="cursor: pointer;">
                     <div class="card-background sd-bg"></div>
                     <div class="card-content">
@@ -70,6 +72,7 @@
                     </div>
                 </div>
 
+                <!-- Qlake -->
                 <div class="development-card" onclick="window.location.href='games/qlake.html';" style="cursor: pointer;">
                     <div class="card-background qlake-bg"></div>
                     <div class="card-content">
@@ -85,16 +88,147 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- Tanabata -->
+                <div class="development-card" onclick="window.location.href='games/ft.html';" style="cursor: pointer;">
+                    <div class="card-background tanabata-bg"></div>
+                    <div class="card-content">
+                        <div class="card-image">
+                            <img src="..\..\img\Tanabata\Tanabata_Logo.png" alt="Tanabata Logo">
+                        </div>
+                        <div class="card-info">
+                            <h3 data-translate="tanabataTitle">Tanabata: Path to the Stars</h3>
+                            <p data-translate="tanabataDescriptionDevs">A relaxing atmospheric puzzle game with adventure elements. Embark on a mystical journey through Tokyo and beyond to discover the secret Tanabata festival! Explore beautiful locations, solve ancient puzzles, and play magical mini-games where your choices determine the spectacular starry finale.</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="games/ft.html" class="card-btn" data-translate="learn_more">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
-        <div class="bots-section">
+        <!-- ========== ПО ========== -->
+        <div class="tech-section">
             <div class="section-header">
-                <h2 data-translate="devsMain3">Мои Боты</h2>
+                <h2 data-translate="devsMain4">Моё ПО</h2>
                 <div class="title-decoration"></div>
             </div>
-            
+
             <div class="developments-grid">
+                <!-- 1. Актуальные проекты (Released и In Development) -->
+
+                <!-- Xeno Language Ecosystem (Released) -->
+                <div class="development-card" onclick="window.location.href='software/xl.html';" style="cursor: pointer;">
+                    <div class="card-background" style="background: linear-gradient(135deg, #2d1b4e, #4a2a7a);"></div>
+                    <div class="card-content">
+                        <div class="card-image">
+                            <div style="width:120px; height:120px; border-radius:20px; background:#1a0b2e; display:flex; align-items:center; justify-content:center; font-size:3rem; color:#e8b4e1; border:2px solid rgba(228,180,225,0.3);">🧠</div>
+                        </div>
+                        <div class="card-info">
+                            <h3>Xeno Language Ecosystem</h3>
+                            <span class="status-badge released" data-translate="released">Выпущено</span>
+                            <p>Компактный интерпретируемый язык и VM для ESP32. Экосистема включает ядро языка, Windows-исполняемый файл и интегрированную среду разработки Xeno IDE.</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="software/xl.html" class="card-btn" data-translate="learn_more">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- MusicLocalUI -->
+                <div class="development-card" onclick="window.location.href='software/mui.html';" style="cursor: pointer;">
+                    <div class="card-background mui-bg"></div>
+                    <div class="card-content">
+                        <div class="card-image">
+                            <div style="width:120px; height:120px; border-radius:20px; background:linear-gradient(135deg, #1a2a3a, #2a4a5a); display:flex; align-items:center; justify-content:center; font-size:3rem; color:#e8b4e1; border:2px solid rgba(228,180,225,0.3);">🎵</div>
+                        </div>
+                        <div class="card-info">
+                            <h3 data-translate="musicLocalUITitle">Music Local UI</h3>
+                            <span class="status-badge released" data-translate="released">Выпущено</span>
+                            <p data-translate="musicLocalUIDescriptionDevs">Легковесный музыкальный проигрыватель для Windows для локальных аудиофайлов (размером менее 1 МБ). Компактное и эффективное приложение для прослушивания музыки с вашего компьютера.</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="software/mui.html" class="card-btn" data-translate="learn_more">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Port Scanner -->
+                <div class="development-card" onclick="window.location.href='software/ps.html';" style="cursor: pointer;">
+                    <div class="card-background ps-bg"></div>
+                    <div class="card-content">
+                        <div class="card-image">
+                            <div style="width:120px; height:120px; border-radius:20px; background:linear-gradient(135deg, #1a2a3a, #2a4a5a); display:flex; align-items:center; justify-content:center; font-size:3rem; color:#e8b4e1; border:2px solid rgba(228,180,225,0.3);">🌐</div>
+                        </div>
+                        <div class="card-info">
+                            <h3 data-translate="portScannerTitle">Port Scanner</h3>
+                            <span class="status-badge released" data-translate="released">Выпущено</span>
+                            <p data-translate="portScannerDescriptionDevs">Многофункциональный инструмент для анализа и взаимодействия с сетями. Предоставляет возможности для проверки IP-адресов, сканирования портов, пинга серверов, просмотра логов и доступа к терминальным командам.</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="software/ps.html" class="card-btn" data-translate="learn_more">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Yuki Ecosystem -->
+                <div class="development-card" onclick="window.location.href='software/yuki/yuki.html';" style="cursor: pointer;">
+                    <div class="card-background" style="background: linear-gradient(135deg, #1a1a2e, #2d1b4e);"></div>
+                    <div class="card-content">
+                        <div class="card-image">
+                            <img src="../../img/Yuki/yukiicon.png" alt="Yuki Logo" style="width:120px; height:120px; border-radius:20px; border:2px solid rgba(228,180,225,0.3);">
+                        </div>
+                        <div class="card-info">
+                            <h3>Yuki Ecosystem</h3>
+                            <span class="status-badge in-development" data-translate="sysReqDev">В разработке</span>
+                            <p>Современная платформа для управления умными устройствами и создания распределённых IoT-систем. Включает Core, Protocol, клиенты для Windows/Android и веб-интерфейс.</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="software/yuki/yuki.html" class="card-btn" data-translate="learn_more">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Download Server -->
+                <div class="development-card" onclick="window.location.href='software/ds.html';" style="cursor: pointer;">
+                    <div class="card-background ds-bg"></div>
+                    <div class="card-content">
+                        <div class="card-image">
+                            <div style="width:120px; height:120px; border-radius:20px; background:linear-gradient(135deg, #1a2a3a, #2a4a5a); display:flex; align-items:center; justify-content:center; font-size:3rem; color:#e8b4e1; border:2px solid rgba(228,180,225,0.3);">📥</div>
+                        </div>
+                        <div class="card-info">
+                            <h3 data-translate="downloadServerTitle">Download Server</h3>
+                            <span class="status-badge in-development" data-translate="sysReqDev">В разработке</span>
+                            <p data-translate="downloadServerDescriptionDevs">Современный веб-менеджер загрузок с отслеживанием прогресса в реальном времени и удобным интерфейсом. Этот инструмент предоставляет полный контроль над процессом загрузки файлов с расширенными функциями управления.</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="software/ds.html" class="card-btn" data-translate="learn_more">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- XenoOS -->
+                <div class="development-card" onclick="window.location.href='software/xos.html';" style="cursor: pointer;">
+                    <div class="card-background xos-bg"></div>
+                    <div class="card-content">
+                        <div class="card-image">
+                            <div style="width:120px; height:120px; border-radius:20px; background:linear-gradient(135deg, #1a2a3a, #2a4a5a); display:flex; align-items:center; justify-content:center; font-size:3rem; color:#e8b4e1; border:2px solid rgba(228,180,225,0.3);">⚙️</div>
+                        </div>
+                        <div class="card-info">
+                            <h3 data-translate="xenoOSTitle">XenoOS</h3>
+                            <span class="status-badge in-development" data-translate="sysReqDev">В разработке</span>
+                            <p data-translate="xenoOSDescriptionDevs">Командная оболочка (CLI) для взаимодействия с различными системными компонентами, такими как файловые системы, Wi-Fi, SD-карты и другие системные настройки. Система поддерживает множество команд для управления файлами, директориями и системными конфигурациями.</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="software/xos.html" class="card-btn" data-translate="learn_more">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2. Устаревшие проекты (Deprecated) – в конце -->
+
+                <!-- VL_PLAY Games Bot (Deprecated) -->
                 <div class="development-card" onclick="window.location.href='other/bot.html';" style="cursor: pointer;">
                     <div class="card-background bot-bg"></div>
                     <div class="card-content">
@@ -103,23 +237,16 @@
                         </div>
                         <div class="card-info">
                             <h3>VL_PLAY Games Bot</h3>
-                            <p data-translate="botDescriptionDevs">Многофункциональный Telegram-бот, который предоставляет ряд полезных команд для удобства пользователей. А также информирует вас о новых новостях VL_PLAY Games.</p>
+                            <span class="status-badge deprecated" data-translate="deprecated">Устарело</span>
+                            <p data-translate="botDescriptionDevs">Многофункциональный Telegram-бот, который предоставлял ряд полезных команд для удобства пользователей. В настоящее время устарел и не поддерживается.</p>
                         </div>
                         <div class="card-action">
                             <a href="other/bot.html" class="card-btn" data-translate="learn_more">Подробнее</a>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
 
-        <div class="tech-section">
-            <div class="section-header">
-                <h2 data-translate="devsMain4">Моё ПО</h2>
-                <div class="title-decoration"></div>
-            </div>
-            
-            <div class="developments-grid">
+                <!-- XenoClock (Deprecated) -->
                 <div class="development-card" onclick="window.location.href='software/xc.html';" style="cursor: pointer;">
                     <div class="card-background xc-bg"></div>
                     <div class="card-content">

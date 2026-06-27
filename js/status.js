@@ -54,6 +54,29 @@ const status = {
 
     'xenolangEXEVersion': "0.1.4.1",
     'xenolangEXEDate': "30.11.2025",
+
+    // Yuki Ecosystem (все в разработке)
+    'yukiCoreVersion': "---",
+    'yukiCoreDate': "---",
+
+    'yukiProtocolVersion': "---",
+    'yukiProtocolDate': "---",
+
+    'yukiWindowsVersion': "---",
+    'yukiWindowsDate': "---",
+
+    'yukiAndroidVersion': "---",
+    'yukiAndroidDate': "---",
+
+    'yukiWebUIVersion': "---",
+    'yukiWebUIDate': "---",
+
+    'yukiHumidifierVersion': "---",
+    'yukiHumidifierDate': "---",
+
+    // Новый проект LufiraOS (в разработке)
+    'lufiraosVersion': "---",
+    'lufiraosDate': "---",
 };
 
 function setStatus() {

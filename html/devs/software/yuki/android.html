@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../css/main.css">
+    <link rel="stylesheet" href="../../../css/header.css">
+    <link rel="stylesheet" href="../../../css/body.css">
+    <link rel="stylesheet" href="../../../css/devs.css">
+    <link rel="stylesheet" href="../../../css/projects.css">
+    <link rel="stylesheet" href="../../../css/footer.css">
+    <link rel="shortcut icon" href="../../../img/header/LOGO VL_PLAY Games.png" />
+    <script src="../../../js/translations.js" defer></script>
+    <script src="../../../js/status.js" defer></script>
+    <title>VL_PLAY Games - Yuki Android Client</title>
+</head>
+<body>
+    <div class="spin-wrapper"><div class="spinner"></div></div>
+    <div class="page-container">
+        <header>
+            <div class="logo">
+                <img src="../../../img/header/LOGO VL_PLAY Games.png" alt="Логотип VL_PLAY Games" width="100" height="100" onclick="window.location.href='../../../index.html';" style="cursor: pointer;">
+                <h1>VL_PLAY Games - Yuki Android Client</h1>
+            </div>
+            <nav>
+                <div class="language-buttons">
+                    <div class="language-dropdown">
+                        <button class="language-dropdown-btn" data-translate="site_language">Язык</button>
+                        <div class="language-dropdown-content">
+                            <button id="switchToEnglish" class="switchToEnglishBut">English</button>
+                            <button id="switchToRussian" class="switchToRussianBut">Русский</button>
+                            <button id="switchToJapanese" class="switchToJapaneseBut">日本語</button>
+                        </div>
+                    </div>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="../../../index.html" data-translate="nav_home">Главная</a></li>
+                    <li><a href="../../../html/devs/devs.html" data-translate="nav_developments">Разработки</a></li>
+                    <li><a href="../../../html/about_me/about_me.html" data-translate="nav_about_me">Обо мне</a></li>
+                    <li><a href="../../../html/links/links.html" data-translate="nav_contacts">Ссылки</a></li>
+                    <li><a href="../../../html/status/status.html" data-translate="nav_status">Статус</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="centered-text">
+            <h1>Yuki Android Client</h1>
+            <div class="title-decoration"></div>
+        </div>
+
+        <div class="devs-description">
+            <div class="game-header-card">
+                <div class="game-header-content">
+                    <div class="game-logo-section">
+                        <div class="logo-container">
+                            <div style="width:120px; height:120px; border-radius:20px; background:linear-gradient(135deg, #1a3a2e, #2a5a4a); display:flex; align-items:center; justify-content:center; font-size:3rem; color:#e8b4e1; border:2px solid rgba(228,180,225,0.3);">📱</div>
+                        </div>
+                    </div>
+                    <div class="game-info-section">
+                        <div class="game-title-section">
+                            <h1 class="game-title">Yuki Android Client</h1>
+                            <div class="status-badge in-development" data-translate="sysReqDev">В разработке</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="description-card">
+                <div class="card-header">
+                    <h3>Описание</h3>
+                    <div class="decorative-line"></div>
+                </div>
+                <p class="description-text">
+                    <strong>Yuki Android Client</strong> — мобильное приложение для Android, разработанное на <strong>Kotlin</strong>. 
+                    Обеспечивает удалённое управление устройствами через Core, поддержку расширенных команд и сбор системных метрик.
+                </p>
+                <p class="description-text">
+                    Приложение работает как сервис в фоновом режиме, поддерживает авторизацию, отправку команд, 
+                    приём результатов, управление расширенными статусами и сбор метрик устройства (батарея, CPU, память).
+                </p>
+            </div>
+
+            <div class="description-card">
+                <div class="card-header">
+                    <h3>Возможности</h3>
+                    <div class="decorative-line"></div>
+                </div>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <span class="feature-icon">📱</span>
+                        <div class="feature-content">
+                            <h4>Фоновый сервис</h4>
+                            <p>Постоянное подключение к Core с автовосстановлением</p>
+                        </div>
+                    </div>
+                    <div class="feature-card">
+                        <span class="feature-icon">📨</span>
+                        <div class="feature-content">
+                            <h4>Отправка команд</h4>
+                            <p>Любые команды устройствам с JSON-параметрами</p>
+                        </div>
+                    </div>
+                    <div class="feature-card">
+                        <span class="feature-icon">🔋</span>
+                        <div class="feature-content">
+                            <h4>Сбор метрик</h4>
+                            <p>Батарея, CPU, память, статус зарядки</p>
+                        </div>
+                    </div>
+                    <div class="feature-card">
+                        <span class="feature-icon">🔗</span>
+                        <div class="feature-content">
+                            <h4>Связь устройств</h4>
+                            <p>Прямая отправка команд между устройствами</p>
+                        </div>
+                    </div>
+                    <div class="feature-card">
+                        <span class="feature-icon">🔦</span>
+                        <div class="feature-content">
+                            <h4>Управление фонариком</h4>
+                            <p>Включение/выключение вспышки камеры</p>
+                        </div>
+                    </div>
+                    <div class="feature-card">
+                        <span class="feature-icon">🔊</span>
+                        <div class="feature-content">
+                            <h4>Управление громкостью</h4>
+                            <p>Изменение громкости и приглушение звука</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="description-card">
+                <div class="card-header">
+                    <h3>Технологии</h3>
+                    <div class="decorative-line"></div>
+                </div>
+                <div class="tech-stack">
+                    <div class="tech-item">
+                        <span class="tech-icon">📱</span>
+                        <div class="tech-content">
+                            <strong>Kotlin</strong>
+                            <span>Основной язык</span>
+                        </div>
+                    </div>
+                    <div class="tech-item">
+                        <span class="tech-icon">📡</span>
+                        <div class="tech-content">
+                            <strong>OkHttp</strong>
+                            <span>WebSocket клиент</span>
+                        </div>
+                    </div>
+                    <div class="tech-item">
+                        <span class="tech-icon">🗂️</span>
+                        <div class="tech-content">
+                            <strong>Gson</strong>
+                            <span>JSON сериализация</span>
+                        </div>
+                    </div>
+                    <div class="tech-item">
+                        <span class="tech-icon">🔔</span>
+                        <div class="tech-content">
+                            <strong>Foreground Service</strong>
+                            <span>Фоновый режим с уведомлением</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="support-section">
+                <a href="https://www.donationalerts.com/r/vl_play021" target="_blank" class="support-btn">
+                    <span class="btn-icon">❤️</span>
+                    <span data-translate="SupportDevelopment">Поддержать разработку</span>
+                </a>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="footer-buttons">
+                <a href="../../../index.html" class="footer-button" data-translate="nav_home">Главная</a>
+                <a href="../../../html/devs/devs.html" class="footer-button" data-translate="nav_developments">Разработки</a>
+                <a href="../../../html/about_me/about_me.html" class="footer-button" data-translate="nav_about_me">Обо мне</a>
+                <a href="../../../html/links/links.html" class="footer-button" data-translate="nav_contacts">Контакты</a>
+                <a href="../../../html/status/status.html" class="footer-button" data-translate="nav_status">Статус</a>
+            </div>
+            <p>VL_PLAY Games Site v<span status-info = "siteVersion"></span></p>
+        </footer>
+    </div>
+    <button id="scrollTopButton" class="btn_scroll_top">↑</button>
+    <script src="../../../js/main.js" type="module"></script>
+</body>
+</html>
